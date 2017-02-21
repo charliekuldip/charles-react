@@ -3,6 +3,8 @@ import NavLink from './NavLink';
 import axios from 'axios';
 
 
+const url = 'https://jsonplaceholder.typicode.com/posts';
+
 class App extends Component {
 
   constructor(props) {
@@ -13,32 +15,28 @@ class App extends Component {
     };
   }
 
+  // componentDidMount() {
 
-  componentDidMount() {
-    axios.get('http://charles.dev/wp-json/posts?type=project')
-      .then(res => {
-        const data = res.data;
-        // this.setState({ posts });
-        var projects = [];
-        for (var i = 0, len = data.length; i < len; i++) {
-          var project = {};
-          project.id = data[i].ID;
-          project.title = data[i].title;
-          project.terms = data[i].terms;
-          project.content = data[i].content;
-
-          if(data[i].featured_image) {
-            project.image = data[i].featured_image.source;
-          }
-
-          // this.state.projects.push(project);
-          projects.push(project);
-        }
-        this.setState({ projects });
-        console.log('This state: ', this.state);
-        console.table(projects);
-      });
-  }
+  //   axios.get(url)
+  //     .then(res => {
+  //       const data = res.data;
+  //       var projects = [];
+  //       for (var i = 0, len = data.length; i < len; i++) {
+  //         var project = {};
+  //         project.id = data[i].ID;
+  //         project.title = data[i].title;
+  //         project.terms = data[i].terms;
+  //         project.content = data[i].content;
+  //         if(data[i].featured_image) {
+  //           project.image = data[i].featured_image.source;
+  //         }
+  //         projects.push(project);
+  //       }
+  //       this.setState({ projects });
+  //       console.log('This state: ', this.state);
+  //       console.table(projects);
+  //     });
+  // }
 
 
   render() {
@@ -49,7 +47,7 @@ class App extends Component {
           <ul className="main-nav">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/teachers" data={this.projects}>Teachers</NavLink></li>
+            <li><NavLink to="/teachers">Teachers</NavLink></li>
             <li><NavLink to="/courses">Courses</NavLink></li>
           </ul>       
         </header>

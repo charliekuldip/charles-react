@@ -4,7 +4,6 @@ import TeacherList from '../data/teachers';
 
 const Teachers = () => {
   let teachers = TeacherList.map((teacher) => {
-    // console.log('This is this: ', this);
     return (
       <li className="teacher" key={teacher.id} >
         <NavLink to={"teachers/"+ teacher.id}>
