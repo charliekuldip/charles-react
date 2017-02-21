@@ -1,0 +1,84 @@
+const ease = {
+  quadraticOut: (t) => {
+    return -t * (t - 2.0);
+  },
+  quarticOut: (t) => {
+    return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  },
+}
+
+class GooeyOverlay {
+  constructor(path1, path2) {
+    this.path1 = path1;
+    this.path2 = path2;
+    this.duration = 1000;
+    this.delay = 200;
+    this.timeStart = Date.now();
+    this.direction = true;
+  }
+  open() {
+    this.direction = true;
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  close() {
+    this.direction = false;
+    this.timeStart = Date.now();
+    this.renderLoop();
+  }
+  updatePathOpen(time) {
+    const ease1 = ease.quadraticOut(Math.min(time / this.duration, 1));
+    const ease2 = ease.quarticOut(Math.min(time / this.duration, 1));
+    return `
+      M ${100 - ease2 * 100} 0
+      Q ${100 - ease2 * 100} 12.5 ${100 - ease1 * 100} 25
+      T ${100 - ease1 * 100} 50
+      T ${100 - ease1 * 100} 75
+      T ${100 - ease2 * 100} 100
+      H 100
+      V 0
+    `;
+  }
+  updatePathClose(time) {
+    const ease1 = ease.quadraticOut(Math.min(time / this.duration, 1));
+    const ease2 = ease.quarticOut(Math.min(time / this.duration, 1));
+    return `
+      M 0 0
+      H ${100 - ease2 * 100}
+      Q ${100 - ease2 * 100} 12.5 ${100 - ease1 * 100} 25
+      T ${100 - ease1 * 100} 50
+      T ${100 - ease1 * 100} 75
+      T ${100 - ease2 * 100} 100
+      H 0
+      V 0
+    `;
+  }
+  render() {
+    if (this.direction) {
+      this.path1.setAttribute('d', this.updatePathOpen(Date.now() - this.timeStart));
+      this.path2.setAttribute('d', this.updatePathOpen(Date.now() - (this.timeStart + this.delay)));
+    } else {
+      this.path1.setAttribute('d', this.updatePathClose(Date.now() - (this.timeStart + this.delay)));
+      this.path2.setAttribute('d', this.updatePathClose(Date.now() - this.timeStart));
+    }
+  }
+  renderLoop() {
+    this.render();
+    if (Date.now() - this.timeStart >= this.duration + this.delay) {
+      if (!this.direction) {
+        this.open();
+      } else {
+        this.close();
+      }
+    } else {
+      requestAnimationFrame(() => {
+        this.renderLoop();
+      });
+    }
+  }
+}
+
+const path1 = document.getElementById('path01');
+const path2 = document.getElementById('path02');
+const gooeyOverlay = new GooeyOverlay(path1, path2);
+gooeyOverlay.close();
