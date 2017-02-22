@@ -7,8 +7,8 @@ import App from './components/App';
 import Home from './components/Home';
 import About from './components/About';
 import Courses from './components/Courses';
-import Teachers from './components/Teachers';
-import Teacher from './components/Teacher';
+import Projects from './components/Projects';
+import Project from './components/Project';
 import NotFound from './components/NotFound';
 import CourseContainer from './components/courses/CourseContainer';
 import CourseList from './data/courses';
@@ -22,8 +22,8 @@ const routes = (
     <Route component={App}>
       <Route path="/" component={Home} />
       <Route path="about" component={About} title="About" />
-      <Route path="teachers" component={Teachers} />
-      <Route path="teachers/:id" component={Teacher} title="Teacher" />
+      <Route path="projects" component={Projects} />
+      <Route path="projects/:id" component={Project} title="Project" />
       <Route path="courses" component={Courses}>
         <IndexRedirect to="html" />
         <Route path="html" component={CourseContainer} data={CourseList.HTML} />

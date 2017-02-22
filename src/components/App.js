@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
-import axios from 'axios';
+// import axios from 'axios';
 
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
+// const url = 'https://jsonplaceholder.typicode.com/posts';
 
 class App extends Component {
 
@@ -14,6 +14,7 @@ class App extends Component {
       projects: []
     };
   }
+
 
   // componentDidMount() {
 
@@ -47,7 +48,7 @@ class App extends Component {
           <ul className="main-nav">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/teachers">Teachers</NavLink></li>
+            <li><NavLink to="/projects">Projects</NavLink></li>
             <li><NavLink to="/courses">Courses</NavLink></li>
           </ul>       
         </header>

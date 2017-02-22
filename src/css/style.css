@@ -71,19 +71,21 @@ button {
   LAYOUT & PAGE STYLES
 ==================================== */
 
-.container {
-  width: 95%;
-  max-width: 780px;
-  padding-bottom: 2em;
-  margin: 0 auto 2em;
-  background: #fff;
-  border-radius: .5em;
-  box-shadow: 0 3px rgba(0,0,0, .1);
-  overflow: hidden;
-}
+/*.container {*/
+  /*width: 95%;*/
+  /*max-width: 780px;*/
+  /*padding-bottom: 2em;*/
+  /*margin: 0 auto 2em;*/
+  /*background: #fff;*/
+  /*border-radius: .5em;*/
+  /*box-shadow: 0 3px rgba(0,0,0, .1);*/
+  /*overflow: hidden;*/
+/*}*/
+
 header {
-  background: #edeff0;
-  margin-bottom: 2em;
+  /*background: #edeff0;*/
+  /*margin-bottom: 2em;*/
+  background-color:rgba(100,100,100,0.5);
 }
 .main-content {
   padding: 1em 2em;
@@ -102,7 +104,7 @@ header {
 .course-img {
   width: 70px;
 }
-.teacher-img {
+.project-img {
   width: 100%;
   border-radius: .3em;
 }
@@ -170,9 +172,6 @@ header {
 ==================================== */
 
 @media (min-width: 0) and (max-width: 768px) { 
-  body {
-    padding-top: .8em;
-  }
   .home a {
     border-color: transparent;
   }
@@ -205,29 +204,26 @@ header {
    }
 }
 @media (min-width: 769px) {
-  body {
-    padding-top: 3em;
-  }
   .home a {
     border-color: #3b80d1;
   }
   .media img,
   .media > div,
-  .teacher {
+  .project {
     float: left;
   }
   .media > div {
     width: 85.1%;
     margin-left: 1.5em;
   } 
-  .teacher {
+  .project {
     width: 48.73%;
     margin-bottom: 1.5em;
   }
-  .teacher + .teacher {
+  .project + .project {
     margin-left: 2.54%;
   }
-  .teacher:nth-child(2n+3) {
+  .project:nth-child(2n+3) {
     clear: left;
     margin-left: 0;
   }
@@ -267,7 +263,7 @@ header {
   float: left;
 }
 
-.single-teacher img {
+.single-project img {
   width: 100%;
 }
 
@@ -283,3 +279,20 @@ header {
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
+
+.c-davis-bg {
+  /*charles-react/src/img/charles/charles-pic.jpg*/
+  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');
+  background-position: 50% 100%;
+  background-size: auto 100vh;
+  min-height: 100vh;
+  position: absolute;
+  top:0; bottom:0;
+  z-index: -1;
+}
+/*
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+}*/
