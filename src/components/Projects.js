@@ -6,13 +6,16 @@ import ProjectItem from '../components/ProjectItem';
 
 
 const Projects = props => {
+  // debugger;
 
   const results = props.data;
+
   let projects = results.map((project) => {
       return (
-        <ProjectItem url = {project.images.fixed_height.url} />
+        <ProjectItem url = {project.images.fixed_height.url} key={project.id} />
       );
   }); 
+
 
   // let projects = ProjectList.map((project) => {
   //   return (
@@ -34,6 +37,10 @@ const Projects = props => {
     </div>
   );
 }
+
+Projects.propTypes = {
+  data:React.PropTypes.array
+};
 
 export default Projects;
 

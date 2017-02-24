@@ -296,3 +296,33 @@ header {
   min-width: 100vw;
   min-height: 100vh;
 }*/
+
+/* ================================= 
+    ReactCSSTransitionGroup Classes
+==================================== */
+
+/* start enter state */
+.slide-enter {
+  transform: translateX(-100%);
+}
+
+/* end enter state */
+.slide-enter.slide-enter-active {
+ transform: translateX(0);
+ transition: transform 0.5s ease-out;
+}
+
+
+/* start leave state */
+.slide-leave {
+  transform: translateX(0);
+}
+
+/* end leave state */
+.slide-leave.slide-leave-active {
+ transform: translateX(100%);
+ opacity: 0;
+ transition: 0.5s ease-in; 
+}
+
+/* initial mounting */
