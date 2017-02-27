@@ -22,7 +22,7 @@ const routes = (
     <Route component={App}>
       <Route path="/" component={Home} />
       <Route path="about" component={About} title="About" />
-      <Route path="projects" component={Projects} billy="Billy Hayes" />
+      <Route path="projects" component={Projects} billy="Billy Hayes" projects={[App.state]} />
       <Route path="projects/:id" component={Project} title="Project" />
       <Route path="courses" component={Courses}>
         <IndexRedirect to="html" />
