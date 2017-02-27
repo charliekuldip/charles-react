@@ -345,3 +345,7 @@ svg path.path02 {
   -webkit-transition-delay:1s;
   transition-delay:1s;
 }
+
+.hide-overflow {
+  overflow: hidden;
+}
