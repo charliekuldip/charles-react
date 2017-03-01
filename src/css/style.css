@@ -71,21 +71,10 @@ button {
   LAYOUT & PAGE STYLES
 ==================================== */
 
-/*.container {*/
-  /*width: 95%;*/
-  /*max-width: 780px;*/
-  /*padding-bottom: 2em;*/
-  /*margin: 0 auto 2em;*/
-  /*background: #fff;*/
-  /*border-radius: .5em;*/
-  /*box-shadow: 0 3px rgba(0,0,0, .1);*/
-  /*overflow: hidden;*/
-/*}*/
-
 header {
-  /*background: #edeff0;*/
-  /*margin-bottom: 2em;*/
-  background-color:rgba(100,100,100,0.5);
+  background-color:rgba(100,100,100,0.  5);
+  z-index: 10;
+  position: relative;
 }
 .main-content {
   padding: 1em 2em;
@@ -291,8 +280,68 @@ header {
   top:0; bottom:0;
   z-index: -1;
 }
+
+svg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform:translateZ(100);
+  transform:translateZ(100);
+  pointer-events:none;
+}
+svg path.path01 {
+  fill: #cdd;
+}
+svg path.path02 {
+  fill: #abb;
+}
+
+
 /*
 #root {
   min-width: 100vw;
   min-height: 100vh;
 }*/
+
+.container > div {
+  position: relative;
+}
+.container > div > div {
+  position: absolute;
+}
+
+
+.example-enter {
+  opacity: 0.01;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}
+
+.example-leave {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}

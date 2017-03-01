@@ -1,8 +1,11 @@
+const path = require('path');
+
 module.exports = {
   entry: './src/index.js',
   
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    // path: path.resolve(__dirname, './src')
   },
   
   module: {
@@ -23,4 +26,5 @@ module.exports = {
     contentBase: './',
     hot: true
   },
+  devtool: 'cheap-module-eval-source-map'
 };

@@ -1,7 +1,5 @@
 'use strict';
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 var myColors = [
 '#EE2E31',
 '#F4C095',
@@ -10,12 +8,6 @@ var myColors = [
 '#071E22',
 '#2AA399'
 ];
-
-var btn = document.getElementById('btn');
-var body = document.getElementsByTagName("BODY")[0];
-var $path1 = document.getElementById('path01');
-var $path2 = document.getElementById('path02');
-var newColor;
 
 var ease = {
   quadraticOut: function quadraticOut(t) {
@@ -28,30 +20,26 @@ var ease = {
 
 var GooeyOverlay = function () {
   function GooeyOverlay(path1, path2) {
-    _classCallCheck(this, GooeyOverlay);
-
     this.path1 = path1;
     this.path2 = path2;
-    this.duration = 1000;
+    this.duration = window.innerWidth * 1.5;
     this.delay = 200;
     this.timeStart = Date.now();
     this.direction = true;
   }
 
   GooeyOverlay.prototype.open = function open() {
-    // console.log('This is this from open: ', this);
-    var rando = Math.floor((Math.random() * myColors.length-1) + 1);
-    newColor = myColors[rando];
-
-    this.path2.setAttribute('style', 'fill:'+newColor);
-
-    this.direction = true;
+    this.direction = false;
     this.timeStart = Date.now();
     this.renderLoop();
   };
 
   GooeyOverlay.prototype.close = function close() {
-    this.direction = false;
+    // SET COLOR ON BODY AND SVG
+    var rando = Math.floor((Math.random() * myColors.length-1) + 1);
+    this.path2.setAttribute('style', 'fill:'+myColors[rando]);
+
+    this.direction = true;
     this.timeStart = Date.now();
     this.renderLoop();
   };
@@ -59,7 +47,6 @@ var GooeyOverlay = function () {
   GooeyOverlay.prototype.updatePathOpen = function updatePathOpen(time) {
     var ease1 = ease.quadraticOut(Math.min(time / this.duration, 1));
     var ease2 = ease.quarticOut(Math.min(time / this.duration, 1));
-    // console.log('This is this.duration: ', this.duration);
     return '\n      M ' + (100 - ease2 * 100) + ' 0\n      Q ' + (100 - ease2 * 100) + ' 12.5 ' + (100 - ease1 * 100) + ' 25\n      T ' + (100 - ease1 * 100) + ' 50\n      T ' + (100 - ease1 * 100) + ' 75\n      T ' + (100 - ease2 * 100) + ' 100\n      H 100\n      V 0\n    ';
   };
 
@@ -76,7 +63,6 @@ var GooeyOverlay = function () {
     } else {
       this.path1.setAttribute('d', this.updatePathClose(Date.now() - (this.timeStart + this.delay)));
       this.path2.setAttribute('d', this.updatePathClose(Date.now() - this.timeStart));
-
     }
   };
 
@@ -86,23 +72,14 @@ var GooeyOverlay = function () {
     this.render();
     if (Date.now() - this.timeStart >= this.duration + this.delay) {
       if (!this.direction) {
-        this.open();
       } else {
-        // this.close();
-        // done = true;
-        body.setAttribute('style', 'background:'+newColor);
+        this.open();
       }
     } else {
       requestAnimationFrame(function () {
         _this.renderLoop();
       });
     }
-    // console.log('TJHis is done: ', done);
-    // if(done === true) {
-    //   console.log('We are done baby!');
-    //   body.setAttribute('style', 'background:'+newColor);
-    //   done = false;
-    // }
   };
 
   return GooeyOverlay;
@@ -113,11 +90,9 @@ var GooeyOverlay = function () {
 var path1 = document.getElementById('path01');
 var path2 = document.getElementById('path02');
 var gooeyOverlay = new GooeyOverlay(path1, path2);
-// gooeyOverlay.close();
 
-
+var btn = document.getElementById('btn');
 btn.addEventListener('click', function(e) {
   console.log('I have been clicked!');
-  gooeyOverlay.open();
-  console.log(gooeyOverlay.direction)
+  gooeyOverlay.close();
 });
