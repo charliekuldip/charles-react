@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
+import MacBook from './devices/MacBook';
+import IPhone from './devices/IPhone';
 
 
 class Project extends Component {
@@ -12,7 +14,7 @@ class Project extends Component {
   		nextLink,
   		previousLink;
 
-  	// get project from list
+  	// NEXT / PREVIOUS LINKS
   	for(var i = 0, len = ProjectList.length; i < len; i++) {
   	    if (ProjectList[i].id === id) {
   	        index = i;
@@ -27,14 +29,24 @@ class Project extends Component {
 
   	return (
       <div className="main-content single-project">
-        <div className="clearfix">
+        <div className="clearfix block-container">
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project">Previous</NavLink>
           <NavLink to={"/projects/"+ nextLink.id} className="next next-project">Next</NavLink>
         </div>
-        <h1>{ currentProject.name }</h1>
+        <div className="clearfix block-container">
+          <h1>{ currentProject.name }</h1>
+        </div>
+
+        <MacBook src={currentProject.img_src} imgs={currentProject.imgs} />
+
+        <IPhone />
+
         <img src={currentProject.img_src} />
-        <p>{ currentProject.bio }</p>
-        <h5>{ currentProject.id }</h5>
+        <div className="clearfix block-container">
+          <p>{ currentProject.bio }</p>
+          <h5>{ currentProject.id }</h5>
+        </div>
+
       </div>
     );
   }

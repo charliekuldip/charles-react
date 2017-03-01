@@ -10,6 +10,15 @@ import SvgAnimation from './SvgAnimation';
 const url = 'https://jsonplaceholder.typicode.com/posts';
 const projects = [];
 
+const toggleOutlines = ()=> {
+  let body = document.getElementsByTagName('body')[0];
+  if(body.classList.contains('outlines')) {
+    body.removeAttribute('class', 'outlines');
+  } else {
+    body.setAttribute('class','outlines');
+  }
+}
+
 class App extends Component {
   
   // lets us use keyword this inside app class
@@ -66,9 +75,6 @@ class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log('THis is from componentDidUpdate!');
-    // this.state.activePage = this.props.location.pathname;
-    // this.state.activePage = activePage;
-    // this.setAnimation();
   }
   
   render() {
@@ -92,7 +98,6 @@ class App extends Component {
       <div className="container">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         <header>
-          <span className="icn-logo"><i className="material-icons">code</i></span>
           <ul className="main-nav">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
@@ -108,6 +113,7 @@ class App extends Component {
         >
           { renderChildren(this.props) }
         </ReactCSSTransitionGroup>
+        <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
       </div>
     );
   }

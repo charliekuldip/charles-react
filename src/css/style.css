@@ -11,9 +11,16 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+}
 body {
   color: #576366;
-  background: #5fcf80;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -72,12 +79,15 @@ button {
 ==================================== */
 
 header {
-  background-color:rgba(100,100,100,0.  5);
+  /*background-color:rgba(100,100,100,0.  5);*/
   z-index: 10;
   position: relative;
 }
 .main-content {
-  padding: 1em 2em;
+  padding: 1em 0;
+}
+.block-container {
+  padding:0 1em;
 }
 .group:after {
   content: "";
@@ -140,22 +150,6 @@ header {
   background: #39add1;
 }
 
-/* ICONS -------- */
-
-.icn-logo {
-  background: #54606b;
-  color: #fff;
-}
-.icn-logo i {
-  font-size: 2.45em;
-  line-height: 0;
-  margin-top: 30px;
-}
-.icn-error {
-  font-size: 3.2em;
-  margin-bottom: .25em;
-}
-
 /* ================================= 
   MEDIA QUERIES
 ==================================== */
@@ -164,12 +158,7 @@ header {
   .home a {
     border-color: transparent;
   }
-   .icn-logo {
-     display: block;
-     width: 100%;
-     text-align: center;
-     padding-bottom: 4px;
-   }
+
    .main-nav a {
      border-top: 2px solid transparent;
      border-bottom: 2px solid transparent;
@@ -217,10 +206,6 @@ header {
     margin-left: 0;
   }
   /* MAIN NAV -------- */
-  .icn-logo {
-    margin-right: auto;
-    padding: 0 2em;
-  }
   header,
   .main-nav {
     display: flex;
@@ -348,4 +333,17 @@ svg path.path02 {
 
 .hide-overflow {
   overflow: hidden;
+}
+
+
+#outline-button {
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  z-index: 1000;
+  width: 100px;
+}
+
+.outlines * {
+  outline: 1px solid red;
 }
