@@ -19,9 +19,20 @@ class App extends Component {
       gifs:[],
       projects:[],
       activePage:'home',
-      topLevelPage:true
+      topLevelPage:true,
+      animating:false
     };
   }
+
+  // setAnimation() {
+  //   var _t = this;
+  //   _t.setState({animating:true});
+
+  //   setTimeout(function() { 
+  //       _t.setState({animating:false});
+  //       console.log('This is this.state:',_t.state);
+  //     },1000);
+  // }
 
   componentDidMount() {
     // axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
@@ -38,23 +49,26 @@ class App extends Component {
 
   componentWillReceiveProps(nextProps) {
     // console.log('This is from ComponentWillReceiveProps! nextProps:', nextProps);
+    // this.setAnimation();
   }
 
   componentWillUpdate(nextProps, nextState) {
     let locArray = nextProps.location.pathname.split('/');
     let activePage = locArray[1];
-    if(activePage == "") {activePage = "home";}
 
+    if(activePage == "") {activePage = "home";}
     this.state.topLevelPage = locArray.length > 2 ? false : true;
-    
-    console.log('This is locArray', locArray);
-    console.log('This is activePage', activePage);
+  
+    // console.log('This is locArray', locArray);
+    // console.log('This is activePage', activePage);
     this.state.activePage = activePage;
   }
 
   componentDidUpdate(prevProps, prevState) {
     console.log('THis is from componentDidUpdate!');
     // this.state.activePage = this.props.location.pathname;
+    // this.state.activePage = activePage;
+    // this.setAnimation();
   }
   
   render() {
@@ -76,7 +90,7 @@ class App extends Component {
     // <img src="/src/img/Blurry.jpg" />
     return (
       <div className="container">
-        <SvgAnimation />
+        <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         <header>
           <span className="icn-logo"><i className="material-icons">code</i></span>
           <ul className="main-nav">

@@ -30,7 +30,17 @@ const GooeyOverlay = function () {
     this.direction = true;
   }
 
+  GooeyOverlay.prototype.myHandler = function myHandler(e) {
+    e.preventDefault();
+    // console.log('This is from myHandler om SVG!!!!!!');
+    return false;
+  };
+
   GooeyOverlay.prototype.open = function open() {
+
+    document.body.addEventListener('touch', this.myHandler);
+    document.body.className = 'hide-overflow';
+
     this.direction = false;
     this.timeStart = Date.now();
     this.renderLoop();
@@ -81,6 +91,10 @@ const GooeyOverlay = function () {
 
     if (Date.now() - this.timeStart >= this.duration + this.delay) {
       if (!this.direction) {
+        console.log('We are done with anination!');
+        document.body.removeEventListener('touch', this.myHandler);
+        document.body.className = '';
+
       } else {
         this.open();
       }
@@ -98,47 +112,51 @@ const GooeyOverlay = function () {
 
 
 class SvgAnimation extends Component {
-	constructor(props) {
-		super(props);
-  	} 
+  constructor(props) {
+    super(props);
+    } 
 
-	componentDidMount() {
-		// console.log('THis is path1: ', this.refs.path1);
-		// console.log('THis is path2: ', this.refs.path2);
-		this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2);
-		// console.log('THis is this.props.svgChange: ', this.props.svgChange);
-		// this.gooeyOverlay.open();
-	}
+  componentDidMount() {
+    // console.log('THis is path1: ', this.refs.path1);
+    // console.log('THis is path2: ', this.refs.path2);
+    this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2);
+    // console.log('THis is this.props.svgChange: ', this.props.svgChange);
+    // this.gooeyOverlay.open();
+  }
 
-	componentWillUnmount() {
-	}
+  componentWillUnmount() {
+  }
 
-	// componentWillReceiveProps(nextProps) {
-	// 	console.log('THis is this.props.svgChange: ', this.props.svgChange);
-	//     console.log('FROM SVG This is from ComponentWillReceiveProps! nextProps:', nextProps);
-	// }
+  // componentWillReceiveProps(nextProps) {
+  //  console.log('THis is this.props.svgChange: ', this.props.svgChange);
+  //     console.log('FROM SVG This is from ComponentWillReceiveProps! nextProps:', nextProps);
+  // }
 
-	componentWillUpdate(nextProps, nextState) {
-		console.log('FROM SVG THis is componentWillUpdate!');
-	    // console.log('FROM SVG THis is componentWillUpdate! nextProps', nextProps, nextState);
-	    // console.log('nextState: ', nextState);
+  componentWillUpdate(nextProps, nextState) {
+    console.log('FROM SVG THis is componentWillUpdate!');
+      // console.log('FROM SVG THis is componentWillUpdate! nextProps', nextProps, nextState);
+      // console.log('nextState: ', nextState);
      //  console.log('nextProps: ', nextProps);
-	    this.gooeyOverlay.open();
-	}
+    this.gooeyOverlay.open();
 
-	componentDidUpdate(prevProps, prevState) {
-	    console.log('FROM SVG THis is from componentDidUpdate!');
-	    this.gooeyOverlay.close();
-	}
+    if(this.props.topLevelPage) {
+      this.gooeyOverlay.open();
+    }
+  }
 
-	render() {
-		return (
-			<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-			  	<path className="path01" id="path01" d="" ref="path1"></path>
-      			<path className="path02" id="path02" d="" ref="path2"></path>
-			</svg>
-		);
-  	}
+  componentDidUpdate(prevProps, prevState) {
+      console.log('FROM SVG THis is from componentDidUpdate!');
+      this.gooeyOverlay.close();
+  }
+
+  render() {
+    return (
+      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path className="path01" id="path01" d="" ref="path1"></path>
+            <path className="path02" id="path02" d="" ref="path2"></path>
+      </svg>
+    );
+    }
 }
 
 
