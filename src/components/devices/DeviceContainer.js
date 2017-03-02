@@ -11,9 +11,9 @@ const deviceContainerStyle = {
 
 const DeviceContainer = props => (
 	<div className="clearfix tri-device-container">
-        <MacBook imgs={props.imgs} />
-        <IPhone imgs={props.imgs} />
-        <IPad imgs={props.imgs} />
+        <MacBook images={props.images} projectId={props.projectId} />
+        <IPhone images={props.images} projectId={props.projectId} />
+        <IPad images={props.images} projectId={props.projectId} />
     </div>
 );
 

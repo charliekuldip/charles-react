@@ -44,7 +44,7 @@ class Project extends Component {
           </div>
         </div>
 
-        <DeviceContainer imgs={currentProject.imgs} />
+        <DeviceContainer imgs={currentProject.imgs} projectId={currentProject.id} images={currentProject.images} />
 
         <div className="clearfix block-container">
           <p>{ currentProject.bio }</p>

@@ -10,7 +10,7 @@ const IPad = props => (
 		<div className="device-mockup" data-device="ipad_air_2" data-orientation="portrait" data-color="grey">
 	        <div className="device">
 	            <div className="screen">
-					<img src={props.imgs.tablet[0]} style={imgStyle} />            
+					<img src={ '/src/img/projects/'+props.projectId +'/tablet/'+props.images[0]} style={imgStyle} />           
 	            </div>
 	        </div>
 	    </div>
