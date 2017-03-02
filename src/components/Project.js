@@ -26,19 +26,26 @@ class Project extends Component {
   	    }
   	}
 
+    const marqStyle = {
+      backgroundImage:'url('+currentProject.img_src+')',
+      backgroundSize:'cover',
+      backgroundPosition:'50% 50%',
+      backgroundRepeat:'no-repeat'
+    }
+
   	return (
       <div className="main-content single-project">
-        <div className="clearfix block-container">
+        <div className="clearfix marquee-nav">
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project">Previous</NavLink>
           <NavLink to={"/projects/"+ nextLink.id} className="next next-project">Next</NavLink>
-        </div>
-        <div className="clearfix block-container">
-          <h1>{ currentProject.name }</h1>
+
+          <div className="clearfix block-container marquee" style={marqStyle}>
+            <h1>{ currentProject.name }</h1>
+          </div>
         </div>
 
         <DeviceContainer imgs={currentProject.imgs} />
 
-        <img src={currentProject.img_src} />
         <div className="clearfix block-container">
           <p>{ currentProject.bio }</p>
           <h5>{ currentProject.id }</h5>

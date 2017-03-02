@@ -22,8 +22,18 @@ html {
 body {
   color: #576366;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-weight: 400;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 ul {
@@ -349,6 +359,63 @@ svg path.path02 {
 }
 
 
+/* MARQUEE */
+.marquee-nav {
+  position: relative;
+}
+
+.marquee {
+  padding-bottom:59.25%;
+  width:100%;
+  position: relative;
+}
+
+.marquee:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: auto;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: none;
+}
+
+.marquee h1 {
+  color:white;
+  letter-spacing: 0.015em;
+  text-align: center;
+
+  position: absolute;
+  top:50%; left:50%;
+  width: 95%;
+  margin:auto;
+  z-index: 2;
+
+  -webkit-transform:translate3d(-50%, -50%, 0);
+  -moz-transform:translate3d(-50%, -50%, 0);
+  -o-transform:translate3d(-50%, -50%, 0);
+  transform:translate3d(-50%, -50%, 0);  
+
+  font-size: 9vw; 
+}
+
+@media(min-width:1264px) {
+  .marquee {
+    padding-bottom: 768px;
+  }
+  .marquee h1 {
+    font-size: 110px;
+  }
+}
+
+/* DEVICES */
 .device-container {
   position: relative;
 }
