@@ -5,19 +5,29 @@ const ProjectList = [
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/iris_warriors_header.jpg",
     id: "9",
     imgs:{
-      mobile:[],
-      tablet:[],
+      mobile:[
+        '/src/img/projects/iriswarriors/mobile/Gallery - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/mobile/The Dancers - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/mobile/The Making Of - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/mobile/The Story - Iris Warriors.png',
+      ],
+      iphone6:[
+        '/src/img/projects/iriswarriors/iphone-6/Gallery - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/iphone-6/The Dancers - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/iphone-6/The Making Of - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/iphone-6/The Story - Iris Warriors.png',
+      ],
+      tablet:[
+        '/src/img/projects/iriswarriors/tablet/Gallery - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/tablet/The Dancers - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/tablet/The Making Of - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/tablet/The Story - Iris Warriors.png',
+      ],
       desktop:[
-        '/src/img/projects/iriswarriors/desktop/Gallery - Iris Warriors (1).png',
-        '/src/img/projects/iriswarriors/desktop/Home - Iris Warriors (2).png',
-        '/src/img/projects/iriswarriors/desktop/Home - Iris Warriors (3).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (11).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (12).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (13).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (14).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (15).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (16).png',
-        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors (8).png'
+        '/src/img/projects/iriswarriors/desktop/Gallery - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/desktop/The Dancers - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/desktop/The Making Of - Iris Warriors.png',
+        '/src/img/projects/iriswarriors/desktop/The Story - Iris Warriors.png',
       ]
     }
   },

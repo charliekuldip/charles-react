@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
-import MacBook from './devices/MacBook';
-import IPhone from './devices/IPhone';
+import DeviceContainer from './devices/DeviceContainer';
 
 
 class Project extends Component {
@@ -37,9 +36,7 @@ class Project extends Component {
           <h1>{ currentProject.name }</h1>
         </div>
 
-        <MacBook src={currentProject.img_src} imgs={currentProject.imgs} />
-
-        <IPhone />
+        <DeviceContainer imgs={currentProject.imgs} />
 
         <img src={currentProject.img_src} />
         <div className="clearfix block-container">

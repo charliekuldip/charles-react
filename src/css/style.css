@@ -347,3 +347,31 @@ svg path.path02 {
 .outlines * {
   outline: 1px solid red;
 }
+
+
+.device-container {
+  position: relative;
+}
+
+.tri-device-container {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto 1em;
+}
+
+.tri-device-container .ipad,
+.tri-device-container .iphone {
+  position: absolute;
+  margin:auto;
+}
+.tri-device-container .iphone {
+  width: 18%;
+  max-width: 380px;
+  bottom: -11%;
+  left: 5%;
+}
+.tri-device-container .ipad {
+    width: 30%;
+    bottom: -11%;
+    right: 5%;
+}
