@@ -95,7 +95,7 @@ class App extends Component {
 
     // <img src="/src/img/Blurry.jpg" />
     return (
-      <div className="container">
+      <div className="container clearfix">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         <header>
           <ul className="main-nav">

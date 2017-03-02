@@ -27,8 +27,7 @@ class Project extends Component {
   	}
 
     const marqStyle = {
-      backgroundImage:'url('+currentProject.img_src+')',
-      backgroundSize:'cover',
+      backgroundImage:'url("'+currentProject.img_src+'")',
       backgroundPosition:'50% 50%',
       backgroundRepeat:'no-repeat'
     }

@@ -18,10 +18,30 @@ const ProjectList = [
     id: "theraflu"
   },
   {
+    name: "Heard City Website",
+    bio: "Our friends at Heard City approached us to help them establish a brand identity that was not only true to their agency culture, but which reflected their company’s cutting-edge audio post-production capabilities. Our creative team partnered with Heard City to successfully capture the agency’s essence and craft an identity that brought the brand to life (in digital and print form) through a responsive HTML5 parallax website, business cards, a brochure and a stationary set.",
+    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/HeardCity_header.jpg",
+    id: "heardcity",
+    images: [
+      'Home - Heardcity.png',
+      'Projects - Heardcity.png',
+      'Our Team - Heardcity.png',
+      'Gloria Pitagorsky - Heardcity.png',
+      'VR Projects - Heardcity.png',
+      'Contact - Heardcity.png',
+    ]
+  },
+  {
     name: "Con Edison Microsite",
     bio: "conEdison approached ClickFireMedia with the challenge of building an interactive online platform that informs and educates New York City Building Managers of energy-efficient cost saving techniques for their properties. Working with the Gate we conceptualized an immersive visual journey that put the average Building Manger into the drivers seat. Our CG team designed and constructed a photo realistic 3D “Class B” building, consisting of 9 different destinations, that users can explore, all while learning of different techniques to enhance their building and save on their energy bill. conEdison’s ultimate goal was to get users to register for their Demand Response Program.  An initiative that gives conEdison control of a building’s energy consumption during peak hours, in return for revenue. To make this offer more enticing we offered the users a suite of tools to educate them on these cost savings opportunities and revenue potential. Our investment in this project spans almost a full year, starting with detailed UX wire framings to endless design explorations and content hub for thought leadership, industry insights and educational interactive tools.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/ConEd_header.jpg",
-    id: "coned"
+    id: "coned",
+    images: [
+      'Commercial - Con Edison.png',
+      'Customer Solutions - Con Edison.png',
+      'Insights & Events - Con Edison.png',
+      'Urban Green Gala - Con Edison.png',
+    ]
   },
   {
     name: "VFILES Smashion!",
@@ -30,28 +50,54 @@ const ProjectList = [
     id: "vfiles"
   },
   {
-    name: "Heard City Website",
-    bio: "Our friends at Heard City approached us to help them establish a brand identity that was not only true to their agency culture, but which reflected their company’s cutting-edge audio post-production capabilities. Our creative team partnered with Heard City to successfully capture the agency’s essence and craft an identity that brought the brand to life (in digital and print form) through a responsive HTML5 parallax website, business cards, a brochure and a stationary set.",
-    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/HeardCity_header.jpg",
-    id: "heardcity"
+    name: "Matcha Love",
+    bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
+    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
+    id: "matchalove",
+    images:[
+      'Home - Matcha Love.png',
+      'About - Matcha Love.png',
+      'Classic Matcha - Matcha Love.png',
+      'Press - Matcha Love.png',
+      'Products Archive - Matcha Love.png',
+      'Recipes Archive - Matcha Love.png',
+      'Stores - Matcha Love.png',
+    ]
   },
   {
     name: "GM About Page",
     bio: "Mccann Detroit approached us to collaborate on the imagination of the new look gm.com website. This exciting brief challenged our team to concept, design and develop the new look \"About Our Company\" section of gm.com site that would inspire the new website's look and feel. Our goal was to visually enhance an information-heavy experience, to ultimately tell a more engaging and interactive story across desktop, tablet and mobile platforms. During our R&D phase our team created animated prototypes and used a creative prototyping technique called \"video-lization\" to communicate and bring to life our creative vision. We also created a series of customized SVG animations to visually communicate important GM brand values such as \"Our Company\", \"Our People\", \"Our Brands\", and \"Our Commitment\". From a Technology standpoint our team formulated development solutions that enhanced the overall user experience across various devices and browsers. To prevent conflict with the existing GM codebase, the technology team wrote a custom-tailored mobile-first framework utilizing CSS3 animations and transforms in combination with scroll-controlled features and SVG graphics. The result is a seamless experience delighting the user as they scroll, revealing eye-catching animations to carry the dialog of GM’s story and further establish their reputation as trend-setters in their industry.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/GM_header.jpg",
-    id: "gm"
+    id: "gm",
+    images:[
+      'General Motors | About.png'
+    ]
   },
   {
     name: "Gamut",
     bio: "To transfer a new brand vision into reality, ClickFire Media partnered with CO-OP Marketing to rebrand COX Digital Solutions and craft them a new website. The fully responsive site performs flawlessly across platforms and includes a robust CMS, coded to make managing content a seamless experience. Using cutting-edge CSS3 techniques, the site implements parallax scrolling without the use of Javascript, ensuring a smooth visual effect across all modern browsers. A branding video was also produced and launched on the website to communicate the essence of the new brand identity to customers.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/gamut_header.jpg",
-    id: "gamut"
+    id: "gamut",
+    images:[
+      'Gamut | Who We Are | Our Leadership.png',
+      'Gamut | Watch + Read.png',
+      'Gamut | What we do.png',
+      'Gamut | Who We Are | About.png',
+    ]
   },
   {
-    name: "Matcha Love",
-    bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
-    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
-    id: "matchalove"
+    name: "The Family",
+    bio: "We function differently for each of our clients and friends, but we always strive to make a significant and profound impact on both of their brands and businesses. We manage talent, brands, and careers connected with creating and producing award-winning advertising.  We help create a unique niche for each of our Family Members based on their individual talent, aesthetic, and where they want to grow. We give each a resoundingly clear voice in this very loud and cluttered industry. We effectively help build their brands, their portfolios, their standing in the industry, and their bottom line. Our skills include, but are not limited to: communicating, relationship building, dog training, proactive selling and marketing, strategizing, splitting wood, branding, cooking, public relations, gardening, event planning, producing, creating, reading, writing, arithmetic, motivational dancing, business coaching and consulting, spotting and building talent, surfing, interior decorating, hunting and gathering, multitasking, driving a stick shift, trend setting and taste making, gift wrapping, making dove sounds, procurement, and winning. One of us is even a repeated Spelling Bee champ.",
+    img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
+    id: "thefamily",
+    images:[
+      // 'Home - The Family.png',
+      'Work & News - The Family.png',
+      'Family Members - The Family.png',
+      'Recent Archives - The Family.png',
+      'WHO? WHAT? WHY? - The Family.png',
+      'Contact - The Family.png',
+    ]
   },
   {
     name: "Breast Cancer Awareness",
