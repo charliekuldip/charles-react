@@ -37,7 +37,6 @@ const ProjectList = [
       'Our Team - Heardcity.png',
       'Gloria Pitagorsky - Heardcity.png',
       'VR Projects - Heardcity.png',
-      'Contact - Heardcity.png',
     ]
   },
   {
@@ -91,11 +90,10 @@ const ProjectList = [
     img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
     id: "thefamily",
     images:[
-      // 'Home - The Family.png',
+      'Home - The Family.png',
       'Work & News - The Family.png',
       'Family Members - The Family.png',
       'Recent Archives - The Family.png',
-      'WHO? WHAT? WHY? - The Family.png',
       'Contact - The Family.png',
     ]
   },

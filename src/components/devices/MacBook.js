@@ -17,7 +17,7 @@ const MacBook = props => (
     	<div className="device-mockup macbook">
         	<div className="device">
             	<div className="screen">
-                    <img src={ '/src/img/projects/'+props.projectId +'/desktop/'+props.images[0]} style={imgStyle} />
+                    <img src={ '/src/img/projects/'+props.projectId +'/desktop/'+props.curSlide} style={imgStyle} />
             	</div>
         	</div>
         </div>

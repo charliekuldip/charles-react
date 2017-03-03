@@ -269,6 +269,7 @@ svg path.path02 {
 }
 
 
+
 /* PROJECT LIST */
 .bg-img {
   padding-bottom:59.25%;
@@ -400,7 +401,8 @@ ul.group li {
 }
 
 .marquee {
-  padding-bottom:59.25%;
+  /*padding-bottom:59.25%;*/
+  padding-bottom:39.25%;
   width:100%;
   position: relative;
   background-size: cover;
@@ -461,6 +463,13 @@ ul.group li {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.025em;
+    transition:color 180ms;
+    -webkit-transition:color 180ms;
+}
+
+.next:hover,
+.previous:hover {
+  color:red;
 }
 
 .next {

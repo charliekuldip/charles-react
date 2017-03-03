@@ -9,20 +9,6 @@ const deviceContainerStyle = {
 	height:'100%'
 };
 
-// const changeSlide = props => {
-// 	let x = 0;
-// 	window.setInterval(function() {
-// 		console.log('This is from changeSlide! and x',x);
-// 		if(x < props.images.length - 1) {
-// 			x++;
-// 		} else {
-// 			x = 0;
-// 		}
-
-// 	}, 5000);
-// }
-
-// const DeviceContainer = props => (
 class DeviceContainer extends Component {
 
 	constructor(props) {
@@ -36,7 +22,7 @@ class DeviceContainer extends Component {
 	}
 
 	componentDidMount() {
-		this.interval = setInterval(this.onTick.bind(this), 1000);
+		this.interval = setInterval(this.onTick.bind(this), 5000);
 	}
 
 	componentWillUnmount() {
@@ -45,14 +31,26 @@ class DeviceContainer extends Component {
 
 	onTick() {
 	    // if(this.state.running) {
+	   	if(this.props.images !== undefined) {
 		    var now = Date.now();
+		    console.log("This props images length", this.props.images.length);
+		    console.log("This this.state.slideIndex", this.state.slideIndex);
+		    let curSlide;
+
+		    if(this.state.slideIndex >= this.props.images.length-1) {
+		    	curSlide = 0;
+		    } else {
+		    	curSlide = this.state.slideIndex+1;
+		    }
+
 		    this.setState({
 		        previousTime: now,
 		        elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
-				slideIndex:this.state.slideIndex+1
+				slideIndex: curSlide
 		    });
 	    // }
 	    console.log('onTick');
+	    }
 	}
 
 	onStart() {
@@ -76,15 +74,20 @@ class DeviceContainer extends Component {
 
   	render() {
   		// const seconds = Math.floor(this.state.elapsedTime / 1000);
-	  	return(
-	  		<div>
-				<div className="clearfix tri-device-container">
-			        <MacBook images={this.props.images} projectId={this.props.projectId} />
-			        <IPhone images={this.props.images} projectId={this.props.projectId} />
-			        <IPad images={this.props.images} projectId={this.props.projectId} />
-			    </div>
-			</div>
-	   	);
+  		console.log('THis.props: ', this.props);
+  		if(this.props.images !== undefined) {
+		  	return(
+		  		<div>
+					<div className="clearfix tri-device-container">
+				        <MacBook projectId={this.props.projectId} curSlide={this.props.images[this.state.slideIndex]} />
+				        <IPhone projectId={this.props.projectId} curSlide={this.props.images[this.state.slideIndex]} />
+				        <IPad projectId={this.props.projectId} curSlide={this.props.images[this.state.slideIndex]} />
+				    </div>
+				</div>
+		   	);
+		} else {
+			return (<div />);
+		}
   	}
 }
 

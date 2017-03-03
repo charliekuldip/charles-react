@@ -56,7 +56,7 @@ class App extends Component {
     let activePage = locArray[1];
 
     if(activePage == "") {activePage = "home";}
-    this.state.topLevelPage = locArray.length > 2 ? false : true;
+    // this.state.topLevelPage = locArray.length > 2 ? false : true;
   
     // console.log('This is locArray', locArray);
     // console.log('This is activePage', activePage);

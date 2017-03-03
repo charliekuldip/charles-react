@@ -10,7 +10,7 @@ const IPhone = props => (
 		<div className="device-mockup" data-device="iphone6" data-orientation="portrait" data-color="black">
 	        <div className="device">
 	            <div className="screen">
-	            	<img src={ '/src/img/projects/'+props.projectId +'/iphone-6/'+props.images[0]} style={imgStyle} />
+	            	<img src={ '/src/img/projects/'+props.projectId +'/iphone-6/'+props.curSlide} style={imgStyle} />
 	            </div>
 	        </div>
 	    </div>
