@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
 import DeviceContainer from './devices/DeviceContainer';
-// import Project from './projects/Project';
 
 
 class Project extends Component {
@@ -38,10 +37,21 @@ class Project extends Component {
 
   	return (
       <div className="main-content single-project">
-        
+        <div className="clearfix marquee-nav">
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project">Previous</NavLink>
           <NavLink to={"/projects/"+ nextLink.id} className="next next-project">Next</NavLink>
 
+          <div className="clearfix block-container marquee" style={marqStyle}>
+            <h1>{ currentProject.name }</h1>
+          </div>
+        </div>
+
+        <DeviceContainer projectId={currentProject.id} images={currentProject.images} />
+
+        <div className="clearfix block-container">
+          <p>{ currentProject.bio }</p>
+          <h5>{ currentProject.id }</h5>
+        </div>
 
       </div>
     );

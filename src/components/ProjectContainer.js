@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
-import DeviceContainer from './devices/DeviceContainer';
-// import Project from './projects/Project';
+import Project from './projects/Project';
 
 
-class Project extends Component {
+class ProjectContainer extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      projects:ProjectList,
+      currentProject:this.props.params.id,
+      animating:false
+    };
+  }
+
   
   render() {
 
@@ -15,26 +24,17 @@ class Project extends Component {
   		nextLink,
   		previousLink;
 
+
   	// NEXT / PREVIOUS LINKS
   	for(var i = 0, len = ProjectList.length; i < len; i++) {
   	    if (ProjectList[i].id === id) {
   	        index = i;
   	        currentProject = ProjectList[index];
-
   	        nextLink = index + 1 < len ? ProjectList[index+1] : ProjectList[0];
   	        previousLink = index - 1 >= 0 ? ProjectList[index-1] : ProjectList[len-1];
-
   	        break;
   	    }
   	}
-
-    const marqStyle = {
-      backgroundImage:'url("'+currentProject.img_src+'")',
-      backgroundPosition:'50% 50%',
-      backgroundRepeat:'no-repeat'
-    }
-
-    // console.log("currentProject.images", currentProject.images);
 
   	return (
       <div className="main-content single-project">
@@ -42,6 +42,7 @@ class Project extends Component {
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project">Previous</NavLink>
           <NavLink to={"/projects/"+ nextLink.id} className="next next-project">Next</NavLink>
 
+          <Project currentProject={currentProject} />
 
       </div>
     );
@@ -49,4 +50,4 @@ class Project extends Component {
 }
 
 
-export default Project;
+export default ProjectContainer;

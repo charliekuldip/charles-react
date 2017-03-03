@@ -4,6 +4,7 @@ import axios from 'axios';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import ReactTransitionGroup from 'react-addons-transition-group'
 import SvgAnimation from './SvgAnimation';
+import ProjectList from '../data/projects';
 
 
 
@@ -25,8 +26,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      gifs:[],
-      projects:[],
+      projects:ProjectList,
       activePage:'home',
       topLevelPage:true,
       animating:false
@@ -73,7 +73,7 @@ class App extends Component {
       return React.Children.map(props.children, child => {
         if (child.type.name === "Projects")
           return React.cloneElement(child, {
-            data: this.state.gifs,
+            projects: this.state.projects,
             key: child.type.name
           })
         else

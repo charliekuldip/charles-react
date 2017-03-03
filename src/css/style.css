@@ -406,6 +406,8 @@ ul.group li {
   width:100%;
   position: relative;
   background-size: cover;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
 }
 
 .marquee:before {
