@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ProjectList from '../data/projects';
 import Project from './projects/Project';
 

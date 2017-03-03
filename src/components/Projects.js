@@ -9,7 +9,7 @@ import ProjectItem from '../components/ProjectItem';
 let projects = ProjectList.map((project) => {
 
   const projectStyle = {
-    backgroundImage:'url('+project.img_src+')',
+    backgroundImage:'url("'+project.img_src+'")',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
   }
