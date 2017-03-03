@@ -5,6 +5,13 @@ import ProjectList from '../data/projects';
 import Project from './projects/Project';
 
 
+function debugIt() {
+  console.log('This is from debugIt!');
+  window.setTimeout(()=>{
+    debugger;
+  }, 300);
+}
+
 class ProjectContainer extends Component {
 
   constructor(props) {
@@ -12,7 +19,8 @@ class ProjectContainer extends Component {
     this.state = {
       projects:ProjectList,
       currentProject:this.props.params.id,
-      animating:false
+      animating:false,
+      key:'project-container'
     };
   }
 
@@ -41,9 +49,18 @@ class ProjectContainer extends Component {
       <div className="main-content single-project">
         
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project">Previous</NavLink>
-          <NavLink to={"/projects/"+ nextLink.id} className="next next-project">Next</NavLink>
+          <NavLink to={"/projects/"+ nextLink.id} className="next next-project" >Next</NavLink>
 
-          <Project currentProject={currentProject} />
+          <div className="clearfix">
+            <ReactCSSTransitionGroup
+              component="div"
+              transitionName="single"
+              transitionEnterTimeout={1000}
+              transitionLeaveTimeout={1000}
+            >
+              <Project key={index} currentProject={currentProject} />
+            </ReactCSSTransitionGroup>
+          </div>
 
       </div>
     );

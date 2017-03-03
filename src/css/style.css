@@ -270,6 +270,36 @@ svg path.path02 {
 
 
 
+.single-enter {
+  opacity: 0.01;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}
+
+.single-enter.single-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  -webkit-transition-delay:1s;
+  transition-delay:1s;
+}
+
+.single-leave {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+.single-leave.single-leave-active {
+  opacity: 0.01;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+
+
 /* PROJECT LIST */
 .bg-img {
   padding-bottom:59.25%;
