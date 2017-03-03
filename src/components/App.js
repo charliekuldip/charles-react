@@ -33,16 +33,6 @@ class App extends Component {
     };
   }
 
-  // setAnimation() {
-  //   var _t = this;
-  //   _t.setState({animating:true});
-
-  //   setTimeout(function() { 
-  //       _t.setState({animating:false});
-  //       console.log('This is this.state:',_t.state);
-  //     },1000);
-  // }
-
   componentDidMount() {
     // axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
     //   .then(response => {
@@ -98,7 +88,7 @@ class App extends Component {
       <div className="container clearfix">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         <header>
-          <ul className="main-nav">
+          <ul className="main-nav clearfix">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/projects">Projects</NavLink></li>

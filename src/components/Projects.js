@@ -31,7 +31,6 @@ class Projects extends Component {
   render() {
     return (
       <div className="main-content">
-        <h2></h2>
         <ul className="group">
           {projects}    
         </ul>

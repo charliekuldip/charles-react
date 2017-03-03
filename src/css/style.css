@@ -2,7 +2,7 @@
   WEB FONTS
 ==================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 
 /* ================================= 
   ELEMENT STYLES
@@ -144,6 +144,11 @@ header {
 }
 
 /* MAIN NAV -------- */
+@media(min-width: 600px) {
+  .main-nav li {
+    float: left;
+  }  
+}
 
 .main-nav a {
   font-size: .95em;
@@ -181,49 +186,6 @@ header {
   color: #fff;
   background: #39add1;
 }
-
-/* ================================= 
-  MEDIA QUERIES
-==================================== */
-
-@media (min-width: 0) and (max-width: 799px) { 
-  .home a {
-    border-color: transparent;
-  }
-   .courses h2 {
-     margin-bottom: 0;
-   }
-   .course-nav {
-     display: block;
-     margin: 1.5em 0 3.2em;
-   }
-   .home a,
-   input,
-   button {
-     display: block;
-     width: 100%;
-     margin-bottom: 1em;
-   }
-}
-@media (min-width: 800px) {
-  /* MAIN NAV -------- */
-  header,
-  .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .main-nav a {
-    padding: 1.25em 1.5em;
-  }
-  /* COURSE NAV -------- */
-  .course-nav {
-    float: right;
-  } 
-  .courses h2 {
-    float: left;
-  }
-}
-
 
 .single-project img {
   width: 100%;

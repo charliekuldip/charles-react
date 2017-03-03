@@ -12,10 +12,19 @@ const ProjectList = [
     ]
   },
   {
-    name: "Theraflu",
-    bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
-    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-video/CFM_Theraflu_CS.jpg",
-    id: "theraflu"
+    name: "Matcha Love",
+    bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
+    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
+    id: "matchalove",
+    images:[
+      'Home - Matcha Love.png',
+      'About - Matcha Love.png',
+      'Classic Matcha - Matcha Love.png',
+      'Press - Matcha Love.png',
+      'Products Archive - Matcha Love.png',
+      'Recipes Archive - Matcha Love.png',
+      'Stores - Matcha Love.png',
+    ]
   },
   {
     name: "Heard City Website",
@@ -50,19 +59,10 @@ const ProjectList = [
     id: "vfiles"
   },
   {
-    name: "Matcha Love",
-    bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
-    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
-    id: "matchalove",
-    images:[
-      'Home - Matcha Love.png',
-      'About - Matcha Love.png',
-      'Classic Matcha - Matcha Love.png',
-      'Press - Matcha Love.png',
-      'Products Archive - Matcha Love.png',
-      'Recipes Archive - Matcha Love.png',
-      'Stores - Matcha Love.png',
-    ]
+    name: "Theraflu",
+    bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
+    img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-video/CFM_Theraflu_CS.jpg",
+    id: "theraflu"
   },
   {
     name: "GM About Page",
