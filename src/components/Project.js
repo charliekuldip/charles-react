@@ -32,6 +32,8 @@ class Project extends Component {
       backgroundRepeat:'no-repeat'
     }
 
+    // console.log("currentProject.images", currentProject.images);
+
   	return (
       <div className="main-content single-project">
         <div className="clearfix marquee-nav">
@@ -43,7 +45,7 @@ class Project extends Component {
           </div>
         </div>
 
-        <DeviceContainer imgs={currentProject.imgs} projectId={currentProject.id} images={currentProject.images} />
+        <DeviceContainer projectId={currentProject.id} images={currentProject.images} />
 
         <div className="clearfix block-container">
           <p>{ currentProject.bio }</p>

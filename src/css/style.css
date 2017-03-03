@@ -20,13 +20,14 @@ html {
     background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
 }
 body {
-  color: #576366;
+  /*color: #576366;*/
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   font-weight: normal;
   font-weight: 400;
 }
 
+.previous, .next,
 .main-nav a,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
@@ -56,12 +57,19 @@ a {
   text-decoration: none;
 }
 
-hr {
-  border: 0;
-  height: 0;
-  margin: 2.3em 0 2em 0;
-  border-top: 1px solid rgba(0, 0, 0, .1);
-}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
 
 .hide-overflow {
   overflow: hidden;
@@ -90,8 +98,6 @@ button {
   font-size: .9em;
   margin-right: 10px;
   border: none;
-  border-radius: 3px;
-  border: solid 1px #ccc;
   outline: none;
 }
 button {
@@ -132,7 +138,6 @@ header {
 }
 .project-img {
   width: 100%;
-  border-radius: .3em;
 }
 .not-found {
   text-align: center;
@@ -181,18 +186,10 @@ header {
   MEDIA QUERIES
 ==================================== */
 
-@media (min-width: 0) and (max-width: 768px) { 
+@media (min-width: 0) and (max-width: 799px) { 
   .home a {
     border-color: transparent;
   }
-
-   .main-nav a {
-     border-top: 2px solid transparent;
-     border-bottom: 2px solid transparent;
-   }
-   .main-nav a:hover {
-     border-color: rgba(0,0,0, .1);
-   }
    .courses h2 {
      margin-bottom: 0;
    }
@@ -208,30 +205,7 @@ header {
      margin-bottom: 1em;
    }
 }
-@media (min-width: 769px) {
-  /*.home a {
-    border-color: #3b80d1;
-  }*/
-  /*.media img,
-  .media > div,
-  .project {
-    float: left;
-  }
-  .media > div {
-    width: 85.1%;
-    margin-left: 1.5em;
-  } 
-  .project {
-    width: 48.73%;
-    margin-bottom: 1.5em;
-  }
-  .project + .project {
-    margin-left: 2.54%;
-  }
-  .project:nth-child(2n+3) {
-    clear: left;
-    margin-left: 0;
-  }*/
+@media (min-width: 800px) {
   /* MAIN NAV -------- */
   header,
   .main-nav {
@@ -255,19 +229,6 @@ header {
   width: 100%;
 }
 
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-
 
 .container > div {
   position: relative;
@@ -281,7 +242,6 @@ header {
 
 /* ABOUT PAGE */
 .c-davis-bg {
-  /*charles-react/src/img/charles/charles-pic.jpg*/
   background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');
   background-position: 50% 100%;
   background-size: auto 100vh;
@@ -365,8 +325,8 @@ svg path.path02 {
 }
 
 ul.group li:hover .bg-img {
-  -webkit-transform:scale(1.15);
-  transform:scale(1.15);
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
 }
 
 
@@ -408,6 +368,22 @@ ul.group li a h3 {
 
   -webkit-transition:all 200ms;
   transition:all 200ms;
+
+
+  font-size: 10.8vw;
+}
+
+@media(min-width: 600px) {
+  ul.group li a h3 {
+    font-size: 5.4vw;
+  }
+}
+
+@media(min-width: 1200px) {
+  ul.group li a h3 {
+/*    font-size: 5.4vw;*/
+    font-size: 2.7vw;
+  }
 }
 
 ul.group li a:hover h3 {
@@ -438,7 +414,12 @@ ul.group li:hover:before {
   background:rgba(0,0,0,0);
 }
 
-@media(min-width: 400px) {
+ul.group li {
+  display: block;
+  width: 100%;
+}
+
+@media(min-width: 600px) {
   ul.group li {
     float: left;
     width: 50%;
@@ -460,6 +441,7 @@ ul.group li:hover:before {
   padding-bottom:59.25%;
   width:100%;
   position: relative;
+  background-size: cover;
 }
 
 .marquee:before {
@@ -482,6 +464,7 @@ ul.group li:hover:before {
 .marquee h1 {
   color:white;
   text-align: center;
+  line-height: 1.15em;
 
   position: absolute;
   top:50%; left:50%;

@@ -4,7 +4,10 @@ import NavLink from './NavLink';
 import ProjectList from '../data/projects';
 import ProjectItem from '../components/ProjectItem';
 
+// this page now relies on color thief
+
 let projects = ProjectList.map((project) => {
+
   const projectStyle = {
     backgroundImage:'url('+project.img_src+')',
     backgroundSize:'cover',
