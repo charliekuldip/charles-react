@@ -3,12 +3,6 @@ import IPad from './Ipad';
 import IPhone from './Iphone';
 import MacBook from './MacBook';
 
-const deviceContainerStyle = {
-	display:'block',
-	width:'100%',
-	height:'100%'
-};
-
 class DeviceContainer extends Component {
 
 	constructor(props) {

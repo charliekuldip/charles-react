@@ -17,6 +17,10 @@ class Project extends Component {
       backgroundImage:'url("'+this.props.currentProject.img_src+'")',
     }
 
+    const tagItems = this.props.currentProject.tags.map((tag) =>
+      <li key={tag}>{tag}</li>
+    );
+
 
   	return (
       <div className="main-content single-project">
@@ -29,7 +33,8 @@ class Project extends Component {
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />
 
         <div className="clearfix block-container">
-          <p>{ this.props.currentProject.bio }</p>
+          <p className="bio">{ this.props.currentProject.bio }</p>
+          <ul className="tags">{tagItems}</ul>
           <h5>{ this.props.currentProject.id }</h5>
         </div>
       </div>

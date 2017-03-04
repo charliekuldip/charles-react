@@ -29,6 +29,7 @@ body {
 
 .previous, .next,
 .main-nav a,
+ul.tags li,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -560,4 +561,20 @@ ul.group li {
 
 .screen {
   background:white;
+}
+
+.bio {
+  margin-bottom: 1em;
+}
+
+ul.tags li {
+  font-size: 0.85em;
+  display:inline-block;
+  list-style-type:disc;
+  padding:0 0.5em;
+  line-height: 1.6em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  background: rgba(0,0,0, 1);
+  color:white;
 }

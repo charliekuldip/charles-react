@@ -4,14 +4,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ProjectList from '../data/projects';
 import Project from './projects/Project';
 
-
-function debugIt() {
-  console.log('This is from debugIt!');
-  window.setTimeout(()=>{
-    debugger;
-  }, 300);
-}
-
 class ProjectContainer extends Component {
 
   constructor(props) {

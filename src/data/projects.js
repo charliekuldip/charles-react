@@ -9,7 +9,19 @@ const ProjectList = [
       'The Dancers - Iris Warriors.png',
       'The Making Of - Iris Warriors.png',
       'The Story - Iris Warriors.png',
-    ]
+    ],
+    tags:[
+      'Canvas',
+      'Google Maps API',
+      'Greensock JS',
+      'jQuery',
+      'PHP',
+      'SVG Animation',
+      'Wordpress'
+    ],
+    agency:'Click 3X',
+    client: 'DonRoy',
+    role: 'Full Stack Developer'
   },
   {
     name: "Matcha Love",
@@ -24,7 +36,16 @@ const ProjectList = [
       'Products Archive - Matcha Love.png',
       'Recipes Archive - Matcha Love.png',
       'Stores - Matcha Love.png',
-    ]
+    ],
+    tags: [
+      'jQuery',
+      'PHP',
+      'SASS',
+      'Wordpress'
+    ],
+    agency:'Click 3X',
+    client: 'Matcha Love',
+    role: 'Full Stack Developer'
   },
   {
     name: "Heard City Website",
@@ -37,7 +58,17 @@ const ProjectList = [
       'Our Team - Heardcity.png',
       'Gloria Pitagorsky - Heardcity.png',
       'VR Projects - Heardcity.png',
-    ]
+    ],
+    tags: [
+      'GSAP',
+      'Parallax',
+      'jQuery',
+      'PHP',
+      'Wordpress'
+    ],
+    agency:'Click 3X',
+    client: 'Heard City',
+    role: 'Full Stack Developer'
   },
   {
     name: "Con Edison Microsite",
@@ -49,19 +80,46 @@ const ProjectList = [
       'Customer Solutions - Con Edison.png',
       'Insights & Events - Con Edison.png',
       'Urban Green Gala - Con Edison.png',
-    ]
+    ],
+    tags: [
+      'CSS Animation',
+      'jQuery',
+      'PHP',
+      'Wordpress'
+    ],
+    agency:'The Gate',
+    client: 'Con Edison',
+    role: 'Full Stack Developer'
   },
   {
     name: "VFILES Smashion!",
     bio: "What chic sophisticate hasn’t fantasized about donning a fashionable frock on the runway to compete with top models? In order to bring that dream to fruition, we worked with the VFILES team, provided concepting, game logic, animation and cross-platform application development to ensure a gaming experience stylish enough to live up to the VFILES brand. Just like the big names in Haute Couture, the goal for players is to compete on the runways of four major city’s fashion weeks. Featuring immersive storytelling and addictive gameplay, the app—built for iOS and Android devices—delivers a compelling challenge in either landscape or portrait orientation.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/smashion_header.jpg",
-    id: "vfiles"
+    id: "vfiles",
+    tags: [
+      'Corona SDK',
+      'Lua',
+      'Mobile App'
+    ],
+    agency:'Click 3X',
+    client: 'VFiles',
+    role: 'Front End Developer'
   },
   {
     name: "Theraflu",
     bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-video/CFM_Theraflu_CS.jpg",
-    id: "theraflu"
+    id: "theraflu",
+    tags: [
+      'Angular JS',
+      'CSS Animation',
+      'Kiosk',
+      'Large Display',
+      'SASS'
+    ],
+    agency:'Saatchi & Saatchi',
+    client: 'Theraflu',
+    role: 'Front End Developer'
   },
   {
     name: "GM About Page",
@@ -70,7 +128,16 @@ const ProjectList = [
     id: "gm",
     images:[
       'General Motors | About.png'
-    ]
+    ],
+    tags:[
+      'CSS Animation',
+      'jQuery',
+      'SASS',
+      'SVG Animation'
+    ],
+    agency:'McCaan',
+    client: 'General Motors',
+    role: 'Front End Developer'
   },
   {
     name: "Gamut",
@@ -82,6 +149,13 @@ const ProjectList = [
       'Gamut | Watch + Read.png',
       'Gamut | What we do.png',
       'Gamut | Who We Are | About.png',
+    ],
+    tags:[
+      'Wordpress',
+      'PHP',
+      'Parallax',
+      'jQuery',
+      'CSS Animation'
     ]
   },
   {
@@ -95,13 +169,29 @@ const ProjectList = [
       'Family Members - The Family.png',
       'Recent Archives - The Family.png',
       'Contact - The Family.png',
+    ],
+    tags:[
+      'Wordpress',
+      'PHP',
+      'Parallax',
+      'jQuery'
     ]
   },
   {
     name: "Breast Cancer Awareness",
     bio: "In 2014 we were challenged by our client The Estée Lauder Companies to create a 360 campaign that would inspire audiences to join the important conversation about breast cancer awareness. Our response was to leverage the power of storytelling across the digital and social landscape, by amplifying video content and tailoring the topics of conversation to connect to a wider audience. With the call-to-action: “Hear our stories. Share yours,” Click3x Director Jonathan Yi and ClickFire Media brought together individuals, their families and supporters to capture a two-way conversation. Through authentic narrative and hours of moving footage, audiences learned that cancer is not a solitary struggle; it affects us all. The hours of moving footage led to the creation of a campaign trailer and 27-minute documentary. Users around the world visited the responsive BCACampaign.com website, built ground up with consistent performance from mobile to desktop. It was then translated into 15 different languages, to share stories, photos, videos and opinions resulting in an aggregated live feed that engaged a global audience. The resulting metrics were astounding - 1,000,000 YouTube views, 2,000,000 social media impressions, and 16,000 moments of engagement demonstrating the power of storytelling to transcend space, time and location.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/bca_header.jpg",
-    id: "bca"
+    id: "bca",
+    tags:[
+      'Backbone JS',
+      'CodeIgniter',
+      'Google Maps API',
+      'jQuery',
+      'PHP'
+    ],
+    agency:'Reason 2 Be',
+    client: 'Estee Lauder',
+    role: 'Front End Developer'
   }
 ];
 

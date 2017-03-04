@@ -80,7 +80,6 @@ const GooeyOverlay = function () {
 
   GooeyOverlay.prototype.renderLoop = function renderLoop() {
     var _this = this;
-    var done = false;
     this.render();
 
     // this.debug = false;

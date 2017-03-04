@@ -31,21 +31,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // axios.get('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
-    //   .then(response => {
-    //     this.setState({
-    //       gifs: response.data.data
-    //     });
-    //   })
-    //   .catch(error => {
-    //     console.log('Error fetching and parsing data', error);
-    // });
-    // console.log('THis componentDidMount baby! and this is from App.js!');
   }
 
   componentWillReceiveProps(nextProps) {
-    // console.log('This is from ComponentWillReceiveProps! nextProps:', nextProps);
-    // this.setAnimation();
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -53,10 +41,6 @@ class App extends Component {
     let activePage = locArray[1];
 
     if(activePage == "") {activePage = "home";}
-    // this.state.topLevelPage = locArray.length > 2 ? false : true;
-  
-    // console.log('This is locArray', locArray);
-    // console.log('This is activePage', activePage);
     this.state.activePage = activePage;
   }
 
