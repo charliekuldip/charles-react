@@ -15,7 +15,8 @@ class Project extends Component {
   render() {
 
     const marqStyle = {
-      backgroundImage:'url("'+this.props.currentProject.img_src+'")',
+      // backgroundImage:'url("'+this.props.currentProject.img_src+'")',
+      backgroundColor:this.props.currentProject.bg_colors[0]
     }
 
     const tagItems = this.props.currentProject.tags.map((tag) =>
@@ -25,10 +26,9 @@ class Project extends Component {
 
   	return (
       <div className="main-content single-project">
-        <div className="clearfix marquee-nav">
-          <ImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} >
-            <h1>{ this.props.currentProject.name }</h1>
-          </ImageLoader>
+        <div className="clearfix marquee-nav" style={marqStyle}>
+          <ImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} />
+          <h1>{ this.props.currentProject.name }</h1>
         </div>
 
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />

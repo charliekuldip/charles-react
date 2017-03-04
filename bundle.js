@@ -21542,7 +21542,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\nbody {\n  /*color: #576366;*/\n  margin: 0;\n  /*font-family: 'Open Sans', sans-serif;*/\n  font-weight: normal;\n  font-weight: 400;\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n\n.clearfix:after {\n     visibility: hidden;\n     display: block;\n     font-size: 0;\n     content: \" \";\n     clear: both;\n     height: 0;\n     }\n.clearfix { display: inline-block; }\n/* start commented backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n}\n\n.block-container {\n  padding:0 1em;\n}\n\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n\n@media(min-width:600px) {\n  header {\n    z-index: 4;\n    position: relative;\n    background: none;\n  }\n}\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n@media(max-width:599px) {\n  header + div {\n    padding-top: 71px;\n  }\n  #main-nav-btn {\n    z-index: 4;\n    display: block;\n    position: fixed;\n    width: 71px;\n    height:71px;\n    outline: 0;\n    border:0;\n    padding:0;\n    margin:auto;\n    cursor: pointer;\n  }\n  #main-nav-btn:active {\n    background: purple;\n  }\n  #main-nav-container {\n    z-index: 3;\n    position: fixed;\n    width: 100%;\n    background: lightgray;\n\n    -webkit-transform:translate3d(0, -100%, 0);\n    transform:translate3d(0, -100%, 0);\n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n\n    -webkit-transition-delay:1000ms;\n    transition-delay:1000ms;\n  }\n\n  #main-nav-container.open {\n   -webkit-transform:translate3d(0, 0%, 0);\n    transform:translate3d(0, 0%, 0); \n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n  }\n\n  #main-nav-container.closed.from-btn {\n    -webkit-transition-delay:0ms;\n    transition-delay:0ms;\n  }\n}\n\n/* MAIN NAV -------- */\n@media(min-width: 600px) {\n  .main-nav li {\n    float: left;\n  }  \n}\n\n.main-nav a {\n  font-size: .95em;\n  color: #222;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');\n  background-position: 50% 100%;\n  background-size: auto 100vh;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: absolute;\n  bottom:0;\n  top: -75px;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg path.path01 {\n  fill: #cdd;\n}\nsvg path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n\n\n.single-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-enter.single-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n.single-leave.single-leave-active {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\nul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  text-align: center;\n  font-size: 2.1em;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n\n\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  padding-bottom:59.25%;\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n}\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n  z-index: 2;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n@media(min-width: 800px) {\n  .marquee {\n    padding-bottom:39.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    top: 1rem;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right: 1em;\n}\n\n.previous {\n  left: 1rem;\n}\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 1em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}", ""]);
+	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\nbody {\n  /*color: #576366;*/\n  margin: 0;\n  /*font-family: 'Open Sans', sans-serif;*/\n  font-weight: normal;\n  font-weight: 400;\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n\n.clearfix:after {\n     visibility: hidden;\n     display: block;\n     font-size: 0;\n     content: \" \";\n     clear: both;\n     height: 0;\n     }\n.clearfix { display: inline-block; }\n/* start commented backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n}\n\n.block-container {\n  padding:0 1em;\n}\n\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n\n@media(min-width:600px) {\n  header {\n    z-index: 4;\n    position: relative;\n    background: none;\n  }\n}\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n@media(max-width:599px) {\n  header + div {\n    padding-top: 71px;\n  }\n  #main-nav-btn {\n    z-index: 4;\n    display: block;\n    position: fixed;\n    width: 71px;\n    height:71px;\n    outline: 0;\n    border:0;\n    padding:0;\n    margin:auto;\n    cursor: pointer;\n  }\n  #main-nav-btn:active {\n    background: purple;\n  }\n  #main-nav-container {\n    z-index: 3;\n    position: fixed;\n    width: 100%;\n    background: lightgray;\n\n    -webkit-transform:translate3d(0, -100%, 0);\n    transform:translate3d(0, -100%, 0);\n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n\n    -webkit-transition-delay:1000ms;\n    transition-delay:1000ms;\n  }\n\n  #main-nav-container.open {\n   -webkit-transform:translate3d(0, 0%, 0);\n    transform:translate3d(0, 0%, 0); \n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n  }\n\n  #main-nav-container.closed.from-btn {\n    -webkit-transition-delay:0ms;\n    transition-delay:0ms;\n  }\n}\n\n/* MAIN NAV -------- */\n@media(min-width: 600px) {\n  .main-nav li {\n    float: left;\n  }  \n}\n\n.main-nav a {\n  font-size: .95em;\n  color: #222;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');\n  background-position: 50% 100%;\n  background-size: auto 100vh;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: absolute;\n  bottom:0;\n  top: -75px;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg path.path01 {\n  fill: #cdd;\n}\nsvg path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n\n\n.single-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-enter.single-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n.single-leave.single-leave-active {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\nul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  text-align: center;\n  font-size: 2.1em;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n\n\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  padding-bottom:59.25%;\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n}\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n  z-index: 2;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n@media(min-width: 800px) {\n  .marquee {\n    padding-bottom:39.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    top: 1rem;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right: 1em;\n}\n\n.previous {\n  left: 1rem;\n}\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 1em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}", ""]);
 
 	// exports
 
@@ -21893,7 +21893,7 @@
 
 	var _ProjectContainer2 = _interopRequireDefault(_ProjectContainer);
 
-	var _NotFound = __webpack_require__(298);
+	var _NotFound = __webpack_require__(300);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -31565,7 +31565,8 @@
 	  tags: ['Canvas', 'Google Maps API', 'Greensock JS', 'jQuery', 'PHP', 'SVG Animation', 'Wordpress'],
 	  agency: 'Click 3X',
 	  client: 'DonRoy',
-	  role: 'Full Stack Developer'
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#483078', '#000000', '#fff0a8']
 	}, {
 	  name: "Matcha Love",
 	  bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
@@ -31575,7 +31576,8 @@
 	  tags: ['jQuery', 'PHP', 'SASS', 'Wordpress'],
 	  agency: 'Click 3X',
 	  client: 'Matcha Love',
-	  role: 'Full Stack Developer'
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#a86030', '#f0d8c0', '#d8c0a8']
 	}, {
 	  name: "Heard City Website",
 	  bio: "Our friends at Heard City approached us to help them establish a brand identity that was not only true to their agency culture, but which reflected their company’s cutting-edge audio post-production capabilities. Our creative team partnered with Heard City to successfully capture the agency’s essence and craft an identity that brought the brand to life (in digital and print form) through a responsive HTML5 parallax website, business cards, a brochure and a stationary set.",
@@ -31585,7 +31587,8 @@
 	  tags: ['GSAP', 'Parallax', 'jQuery', 'PHP', 'Wordpress'],
 	  agency: 'Click 3X',
 	  client: 'Heard City',
-	  role: 'Full Stack Developer'
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#f0f0f0', '#d8d8d8', '#c0a8a8']
 	}, {
 	  name: "Con Edison Microsite",
 	  bio: "conEdison approached ClickFireMedia with the challenge of building an interactive online platform that informs and educates New York City Building Managers of energy-efficient cost saving techniques for their properties. Working with the Gate we conceptualized an immersive visual journey that put the average Building Manger into the drivers seat. Our CG team designed and constructed a photo realistic 3D “Class B” building, consisting of 9 different destinations, that users can explore, all while learning of different techniques to enhance their building and save on their energy bill. conEdison’s ultimate goal was to get users to register for their Demand Response Program.  An initiative that gives conEdison control of a building’s energy consumption during peak hours, in return for revenue. To make this offer more enticing we offered the users a suite of tools to educate them on these cost savings opportunities and revenue potential. Our investment in this project spans almost a full year, starting with detailed UX wire framings to endless design explorations and content hub for thought leadership, industry insights and educational interactive tools.",
@@ -31595,7 +31598,8 @@
 	  tags: ['CSS Animation', 'jQuery', 'PHP', 'Wordpress'],
 	  agency: 'The Gate',
 	  client: 'Con Edison',
-	  role: 'Full Stack Developer'
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#c0d8f0', '#d8f0f0', '#9090a8']
 	}, {
 	  name: "VFILES Smashion!",
 	  bio: "What chic sophisticate hasn’t fantasized about donning a fashionable frock on the runway to compete with top models? In order to bring that dream to fruition, we worked with the VFILES team, provided concepting, game logic, animation and cross-platform application development to ensure a gaming experience stylish enough to live up to the VFILES brand. Just like the big names in Haute Couture, the goal for players is to compete on the runways of four major city’s fashion weeks. Featuring immersive storytelling and addictive gameplay, the app—built for iOS and Android devices—delivers a compelling challenge in either landscape or portrait orientation.",
@@ -31604,7 +31608,8 @@
 	  tags: ['Corona SDK', 'Lua', 'Mobile App'],
 	  agency: 'Click 3X',
 	  client: 'VFiles',
-	  role: 'Front End Developer'
+	  role: 'Front End Developer',
+	  bg_colors: ['#304830', '#486048', '#181818']
 	}, {
 	  name: "Theraflu",
 	  bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
@@ -31613,7 +31618,8 @@
 	  tags: ['Angular JS', 'CSS Animation', 'Kiosk', 'Large Display', 'SASS'],
 	  agency: 'Saatchi & Saatchi',
 	  client: 'Theraflu',
-	  role: 'Front End Developer'
+	  role: 'Front End Developer',
+	  bg_colors: ['#181848', '#000000', '#000018']
 	}, {
 	  name: "GM About Page",
 	  bio: "Mccann Detroit approached us to collaborate on the imagination of the new look gm.com website. This exciting brief challenged our team to concept, design and develop the new look \"About Our Company\" section of gm.com site that would inspire the new website's look and feel. Our goal was to visually enhance an information-heavy experience, to ultimately tell a more engaging and interactive story across desktop, tablet and mobile platforms. During our R&D phase our team created animated prototypes and used a creative prototyping technique called \"video-lization\" to communicate and bring to life our creative vision. We also created a series of customized SVG animations to visually communicate important GM brand values such as \"Our Company\", \"Our People\", \"Our Brands\", and \"Our Commitment\". From a Technology standpoint our team formulated development solutions that enhanced the overall user experience across various devices and browsers. To prevent conflict with the existing GM codebase, the technology team wrote a custom-tailored mobile-first framework utilizing CSS3 animations and transforms in combination with scroll-controlled features and SVG graphics. The result is a seamless experience delighting the user as they scroll, revealing eye-catching animations to carry the dialog of GM’s story and further establish their reputation as trend-setters in their industry.",
@@ -31623,21 +31629,24 @@
 	  tags: ['CSS Animation', 'jQuery', 'SASS', 'SVG Animation'],
 	  agency: 'McCaan',
 	  client: 'General Motors',
-	  role: 'Front End Developer'
+	  role: 'Front End Developer',
+	  bg_colors: ['#d8d8d8', '#f0f0f0', '#ffffff']
 	}, {
 	  name: "Gamut",
 	  bio: "To transfer a new brand vision into reality, ClickFire Media partnered with CO-OP Marketing to rebrand COX Digital Solutions and craft them a new website. The fully responsive site performs flawlessly across platforms and includes a robust CMS, coded to make managing content a seamless experience. Using cutting-edge CSS3 techniques, the site implements parallax scrolling without the use of Javascript, ensuring a smooth visual effect across all modern browsers. A branding video was also produced and launched on the website to communicate the essence of the new brand identity to customers.",
 	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/gamut_header.jpg",
 	  id: "gamut",
 	  images: ['Gamut | Who We Are | Our Leadership.png', 'Gamut | Watch + Read.png', 'Gamut | What we do.png', 'Gamut | Who We Are | About.png'],
-	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery', 'CSS Animation']
+	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery', 'CSS Animation'],
+	  bg_colors: ['#d8d8d8', '#f0f0f0', '#c0c0c0']
 	}, {
 	  name: "The Family",
 	  bio: "We function differently for each of our clients and friends, but we always strive to make a significant and profound impact on both of their brands and businesses. We manage talent, brands, and careers connected with creating and producing award-winning advertising.  We help create a unique niche for each of our Family Members based on their individual talent, aesthetic, and where they want to grow. We give each a resoundingly clear voice in this very loud and cluttered industry. We effectively help build their brands, their portfolios, their standing in the industry, and their bottom line. Our skills include, but are not limited to: communicating, relationship building, dog training, proactive selling and marketing, strategizing, splitting wood, branding, cooking, public relations, gardening, event planning, producing, creating, reading, writing, arithmetic, motivational dancing, business coaching and consulting, spotting and building talent, surfing, interior decorating, hunting and gathering, multitasking, driving a stick shift, trend setting and taste making, gift wrapping, making dove sounds, procurement, and winning. One of us is even a repeated Spelling Bee champ.",
 	  img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
 	  id: "thefamily",
 	  images: ['Home - The Family.png', 'Work & News - The Family.png', 'Family Members - The Family.png', 'Recent Archives - The Family.png', 'Contact - The Family.png'],
-	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery']
+	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery'],
+	  bg_colors: ['#d8a860', '#f0f0f0', '#ffffff']
 	}, {
 	  name: "Breast Cancer Awareness",
 	  bio: "In 2014 we were challenged by our client The Estée Lauder Companies to create a 360 campaign that would inspire audiences to join the important conversation about breast cancer awareness. Our response was to leverage the power of storytelling across the digital and social landscape, by amplifying video content and tailoring the topics of conversation to connect to a wider audience. With the call-to-action: “Hear our stories. Share yours,” Click3x Director Jonathan Yi and ClickFire Media brought together individuals, their families and supporters to capture a two-way conversation. Through authentic narrative and hours of moving footage, audiences learned that cancer is not a solitary struggle; it affects us all. The hours of moving footage led to the creation of a campaign trailer and 27-minute documentary. Users around the world visited the responsive BCACampaign.com website, built ground up with consistent performance from mobile to desktop. It was then translated into 15 different languages, to share stories, photos, videos and opinions resulting in an aggregated live feed that engaged a global audience. The resulting metrics were astounding - 1,000,000 YouTube views, 2,000,000 social media impressions, and 16,000 moments of engagement demonstrating the power of storytelling to transcend space, time and location.",
@@ -31646,7 +31655,8 @@
 	  tags: ['Backbone JS', 'CodeIgniter', 'Google Maps API', 'jQuery', 'PHP'],
 	  agency: 'Reason 2 Be',
 	  client: 'Estee Lauder',
-	  role: 'Front End Developer'
+	  role: 'Front End Developer',
+	  bg_colors: ['#a8a8c0', '#90a8a8', '#181818']
 	}];
 
 	exports.default = ProjectList;
@@ -31976,7 +31986,8 @@
 	  var projectStyle = {
 	    backgroundImage: 'url("' + project.img_src + '")',
 	    backgroundSize: 'cover',
-	    backgroundRepeat: 'no-repeat'
+	    backgroundRepeat: 'no-repeat',
+	    backgroundColor: project.bg_colors[0]
 	  };
 	  return _react2.default.createElement(
 	    'li',
@@ -32176,6 +32187,10 @@
 
 	var _DeviceContainer2 = _interopRequireDefault(_DeviceContainer);
 
+	var _ImageLoader = __webpack_require__(298);
+
+	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32205,7 +32220,8 @@
 	    value: function render() {
 
 	      var marqStyle = {
-	        backgroundImage: 'url("' + this.props.currentProject.img_src + '")'
+	        // backgroundImage:'url("'+this.props.currentProject.img_src+'")',
+	        backgroundColor: this.props.currentProject.bg_colors[0]
 	      };
 
 	      var tagItems = this.props.currentProject.tags.map(function (tag) {
@@ -32221,15 +32237,12 @@
 	        { className: 'main-content single-project' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'clearfix marquee-nav' },
+	          { className: 'clearfix marquee-nav', style: marqStyle },
+	          _react2.default.createElement(_ImageLoader2.default, { className: 'clearfix block-container marquee', src: this.props.currentProject.img_src }),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'clearfix block-container marquee', style: marqStyle },
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              this.props.currentProject.name
-	            )
+	            'h1',
+	            null,
+	            this.props.currentProject.name
 	          )
 	        ),
 	        _react2.default.createElement(_DeviceContainer2.default, { projectId: this.props.currentProject.id, images: this.props.currentProject.images }),
@@ -32554,6 +32567,145 @@
 
 /***/ },
 /* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(299);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var bgImgStyle = {};
+
+	var ImageLoader = function (_Component) {
+	  _inherits(ImageLoader, _Component);
+
+	  function ImageLoader(props) {
+	    _classCallCheck(this, ImageLoader);
+
+	    var _this = _possibleConstructorReturn(this, (ImageLoader.__proto__ || Object.getPrototypeOf(ImageLoader)).call(this, props));
+
+	    _this.state = {
+	      loaded: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(ImageLoader, [{
+	    key: 'onImageLoad',
+	    value: function onImageLoad() {
+	      this.setState({ loaded: true });
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var imgTag = this.refs.img;
+	      var imgSrc = imgTag.getAttribute('src');
+	      var img = new window.Image();
+	      img.onload = this.onImageLoad.bind(this);
+	      img.src = imgSrc;
+	      bgImgStyle.backgroundImage = 'url("' + imgSrc + '")';
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          className = _props.className,
+	          props = _props.props;
+
+	      var imgClasses = 'image';
+	      var rootClassName = (0, _classnames2.default)(className, 'image', {
+	        'image-loaded': this.state.loaded
+	      });
+	      return _react2.default.createElement('div', _extends({ ref: 'img' }, this.props, { style: bgImgStyle, className: rootClassName }));
+	    }
+	  }]);
+
+	  return ImageLoader;
+	}(_react.Component);
+
+	exports.default = ImageLoader;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {

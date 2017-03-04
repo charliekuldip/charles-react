@@ -11,6 +11,7 @@ let projects = ProjectList.map((project) => {
     backgroundImage:'url("'+project.img_src+'")',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
+    backgroundColor:project.bg_colors[0]
   }
   return (
     <li className="project" key={project.id} >
