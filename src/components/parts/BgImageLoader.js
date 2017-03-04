@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 
+const bgImgStyle={};
 
-class ImageLoader extends Component {
+class BgImageLoader extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -20,6 +21,7 @@ class ImageLoader extends Component {
     const img = new window.Image();
     img.onload = this.onImageLoad.bind(this);
     img.src = imgSrc;
+    bgImgStyle.backgroundImage = 'url("'+imgSrc+'")';
   }
 
   render() {
@@ -29,9 +31,9 @@ class ImageLoader extends Component {
       'image-loaded': this.state.loaded,
     });
     return (
-      <img ref="img" {...this.props} className={rootClassName} />
+      <div ref="img" {...this.props} style={bgImgStyle} className={rootClassName} />
     );
   }
 }
 
-export default ImageLoader;
+export default BgImageLoader;

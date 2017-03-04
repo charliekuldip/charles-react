@@ -15,6 +15,10 @@ class DeviceContainer extends Component {
 	    };
 	}
 
+	onImageLoad() {
+		console.log('This image has been loaded@!');
+	}
+
 	componentDidMount() {
 		this.interval = setInterval(this.onTick.bind(this), 5000);
 	}

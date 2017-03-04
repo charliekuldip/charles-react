@@ -32,7 +32,11 @@ class MainNav extends Component {
   	render() {
 	    return (
 	    	<header>
-	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)}>X</button>
+	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)}>
+	    			<span className="bar"></span>
+	    			<span className="bar"></span>
+	    			<span className="bar"></span>
+	    		</button>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
 					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)}>Home</NavLink></li>

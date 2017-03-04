@@ -118,9 +118,10 @@ a {
 
 @media(min-width:600px) {
   header {
-    z-index: 4;
-    position: relative;
+    z-index: 2;
+    position: absolute;
     background: none;
+    width: 100%;
   }
 }
 #main-nav-btn {
@@ -129,14 +130,17 @@ a {
   position: static;
 }
 @media(max-width:599px) {
-  header + div {
+  /*header + div {
     padding-top: 71px;
-  }
+  }*/
   #main-nav-btn {
-    z-index: 4;
+    background: transparent;
+    /*z-index: 4;*/
+    z-index: 6;
     display: block;
     position: fixed;
-    width: 71px;
+    /*width: 71px;*/
+    width: 62px;
     height:71px;
     outline: 0;
     border:0;
@@ -144,6 +148,18 @@ a {
     margin:auto;
     cursor: pointer;
   }
+
+  #main-nav-btn span.bar {
+    display: block;
+    height: 4px;
+    /*background: black;*/
+    background: aqua;
+    width: 44px;
+    margin: 0 auto 7px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
   #main-nav-btn:active {
     background: purple;
   }
@@ -179,6 +195,9 @@ a {
 
 /* MAIN NAV -------- */
 @media(min-width: 600px) {
+  .main-nav {
+    float: right;
+  }
   .main-nav li {
     float: left;
   }  
@@ -186,7 +205,7 @@ a {
 
 .main-nav a {
   font-size: .95em;
-  color: #222;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -219,7 +238,8 @@ a {
 .c-davis-bg {
   background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');
   background-position: 50% 100%;
-  background-size: auto 100vh;
+  /*background-size: auto 100vh;*/
+  background-size: cover;
   min-height: 100vh;
   height: 100%;
   width: 100vw;
@@ -476,9 +496,10 @@ ul.group li {
 
   position: absolute;
   top:50%; left:50%;
-  width: 95%;
+  /*width: 95%;*/
+  width: 84%;
   margin:auto;
-  z-index: 2;
+  z-index: 1;
 
   -webkit-transform:translate3d(-50%, -50%, 0);
   -moz-transform:translate3d(-50%, -50%, 0);
@@ -488,21 +509,6 @@ ul.group li {
   font-size: 9vw; 
 }
 
-@media(min-width: 800px) {
-  .marquee {
-    padding-bottom:39.25%;
-  }
-}
-
-@media(min-width:1264px) {
-  .marquee {
-    padding-bottom: 508px;
-  }
-  .marquee h1 {
-    font-size: 110px;
-  }
-}
-
 .next,
 .previous {
     position: absolute;
@@ -510,10 +516,17 @@ ul.group li {
     z-index: 2;
     color: white;
     display: block;
-    top: 1rem;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.025em;
+
+
+    padding-bottom: 59.25%;
+    top: 0;
+    height: 0;
+    /*width: 10%;*/
+    width: 8%;
+
     transition:color 180ms;
     -webkit-transition:color 180ms;
 }
@@ -524,12 +537,55 @@ ul.group li {
 }
 
 .next {
-  right: 1em;
+  right:0;
 }
 
 .previous {
-  left: 1rem;
+  left:0;
 }
+
+.previous:after,
+.next:after {
+  display: block;
+  position: absolute;
+  top:0; bottom:0; 
+  left:0; right:0;
+  margin:auto;
+  height: 1ex;
+  width: 1ex;
+  line-height: 1ex;
+  font-size: 9vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.previous:after {
+  content: '<';
+}
+
+.next:after {
+  content: '>';
+}
+
+/*@media(min-width: 800px) {
+  .next,
+  .previous,
+  .marquee {
+    padding-bottom:39.25%;
+  }
+}*/
+
+@media(min-width:1264px) {
+  .next,
+  .previous,
+  .marquee {
+    padding-bottom: 508px;
+  }
+  .marquee h1 {
+    font-size: 110px;
+  }
+}
+
 
 /* DEVICES */
 .device-container {
@@ -587,4 +643,12 @@ ul.tags li {
 }
 .image.image-loaded { 
   opacity: 1; 
+}
+
+.roles {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin:0 auto;
 }

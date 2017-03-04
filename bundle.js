@@ -21542,7 +21542,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\nbody {\n  /*color: #576366;*/\n  margin: 0;\n  /*font-family: 'Open Sans', sans-serif;*/\n  font-weight: normal;\n  font-weight: 400;\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n\n.clearfix:after {\n     visibility: hidden;\n     display: block;\n     font-size: 0;\n     content: \" \";\n     clear: both;\n     height: 0;\n     }\n.clearfix { display: inline-block; }\n/* start commented backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n}\n\n.block-container {\n  padding:0 1em;\n}\n\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n\n@media(min-width:600px) {\n  header {\n    z-index: 4;\n    position: relative;\n    background: none;\n  }\n}\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n@media(max-width:599px) {\n  header + div {\n    padding-top: 71px;\n  }\n  #main-nav-btn {\n    z-index: 4;\n    display: block;\n    position: fixed;\n    width: 71px;\n    height:71px;\n    outline: 0;\n    border:0;\n    padding:0;\n    margin:auto;\n    cursor: pointer;\n  }\n  #main-nav-btn:active {\n    background: purple;\n  }\n  #main-nav-container {\n    z-index: 3;\n    position: fixed;\n    width: 100%;\n    background: lightgray;\n\n    -webkit-transform:translate3d(0, -100%, 0);\n    transform:translate3d(0, -100%, 0);\n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n\n    -webkit-transition-delay:1000ms;\n    transition-delay:1000ms;\n  }\n\n  #main-nav-container.open {\n   -webkit-transform:translate3d(0, 0%, 0);\n    transform:translate3d(0, 0%, 0); \n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n  }\n\n  #main-nav-container.closed.from-btn {\n    -webkit-transition-delay:0ms;\n    transition-delay:0ms;\n  }\n}\n\n/* MAIN NAV -------- */\n@media(min-width: 600px) {\n  .main-nav li {\n    float: left;\n  }  \n}\n\n.main-nav a {\n  font-size: .95em;\n  color: #222;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');\n  background-position: 50% 100%;\n  background-size: auto 100vh;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: absolute;\n  bottom:0;\n  top: -75px;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg path.path01 {\n  fill: #cdd;\n}\nsvg path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n\n\n.single-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-enter.single-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n.single-leave.single-leave-active {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\nul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  text-align: center;\n  font-size: 2.1em;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n\n\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  padding-bottom:59.25%;\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n}\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n  z-index: 2;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n@media(min-width: 800px) {\n  .marquee {\n    padding-bottom:39.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    top: 1rem;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right: 1em;\n}\n\n.previous {\n  left: 1rem;\n}\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 1em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}", ""]);
+	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\nbody {\n  /*color: #576366;*/\n  margin: 0;\n  /*font-family: 'Open Sans', sans-serif;*/\n  font-weight: normal;\n  font-weight: 400;\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n\n.clearfix:after {\n     visibility: hidden;\n     display: block;\n     font-size: 0;\n     content: \" \";\n     clear: both;\n     height: 0;\n     }\n.clearfix { display: inline-block; }\n/* start commented backslash hack \\*/\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n}\n\n.block-container {\n  padding:0 1em;\n}\n\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n\n@media(min-width:600px) {\n  header {\n    z-index: 2;\n    position: absolute;\n    background: none;\n    width: 100%;\n  }\n}\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n@media(max-width:599px) {\n  /*header + div {\n    padding-top: 71px;\n  }*/\n  #main-nav-btn {\n    background: transparent;\n    /*z-index: 4;*/\n    z-index: 6;\n    display: block;\n    position: fixed;\n    /*width: 71px;*/\n    width: 62px;\n    height:71px;\n    outline: 0;\n    border:0;\n    padding:0;\n    margin:auto;\n    cursor: pointer;\n  }\n\n  #main-nav-btn span.bar {\n    display: block;\n    height: 4px;\n    /*background: black;*/\n    background: aqua;\n    width: 44px;\n    margin: 0 auto 7px;\n    border-radius: 7px;\n    cursor: pointer;\n  }\n\n  #main-nav-btn:active {\n    background: purple;\n  }\n  #main-nav-container {\n    z-index: 3;\n    position: fixed;\n    width: 100%;\n    background: lightgray;\n\n    -webkit-transform:translate3d(0, -100%, 0);\n    transform:translate3d(0, -100%, 0);\n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n\n    -webkit-transition-delay:1000ms;\n    transition-delay:1000ms;\n  }\n\n  #main-nav-container.open {\n   -webkit-transform:translate3d(0, 0%, 0);\n    transform:translate3d(0, 0%, 0); \n\n    -webkit-transition: transform 200ms;\n    transition: transform 200ms;\n  }\n\n  #main-nav-container.closed.from-btn {\n    -webkit-transition-delay:0ms;\n    transition-delay:0ms;\n  }\n}\n\n/* MAIN NAV -------- */\n@media(min-width: 600px) {\n  .main-nav {\n    float: right;\n  }\n  .main-nav li {\n    float: left;\n  }  \n}\n\n.main-nav a {\n  font-size: .95em;\n  color: white;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');\n  background-position: 50% 100%;\n  /*background-size: auto 100vh;*/\n  background-size: cover;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: absolute;\n  bottom:0;\n  top: -75px;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg path.path01 {\n  fill: #cdd;\n}\nsvg path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n\n\n.single-enter {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-enter.single-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n  -webkit-transition-delay:1s;\n  transition-delay:1s;\n}\n\n.single-leave {\n  opacity: 1;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n.single-leave.single-leave-active {\n  opacity: 0.01;\n  -webkit-transition: opacity 1s ease-in;\n  transition: opacity 1s ease-in;\n}\n\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\nul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  text-align: center;\n  font-size: 2.1em;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n\n\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  padding-bottom:59.25%;\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n}\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n\n\n    padding-bottom: 59.25%;\n    top: 0;\n    height: 0;\n    /*width: 10%;*/\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n}\n\n.previous:after {\n  content: '<';\n}\n\n.next:after {\n  content: '>';\n}\n\n/*@media(min-width: 800px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:39.25%;\n  }\n}*/\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 1em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto;\n}", ""]);
 
 	// exports
 
@@ -31737,7 +31737,9 @@
 					_react2.default.createElement(
 						'button',
 						{ id: 'main-nav-btn', className: 'main-nav-btn', onClick: this.setMenuClass.bind(this) },
-						'X'
+						_react2.default.createElement('span', { className: 'bar' }),
+						_react2.default.createElement('span', { className: 'bar' }),
+						_react2.default.createElement('span', { className: 'bar' })
 					),
 					_react2.default.createElement(
 						'div',
@@ -32122,16 +32124,8 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main-content single-project' },
-	        _react2.default.createElement(
-	          _NavLink2.default,
-	          { to: "/projects/" + previousLink.id, className: 'previous previous-project' },
-	          'Previous'
-	        ),
-	        _react2.default.createElement(
-	          _NavLink2.default,
-	          { to: "/projects/" + nextLink.id, className: 'next next-project' },
-	          'Next'
-	        ),
+	        _react2.default.createElement(_NavLink2.default, { to: "/projects/" + previousLink.id, className: 'previous previous-project' }),
+	        _react2.default.createElement(_NavLink2.default, { to: "/projects/" + nextLink.id, className: 'next next-project' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'clearfix' },
@@ -32187,9 +32181,9 @@
 
 	var _DeviceContainer2 = _interopRequireDefault(_DeviceContainer);
 
-	var _ImageLoader = __webpack_require__(298);
+	var _BgImageLoader = __webpack_require__(298);
 
-	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
+	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32238,7 +32232,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'clearfix marquee-nav', style: marqStyle },
-	          _react2.default.createElement(_ImageLoader2.default, { className: 'clearfix block-container marquee', src: this.props.currentProject.img_src }),
+	          _react2.default.createElement(_BgImageLoader2.default, { className: 'clearfix block-container marquee', src: this.props.currentProject.img_src }),
 	          _react2.default.createElement(
 	            'h1',
 	            null,
@@ -32249,6 +32243,52 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'clearfix block-container' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'roles' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Role:\xA0'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                this.props.currentProject.role
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Client:\xA0'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                this.props.currentProject.client
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Agency:\xA0'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                this.props.currentProject.agency
+	              )
+	            )
+	          ),
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'bio' },
@@ -32332,6 +32372,11 @@
 		}
 
 		_createClass(DeviceContainer, [{
+			key: 'onImageLoad',
+			value: function onImageLoad() {
+				console.log('This image has been loaded@!');
+			}
+		}, {
 			key: 'componentDidMount',
 			value: function componentDidMount() {
 				this.interval = setInterval(this.onTick.bind(this), 5000);
@@ -32599,13 +32644,13 @@
 
 	var bgImgStyle = {};
 
-	var ImageLoader = function (_Component) {
-	  _inherits(ImageLoader, _Component);
+	var BgImageLoader = function (_Component) {
+	  _inherits(BgImageLoader, _Component);
 
-	  function ImageLoader(props) {
-	    _classCallCheck(this, ImageLoader);
+	  function BgImageLoader(props) {
+	    _classCallCheck(this, BgImageLoader);
 
-	    var _this = _possibleConstructorReturn(this, (ImageLoader.__proto__ || Object.getPrototypeOf(ImageLoader)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (BgImageLoader.__proto__ || Object.getPrototypeOf(BgImageLoader)).call(this, props));
 
 	    _this.state = {
 	      loaded: false
@@ -32613,7 +32658,7 @@
 	    return _this;
 	  }
 
-	  _createClass(ImageLoader, [{
+	  _createClass(BgImageLoader, [{
 	    key: 'onImageLoad',
 	    value: function onImageLoad() {
 	      this.setState({ loaded: true });
@@ -32643,12 +32688,12 @@
 	    }
 	  }]);
 
-	  return ImageLoader;
+	  return BgImageLoader;
 	}(_react.Component);
 
-	exports.default = ImageLoader;
+	exports.default = BgImageLoader;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "BgImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 299 */

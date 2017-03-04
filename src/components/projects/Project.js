@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavLink from './../NavLink';
 import ProjectList from '../../data/projects';
 import DeviceContainer from './../devices/DeviceContainer';
-import ImageLoader from './../parts/ImageLoader';
+import BgImageLoader from './../parts/BgImageLoader';
 
 
 class Project extends Component {
@@ -27,13 +27,18 @@ class Project extends Component {
   	return (
       <div className="main-content single-project">
         <div className="clearfix marquee-nav" style={marqStyle}>
-          <ImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} />
+          <BgImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} />
           <h1>{ this.props.currentProject.name }</h1>
         </div>
 
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />
 
         <div className="clearfix block-container">
+          <ul className="roles">
+            <li><span>Role:&nbsp;</span><span>{this.props.currentProject.role}</span></li>
+            <li><span>Client:&nbsp;</span><span>{this.props.currentProject.client}</span></li>
+            <li><span>Agency:&nbsp;</span><span>{this.props.currentProject.agency}</span></li>
+          </ul>
           <p className="bio">{ this.props.currentProject.bio }</p>
           <ul className="tags">{tagItems}</ul>
           <h5>{ this.props.currentProject.id }</h5>
