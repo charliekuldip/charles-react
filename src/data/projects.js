@@ -21,7 +21,12 @@ const ProjectList = [
     ],
     agency:'Click 3X',
     client: 'DonRoy',
-    role: 'Full Stack Developer'
+    role: 'Full Stack Developer',
+    bg_colors: [
+      '#483078',
+      '#000000',
+      '#fff0a8'
+    ]
   },
   {
     name: "Matcha Love",
@@ -45,7 +50,12 @@ const ProjectList = [
     ],
     agency:'Click 3X',
     client: 'Matcha Love',
-    role: 'Full Stack Developer'
+    role: 'Full Stack Developer',
+    bg_colors:[
+      '#a86030',
+      '#f0d8c0',
+      '#d8c0a8'
+    ]
   },
   {
     name: "Heard City Website",
@@ -68,7 +78,12 @@ const ProjectList = [
     ],
     agency:'Click 3X',
     client: 'Heard City',
-    role: 'Full Stack Developer'
+    role: 'Full Stack Developer',
+    bg_colors: [
+      '#f0f0f0',
+      '#d8d8d8',
+      '#c0a8a8'
+    ]
   },
   {
     name: "Con Edison Microsite",
@@ -89,7 +104,12 @@ const ProjectList = [
     ],
     agency:'The Gate',
     client: 'Con Edison',
-    role: 'Full Stack Developer'
+    role: 'Full Stack Developer',
+    bg_colors: [
+      '#c0d8f0',
+      '#d8f0f0',
+      '#9090a8'
+    ]
   },
   {
     name: "VFILES Smashion!",
@@ -103,7 +123,12 @@ const ProjectList = [
     ],
     agency:'Click 3X',
     client: 'VFiles',
-    role: 'Front End Developer'
+    role: 'Front End Developer',
+    bg_colors: [
+      '#304830',
+      '#486048',
+      '#181818'
+    ]
   },
   {
     name: "Theraflu",
@@ -119,7 +144,12 @@ const ProjectList = [
     ],
     agency:'Saatchi & Saatchi',
     client: 'Theraflu',
-    role: 'Front End Developer'
+    role: 'Front End Developer',
+    bg_colors: [
+      '#181848',
+      '#000000',
+      '#000018'
+    ]
   },
   {
     name: "GM About Page",
@@ -137,7 +167,12 @@ const ProjectList = [
     ],
     agency:'McCaan',
     client: 'General Motors',
-    role: 'Front End Developer'
+    role: 'Front End Developer',
+    bg_colors:[
+      '#d8d8d8',
+      '#f0f0f0',
+      '#ffffff'
+    ]
   },
   {
     name: "Gamut",
@@ -156,6 +191,11 @@ const ProjectList = [
       'Parallax',
       'jQuery',
       'CSS Animation'
+    ],
+    bg_colors:[
+      '#d8d8d8',
+      '#f0f0f0',
+      '#c0c0c0'
     ]
   },
   {
@@ -175,6 +215,11 @@ const ProjectList = [
       'PHP',
       'Parallax',
       'jQuery'
+    ],
+    bg_colors:[
+      '#d8a860',
+      '#f0f0f0',
+      '#ffffff'
     ]
   },
   {
@@ -191,7 +236,12 @@ const ProjectList = [
     ],
     agency:'Reason 2 Be',
     client: 'Estee Lauder',
-    role: 'Front End Developer'
+    role: 'Front End Developer',
+    bg_colors:[
+      '#a8a8c0',
+      '#90a8a8',
+      '#181818'
+    ]
   }
 ];
 
