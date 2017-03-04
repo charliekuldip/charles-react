@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NavLink from './NavLink';
 import axios from 'axios';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-// import ReactTransitionGroup from 'react-addons-transition-group'
 import SvgAnimation from './SvgAnimation';
 import ProjectList from '../data/projects';
 import MainNav from './MainNav';

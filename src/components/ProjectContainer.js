@@ -39,6 +39,7 @@ class ProjectContainer extends Component {
 
   	return (
       <div className="main-content single-project">
+        <div className={currentProject.id}>
         
           <NavLink to={"/projects/"+ previousLink.id} className="previous previous-project"></NavLink>
           <NavLink to={"/projects/"+ nextLink.id} className="next next-project"></NavLink>
@@ -54,6 +55,7 @@ class ProjectContainer extends Component {
             </ReactCSSTransitionGroup>
           </div>
 
+        </div>
       </div>
     );
   }

@@ -1,16 +1,12 @@
 import React from 'react';
-
-const imgStyle = {
-  width:'100%',
-  height:'100%'
-};
+import ImageLoader from '../parts/ImageLoader';
 
 const IPad = props => (
 	<div className="device-container ipad" data-size-port="480px" data-size-land="600px">
 		<div className="device-mockup" data-device="ipad_air_2" data-orientation="portrait" data-color="grey">
 	        <div className="device">
 	            <div className="screen">
-					<img src={ '/src/img/projects/'+props.projectId +'/tablet/'+props.curSlide} style={imgStyle} />
+					<ImageLoader src={ '/src/img/projects/'+props.projectId +'/tablet/'+props.curSlide} />
 	            </div>
 	        </div>
 	    </div>

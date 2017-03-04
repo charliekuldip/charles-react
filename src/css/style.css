@@ -59,6 +59,9 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-top:1em;
+}
 
 .clearfix:after {
      visibility: hidden;
@@ -118,11 +121,15 @@ a {
 
 @media(min-width:600px) {
   header {
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     background: none;
     width: 100%;
   }
+
+  /*header + div .main-content {
+    padding-top: 71px;
+  }*/
 }
 #main-nav-btn {
   z-index:auto;
@@ -130,9 +137,6 @@ a {
   position: static;
 }
 @media(max-width:599px) {
-  /*header + div {
-    padding-top: 71px;
-  }*/
   #main-nav-btn {
     background: transparent;
     /*z-index: 4;*/
@@ -245,7 +249,7 @@ a {
   width: 100vw;
   position: absolute;
   bottom:0;
-  top: -75px;
+  top:0;
   z-index: -1;
 }
 
@@ -616,6 +620,10 @@ ul.group li {
 }
 
 .screen {
+  background:black;
+}
+
+.gm .screen {
   background:white;
 }
 

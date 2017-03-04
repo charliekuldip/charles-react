@@ -1,10 +1,5 @@
 import React from 'react';
-
-const imgStyle = {
-	display:'block',
-	width:'100%',
-	height:'100%'
-};
+import ImageLoader from '../parts/ImageLoader';
 
 const containerStyle = {
     width:'100%',
@@ -17,7 +12,7 @@ const MacBook = props => (
     	<div className="device-mockup macbook">
         	<div className="device">
             	<div className="screen">
-                    <img src={ '/src/img/projects/'+props.projectId +'/desktop/'+props.curSlide} style={imgStyle} />
+                    <ImageLoader src={ '/src/img/projects/'+props.projectId +'/desktop/'+props.curSlide} />
             	</div>
         	</div>
         </div>
