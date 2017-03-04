@@ -5,10 +5,13 @@ import DeviceContainer from './../devices/DeviceContainer';
 
 
 class Project extends Component {
+  componentDidMount() {
+    window.setTimeout(()=>{
+      window.scrollTo(0, 0);
+    }, 1000);
+  }
   
   render() {
-
-  	let id = this.props.currentProject.id;
 
     const marqStyle = {
       backgroundImage:'url("'+this.props.currentProject.img_src+'")',

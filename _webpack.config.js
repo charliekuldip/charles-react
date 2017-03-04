@@ -26,5 +26,5 @@ module.exports = {
     contentBase: './',
     hot: true
   },
-  // devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map'
 };

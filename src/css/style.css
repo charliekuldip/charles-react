@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.015em;
+  line-height: 1.4em;
 }
 
 h1,
@@ -71,10 +72,15 @@ a {
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .hide-overflow {
   overflow: hidden;
 }
-
 
 #outline-button {
   position: fixed;
@@ -88,59 +94,86 @@ a {
   outline: 1px solid red;
 }
 
-
-/* FORM & BUTTON STYLES -------- */
-
-.home a,
-input,
-button {
-  padding: .5em;
-  font-size: .9em;
-  margin-right: 10px;
-  border: none;
-  outline: none;
-}
-button {
-  color: white;
-  background: #4188dc;
-  padding-left: 1em;
-  padding-right: 1em;
-  cursor: pointer;
-  border-color: rgba(0,0,0, .1);
-}
-
 /* ================================= 
   LAYOUT & PAGE STYLES
 ==================================== */
-
-header {
-  /*background-color:rgba(100,100,100,0.  5);*/
-  z-index: 10;
+.container > div {
   position: relative;
+  width: 100%;
+}
+.container > div > div {
+  position: absolute;
+  width: 100%;
 }
 
 .block-container {
   padding:0 1em;
 }
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.course {
-  margin-bottom: 1em;
-}
 
-/* IMAGES -------- */
 
-.course-img {
-  width: 70px;
+/* ================================= 
+  MENU & HEADER STYLES
+==================================== */
+
+@media(min-width:600px) {
+  header {
+    z-index: 4;
+    position: relative;
+    background: none;
+  }
 }
-.project-img {
-  width: 100%;
+#main-nav-btn {
+  z-index:auto;
+  display:none;
+  position: static;
 }
-.not-found {
-  text-align: center;
+@media(max-width:599px) {
+  header + div {
+    padding-top: 71px;
+  }
+  #main-nav-btn {
+    z-index: 4;
+    display: block;
+    position: fixed;
+    width: 71px;
+    height:71px;
+    outline: 0;
+    border:0;
+    padding:0;
+    margin:auto;
+    cursor: pointer;
+  }
+  #main-nav-btn:active {
+    background: purple;
+  }
+  #main-nav-container {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    background: lightgray;
+
+    -webkit-transform:translate3d(0, -100%, 0);
+    transform:translate3d(0, -100%, 0);
+
+    -webkit-transition: transform 200ms;
+    transition: transform 200ms;
+
+    -webkit-transition-delay:1000ms;
+    transition-delay:1000ms;
+  }
+
+  #main-nav-container.open {
+   -webkit-transform:translate3d(0, 0%, 0);
+    transform:translate3d(0, 0%, 0); 
+
+    -webkit-transition: transform 200ms;
+    transition: transform 200ms;
+  }
+
+  #main-nav-container.closed.from-btn {
+    -webkit-transition-delay:0ms;
+    transition-delay:0ms;
+  }
 }
 
 /* MAIN NAV -------- */
@@ -165,42 +198,21 @@ header {
   background: #3b80d1;
 }
 
-/* COURSE NAV -------- */
 
-.course-nav li {
-  display: inline-block;
+/* IMAGES -------- */
+.course-img {
+  width: 70px;
 }
-.course-nav li + li {
-  margin-left: .6em;
+.project-img {
+  width: 100%;
 }
-.course-nav a {
-  font-size: .85em;
-  color: #7d7d7d;
-  padding: .2em .8em;
-  border-radius: .25em;
-  background: #eaebeb;
-  transition: .2s;
-}
-.course-nav a:hover,
-.course-nav a.active {
-  color: #fff;
-  background: #39add1;
+.not-found {
+  text-align: center;
 }
 
 .single-project img {
   width: 100%;
 }
-
-
-.container > div {
-  position: relative;
-  width: 100%;
-}
-.container > div > div {
-  position: absolute;
-  width: 100%;
-}
-
 
 /* ABOUT PAGE */
 .c-davis-bg {
@@ -208,11 +220,13 @@ header {
   background-position: 50% 100%;
   background-size: auto 100vh;
   min-height: 100vh;
+  height: 100%;
+  width: 100vw;
   position: absolute;
-  top:0; bottom:0;
+  bottom:0;
+  top: -75px;
   z-index: -1;
 }
-
 
 /* SVG ANIMATION */
 svg {
@@ -232,7 +246,6 @@ svg path.path01 {
 svg path.path02 {
   fill: #abb;
 }
-
 
 
 /* CSS ANIMATION */
@@ -317,11 +330,11 @@ svg path.path02 {
   transition:all 5000ms;
 }
 
+/* PROJECTS PAGE */
 ul.group li:hover .bg-img {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
-
 
 ul.group li,
 ul.group li a {
@@ -374,7 +387,6 @@ ul.group li a h3 {
 
 @media(min-width: 1200px) {
   ul.group li a h3 {
-/*    font-size: 5.4vw;*/
     font-size: 2.7vw;
   }
 }
@@ -431,8 +443,7 @@ ul.group li {
 }
 
 .marquee {
-  /*padding-bottom:59.25%;*/
-  padding-bottom:39.25%;
+  padding-bottom:59.25%;
   width:100%;
   position: relative;
   background-size: cover;
@@ -476,9 +487,15 @@ ul.group li {
   font-size: 9vw; 
 }
 
+@media(min-width: 800px) {
+  .marquee {
+    padding-bottom:39.25%;
+  }
+}
+
 @media(min-width:1264px) {
   .marquee {
-    padding-bottom: 768px;
+    padding-bottom: 508px;
   }
   .marquee h1 {
     font-size: 110px;
@@ -488,7 +505,8 @@ ul.group li {
 .next,
 .previous {
     position: absolute;
-    z-index: 5;
+    /*z-index: 5;*/
+    z-index: 2;
     color: white;
     display: block;
     top: 1rem;

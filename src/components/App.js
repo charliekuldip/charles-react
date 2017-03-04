@@ -5,11 +5,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import ReactTransitionGroup from 'react-addons-transition-group'
 import SvgAnimation from './SvgAnimation';
 import ProjectList from '../data/projects';
+import MainNav from './MainNav';
 
-
-
-const url = 'https://jsonplaceholder.typicode.com/posts';
-const projects = [];
 
 const toggleOutlines = ()=> {
   let body = document.getElementsByTagName('body')[0];
@@ -68,7 +65,6 @@ class App extends Component {
   }
   
   render() {
-    // SET PROJECTS ON PROJECTS PAGE
     const renderChildren = (props) => {
       return React.Children.map(props.children, child => {
         if (child.type.name === "Projects")
@@ -83,18 +79,12 @@ class App extends Component {
       })
     }
 
-    // <img src="/src/img/Blurry.jpg" />
     return (
       <div className="container clearfix">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
-        <header>
-          <ul className="main-nav clearfix">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/projects">Projects</NavLink></li>
-            <li><NavLink to="/courses">Courses</NavLink></li>
-          </ul>       
-        </header>
+        
+        <MainNav />       
+        
         <ReactCSSTransitionGroup
           component="div"
           transitionName="example"

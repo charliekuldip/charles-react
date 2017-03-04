@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
-import ProjectItem from '../components/ProjectItem';
 
 // this page now relies on color thief
 
