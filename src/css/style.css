@@ -578,3 +578,13 @@ ul.tags li {
   background: rgba(0,0,0, 1);
   color:white;
 }
+
+
+.image { 
+  opacity: 0; 
+  -webkit-transition: opacity 0.3s; 
+  transition: opacity 0.3s;
+}
+.image.image-loaded { 
+  opacity: 1; 
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavLink from './../NavLink';
 import ProjectList from '../../data/projects';
 import DeviceContainer from './../devices/DeviceContainer';
+import ImageLoader from './../parts/ImageLoader';
 
 
 class Project extends Component {
@@ -25,9 +26,9 @@ class Project extends Component {
   	return (
       <div className="main-content single-project">
         <div className="clearfix marquee-nav">
-          <div className="clearfix block-container marquee" style={marqStyle}>
+          <ImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} >
             <h1>{ this.props.currentProject.name }</h1>
-          </div>
+          </ImageLoader>
         </div>
 
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />
