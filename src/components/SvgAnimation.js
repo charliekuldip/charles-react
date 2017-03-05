@@ -150,7 +150,7 @@ class SvgAnimation extends Component {
 
   render() {
     return (
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg id="page-animation" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
           <path className="path01" id="path01" d="" ref="path1"></path>
             <path className="path02" id="path02" d="" ref="path2"></path>
       </svg>

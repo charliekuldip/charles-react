@@ -27,6 +27,16 @@ body {
   font-weight: 400;
 }
 
+html {
+  font-size: 115.5%;
+}
+
+@media(min-width: 600px) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
 .previous, .next,
 .main-nav a,
 ul.tags li,
@@ -60,7 +70,7 @@ a {
 }
 
 p {
-  margin-top:1em;
+  margin-top:0.75em;
 }
 
 .clearfix:after {
@@ -254,7 +264,7 @@ p {
 }
 
 /* SVG ANIMATION */
-svg {
+svg#page-animation {
   position: fixed;
   top: 0;
   right: 0;
@@ -659,4 +669,9 @@ ul.tags li {
   font-weight: 800;
   text-transform: uppercase;
   margin:0 auto;
+}
+
+.roles li {
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
 }

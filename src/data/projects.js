@@ -5,10 +5,10 @@ const ProjectList = [
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/iris_warriors_header.jpg",
     id: "iriswarriors",
     images:[
+      'The Story - Iris Warriors.png',
       'Gallery - Iris Warriors.png',
       'The Dancers - Iris Warriors.png',
       'The Making Of - Iris Warriors.png',
-      'The Story - Iris Warriors.png',
     ],
     tags:[
       'Canvas',
