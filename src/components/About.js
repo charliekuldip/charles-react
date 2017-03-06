@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const cStyle = {
-	backgroundImage:'url("/src/img/charles/cdavis-for-web-2.png")'
+	backgroundImage:'url("/src/img/charles/cdavis-for-web-2-c.png")'
 }
 
 class About extends Component {
