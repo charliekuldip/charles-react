@@ -40,13 +40,14 @@ html {
 .previous, .next,
 .main-nav a,
 ul.tags li,
-h1, h2, h3, h4, h5, h6 {
+h1, h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.015em;
   line-height: 1.4em;
+  margin-bottom: 1em;
 }
 
 h1,
@@ -121,7 +122,8 @@ p {
 }
 
 .block-container {
-  padding:0 1em;
+  padding:1em 1em;
+  background-color:white;
 }
 
 
@@ -129,7 +131,8 @@ p {
   MENU & HEADER STYLES
 ==================================== */
 
-@media(min-width:600px) {
+/*@media(min-width:600px) {*/
+@media(min-width:400px) {
   header {
     z-index: 5;
     position: absolute;
@@ -146,7 +149,7 @@ p {
   display:none;
   position: static;
 }
-@media(max-width:599px) {
+@media(max-width:399px) {
   #main-nav-btn {
     background: transparent;
     /*z-index: 4;*/
@@ -208,7 +211,8 @@ p {
 }
 
 /* MAIN NAV -------- */
-@media(min-width: 600px) {
+/*@media(min-width: 600px) {*/
+  @media(min-width: 400px) {
   .main-nav {
     float: right;
   }
@@ -251,13 +255,14 @@ p {
 /* ABOUT PAGE */
 .c-davis-bg {
   background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');
-  background-position: 50% 100%;
-  /*background-size: auto 100vh;*/
-  background-size: cover;
+  background-position: 50% 0%;
+  background-size: auto 100vh;
+  /*background-size: cover;*/
+  background-repeat:repeat-x;
   min-height: 100vh;
   height: 100%;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   bottom:0;
   top:0;
   z-index: -1;
@@ -275,10 +280,10 @@ svg#page-animation {
   transform:translateZ(100);
   pointer-events:none;
 }
-svg path.path01 {
+svg#page-animation path.path01 {
   fill: #cdd;
 }
-svg path.path02 {
+svg#page-animation path.path02 {
   fill: #abb;
 }
 
@@ -393,10 +398,6 @@ ul.group li a {
 
 ul.group li a h3 {
   color:white;
-  text-align: center;
-  font-size: 2.1em;
-  line-height: 1.15em;
-
   position: absolute;
   top:50%; left:50%;
   width: 95%;
@@ -409,21 +410,40 @@ ul.group li a h3 {
 
   -webkit-transition:all 200ms;
   transition:all 200ms;
+}
 
-
+/*.about-marquee h1*/
+.about-marquee,
+ul.group li a h3 {
+  text-align: center;
+  line-height: 1.15em;
+  font-size: 2.1em;
   font-size: 10.8vw;
 }
 
 @media(min-width: 600px) {
+  .about-marquee h1,
   ul.group li a h3 {
     font-size: 5.4vw;
   }
 }
 
 @media(min-width: 1200px) {
+  .about-marquee h1,
   ul.group li a h3 {
     font-size: 2.7vw;
   }
+}
+
+.about-marquee h1 {
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
+.about-marquee h2 {
+  font-size: 0.4em;
+  line-height: 1.1em;
+  margin-bottom: 0.1em;
+  margin-top:0.1em;
 }
 
 ul.group li a:hover h3 {
@@ -478,13 +498,16 @@ ul.group li {
 }
 
 .marquee {
-  padding-bottom:59.25%;
+  /*padding-bottom:59.25%;*/
   width:100%;
   position: relative;
   background-size: cover;
   background-position:50% 50%;
   background-repeat:no-repeat;
+
+  padding-bottom: 88.5%;
 }
+
 
 .marquee:before {
   content: "";
@@ -535,7 +558,8 @@ ul.group li {
     letter-spacing: 0.025em;
 
 
-    padding-bottom: 59.25%;
+    /*padding-bottom: 59.25%;*/
+    padding-bottom: 88.5%;
     top: 0;
     height: 0;
     /*width: 10%;*/
@@ -581,13 +605,13 @@ ul.group li {
   content: '>';
 }
 
-/*@media(min-width: 800px) {
+@media(min-width: 600px) {
   .next,
   .previous,
   .marquee {
-    padding-bottom:39.25%;
+    padding-bottom:59.25%;
   }
-}*/
+}
 
 @media(min-width:1264px) {
   .next,
@@ -609,7 +633,7 @@ ul.group li {
 .tri-device-container {
   position: relative;
   max-width: 1300px;
-  margin: 0 auto 1em;
+  margin: 0 auto 2em;
 }
 
 .tri-device-container .ipad,
@@ -627,6 +651,12 @@ ul.group li {
     width: 30%;
     bottom: -11%;
     right: 5%;
+}
+
+.macbookcontainer {
+    width:100%;
+    max-width:1300px;
+    margin:7% auto 15%;
 }
 
 .screen {
@@ -668,10 +698,50 @@ ul.tags li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  margin:0 auto;
+  margin:1em auto 0;
 }
 
 .roles li {
   line-height: 1.2em;
   margin-bottom: 0.3em;
+}
+
+
+/* ABOUT PAGE UPDATES */
+.table-full {
+  display: table;
+}
+
+.table-full > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+  
+.about-marquee {
+  color:white;
+  height: 100vh;
+  width: 100%;
+  background-color:rgba(0,0,0,0.25);
+}
+
+.about-marquee h1,
+.about-marquee h2 {
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.about-marquee h2 {
+  max-width: 19em;
+}
+
+#dogs-logo {
+  width: 50%;
+  max-width: 500px;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+}
+#dogs-logo path {
+  fill:#ffffff;
 }
