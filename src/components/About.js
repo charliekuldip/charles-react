@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+const cStyle = {
+	backgroundImage:'url("/src/img/charles/cdavis-for-web-2.png")'
+}
+
 class About extends Component {
   render() {
     return (
     	<div className="clearfix">
-		    <div className="c-davis-bg"></div>
+		    <div className="c-davis-bg" style={cStyle}></div>
 		    <div className="main-content">
 
 		    	<div className="clearfix about-marquee table-full">

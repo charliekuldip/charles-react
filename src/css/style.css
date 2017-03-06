@@ -254,11 +254,10 @@ p {
 
 /* ABOUT PAGE */
 .c-davis-bg {
-  background-image:url('http://chowarddavis.staging.click3x.com/wp-content/uploads/2014/12/CharlesDavis-Highest-Res-1600x1139.jpg');
+  background-color:#958e7e;
   background-position: 50% 0%;
   background-size: auto 100vh;
-  /*background-size: cover;*/
-  background-repeat:repeat-x;
+  background-repeat:no-repeat;
   min-height: 100vh;
   height: 100%;
   width: 100vw;
@@ -716,7 +715,7 @@ ul.tags li {
   display: table-cell;
   vertical-align: middle;
 }
-  
+
 .about-marquee {
   color:white;
   height: 100vh;
