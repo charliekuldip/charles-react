@@ -23,13 +23,21 @@ class App extends Component {
     super(props);
     this.state = {
       projects:ProjectList,
-      activePage:'home',
+      activePage:'about',
       topLevelPage:true,
       animating:false
     };
   }
 
   componentDidMount() {
+    const loadingContainer = document.getElementById('loading-container');
+    loadingContainer.setAttribute('class', 'hide');
+    setTimeout(()=>{
+      loadingContainer.parentNode.removeChild(loadingContainer);
+      document.body.removeAttribute('class', 'unloaded');
+      // debugger();
+      console.log('Just removed the Container!');
+    }, 1000);
   }
 
   componentWillReceiveProps(nextProps) {
