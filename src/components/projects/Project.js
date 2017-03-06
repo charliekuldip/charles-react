@@ -15,7 +15,6 @@ class Project extends Component {
   render() {
 
     const marqStyle = {
-      // backgroundImage:'url("'+this.props.currentProject.img_src+'")',
       backgroundColor:this.props.currentProject.bg_colors[0]
     }
 
@@ -25,7 +24,7 @@ class Project extends Component {
 
 
   	return (
-      <div className="main-content single-project">
+      <div className="clearfix inner">
         <div className="clearfix marquee-nav" style={marqStyle}>
           <BgImageLoader className="clearfix block-container marquee" src={this.props.currentProject.img_src} />
           <h1>{ this.props.currentProject.name }</h1>
