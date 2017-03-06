@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BgImageLoader from './parts/BgImageLoader';
 
 const cStyle = {
 	backgroundImage:'url("/src/img/charles/cdavis-for-web-2-c.png")'
@@ -8,7 +9,7 @@ class About extends Component {
   render() {
     return (
     	<div className="clearfix">
-		    <div className="c-davis-bg" style={cStyle}></div>
+		    <BgImageLoader className="c-davis-bg" src="/src/img/charles/cdavis-for-web-2-c.png" />
 		    <div className="main-content">
 
 		    	<div className="clearfix about-marquee table-full">

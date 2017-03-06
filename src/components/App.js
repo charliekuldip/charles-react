@@ -39,8 +39,9 @@ class App extends Component {
     let locArray = nextProps.location.pathname.split('/');
     let activePage = locArray[1];
 
-    if(activePage == "") {activePage = "home";}
+    if(activePage == "") {activePage = "about";}
     this.state.activePage = activePage;
+    
   }
 
   componentDidUpdate(prevProps, prevState) {
