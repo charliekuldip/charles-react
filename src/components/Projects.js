@@ -29,8 +29,13 @@ class Projects extends Component {
   }
 
   render() {
+    // if(!document.body.classList.contains('ready')) {
+    //   document.body.className = 'ready';
+    // }
+    
     return (
       <div className="main-content">
+        <h1>Projects</h1>
         <ul className="group">
           {projects}    
         </ul>

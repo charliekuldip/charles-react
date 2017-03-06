@@ -62,8 +62,11 @@ class App extends Component {
       })
     }
 
+    const classN = "container clearfix " + this.state.activePage;
+
     return (
-      <div className="container clearfix">
+
+      <div className={classN} ref="app-container">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         
         <MainNav />       

@@ -223,17 +223,24 @@ p {
 
 .main-nav a {
   font-size: .95em;
-  color: white;
+  color: #000;
   text-align: center;
   text-transform: uppercase;
   display: block;
   padding: 1em;
+  margin-bottom: 0;
+  -webkit-transition: .2s;
   transition: .2s;
 }
 .main-nav a:hover,
 .main-nav .active {
-  color: #fff;
-  background: #3b80d1;
+  color: red;
+  /*background: #3b80d1;*/
+}
+
+.home .main-nav a,
+.about .main-nav a {
+  color: white;  
 }
 
 
@@ -370,7 +377,7 @@ svg#page-animation path.path02 {
 }
 
 /* PROJECTS PAGE */
-ul.group li:hover .bg-img {
+.ready ul.group li:hover .bg-img {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
@@ -743,4 +750,12 @@ ul.tags li {
 }
 #dogs-logo path {
   fill:#ffffff;
+}
+
+
+/* ART */
+ul.arts-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }

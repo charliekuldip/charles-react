@@ -39,9 +39,9 @@ class MainNav extends Component {
 	    		</button>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
-					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)}>Home</NavLink></li>
-					    <li><NavLink to="/about" onClick={this.setMenuClass.bind(this)}>About</NavLink></li>
+					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)}>About</NavLink></li>
 					    <li><NavLink to="/projects" onClick={this.setMenuClass.bind(this)}>Projects</NavLink></li>
+					    <li><NavLink to="/art" onClick={this.setMenuClass.bind(this)}>Art</NavLink></li>
 					</ul>
 				</div>
 			</header>

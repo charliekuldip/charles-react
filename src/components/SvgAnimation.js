@@ -92,7 +92,7 @@ const GooeyOverlay = function () {
       if (!this.direction) {
         console.log('We are done with anination!');
         document.body.removeEventListener('touch', this.myHandler);
-        document.body.className = '';
+        document.body.className = 'ready';
 
       } else {
         this.open();
@@ -113,7 +113,7 @@ const GooeyOverlay = function () {
 class SvgAnimation extends Component {
   constructor(props) {
     super(props);
-    } 
+  } 
 
   componentDidMount() {
     // console.log('THis is path1: ', this.refs.path1);
@@ -152,7 +152,7 @@ class SvgAnimation extends Component {
     return (
       <svg id="page-animation" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
           <path className="path01" id="path01" d="" ref="path1"></path>
-            <path className="path02" id="path02" d="" ref="path2"></path>
+          <path className="path02" id="path02" d="" ref="path2"></path>
       </svg>
     );
     }
