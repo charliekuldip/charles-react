@@ -102,12 +102,21 @@ p {
 .container > div > div {
   position: absolute;
   width: 100%;
-
   padding-top: 59.094px;
 }
 @media(min-width: 600px) {
 .container > div > div {
   padding-top: 70.781px;
+  }
+}
+
+.container > div > div.single-project {
+  padding-top: 0;
+}
+
+@media(min-width: 600px) {
+  .container > div > div.single-project {
+    padding-top: 0;
   }
 }
 
@@ -639,6 +648,7 @@ ul.arts-list li img {
   max-width: 100%;
 }
 
+.single-art,
 .single-project .inner {
   position: absolute;
   width: 100%;
@@ -678,4 +688,18 @@ ul.arts-list li img {
     background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
     background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
     background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);
+}
+
+
+.art-img {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  margin:0 auto;
+  background-position: 50% 50%;
+}
+
+.art-project .previous,
+.art-project .next {
+  padding-bottom: 100%;
 }

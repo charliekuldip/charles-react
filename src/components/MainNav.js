@@ -34,7 +34,7 @@ class MainNav extends Component {
 
   	render() {
   		const navStyle={}
-	    if(this.props.activePage == "about") {
+	    if(this.props.activePage == "about" || this.props.topLevelPage == false) {
 	    	navStyle.color = '#ffffff';
 	    }
 

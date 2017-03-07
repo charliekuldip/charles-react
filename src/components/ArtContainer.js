@@ -4,6 +4,12 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import ArtList from '../data/art';
 import Art from './projects/Art';
 
+
+
+const artStyle = {
+  paddingTop:0
+}
+
 class ArtContainer extends Component {
 
   constructor(props) {
@@ -38,7 +44,7 @@ class ArtContainer extends Component {
   	}
 
   	return (
-      <div className="main-content single-project">
+      <div className="main-content single-project art-project" style={artStyle}>
         <div className={currentProject.id}>
         
           <NavLink to={"/art/"+ previousLink.id} className="previous previous-project"></NavLink>
@@ -47,7 +53,7 @@ class ArtContainer extends Component {
           <div className="clearfix">
             <ReactCSSTransitionGroup
               component="div"
-              transitionName="single"
+              transitionName="example"
               transitionEnterTimeout={1000}
               transitionLeaveTimeout={1000}
             >

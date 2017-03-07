@@ -24,11 +24,15 @@ class App extends Component {
 
     let locArray = props.location.pathname.split('/');
     let activePage = locArray[1];
+    let topLevel = true;
+    if(locArray.length > 2) {
+      topLevel = false;
+    }
 
     this.state = {
       projects:ProjectList,
       activePage:activePage,
-      topLevelPage:true,
+      topLevelPage:topLevel,
       animating:false
     };
   }
@@ -50,9 +54,16 @@ class App extends Component {
   componentWillUpdate(nextProps, nextState) {
     let locArray = nextProps.location.pathname.split('/');
     let activePage = locArray[1];
+    console.log('This is locArray.length: ', locArray.length);
 
     if(activePage == "") {activePage = "about";}
     this.state.activePage = activePage;
+
+    if(locArray.length > 2) {
+      this.state.topLevelPage = false;
+    } else {
+      this.state.topLevelPage = true;
+    }
     
   }
 
@@ -80,7 +91,7 @@ class App extends Component {
       <div className="container clearfix" ref="app-container">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         
-        <MainNav activePage={this.state.activePage} />       
+        <MainNav activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} />       
         
         <ReactCSSTransitionGroup
           component="div"

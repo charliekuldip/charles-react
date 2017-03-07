@@ -1,9 +1,6 @@
-// import React from 'react';
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
-
-// this page now relies on color thief
 
 let projects = ProjectList.map((project) => {
 

@@ -1,8 +1,6 @@
-// import React from 'react';
 import React, { Component } from 'react'; 
+import NavLink from './NavLink';
 import ArtList from '../data/art';
-
-// this page now relies on color thief
 
 let arts = ArtList.map((art) => {
 
@@ -16,6 +14,9 @@ let arts = ArtList.map((art) => {
   return (
     <li className="art" key={art.id} >
       <div className="project-img bg-img art-img" style={artStyle} />
+      <NavLink to={"/art/"+ art.id}>        
+        <h3>{art.name}</h3>
+      </NavLink>
     </li>
   );
 }); 
