@@ -25,18 +25,17 @@ let projects = ProjectList.map((project) => {
 
 class Projects extends Component {
   componentDidMount() {
-
+    window.setTimeout(()=>{
+      window.scrollTo(0, 0);
+    }, 1000);
   }
 
   render() {
-    // if(!document.body.classList.contains('ready')) {
-    //   document.body.className = 'ready';
-    // }
     
     return (
       <div className="main-content">
         <h1>Projects</h1>
-        <ul className="group">
+        <ul className="clearfix group projects-list">
           {projects}    
         </ul>
       </div>

@@ -29,9 +29,16 @@ class MainNav extends Component {
     	}
     }
 
+    
+
   	render() {
+  		const navStyle={}
+	    if(this.props.activePage == "about") {
+	    	navStyle.color = '#ffffff';
+	    }
+
 	    return (
-	    	<header>
+	    	<header className="clearfix">
 	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)}>
 	    			<span className="bar"></span>
 	    			<span className="bar"></span>
@@ -39,9 +46,9 @@ class MainNav extends Component {
 	    		</button>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
-					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)}>About</NavLink></li>
-					    <li><NavLink to="/projects" onClick={this.setMenuClass.bind(this)}>Projects</NavLink></li>
-					    <li><NavLink to="/art" onClick={this.setMenuClass.bind(this)}>Art</NavLink></li>
+					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)} style={navStyle}>About</NavLink></li>
+					    <li><NavLink to="/projects" onClick={this.setMenuClass.bind(this)} style={navStyle}>Projects</NavLink></li>
+					    <li><NavLink to="/art" onClick={this.setMenuClass.bind(this)} style={navStyle}>Art</NavLink></li>
 					</ul>
 				</div>
 			</header>

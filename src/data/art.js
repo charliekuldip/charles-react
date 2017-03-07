@@ -5,7 +5,7 @@ const ArtList = [
     src:'3-dogs.jpg',
     media:'acrylic',
     dimensions:'12" x 12"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#5f8d82']
   },
   {
     id:'all-dogs-go-to-heaven-1',
@@ -13,7 +13,7 @@ const ArtList = [
     src:'all-dogs-go-to-heaven-1.jpg',
     media:'oil',
     dimensions:'40" x 60"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#0a1237']
   },
   {
     id:'all-dogs-set',
@@ -21,7 +21,7 @@ const ArtList = [
     src:'all-dogs-set.jpg',
     media:'oil',
     dimensions:'40" x 60"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#79687b']
   },
   {
     id:'bosco-pastel',
@@ -29,7 +29,7 @@ const ArtList = [
     src:'bosco-pastel.jpg',
     media:'pastel',
     dimensions:'24" x 36"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#f7d08d']
   },
   {
     id:'charlie-red-dog',
@@ -37,7 +37,7 @@ const ArtList = [
     src:'Charlie-red-dog.jpg',
     media:'oil',
     dimensions:'18" x 18"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#922812']
   },
   {
     id:'jerry',
@@ -45,7 +45,7 @@ const ArtList = [
     src:'jerry.jpg',
     media:'acrylic',
     dimensions:'12" x 12"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#982826']
   },
   {
     id:'puals-dog-in-works',
@@ -53,7 +53,7 @@ const ArtList = [
     src:'puals-dog-in-works.jpg',
     media:'oil',
     dimensions:'30" x 40"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#547071']
   },
   {
     id:'recent-future',
@@ -61,7 +61,7 @@ const ArtList = [
     src:'recent-future.jpg',
     media:'mixed-media',
     dimensions:'30" x 30"',
-    bg_colors:['#ff00aa']
+    bg_colors:['#d7c5b9']
   }
 ];
 

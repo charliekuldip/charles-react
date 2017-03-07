@@ -22,14 +22,16 @@ let arts = ArtList.map((art) => {
 
 class Arts extends Component {
   componentDidMount() {
-
+    window.setTimeout(()=>{
+      window.scrollTo(0, 0);
+    }, 1000);
   }
 
   render() {
     return (
       <div className="main-content">
         <h1>Art</h1>
-        <ul className="group arts-list">
+        <ul className="clearfix group arts-list">
           {arts}    
         </ul>
       </div>

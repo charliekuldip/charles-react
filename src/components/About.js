@@ -5,10 +5,14 @@ const cStyle = {
 	backgroundImage:'url("/src/img/charles/cdavis-for-web-2-c.png")'
 }
 
+const aboutStyle = {
+	paddingTop:0
+}
+
 class About extends Component {
   render() {
     return (
-    	<div className="clearfix">
+    	<div className="clearfix" style={aboutStyle}>
 		    <BgImageLoader className="c-davis-bg" src="/src/img/charles/cdavis-for-web-2-c.png" />
 		    <div className="main-content">
 

@@ -73,15 +73,8 @@ p {
  height: 0;
 }
 .clearfix { display: inline-block; }
-/* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .hide-overflow {
   overflow: hidden;
@@ -109,6 +102,13 @@ p {
 .container > div > div {
   position: absolute;
   width: 100%;
+
+  padding-top: 59.094px;
+}
+@media(min-width: 600px) {
+.container > div > div {
+  padding-top: 70.781px;
+  }
 }
 
 .block-container {
@@ -124,27 +124,9 @@ p {
   MENU & HEADER STYLES
 ==================================== */
 header {
-  position: absolute;
-  width: 100%;
+  float: right;
   z-index: 10;
-}
-
-header+div {
-  padding-top:59px;
-}
-
-.about-marquee {
-  margin-top:-59px;
-}
-
-@media(min-width: 600px) {
-  header+div {
-    padding-top:70.781px;
-  }
-
-  .about-marquee {
-    margin-top:-70.781px;
-  }  
+  position: relative;
 }
 
 #main-nav-btn {
@@ -231,66 +213,29 @@ svg#page-animation path.path02 {
 
 /* CSS ANIMATION */
 .example-enter {
-  opacity: 0.01;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
+  opacity: 0;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
+  -webkit-transition: opacity 1s step-end;
+  -moz-transition: opacity 1s step-end;
+  -o-transition: opacity 1s step-end;
+  transition: opacity 1s step-end;
 }
 
 .example-leave {
   opacity: 1;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
 }
 
 .example-leave.example-leave-active {
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
+  -webkit-transition: opacity 1s step-end;
+  -moz-transition: opacity 1s step-end;
+  -o-transition: opacity 1s step-end;
+  transition: opacity 1s step-end;
 }
 
-
-
-.single-enter {
-  opacity: 0.01;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
-}
-
-.single-enter.single-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-  -webkit-transition-delay:1s;
-  transition-delay:1s;
-}
-
-.single-leave {
-  opacity: 1;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-}
-
-.single-leave.single-leave-active {
-  opacity: 0.01;
-  -webkit-transition: opacity 1s ease-in;
-  transition: opacity 1s ease-in;
-}
 
 /* PROJECT LIST */
 .bg-img {

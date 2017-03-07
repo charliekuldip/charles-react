@@ -71,14 +71,12 @@ class App extends Component {
       })
     }
 
-    const classN = "container clearfix " + this.state.activePage;
-
     return (
 
-      <div className={classN} ref="app-container">
+      <div className="container clearfix" ref="app-container">
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
         
-        <MainNav />       
+        <MainNav activePage={this.state.activePage} />       
         
         <ReactCSSTransitionGroup
           component="div"

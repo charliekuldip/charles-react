@@ -47,7 +47,7 @@ class ProjectContainer extends Component {
           <div className="clearfix">
             <ReactCSSTransitionGroup
               component="div"
-              transitionName="single"
+              transitionName="example"
               transitionEnterTimeout={1000}
               transitionLeaveTimeout={1000}
             >

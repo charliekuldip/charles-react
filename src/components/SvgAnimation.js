@@ -23,9 +23,8 @@ const GooeyOverlay = function () {
   function GooeyOverlay(path1, path2) {
     this.path1 = path1;
     this.path2 = path2;
-    // this.duration = window.innerWidth * 1.5;
     this.duration = 750;
-    this.delay = 250;
+    this.delay =250;
     this.timeStart = Date.now();
     this.direction = true;
   }
