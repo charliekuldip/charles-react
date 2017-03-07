@@ -7,7 +7,8 @@ class MainNav extends Component {
 	    this.state = {
 	    	menuClass:'closed',
 	      	animating:false,
-	      	active: false
+	      	active: false,
+	      	activePage:props.activePage
 	    };
 	}
 

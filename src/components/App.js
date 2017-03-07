@@ -21,23 +21,27 @@ class App extends Component {
   // lets us use keyword this inside app class
   constructor(props) {
     super(props);
+
+    let locArray = props.location.pathname.split('/');
+    let activePage = locArray[1];
+
     this.state = {
       projects:ProjectList,
-      activePage:'about',
+      activePage:activePage,
       topLevelPage:true,
       animating:false
     };
   }
 
   componentDidMount() {
-    const loadingContainer = document.getElementById('loading-container');
-    loadingContainer.setAttribute('class', 'hide');
-    setTimeout(()=>{
-      loadingContainer.parentNode.removeChild(loadingContainer);
-      document.body.removeAttribute('class', 'unloaded');
-      // debugger();
-      console.log('Just removed the Container!');
-    }, 1000);
+    // const loadingContainer = document.getElementById('loading-container');
+    // loadingContainer.setAttribute('class', 'hide');
+    // setTimeout(()=>{
+    //   loadingContainer.parentNode.removeChild(loadingContainer);
+    //   document.body.removeAttribute('class', 'unloaded');
+    //   // debugger();
+    //   console.log('Just removed the Container!');
+    // }, 1000);
   }
 
   componentWillReceiveProps(nextProps) {
