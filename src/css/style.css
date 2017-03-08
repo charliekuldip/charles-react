@@ -163,14 +163,17 @@ header {
   -webkit-transition:all .2s;
   transition:all .2s;
 }
-.main-nav a:hover,
-.main-nav .active {
-  color: red;
-}
 
 .home .main-nav a,
 .about .main-nav a {
   color: white;  
+}
+
+.home .main-nav a:hover,
+.about .main-nav a:hover,
+.main-nav a:hover,
+.main-nav .active {
+  color: red;
 }
 
 

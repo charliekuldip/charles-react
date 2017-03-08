@@ -18,9 +18,31 @@ const ease = {
   }
 };
 
+function hasClass(el, className) {
+  if (el.classList)
+    return el.classList.contains(className)
+  else
+    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+};
+
+function addClass(el, className) {
+  if (el.classList)
+    el.classList.add(className)
+  else if (!hasClass(el, className)) el.className += " " + className
+};
+
+function removeClass(el, className) {
+  if (el.classList)
+    el.classList.remove(className)
+  else if (hasClass(el, className)) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+    el.className=el.className.replace(reg, ' ')
+  }
+};
+
 
 const GooeyOverlay = function () {
-  function GooeyOverlay(path1, path2) {
+  function GooeyOverlay(path1, path2, parent) {
     this.path1 = path1;
     this.path2 = path2;
     this.duration = 750;
@@ -28,6 +50,8 @@ const GooeyOverlay = function () {
     this.timeStart = Date.now();
     this.direction = true;
     this.animating = false;
+    this.parent = parent;
+    this.activePage = this.parent.props.activePage;
   }
 
   GooeyOverlay.prototype.myHandler = function myHandler(e) {
@@ -36,10 +60,6 @@ const GooeyOverlay = function () {
   };
 
   GooeyOverlay.prototype.open = function open() {
-
-    document.body.addEventListener('touch', this.myHandler);
-    document.body.className = 'hide-overflow';
-
     this.direction = false;
     this.timeStart = Date.now();
     this.animating = true;
@@ -47,10 +67,13 @@ const GooeyOverlay = function () {
   };
 
   GooeyOverlay.prototype.close = function close() {
+    document.body.addEventListener('touch', this.myHandler);
+    addClass(document.body, 'hide-overflow');
     // SET COLOR ON BODY AND SVG
     var rando = Math.floor((Math.random() * myColors.length-1) + 1);
     this.path2.setAttribute('style', 'fill:'+myColors[rando]);
 
+    this.animating = true;
     this.direction = true;
     this.timeStart = Date.now();
     this.renderLoop();
@@ -86,9 +109,13 @@ const GooeyOverlay = function () {
       if (!this.direction) {
         console.log('We are done with anination!');
         document.body.removeEventListener('touch', this.myHandler);
-        document.body.className = 'ready';
+        removeClass(document.body, 'hide-overflow');
+        addClass(document.body, 'ready');
         this.animating = false;
       } else {
+        removeClass(document.body, this.activePage);
+        addClass(document.body, this.parent.props.activePage);
+        this.activePage = this.parent.props.activePage;
         this.open();
       }
     } else {
@@ -112,6 +139,7 @@ class SvgAnimation extends Component {
 
   componentDidMount() {
     this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2, this);
+    addClass(document.body, this.props.activePage);
   }
 
   componentWillUnmount() {

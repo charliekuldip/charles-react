@@ -13,11 +13,9 @@ class MainNav extends Component {
 	    };
 	}
 
-
 	componentWillMount() {
-		// React.initializeTouchEvents(true);
-	}
 
+	}
 
     setMenuClass(e) {
     	e.target.className += ' active';
@@ -45,14 +43,8 @@ class MainNav extends Component {
     	}
     }
 
-    
-
   	render() {
   		const navStyle={}
-  		
-	    if(this.props.activePage == "about" || this.props.topLevelPage == false) {
-	    	navStyle.color = '#ffffff';
-	    }
 
 	    return (
 	    	<header className="clearfix">
