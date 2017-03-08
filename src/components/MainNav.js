@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink'
+import Scroll from 'react-scroll';
 
 class MainNav extends Component {
 	constructor(props) {
@@ -12,7 +13,14 @@ class MainNav extends Component {
 	    };
 	}
 
+
+	componentWillMount() {
+		// React.initializeTouchEvents(true);
+	}
+
+
     setMenuClass(e) {
+    	e.target.className += ' active';
     	if(!this.state.active) {
     		this.setState({
     			active: true,
@@ -28,19 +36,27 @@ class MainNav extends Component {
     			menuClass:closeClass
     		});	
     	}
+
+    	if(this.props.activePage == "about" && e.target.text == 'About') {
+    		e.preventDefault();
+    		Scroll.animateScroll.scrollTo(window.innerHeight, {
+    			duration:350
+    		});
+    	}
     }
 
     
 
   	render() {
   		const navStyle={}
+  		
 	    if(this.props.activePage == "about" || this.props.topLevelPage == false) {
 	    	navStyle.color = '#ffffff';
 	    }
 
 	    return (
 	    	<header className="clearfix">
-	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)}>
+	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)} onTouchStart={this.setMenuClass.bind(this)}>
 	    			<span className="bar"></span>
 	    			<span className="bar"></span>
 	    			<span className="bar"></span>

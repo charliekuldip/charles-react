@@ -23,27 +23,29 @@ class ArtContainer extends Component {
   }
 
   
-  render() {
 
-  	let id = this.props.params.id,
-  		currentProject,
-  		index = -1,
-  		nextLink,
-  		previousLink;
+  
+  render() {  
+
+    let id = this.props.params.id,
+      currentProject,
+      index = -1,
+      nextLink,
+      previousLink;
 
 
-  	// NEXT / PREVIOUS LINKS
-  	for(var i = 0, len = ArtList.length; i < len; i++) {
-  	    if (ArtList[i].id === id) {
-  	        index = i;
-  	        currentProject = ArtList[index];
-  	        nextLink = index + 1 < len ? ArtList[index+1] : ArtList[0];
-  	        previousLink = index - 1 >= 0 ? ArtList[index-1] : ArtList[len-1];
-  	        break;
-  	    }
-  	}
+    // NEXT / PREVIOUS LINKS
+    for(var i = 0, len = ArtList.length; i < len; i++) {
+        if (ArtList[i].id === id) {
+            index = i;
+            currentProject = ArtList[index];
+            nextLink = index + 1 < len ? ArtList[index+1] : ArtList[0];
+            previousLink = index - 1 >= 0 ? ArtList[index-1] : ArtList[len-1];
+            break;
+        }
+    }
 
-  	return (
+    return (
       <div className="main-content single-project art-project" style={artStyle}>
         <div className={currentProject.id}>
         

@@ -15,7 +15,7 @@ let arts = ArtList.map((art) => {
     <li className="art" key={art.id} >
       <div className="project-img bg-img art-img" style={artStyle} />
       <NavLink to={"/art/"+ art.id}>        
-        <h3>{art.name}</h3>
+        <h3 className="art-heading">{art.name}</h3>
       </NavLink>
     </li>
   );

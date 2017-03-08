@@ -24,6 +24,8 @@ class App extends Component {
 
     let locArray = props.location.pathname.split('/');
     let activePage = locArray[1];
+    if(activePage == "") {activePage = "about";}
+    
     let topLevel = true;
     if(locArray.length > 2) {
       topLevel = false;
@@ -37,6 +39,13 @@ class App extends Component {
     };
   }
 
+  goToAbout() {
+    setTimeout(()=>{
+      window.scrollTo(0, window.innerHeight);
+    }, 1000);
+  }
+
+
   componentDidMount() {
     // const loadingContainer = document.getElementById('loading-container');
     // loadingContainer.setAttribute('class', 'hide');
@@ -49,26 +58,30 @@ class App extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    this.state.animating = true;
   }
 
   componentWillUpdate(nextProps, nextState) {
     let locArray = nextProps.location.pathname.split('/');
     let activePage = locArray[1];
-    console.log('This is locArray.length: ', locArray.length);
 
     if(activePage == "") {activePage = "about";}
     this.state.activePage = activePage;
+
+    if(activePage == "about") {
+      this.goToAbout();
+    }
 
     if(locArray.length > 2) {
       this.state.topLevelPage = false;
     } else {
       this.state.topLevelPage = true;
-    }
-    
+    }  
   }
 
   componentDidUpdate(prevProps, prevState) {
     console.log('THis is from componentDidUpdate!');
+    
   }
   
   render() {

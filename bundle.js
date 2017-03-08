@@ -21542,7 +21542,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\np {\n  margin-top:0.75em;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\nheader {\n  float: right;\n  z-index: 10;\n  position: relative;\n}\n\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n\n.main-nav li {\n  float: left;\n}  \n\n.main-nav a {\n  font-size: .95em;\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  transition:all .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n.ready ul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n\n\n    /*padding-bottom: 59.25%;*/\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    /*width: 10%;*/\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n}\n\n.previous:after {\n  content: '<';\n}\n\n.next:after {\n  content: '>';\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 2em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n    margin:7% auto 15%;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100%;\n}", ""]);
+	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\np {\n  margin-top:0.75em;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n.about h2 {\n  margin-bottom: 0.6em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\nheader {\n  float: right;\n  z-index: 10;\n  position: relative;\n}\n\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n\n.main-nav li {\n  float: left;\n}  \n\n.main-nav a {\n  font-size: .95em;\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  transition:all .2s;\n}\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  -webkit-transform:translateZ(100);\n  transform:translateZ(100);\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n.ready ul.group li:hover .bg-img {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    /*z-index: 5;*/\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n\n\n    /*padding-bottom: 59.25%;*/\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    /*width: 10%;*/\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n  content: '';\n  width: 0;\n  height: 0;\n  border-style: solid;\n  -webkit-transition:all 180ms;\n  -moz-transition:all 180ms;\n  -o-transition:all 180ms;\n  transition:all 180ms;\n}\n\n.previous:after {\n  border-width: 0.44em 0.68em 0.44em 0;\n  border-color: transparent #ffffff transparent transparent;\n}\n\n.next:after {\n  border-width: 0.44em 0 0.44em 0.68em;\n  border-color: transparent transparent transparent #ffffff;\n}\n\n\n.previous.active:after,\n.previous:active:after,\n.previous:hover:after{\n  border-color:transparent red transparent transparent;\n}\n\n.next.active:after,\n.next:active:after,\n.next:hover:after {\n  border-color:transparent transparent transparent red;\n\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom: 508px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 2em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n    margin:7% auto 15%;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.main-content.about {\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-container h1,\n.about-container .h1 {\n  line-height: 1em;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n}\n\n.about-marquee:first-of-type {\n  margin-bottom: 50vh;\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n.art-project {\n  min-height: 100vh;\n  background-color: #000000;\n}\n\n.single-art {\n  top:50%;\n  -webkit-transform:translateY(-50%);\n  -moz-transform:translateY(-50%);\n  -o-transform:translateY(-50%);\n  transform:translateY(-50%);\n}\n\nul.group li a h3.art-heading {\n  color: transparent;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100vh;\n}", ""]);
 
 	// exports
 
@@ -21877,27 +21877,27 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Arts = __webpack_require__(289);
+	var _Arts = __webpack_require__(301);
 
 	var _Arts2 = _interopRequireDefault(_Arts);
 
-	var _About = __webpack_require__(291);
+	var _About = __webpack_require__(303);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(294);
+	var _Projects = __webpack_require__(306);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectContainer = __webpack_require__(295);
+	var _ProjectContainer = __webpack_require__(307);
 
 	var _ProjectContainer2 = _interopRequireDefault(_ProjectContainer);
 
-	var _ArtContainer = __webpack_require__(302);
+	var _ArtContainer = __webpack_require__(314);
 
 	var _ArtContainer2 = _interopRequireDefault(_ArtContainer);
 
-	var _NotFound = __webpack_require__(304);
+	var _NotFound = __webpack_require__(316);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -27649,6 +27649,10 @@
 
 	    var locArray = props.location.pathname.split('/');
 	    var activePage = locArray[1];
+	    if (activePage == "") {
+	      activePage = "about";
+	    }
+
 	    var topLevel = true;
 	    if (locArray.length > 2) {
 	      topLevel = false;
@@ -27664,6 +27668,13 @@
 	  }
 
 	  _createClass(App, [{
+	    key: 'goToAbout',
+	    value: function goToAbout() {
+	      setTimeout(function () {
+	        window.scrollTo(0, window.innerHeight);
+	      }, 1000);
+	    }
+	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      // const loadingContainer = document.getElementById('loading-container');
@@ -27677,18 +27688,23 @@
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {}
+	    value: function componentWillReceiveProps(nextProps) {
+	      this.state.animating = true;
+	    }
 	  }, {
 	    key: 'componentWillUpdate',
 	    value: function componentWillUpdate(nextProps, nextState) {
 	      var locArray = nextProps.location.pathname.split('/');
 	      var activePage = locArray[1];
-	      console.log('This is locArray.length: ', locArray.length);
 
 	      if (activePage == "") {
 	        activePage = "about";
 	      }
 	      this.state.activePage = activePage;
+
+	      if (activePage == "about") {
+	        this.goToAbout();
+	      }
 
 	      if (locArray.length > 2) {
 	        this.state.topLevelPage = false;
@@ -31425,11 +31441,11 @@
 	    this.delay = 250;
 	    this.timeStart = Date.now();
 	    this.direction = true;
+	    this.animating = false;
 	  }
 
 	  GooeyOverlay.prototype.myHandler = function myHandler(e) {
 	    e.preventDefault();
-	    // console.log('This is from myHandler om SVG!!!!!!');
 	    return false;
 	  };
 
@@ -31440,6 +31456,7 @@
 
 	    this.direction = false;
 	    this.timeStart = Date.now();
+	    this.animating = true;
 	    this.renderLoop();
 	  };
 
@@ -31479,17 +31496,12 @@
 	    var _this = this;
 	    this.render();
 
-	    // this.debug = false;
-	    // if((Date.now() - this.timeStart > 350) && (this.debug == false) ) {
-	    //   debugger;
-	    //   this.debug = true;
-	    // }
-
 	    if (Date.now() - this.timeStart >= this.duration + this.delay) {
 	      if (!this.direction) {
 	        console.log('We are done with anination!');
 	        document.body.removeEventListener('touch', this.myHandler);
 	        document.body.className = 'ready';
+	        this.animating = false;
 	      } else {
 	        this.open();
 	      }
@@ -31509,45 +31521,38 @@
 	  function SvgAnimation(props) {
 	    _classCallCheck(this, SvgAnimation);
 
-	    return _possibleConstructorReturn(this, (SvgAnimation.__proto__ || Object.getPrototypeOf(SvgAnimation)).call(this, props));
+	    var _this2 = _possibleConstructorReturn(this, (SvgAnimation.__proto__ || Object.getPrototypeOf(SvgAnimation)).call(this, props));
+
+	    _this2.state = {
+	      animating: false
+	    };
+	    return _this2;
 	  }
 
 	  _createClass(SvgAnimation, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      // console.log('THis is path1: ', this.refs.path1);
-	      // console.log('THis is path2: ', this.refs.path2);
-	      this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2);
-	      // console.log('THis is this.props.svgChange: ', this.props.svgChange);
-	      // this.gooeyOverlay.open();
+	      this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2, this);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {}
-
-	    // componentWillReceiveProps(nextProps) {
-	    //  console.log('THis is this.props.svgChange: ', this.props.svgChange);
-	    //     console.log('FROM SVG This is from ComponentWillReceiveProps! nextProps:', nextProps);
-	    // }
-
 	  }, {
 	    key: 'componentWillUpdate',
 	    value: function componentWillUpdate(nextProps, nextState) {
 	      console.log('FROM SVG THis is componentWillUpdate!');
-	      // console.log('FROM SVG THis is componentWillUpdate! nextProps', nextProps, nextState);
-	      // console.log('nextState: ', nextState);
-	      //  console.log('nextProps: ', nextProps);
-	      this.gooeyOverlay.open();
-
-	      if (this.props.topLevelPage) {
-	        this.gooeyOverlay.open();
-	      }
 	    }
 	  }, {
 	    key: 'componentDidUpdate',
 	    value: function componentDidUpdate(prevProps, prevState) {
 	      console.log('FROM SVG THis is from componentDidUpdate!');
+	    }
+	  }, {
+	    key: 'shouldComponentUpdate',
+	    value: function shouldComponentUpdate(nextProps, nextState) {
 	      this.gooeyOverlay.close();
+	      console.log('FROM SVG THis is from shouldComponentUpdate!');
+	      return false;
 	    }
 	  }, {
 	    key: 'render',
@@ -31708,6 +31713,10 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
+	var _reactScroll = __webpack_require__(289);
+
+	var _reactScroll2 = _interopRequireDefault(_reactScroll);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31734,8 +31743,14 @@
 		}
 
 		_createClass(MainNav, [{
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				// React.initializeTouchEvents(true);
+			}
+		}, {
 			key: 'setMenuClass',
 			value: function setMenuClass(e) {
+				e.target.className += ' active';
 				if (!this.state.active) {
 					this.setState({
 						active: true,
@@ -31751,11 +31766,19 @@
 						menuClass: closeClass
 					});
 				}
+
+				if (this.props.activePage == "about" && e.target.text == 'About') {
+					e.preventDefault();
+					_reactScroll2.default.animateScroll.scrollTo(window.innerHeight, {
+						duration: 350
+					});
+				}
 			}
 		}, {
 			key: 'render',
 			value: function render() {
 				var navStyle = {};
+
 				if (this.props.activePage == "about" || this.props.topLevelPage == false) {
 					navStyle.color = '#ffffff';
 				}
@@ -31765,7 +31788,7 @@
 					{ className: 'clearfix' },
 					_react2.default.createElement(
 						'button',
-						{ id: 'main-nav-btn', className: 'main-nav-btn', onClick: this.setMenuClass.bind(this) },
+						{ id: 'main-nav-btn', className: 'main-nav-btn', onClick: this.setMenuClass.bind(this), onTouchStart: this.setMenuClass.bind(this) },
 						_react2.default.createElement('span', { className: 'bar' }),
 						_react2.default.createElement('span', { className: 'bar' }),
 						_react2.default.createElement('span', { className: 'bar' })
@@ -31820,6 +31843,826 @@
 /* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
+	exports.Link = __webpack_require__(290);
+	exports.Button = __webpack_require__(299);
+	exports.Element = __webpack_require__(300);
+	exports.Helpers = __webpack_require__(291);
+	exports.scroller = __webpack_require__(298);
+	exports.Events = __webpack_require__(296);
+	exports.scrollSpy = __webpack_require__(297);
+	exports.animateScroll = __webpack_require__(292);
+
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var Helpers = __webpack_require__(291);
+
+	var Link = React.createClass({
+	  render: function () {
+	    return React.DOM.a(this.props, this.props.children);
+	  }
+	});
+
+	module.exports = Helpers.Scroll(Link);
+
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(32);
+
+	var animateScroll = __webpack_require__(292);
+	var scrollSpy = __webpack_require__(297);
+	var defaultScroller = __webpack_require__(298);
+	var assign = __webpack_require__(4);
+
+
+	var protoTypes = {
+	  to: React.PropTypes.string.isRequired,
+	  containerId: React.PropTypes.string,
+	  activeClass:React.PropTypes.string,
+	  spy: React.PropTypes.bool,
+	  smooth: React.PropTypes.bool,
+	  offset: React.PropTypes.number,
+	  delay: React.PropTypes.number,
+	  isDynamic: React.PropTypes.bool,
+	  onClick: React.PropTypes.func,
+	  duration: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.func]),
+	  absolute: React.PropTypes.bool,
+	  onSetActive: React.PropTypes.func,
+	  onSetInactive: React.PropTypes.func,
+	  ignoreCancelEvents: React.PropTypes.bool
+	};
+
+	var Helpers = {
+
+	  Scroll: function (Component, customScroller) {
+
+	    var scroller = customScroller || defaultScroller;
+
+	    return React.createClass({
+
+	      propTypes: protoTypes,
+
+	      getDefaultProps: function() {
+	        return {offset: 0};
+	      },
+
+	      scrollTo : function(to, props) {
+	          scroller.scrollTo(to, props);
+	      },
+
+	      handleClick: function(event) {
+
+	        /*
+	         * give the posibility to override onClick
+	         */
+
+	        if(this.props.onClick) {
+	          this.props.onClick(event);
+	        }
+
+	        /*
+	         * dont bubble the navigation
+	         */
+
+	        if (event.stopPropagation) event.stopPropagation();
+	        if (event.preventDefault) event.preventDefault();
+
+	        /*
+	         * do the magic!
+	         */
+	        this.scrollTo(this.props.to, this.props);
+
+	      },
+
+	      spyHandler: function(y) {
+	        var element = scroller.get(this.props.to);
+	        if (!element) return;
+	        var cords = element.getBoundingClientRect();
+	        var topBound = cords.top + y;
+	        var bottomBound = topBound + cords.height;
+	        var offsetY = y - this.props.offset;
+	        var to = this.props.to;
+	        var isInside = (offsetY >= topBound && offsetY <= bottomBound);
+	        var isOutside = (offsetY < topBound || offsetY > bottomBound);
+	        var activeLink = scroller.getActiveLink();
+
+	        if (isOutside && activeLink === to) {
+	          scroller.setActiveLink(void 0);
+	          this.setState({ active : false });
+
+	          if(this.props.onSetInactive) {
+	            this.props.onSetInactive();
+	          }
+
+	        } else if (isInside && activeLink != to) {
+	          scroller.setActiveLink(to);
+	          this.setState({ active : true });
+
+	          if(this.props.onSetActive) {
+	            this.props.onSetActive(to);
+	          }
+
+	          scrollSpy.updateStates();
+	        }
+	      },
+
+	      componentDidMount: function() {
+
+
+
+	        var containerId = this.props.containerId;
+
+	        var scrollSpyContainer = containerId ? document.getElementById(containerId) : document;
+
+	        if(!scrollSpy.isMounted(scrollSpyContainer)) {
+	          scrollSpy.mount(scrollSpyContainer);
+	        }
+
+
+	        if(this.props.spy) {
+	          var to = this.props.to;
+	          var element = null;
+	          var elemTopBound = 0;
+	          var elemBottomBound = 0;
+
+	          this._stateHandler = function() {
+	            if(scroller.getActiveLink() != to) {
+	                if(this.state !== null && this.state.active && this.props.onSetInactive) {
+	                  this.props.onSetInactive();
+	                }
+	                this.setState({ active : false });
+	            }
+	          }.bind(this)
+
+	          scrollSpy.addStateHandler(this._stateHandler);
+
+	          this._spyHandler = function(y) {
+
+	            var containerTop = 0;
+	            if(scrollSpyContainer.getBoundingClientRect) {
+	              var containerCords = scrollSpyContainer.getBoundingClientRect();
+	              containerTop = containerCords.top;
+	            }
+
+	            if(!element || this.props.isDynamic) {
+	                element = scroller.get(to);
+	                if(!element){ return;}
+
+	                var cords = element.getBoundingClientRect();
+	                elemTopBound = (cords.top - containerTop + y);
+	                elemBottomBound = elemTopBound + cords.height;
+	            }
+
+
+
+	            var offsetY = y - this.props.offset;
+	            var isInside = (offsetY >= Math.floor(elemTopBound) && offsetY <= Math.floor(elemBottomBound));
+	            var isOutside = (offsetY < Math.floor(elemTopBound) || offsetY > Math.floor(elemBottomBound));
+	            var activeLink = scroller.getActiveLink();
+
+	            if (isOutside && activeLink === to) {
+	              scroller.setActiveLink(void 0);
+	              this.setState({ active : false });
+
+	              if(this.props.onSetInactive) {
+	                this.props.onSetInactive();
+	              }
+
+	            } else if (isInside && activeLink != to) {
+	              scroller.setActiveLink(to);
+	              this.setState({ active : true });
+
+	              if(this.props.onSetActive) {
+	                this.props.onSetActive(to);
+	              }
+
+	              scrollSpy.updateStates();
+
+	            }
+	          }.bind(this);
+
+	          scrollSpy.addSpyHandler(this._spyHandler, scrollSpyContainer);
+	        }
+	      },
+	      componentWillUnmount: function() {
+	        scrollSpy.unmount(this._stateHandler, this._spyHandler);
+	      },
+	      render: function() {
+
+	        var className = "";
+	        if(this.state && this.state.active) {
+	          className = ((this.props.className || "") + " " + (this.props.activeClass || "active")).trim();
+	        } else {
+	          className = this.props.className;
+	        }
+
+	        var props = assign({}, this.props);
+
+	        for(var prop in protoTypes) {
+	          if(props.hasOwnProperty(prop)) {
+	            delete props[prop];
+	          }
+	        }
+
+	        props.className = className;
+	        props.onClick = this.handleClick;
+
+	        return React.createElement(Component, props);
+	      }
+	    });
+	  },
+
+
+	  Element: function(Component) {
+	    return React.createClass({
+	      propTypes: {
+	        name: React.PropTypes.string,
+	        id:   React.PropTypes.string
+	      },
+	      componentDidMount: function() {
+	        this.registerElems(this.props.name);
+	      },
+	      componentWillReceiveProps: function(nextProps) {
+	        if (this.props.name !== nextProps.name) {
+	          this.registerElems(nextProps.name);
+	        }
+	      },
+	      componentWillUnmount: function() {
+	        defaultScroller.unregister(this.props.name);
+	      },
+	      registerElems: function(name) {
+	        var domNode = ReactDOM.findDOMNode(this);
+	        defaultScroller.register(name, domNode);
+	      },
+	      render: function() {
+	        return React.createElement(Component, this.props);
+	      }
+	    });
+	  }
+	};
+
+	module.exports = Helpers;
+
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var assign = __webpack_require__(4);
+
+	var smooth = __webpack_require__(293);
+
+	var easing = smooth.defaultEasing;
+
+	var cancelEvents = __webpack_require__(294);
+
+	var events = __webpack_require__(296);
+
+	/*
+	 * Function helper
+	 */
+	var functionWrapper = function(value) {
+	  return typeof value === 'function' ? value : function() { return value; };
+	};
+
+	/*
+	 * Wraps window properties to allow server side rendering
+	 */
+	var currentWindowProperties = function() {
+	  if (typeof window !== 'undefined') {
+	    return window.requestAnimationFrame || window.webkitRequestAnimationFrame;
+	  }
+	};
+
+	/*
+	 * Helper function to never extend 60fps on the webpage.
+	 */
+	var requestAnimationFrameHelper = (function () {
+	  return  currentWindowProperties() ||
+	          function (callback, element, delay) {
+	              window.setTimeout(callback, delay || (1000/60), new Date().getTime());
+	          };
+	})();
+
+
+	var __currentPositionY  = 0;
+	var __startPositionY    = 0;
+	var __targetPositionY   = 0;
+	var __progress          = 0;
+	var __duration          = 0;
+	var __cancel            = false;
+
+	var __target;
+	var __containerElement;
+	var __to;
+	var __start;
+	var __deltaTop;
+	var __percent;
+	var __delayTimeout;
+
+
+	var currentPositionY = function() {
+	  if (__containerElement) {
+	        return __containerElement.scrollTop;
+		} else {
+	    var supportPageOffset = window.pageXOffset !== undefined;
+	    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+	    return supportPageOffset ? window.pageYOffset : isCSS1Compat ?
+	           document.documentElement.scrollTop : document.body.scrollTop;
+	   }
+	};
+
+	var scrollContainerHeight = function() {
+	  if(__containerElement) {
+	    return Math.max(
+	      __containerElement.scrollHeight,
+	      __containerElement.offsetHeight,
+	      __containerElement.clientHeight
+	    );
+	  } else {
+	    var body = document.body;
+	    var html = document.documentElement;
+
+	    return Math.max(
+	      body.scrollHeight,
+	      body.offsetHeight,
+	      html.clientHeight,
+	      html.scrollHeight,
+	      html.offsetHeight
+	    );
+	  }
+	};
+
+	var animateTopScroll = function(timestamp) {
+
+	  // Cancel on specific events
+	  if(__cancel) { 
+	    if(events.registered['end']) {
+	      events.registered['end'](__to, __target, __currentPositionY);
+	    }
+	    return 
+	  };
+
+	  __deltaTop = Math.round(__targetPositionY - __startPositionY);
+
+	  if (__start === null) {
+	    __start = timestamp;
+	  }
+
+	  __progress = timestamp - __start;
+
+	  __percent = (__progress >= __duration ? 1 : easing(__progress/__duration));
+
+	  __currentPositionY = __startPositionY + Math.ceil(__deltaTop * __percent);
+
+	  if(__containerElement) {
+	    __containerElement.scrollTop = __currentPositionY;
+	  } else {
+	    window.scrollTo(0, __currentPositionY);
+	  }
+
+	  if(__percent < 1) {
+	    requestAnimationFrameHelper.call(window, animateTopScroll);
+	    return;
+	  }
+
+	  if(events.registered['end']) {
+	    events.registered['end'](__to, __target, __currentPositionY);
+	  }
+
+	};
+
+	var setContainer = function (options) {
+	  if(!options || !options.containerId) {
+	    __containerElement = null;
+	    return;
+	  }
+
+	  __containerElement = document.getElementById(options.containerId);
+	};
+
+	var startAnimateTopScroll = function(y, options, to, target) {
+
+	  window.clearTimeout(__delayTimeout);
+
+
+	  if (!options.ignoreCancelEvents) {
+	    /*
+	     * Sets the cancel trigger
+	     */
+
+	    cancelEvents.register(function() {
+	      __cancel = true;
+	    });
+	  }
+
+	  setContainer(options);
+
+
+	  __start           = null;
+	  __cancel          = false;
+	  __startPositionY  = currentPositionY();
+	  __targetPositionY = options.absolute ? y : y + __startPositionY;
+	  __deltaTop        = Math.round(__targetPositionY - __startPositionY);
+
+	  __duration        = functionWrapper(options.duration)(__deltaTop);
+	  __duration        = isNaN(parseFloat(__duration)) ? 1000 : parseFloat(__duration);
+	  __to              = to;
+	  __target          = target;
+
+	  if(options && options.delay > 0) {
+	    __delayTimeout = window.setTimeout(function animate() {
+	      requestAnimationFrameHelper.call(window, animateTopScroll);
+	    }, options.delay);
+	    return;
+	  }
+
+	  requestAnimationFrameHelper.call(window, animateTopScroll);
+
+	};
+
+	var scrollToTop = function (options) {
+	  startAnimateTopScroll(0, assign(options || {}, { absolute : true }));
+	};
+
+	var scrollTo = function (toY, options) {
+	  startAnimateTopScroll(toY, assign(options || {}, { absolute : true }));
+	};
+
+	var scrollToBottom = function(options) {
+	  setContainer(options);
+	  startAnimateTopScroll(scrollContainerHeight(), assign(options || {}, { absolute : true }));
+	};
+
+	var scrollMore = function(toY, options) {
+	  setContainer(options);
+	  startAnimateTopScroll(currentPositionY() + toY, assign(options || {}, { absolute : true }));
+	};
+
+	module.exports = {
+	  animateTopScroll: startAnimateTopScroll,
+	  scrollToTop: scrollToTop,
+	  scrollToBottom: scrollToBottom,
+	  scrollTo: scrollTo,
+	  scrollMore: scrollMore,
+	};
+
+
+/***/ },
+/* 293 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	 /*
+	  * https://github.com/oblador/angular-scroll (duScrollDefaultEasing)
+	  */
+	  defaultEasing : function (x) {
+	    'use strict';
+
+	    if(x < 0.5) {
+	      return Math.pow(x*2, 2)/2;
+	    }
+	    return 1-Math.pow((1-x)*2, 2)/2;
+	  }
+	}
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var addPassiveEventListener = __webpack_require__(295);
+
+	var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown']
+
+	module.exports = {
+		register : function(cancelEvent) {
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			for(var i = 0; i < events.length; i = i + 1) {
+				addPassiveEventListener(document, events[i], cancelEvent);
+			}
+		}
+	};
+
+
+/***/ },
+/* 295 */
+/***/ function(module, exports) {
+
+	/*
+	 * Tell the browser that the event listener won't prevent a scroll.
+	 * Allowing the browser to continue scrolling without having to
+	 * to wait for the listener to return.
+	 */
+	var addPassiveEventListener = function(target, eventName, listener) {
+	    var supportsPassiveOption = (function(){
+	        var supportsPassiveOption = false;
+	        try {
+	            var opts = Object.defineProperty({}, 'passive', {
+	                get: function() {
+	                    supportsPassiveOption = true;
+	                }
+	            });
+	            window.addEventListener('test', null, opts);
+	        } catch (e) {}
+	        return supportsPassiveOption;
+	    })();
+
+	    target.addEventListener(eventName, listener, supportsPassiveOption ? {passive: true} : false);
+	};
+
+	module.exports = addPassiveEventListener;
+
+
+/***/ },
+/* 296 */
+/***/ function(module, exports) {
+
+	
+	var Events = {
+		registered : {},
+		scrollEvent : {
+			register: function(evtName, callback) {
+				Events.registered[evtName] = callback;
+			},
+			remove: function(evtName) {
+				Events.registered[evtName] = null;
+			}
+		}
+	};
+
+	module.exports = Events;
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var addPassiveEventListener = __webpack_require__(295);
+
+	var eventThrottler = function(eventHandler) {
+	  var eventHandlerTimeout;
+	  return function(event) {
+	    // ignore events as long as an eventHandler execution is in the queue
+	    if ( !eventHandlerTimeout ) {
+	      eventHandlerTimeout = setTimeout(function() {
+	        eventHandlerTimeout = null;
+	        eventHandler(event);
+	        // The eventHandler will execute at a rate of 15fps
+	      }, 66);
+	    }
+	  };
+	};
+
+	var scrollSpy = {
+
+	  spyCallbacks: [],
+	  spySetState: [],
+	  scrollSpyContainers: [],
+
+	  mount: function (scrollSpyContainer) {
+	    var t = this;
+	    if (scrollSpyContainer) {
+	      var eventHandler = eventThrottler(function(event) {
+	        t.scrollHandler(scrollSpyContainer);
+	      });
+	      this.scrollSpyContainers.push(scrollSpyContainer);
+	      addPassiveEventListener(scrollSpyContainer, 'scroll', eventHandler);
+	    }
+	  },
+
+	  isMounted: function (scrollSpyContainer) {
+	    return this.scrollSpyContainers.indexOf(scrollSpyContainer) !== -1;
+	  },
+
+	  currentPositionY: function (scrollSpyContainer) {
+	    if(scrollSpyContainer === document) {
+	      var supportPageOffset = window.pageXOffset !== undefined;
+	      var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+	      return supportPageOffset ? window.pageYOffset : isCSS1Compat ?
+	      document.documentElement.scrollTop : document.body.scrollTop;
+	    } else {
+	      return scrollSpyContainer.scrollTop;
+	    }
+	  },
+
+	  scrollHandler: function (scrollSpyContainer) {
+	    var callbacks = this.scrollSpyContainers[this.scrollSpyContainers.indexOf(scrollSpyContainer)].spyCallbacks;
+	    if (callbacks) {
+	      for(var i = 0; i < callbacks.length; i++) {
+	        var position =this.currentPositionY(scrollSpyContainer);
+	        callbacks[i](this.currentPositionY(scrollSpyContainer));
+	      }
+	    }
+	  },
+
+	  addStateHandler: function(handler){
+	    this.spySetState.push(handler);
+	  },
+
+	  addSpyHandler: function(handler, scrollSpyContainer) {
+	    var container = this.scrollSpyContainers[this.scrollSpyContainers.indexOf(scrollSpyContainer)];
+	    if(!container.spyCallbacks) {
+	      container.spyCallbacks = [];
+	    }
+	    container.spyCallbacks.push(handler);
+	  },
+
+	  updateStates: function(){
+	    var length = this.spySetState.length;
+
+	    for(var i = 0; i < length; i++) {
+	      this.spySetState[i]();
+	    }
+	  },
+
+	  unmount: function (stateHandler, spyHandler) {
+	    for (var i = 0; i < this.scrollSpyContainers.length; i++) {
+	      var callbacks = this.scrollSpyContainers[i].spyCallbacks;
+	      if(callbacks && callbacks.length) {
+	        callbacks.splice(callbacks.indexOf(spyHandler), 1);
+	      }
+	    }
+
+	    if(this.spySetState && this.spySetState.length) {
+	      this.spySetState.splice(this.spySetState.indexOf(stateHandler), 1);
+	    }
+
+	    document.removeEventListener('scroll', this.scrollHandler);
+	  },
+
+	  update: function() {
+	    for (var i = 0; i < this.scrollSpyContainers.length; i++) {
+	      this.scrollHandler(this.scrollSpyContainers[i]);
+	    }
+	  }
+	}
+
+	module.exports = scrollSpy;
+
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var assign = __webpack_require__(4);
+
+	var animateScroll = __webpack_require__(292);
+	var events = __webpack_require__(296);
+
+	var __mapped = {};
+	var __activeLink;
+
+	module.exports = {
+
+	  unmount: function() {
+	    __mapped = {};
+	  },
+
+	  register: function(name, element){
+	    __mapped[name] = element;
+	  },
+
+	  unregister: function(name) {
+	    delete __mapped[name];
+	  },
+
+	  get: function(name) {
+	    return __mapped[name] || document.getElementById(name);
+	  },
+
+	  setActiveLink: function(link) {
+	    __activeLink = link;
+	  },
+
+	  getActiveLink: function() {
+	    return __activeLink;
+	  },
+
+	  scrollTo: function(to, props) {
+
+	     /*
+	     * get the mapped DOM element
+	     */
+
+	      var target = this.get(to);
+
+	      if(!target) {
+	        console.warn("target Element not found");
+	        return;
+	      }
+
+	      props = assign({}, props, { absolute : false });
+
+
+	      if(events.registered['begin']) {
+	        events.registered['begin'](to, target);
+	      }
+
+	      var containerId = props.containerId;
+	      var containerElement = containerId ? document.getElementById(containerId) : null;
+
+	      var scrollOffset;
+
+	      if(containerId && containerElement) {
+	        props.absolute = true;
+	        if(containerElement !== target.offsetParent) {
+	          if(!containerElement.contains(target)) {
+	            throw new Error('Container with ID ' + containerId + ' is not a parent of target ' + to);
+	          } else {
+	            throw new Error('Container with ID ' + containerId + ' is not a positioned element');
+	          }
+	        }
+
+	        scrollOffset = target.offsetTop;
+	      } else {
+	        var coordinates = target.getBoundingClientRect();
+	        scrollOffset = coordinates.top;
+	      }
+
+	      scrollOffset += (props.offset || 0);
+
+
+	      /*
+	       * if animate is not provided just scroll into the view
+	       */
+	      if(!props.smooth) {
+	        if(containerId && containerElement) {
+	          containerElement.scrollTop = scrollOffset;
+	        } else {
+	          // window.scrollTo accepts only absolute values so body rectangle needs to be subtracted
+	          var bodyRect = document.body.getBoundingClientRect();
+	          window.scrollTo(0, scrollOffset - bodyRect.top);
+	        }
+
+	        if(events.registered['end']) {
+	          events.registered['end'](to, target);
+	        }
+
+	        return;
+	      }
+
+	      /*
+	       * Animate scrolling
+	       */
+
+	      animateScroll.animateTopScroll(scrollOffset, props, to, target);
+	  }
+	};
+
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var Helpers = __webpack_require__(291);
+
+	var Button = React.createClass({
+	  render: function () {
+	    return React.DOM.input(this.props, this.props.children);
+	  }
+	});
+
+	module.exports = Helpers.Scroll(Button);
+
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var Helpers = __webpack_require__(291);
+
+	var Element = React.createClass({
+	  render: function () {
+	    return React.DOM.div(this.props, this.props.children);
+	  }
+	});
+
+	module.exports = Helpers.Element(Element);
+
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
@@ -31838,7 +32681,7 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _art = __webpack_require__(290);
+	var _art = __webpack_require__(302);
 
 	var _art2 = _interopRequireDefault(_art);
 
@@ -31868,7 +32711,7 @@
 	      { to: "/art/" + art.id },
 	      _react2.default.createElement(
 	        'h3',
-	        null,
+	        { className: 'art-heading' },
 	        art.name
 	      )
 	    )
@@ -31919,7 +32762,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Arts.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 290 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -31992,7 +32835,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "art.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 291 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32009,7 +32852,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _BgImageLoader = __webpack_require__(292);
+	var _BgImageLoader = __webpack_require__(304);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
@@ -32047,7 +32890,7 @@
 					_react2.default.createElement(_BgImageLoader2.default, { className: 'c-davis-bg', src: '/src/img/charles/cdavis-for-web-2-c.png' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'main-content' },
+						{ className: 'main-content about' },
 						_react2.default.createElement(
 							'div',
 							{ className: 'clearfix about-marquee table-full' },
@@ -32082,9 +32925,9 @@
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'clearfix block-container' },
+							{ className: 'clearfix block-container about-container' },
 							_react2.default.createElement(
-								'h2',
+								'h1',
 								null,
 								this.props.route.title
 							),
@@ -32145,7 +32988,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 292 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32164,7 +33007,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(293);
+	var _classnames = __webpack_require__(305);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -32215,7 +33058,7 @@
 	          props = _props.props;
 
 	      var imgClasses = 'image';
-	      var rootClassName = (0, _classnames2.default)(className, 'image', {
+	      var rootClassName = (0, _classnames2.default)(className, imgClasses, {
 	        'image-loaded': this.state.loaded
 	      });
 	      return _react2.default.createElement('div', _extends({ ref: 'img' }, this.props, { style: bgImgStyle, className: rootClassName }));
@@ -32230,7 +33073,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "BgImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 293 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -32284,7 +33127,7 @@
 
 
 /***/ },
-/* 294 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32386,7 +33229,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Projects.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 295 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32415,7 +33258,7 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _Project = __webpack_require__(296);
+	var _Project = __webpack_require__(308);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
@@ -32500,7 +33343,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ProjectContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 296 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32525,11 +33368,11 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _DeviceContainer = __webpack_require__(297);
+	var _DeviceContainer = __webpack_require__(309);
 
 	var _DeviceContainer2 = _interopRequireDefault(_DeviceContainer);
 
-	var _BgImageLoader = __webpack_require__(292);
+	var _BgImageLoader = __webpack_require__(304);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
@@ -32664,7 +33507,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Project.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 297 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32681,15 +33524,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Ipad = __webpack_require__(298);
+	var _Ipad = __webpack_require__(310);
 
 	var _Ipad2 = _interopRequireDefault(_Ipad);
 
-	var _Iphone = __webpack_require__(300);
+	var _Iphone = __webpack_require__(312);
 
 	var _Iphone2 = _interopRequireDefault(_Iphone);
 
-	var _MacBook = __webpack_require__(301);
+	var _MacBook = __webpack_require__(313);
 
 	var _MacBook2 = _interopRequireDefault(_MacBook);
 
@@ -32810,7 +33653,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "DeviceContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 298 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32825,7 +33668,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(299);
+	var _ImageLoader = __webpack_require__(311);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -32856,7 +33699,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Ipad.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 299 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32875,7 +33718,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(293);
+	var _classnames = __webpack_require__(305);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -32938,7 +33781,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 300 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32953,7 +33796,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(299);
+	var _ImageLoader = __webpack_require__(311);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -32984,7 +33827,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Iphone.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 301 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32999,7 +33842,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(299);
+	var _ImageLoader = __webpack_require__(311);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -33030,7 +33873,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MacBook.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 302 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33055,11 +33898,11 @@
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _art = __webpack_require__(290);
+	var _art = __webpack_require__(302);
 
 	var _art2 = _interopRequireDefault(_art);
 
-	var _Art = __webpack_require__(303);
+	var _Art = __webpack_require__(315);
 
 	var _Art2 = _interopRequireDefault(_Art);
 
@@ -33148,7 +33991,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ArtContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 303 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33165,17 +34008,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _classnames = __webpack_require__(305);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
 	var _NavLink = __webpack_require__(247);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _art = __webpack_require__(290);
+	var _art = __webpack_require__(302);
 
 	var _art2 = _interopRequireDefault(_art);
-
-	var _BgImageLoader = __webpack_require__(292);
-
-	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33188,32 +34031,67 @@
 	var Art = function (_Component) {
 	  _inherits(Art, _Component);
 
-	  function Art() {
+	  function Art(props) {
 	    _classCallCheck(this, Art);
 
-	    return _possibleConstructorReturn(this, (Art.__proto__ || Object.getPrototypeOf(Art)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Art.__proto__ || Object.getPrototypeOf(Art)).call(this, props));
+
+	    var src = "/src/img/art/" + _this.props.currentProject.src;
+
+	    _this.state = {
+	      src: src,
+	      loaded: false
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Art, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      window.setTimeout(function () {
-	        window.scrollTo(0, 0);
-	      }, 1000);
+	      var _this2 = this;
+
+	      // window.setTimeout(()=>{
+	      //   window.scrollTo(0, 0);
+	      // }, 1000);
+
+	      var img = new window.Image();
+
+	      img.onload = function () {
+	        var pBottom = '';
+	        pBottom = img.height / img.width * 100;
+	        pBottom += "%";
+
+	        _this2.setState({
+	          width: img.width,
+	          height: img.height,
+	          paddingBottom: pBottom,
+	          loaded: true
+	        });
+	      };
+	      img.src = this.state.src;
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _props = this.props,
+	          className = _props.className,
+	          props = _props.props;
+
+	      var imgClasses = 'clearfix marquee-nav art-img image';
+	      var rootClassName = (0, _classnames2.default)(className, imgClasses, {
+	        'image-loaded': this.state.loaded
+	      });
 
 	      var marqStyle = {
 	        backgroundImage: 'url("/src/img/art/' + this.props.currentProject.src + '")',
-	        backgroundColor: this.props.currentProject.bg_colors[0]
+	        backgroundColor: this.props.currentProject.bg_colors[0],
+	        paddingBottom: this.state.paddingBottom
 	      };
 
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main-content single-art' },
-	        _react2.default.createElement('div', { className: 'clearfix marquee-nav art-img', style: marqStyle })
+	        _react2.default.createElement('div', { className: rootClassName, ref: 'img', style: marqStyle })
 	      );
 	    }
 	  }]);
@@ -33226,7 +34104,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Art.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 304 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {

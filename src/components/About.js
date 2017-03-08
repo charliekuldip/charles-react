@@ -14,7 +14,7 @@ class About extends Component {
     return (
     	<div className="clearfix" style={aboutStyle}>
 		    <BgImageLoader className="c-davis-bg" src="/src/img/charles/cdavis-for-web-2-c.png" />
-		    <div className="main-content">
+		    <div className="main-content about">
 
 		    	<div className="clearfix about-marquee table-full">
 		    		<div className="clearfix outer">
@@ -31,8 +31,8 @@ class About extends Component {
 			    	</div>
 		    	</div>
 		    	
-		    	<div className="clearfix block-container">
-		        	<h2>{ this.props.route.title }</h2>
+		    	<div className="clearfix block-container about-container">
+		        	<h1>{ this.props.route.title }</h1>
 		        	<p>Often described as a 'neo-renaissance' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive Developer.</p>
 					<p>A classically trained fine artist since childhood, Charles attended the School of the Art Institute of Chicago before dropping out to join a touring punk band.</p>
 					<p>For the next decade he wrote and recorded original music featured in several TV productions including MTV's 'Jersey Shore', 'Viva La Bam', and 'Real World'.</p>

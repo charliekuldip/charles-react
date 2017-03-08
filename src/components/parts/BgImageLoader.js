@@ -27,7 +27,7 @@ class BgImageLoader extends Component {
   render() {
     const { className, props } = this.props;
     const imgClasses = 'image';
-    const rootClassName = classNames(className, 'image', {
+    const rootClassName = classNames(className, imgClasses, {
       'image-loaded': this.state.loaded,
     });
     return (

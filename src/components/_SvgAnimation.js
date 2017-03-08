@@ -27,11 +27,11 @@ const GooeyOverlay = function () {
     this.delay =250;
     this.timeStart = Date.now();
     this.direction = true;
-    this.animating = false;
   }
 
   GooeyOverlay.prototype.myHandler = function myHandler(e) {
     e.preventDefault();
+    // console.log('This is from myHandler om SVG!!!!!!');
     return false;
   };
 
@@ -42,7 +42,6 @@ const GooeyOverlay = function () {
 
     this.direction = false;
     this.timeStart = Date.now();
-    this.animating = true;
     this.renderLoop();
   };
 
@@ -87,7 +86,7 @@ const GooeyOverlay = function () {
         console.log('We are done with anination!');
         document.body.removeEventListener('touch', this.myHandler);
         document.body.className = 'ready';
-        this.animating = false;
+
       } else {
         this.open();
       }
@@ -101,34 +100,48 @@ const GooeyOverlay = function () {
   return GooeyOverlay;
 }();
 
+
+let played = 0;
+
 class SvgAnimation extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      animating:false
-    };
   } 
 
   componentDidMount() {
-    this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2, this);
+    // console.log('THis is path1: ', this.refs.path1);
+    // console.log('THis is path2: ', this.refs.path2);
+    this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2);
+    // console.log('THis is this.props.svgChange: ', this.props.svgChange);
+    // this.gooeyOverlay.open();
   }
 
   componentWillUnmount() {
   }
 
+  // componentWillReceiveProps(nextProps) {
+  //  console.log('THis is this.props.svgChange: ', this.props.svgChange);
+  //     console.log('FROM SVG This is from ComponentWillReceiveProps! nextProps:', nextProps);
+  // }
+
   componentWillUpdate(nextProps, nextState) {
     console.log('FROM SVG THis is componentWillUpdate!');
+      // console.log('FROM SVG THis is componentWillUpdate! nextProps', nextProps, nextState);
+      // console.log('nextState: ', nextState);
+     //  console.log('nextProps: ', nextProps);
+    this.gooeyOverlay.open();
+
+    if(this.props.topLevelPage) {
+      this.gooeyOverlay.open();
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
       console.log('FROM SVG THis is from componentDidUpdate!');
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
+      console.log('This is played: ', played);
       this.gooeyOverlay.close();
-      console.log('FROM SVG THis is from shouldComponentUpdate!');
-      return false;
+      played++;
   }
 
   render() {

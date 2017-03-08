@@ -129,6 +129,10 @@ p {
   padding:1em 1em;
 }
 
+.about h2 {
+  margin-bottom: 0.6em;
+}
+
 /* ================================= 
   MENU & HEADER STYLES
 ==================================== */
@@ -488,14 +492,38 @@ ul.group li {
   font-size: 9vw;
   text-align: center;
   cursor: pointer;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  -webkit-transition:all 180ms;
+  -moz-transition:all 180ms;
+  -o-transition:all 180ms;
+  transition:all 180ms;
 }
 
 .previous:after {
-  content: '<';
+  border-width: 0.44em 0.68em 0.44em 0;
+  border-color: transparent #ffffff transparent transparent;
 }
 
 .next:after {
-  content: '>';
+  border-width: 0.44em 0 0.44em 0.68em;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+
+.previous.active:after,
+.previous:active:after,
+.previous:hover:after{
+  border-color:transparent red transparent transparent;
+}
+
+.next.active:after,
+.next:active:after,
+.next:hover:after {
+  border-color:transparent transparent transparent red;
+
 }
 
 @media(min-width: 600px) {
@@ -611,11 +639,23 @@ ul.tags li {
   vertical-align: middle;
 }
 
+.main-content.about {
+  background-color:rgba(0,0,0,0.25);
+}
+
+.about-container h1,
+.about-container .h1 {
+  line-height: 1em;
+}
+
 .about-marquee {
   color:white;
   height: 100vh;
   width: 100%;
-  background-color:rgba(0,0,0,0.25);
+}
+
+.about-marquee:first-of-type {
+  margin-bottom: 50vh;
 }
 
 .about-marquee h1,
@@ -652,6 +692,23 @@ ul.arts-list li img {
 .single-project .inner {
   position: absolute;
   width: 100%;
+}
+
+.art-project {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.single-art {
+  top:50%;
+  -webkit-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+
+ul.group li a h3.art-heading {
+  color: transparent;
 }
 
 #loading-container {
@@ -701,5 +758,5 @@ ul.arts-list li img {
 
 .art-project .previous,
 .art-project .next {
-  padding-bottom: 100%;
+  padding-bottom: 100vh;
 }
