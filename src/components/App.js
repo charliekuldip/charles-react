@@ -17,6 +17,30 @@ const toggleOutlines = ()=> {
   }
 }
 
+/*----- disable pointer events on scroll-------*/
+function disablepointeronscroll(){
+    var scrolltimer;
+
+    window.addEventListener('scroll', function(){
+        clearTimeout(scrolltimer);
+
+        if(document.body.className.indexOf('disable-hover') == -1) {
+            document.body.className += ' disable-hover';
+        }
+
+        scrolltimer = setTimeout(function(){
+            var classes = document.body.className.split(" ");
+            for(var i = 0; i<classes.length; i++){
+                if( classes[i] == 'disable-hover' )
+                    classes.splice(i,1);
+            }
+            document.body.className = classes.join(" ");
+        },200);
+    }, false);
+}
+
+disablepointeronscroll();
+
 class App extends Component {
   
   // lets us use keyword this inside app class
@@ -30,6 +54,7 @@ class App extends Component {
     let topLevel = true;
     if(locArray.length > 2) {
       topLevel = false;
+      activePage = "single";
     }
 
     this.state = {
@@ -66,6 +91,12 @@ class App extends Component {
     let locArray = nextProps.location.pathname.split('/');
     let activePage = locArray[1];
 
+    if(locArray.length > 2) {
+      this.state.topLevelPage = false;
+    } else {
+      this.state.topLevelPage = true;
+    }  
+
     if(activePage == "") {activePage = "about";}
     this.state.activePage = activePage;
 
@@ -73,11 +104,9 @@ class App extends Component {
       this.goToAbout();
     }
 
-    if(locArray.length > 2) {
-      this.state.topLevelPage = false;
-    } else {
-      this.state.topLevelPage = true;
-    }  
+    if(this.state.topLevelPage == false) {
+      this.state.activePage = "single";
+    }
   }
 
   toggleAnimationTrue() {
@@ -102,8 +131,8 @@ class App extends Component {
   };
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('THis is from componentDidUpdate!');
-    console.log('prevState', prevState);
+    // console.log('THis is from componentDidUpdate!');
+    // console.log('prevState', prevState);
   }
   
   render() {

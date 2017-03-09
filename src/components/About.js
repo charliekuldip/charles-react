@@ -31,14 +31,14 @@ class About extends Component {
 			    	</div>
 		    	</div>
 		    	
-		    	<div className="clearfix block-container about-container">
+		    	<div id="about-bio" className="clearfix block-container about-container">
 		        	<h1>{ this.props.route.title }</h1>
 		        	<p>Often described as a 'neo-renaissance' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive Developer.</p>
 					<p>A classically trained fine artist since childhood, Charles attended the School of the Art Institute of Chicago before dropping out to join a touring punk band.</p>
 					<p>For the next decade he wrote and recorded original music featured in several TV productions including MTV's 'Jersey Shore', 'Viva La Bam', and 'Real World'.</p>
 					<p>A decision to return to education yielded positive results as Charles discovered an untapped passion for programming for the web while earning his Bachelor's degree from Hunter College. Passion turned into obsession as he progressed from building simple websites to fully dynamic applications.</p>
 					<p>A creative problem solver in the digital and physical realm, the ability to code enabled Charles to independently handle a creative challenge from start to finish. His ability to understand the creative process in multiple mediums and translate it into fully interactive experiences make him an asset on any project.</p>
-		       </div>
+		       	</div>
 
 		       <div className="clearfix about-marquee table-full">
 		    		<div className="clearfix outer">

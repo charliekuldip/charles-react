@@ -218,8 +218,8 @@ const ProjectList = [
     name: "The Family",
     bio: "We function differently for each of our clients and friends, but we always strive to make a significant and profound impact on both of their brands and businesses. We manage talent, brands, and careers connected with creating and producing award-winning advertising.  We help create a unique niche for each of our Family Members based on their individual talent, aesthetic, and where they want to grow. We give each a resoundingly clear voice in this very loud and cluttered industry. We effectively help build their brands, their portfolios, their standing in the industry, and their bottom line. Our skills include, but are not limited to: communicating, relationship building, dog training, proactive selling and marketing, strategizing, splitting wood, branding, cooking, public relations, gardening, event planning, producing, creating, reading, writing, arithmetic, motivational dancing, business coaching and consulting, spotting and building talent, surfing, interior decorating, hunting and gathering, multitasking, driving a stick shift, trend setting and taste making, gift wrapping, making dove sounds, procurement, and winning. One of us is even a repeated Spelling Bee champ.",
     img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
-    img_big: "Home - The Family-big.jpg",
-    img_small: "Home - The Family-small.jpg",
+    img_big: "Home---The-Family-big.jpg",
+    img_small: "Home---The-Family-small.jpg",
     id: "thefamily",
     images:[
       'Home - The Family.png',

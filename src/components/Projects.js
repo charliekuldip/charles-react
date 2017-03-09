@@ -2,16 +2,26 @@ import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
 
+
+function findAncestor (el, cls) {
+    while ((el = el.parentElement) && !el.classList.contains(cls));
+    return el;
+}
+
 let projects = ProjectList.map((project) => {
 
   const projectStyle = {
-    backgroundImage:'url("'+project.img_src+'")',
+    backgroundImage:'url("/src/img/projects/'+project.id+'/'+project.img_small+'")',
     backgroundSize:'cover',
     backgroundRepeat:'no-repeat',
     backgroundColor:project.bg_colors[0]
   }
   const stopScale = (e)=> {
     console.log('This is e.targert: ', e.target);
+    let parentEl = findAncestor(e.target, 'project');
+    let bgImg = parentEl.getElementsByClassName("bg-img")[0];
+    // console.log('THis is parentEl', parentEl);
+    console.log('THis is bgImg', bgImg);
   }
   return (
     <li className="project" key={project.id} onClick={stopScale}>

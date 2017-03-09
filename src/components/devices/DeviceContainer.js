@@ -72,7 +72,7 @@ class DeviceContainer extends Component {
 
   	render() {
   		// const seconds = Math.floor(this.state.elapsedTime / 1000);
-  		console.log('THis.props: ', this.props);
+  		// console.log('THis.props: ', this.props);
   		if(this.props.images !== undefined) {
 		  	return(
 		  		<div>
