@@ -10,8 +10,11 @@ let projects = ProjectList.map((project) => {
     backgroundRepeat:'no-repeat',
     backgroundColor:project.bg_colors[0]
   }
+  const stopScale = (e)=> {
+    console.log('This is e.targert: ', e.target);
+  }
   return (
-    <li className="project" key={project.id} >
+    <li className="project" key={project.id} onClick={stopScale}>
       <div className="project-img bg-img" style={projectStyle} />
       <NavLink to={"/projects/"+ project.id}>        
         <h3>{project.name}</h3>

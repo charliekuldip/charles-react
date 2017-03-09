@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavLink from './NavLink';
 import axios from 'axios';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactTransitionGroup from 'react-addons-transition-group'
 import SvgAnimation from './SvgAnimation';
 import ProjectList from '../data/projects';
 import MainNav from './MainNav';
@@ -79,9 +80,30 @@ class App extends Component {
     }  
   }
 
+  toggleAnimationTrue() {
+    console.log('Toggle Animation True called!');
+    this.setState({
+      animating:true
+    });
+  }
+
+  toggleAnimationFalse() {
+    console.log('Toggle Animation True called!');
+    this.setState({
+      animating:false
+    });
+  }
+
+  toggleAnim() {
+    console.log('THis is anim', this.state.animating);
+    this.setState({
+      animating: !this.state.animating
+    });
+  };
+
   componentDidUpdate(prevProps, prevState) {
     console.log('THis is from componentDidUpdate!');
-    
+    console.log('prevState', prevState);
   }
   
   render() {
@@ -102,7 +124,7 @@ class App extends Component {
     return (
 
       <div className="container clearfix" ref="app-container">
-        <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} />
+        <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} toggleAnim={this.toggleAnim.bind(this)} />
         
         <MainNav activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} />       
         

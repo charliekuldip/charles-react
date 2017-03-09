@@ -146,17 +146,12 @@ class SvgAnimation extends Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
+    this.gooeyOverlay.close();
     console.log('FROM SVG THis is componentWillUpdate!');
   }
 
   componentDidUpdate(prevProps, prevState) {
       console.log('FROM SVG THis is from componentDidUpdate!');
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-      this.gooeyOverlay.close();
-      console.log('FROM SVG THis is from shouldComponentUpdate!');
-      return false;
   }
 
   render() {
