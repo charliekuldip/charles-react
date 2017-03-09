@@ -8,6 +8,15 @@ function findAncestor (el, cls) {
     return el;
 }
 
+function removeClass(el, className) {
+  if (el.classList)
+    el.classList.remove(className)
+  else if (hasClass(el, className)) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+    el.className=el.className.replace(reg, ' ')
+  }
+};
+
 let projects = ProjectList.map((project) => {
 
   const projectStyle = {
@@ -17,15 +26,18 @@ let projects = ProjectList.map((project) => {
     backgroundColor:project.bg_colors[0]
   }
   const stopScale = (e)=> {
-    console.log('This is e.targert: ', e.target);
     let parentEl = findAncestor(e.target, 'project');
     let bgImg = parentEl.getElementsByClassName("bg-img")[0];
-    // console.log('THis is parentEl', parentEl);
-    console.log('THis is bgImg', bgImg);
+    let computedStyle = window.getComputedStyle(bgImg),
+        transform = computedStyle.getPropertyValue('transform');
+  
+    console.log('THis is transform', transform);
+    boxOne.style.transform = transform;
+    // removeClass(bgImg, 'scale-bg');
   }
   return (
     <li className="project" key={project.id} onClick={stopScale}>
-      <div className="project-img bg-img" style={projectStyle} />
+      <div className="project-img bg-img scale-bg" style={projectStyle} />
       <NavLink to={"/projects/"+ project.id}>        
         <h3>{project.name}</h3>
       </NavLink>

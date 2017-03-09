@@ -263,7 +263,9 @@ svg#page-animation path.path02 {
 
   -webkit-transform-origin:center center;
   transform-origin:center center;
+}
 
+.scale-bg {
   -webkit-transform:scale(1);
   transform:scale(1);
 
@@ -272,7 +274,7 @@ svg#page-animation path.path02 {
 }
 
 /* PROJECTS PAGE */
-.ready ul.group li:hover .bg-img {
+.ready ul.group li:hover .scale-bg {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
