@@ -32899,6 +32899,13 @@
 	  value: true
 	});
 	var ArtList = [{
+	  id: 'tyler-naomi',
+	  name: 'Tyler & Naomi',
+	  src: 'tyler-naomi.jpg',
+	  media: 'acrylic',
+	  dimensions: '50" x 50"',
+	  bg_colors: ['#e75f37', '#196e51']
+	}, {
 	  id: '3-dogs',
 	  name: '3 Dogs',
 	  src: '3-dogs.jpg',

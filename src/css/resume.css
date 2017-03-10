@@ -55,7 +55,7 @@ h1, h2,h3,h4,h5,h6 {
 h1 {
   font-size: 2.121em;
   line-height: 1.2em;
-  margin-left: -0.05em;
+  margin-left: -0.065em;
   margin-top: 0.15em;
 }
 
@@ -113,9 +113,16 @@ ul {
 }
 
 .address-container h1,
+.address-container h2,
 .address-container address {
   float: left;
   clear: left;
+}
+
+
+.address-container h2 {
+  margin-top: 0;
+  line-height: 1.1em;
 }
 
 address span {
