@@ -24,12 +24,31 @@ class Art extends Component {
     const img = new window.Image();
     
     img.onload = ()=> {
-      let pBottom = '';
-      pBottom = (img.height/img.width) * 100;  
-      pBottom +="%";
+      let pBottom = '',
+        pWidth = '',
+        units = '';
+
+      if(window.innerWidth > window.innerHeight) {
+        units = 'vh';
+      } else {
+        units = 'vw';
+      }
+
+      // VERT
+      if(img.height > img.width) {
+        pBottom = '100'+units;    
+        pWidth = ( (img.width/img.height) * 100 );
+        pWidth +=units;
+
+      } else {
+        //HORIZ
+        pBottom = (img.height/img.width) * 100;    
+        pWidth = '100'+units;
+        pBottom += units; 
+      }
 
       this.setState({
-        width:img.width,
+        width:pWidth,
         height:img.height,
         paddingBottom:pBottom,
         loaded: true 
@@ -48,7 +67,8 @@ class Art extends Component {
     const marqStyle = {
       backgroundImage:'url("/src/img/art/'+this.props.currentProject.src+'")',
       backgroundColor:this.props.currentProject.bg_colors[0],
-      paddingBottom:this.state.paddingBottom
+      paddingBottom:this.state.paddingBottom,
+      width:this.state.width
     }
 
   	return (

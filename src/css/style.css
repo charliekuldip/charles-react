@@ -144,10 +144,18 @@ p {
   MENU & HEADER STYLES
 ==================================== */
 header {
-  float: right;
+  /*float: right;*/
   z-index: 10;
-  position: relative;
+  /*position: relative;*/
 }
+header {
+  position: fixed;
+  top:0;
+  width:100%;
+}
+header .main-nav {
+    float: right;
+  }
 
 #main-nav-btn {
   z-index:auto;
