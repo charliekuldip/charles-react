@@ -100,30 +100,18 @@ ul {
 }
 .hobbies ul,
 .technical-skills ul {
-  width: 40%;
   float: left;
   position: relative;
   display: block;
   margin-top: 0.25em;
+  margin-right: 2.5em;
 }
 
-@media(min-width: 600px) {
-  .hobbies ul,
-  .technical-skills ul {
-    width: 28%;
-  }
-}
-
-.technical-skills {
-  max-width: 5.5in;
-  float: left;
-  width: 100%;
-}
+.technical-skills,
 .hobbies {
- max-width: 2.7in;
-  float: left;
-  width: 100%; 
+  display: inline-block;
 }
+
 .address-container h1,
 .address-container address {
   float: left;
