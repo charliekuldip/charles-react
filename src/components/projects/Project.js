@@ -22,6 +22,32 @@ class Project extends Component {
       <li key={tag}>{tag}</li>
     );
 
+    if(this.props.currentProject.case_study) {
+       this.props.currentProject.case_study.map((case_study) =>
+        <li><a href={case_study}>View Case Study}</a></li>
+      );
+    }
+
+    // if(this.props.currentProject.website) {
+    //    this.props.currentProject.website.map((website) =>
+    //     <li><a href={website}>View Website}</a></li>
+    //   );
+    // }
+
+    function case_study(props) {
+      const case_study = props.case_study;
+      if (case_study) {
+        return <li><a href={case_study}>View Case Study</a></li>;
+      }
+      return false;
+    }
+    function website(props) {
+      const case_study = props.case_study;
+      if (case_study) {
+        return <li><a href={case_study}>View Case Study</a></li>;
+      }
+      return false;
+    }
 
   	return (
       <div className="clearfix inner">
@@ -29,8 +55,8 @@ class Project extends Component {
           <BgImageLoader className="clearfix block-container marquee" src={'/src/img/projects/'+this.props.currentProject.id+'/'+this.props.currentProject.img_big} />
           <h1>{ this.props.currentProject.name }</h1>
           <ul className="case-study">
-            <li><a href="#">View Case Study</a></li>
-            <li><a href="#">View Website</a></li>
+            <li><a href={this.props.currentProject.website} target="_blank">View Website</a></li>
+            {case_study(this.props.currentProject)}
           </ul>
         </div>
 
