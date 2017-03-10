@@ -150,10 +150,11 @@ class App extends Component {
       })
     }
 
-    // <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} toggleAnim={this.toggleAnim.bind(this)} />
     return (
 
       <div className="container clearfix" ref="app-container">
+
+        <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} toggleAnim={this.toggleAnim.bind(this)} />
         
         <MainNav activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} />       
         

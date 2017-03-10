@@ -28,6 +28,10 @@ class Project extends Component {
         <div className="clearfix marquee-nav" style={marqStyle}>
           <BgImageLoader className="clearfix block-container marquee" src={'/src/img/projects/'+this.props.currentProject.id+'/'+this.props.currentProject.img_big} />
           <h1>{ this.props.currentProject.name }</h1>
+          <ul className="case-study">
+            <li><a href="#">View Case Study</a></li>
+            <li><a href="#">View Website</a></li>
+          </ul>
         </div>
 
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />

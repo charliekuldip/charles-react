@@ -28,6 +28,7 @@ html {
   }
 }
 
+.case-study li a,
 .resume-link,
 .previous, .next,
 .main-nav a,
@@ -786,4 +787,64 @@ div#about-bio > * {
     margin-left: auto;
     margin-right: auto;
     float: none;
+}
+
+.case-study {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    /*width: 100%;*/
+    z-index: 5;
+    margin:auto;
+}
+
+.case-study li {
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+  padding:0;
+  text-align: center;
+}
+
+.case-study li:only-child {
+  display: block;
+}
+
+.case-study li a {
+  color: white;
+  padding: 0.75em 0;
+  font-size: 0.7em;
+  display: block;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.case-study li a:hover,
+.case-study li a:active,
+.case-study li a.active {
+  color:red;
+}
+
+@media(min-width: 400px) {
+  .case-study li a {
+    font-size: 0.9em;
+  }
+}
+
+@media(min-width: 600px) {
+  .case-study {
+    max-width: 84%;
+  }
+  .case-study li a {
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 768px) {
+  .case-study {
+    max-width: 768px;
+  }
 }
