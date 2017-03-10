@@ -6,6 +6,8 @@ const ProjectList = [
     img_big: "iris_warriors_header-big.jpg",
     img_small: "iris_warriors_header-small.jpg",
     id: "iriswarriors",
+    website:'http://iriswarriors.com/',
+    case_study:'http://clickfiremedia.com/project/iriswarriors',
     images:[
       'The Story - Iris Warriors.png',
       'Gallery - Iris Warriors.png',
@@ -37,6 +39,8 @@ const ProjectList = [
     img_big: "matcha_header-big.jpg",
     img_small: "matcha_header-small.jpg",
     id: "matchalove",
+    website: "http://matchalove.com/",
+    case_study: "http://clickfiremedia.com/project/matchalove",
     images:[
       'Home - Matcha Love.png',
       'About - Matcha Love.png',
@@ -68,6 +72,7 @@ const ProjectList = [
     img_big: "HeardCity_header-big.jpg",
     img_small: "HeardCity_header-small.jpg",
     id: "heardcity",
+    website:'http://heardcity.com/',
     images: [
       'Home - Heardcity.png',
       'Projects - Heardcity.png',
@@ -98,6 +103,7 @@ const ProjectList = [
     img_big: "ConEd_header-big.jpg",
     img_small: "ConEd_header-small.jpg",
     id: "coned",
+    case_study: "http://clickfiremedia.com/project/coned",
     images: [
       'Commercial - Con Edison.png',
       'Customer Solutions - Con Edison.png',
@@ -147,6 +153,7 @@ const ProjectList = [
     img_big: "CFM_Theraflu_CS-big.jpg",
     img_small: "CFM_Theraflu_CS-small.jpg",
     id: "theraflu",
+    case_study: "http://clickfiremedia.com/project/theraflu",
     tags: [
       'Angular JS',
       'CSS Animation',
