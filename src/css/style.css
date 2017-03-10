@@ -213,10 +213,10 @@ header {
   bottom:0;
   top:0;
   z-index: -1;
-  -webkit-transform:translate3d(0,0,-1px);
-  -moz-transform:translate3d(0,0,-1px);
-  -o-transform:translate3d(0,0,-1px);
-  transform:translate3d(0,0,-1px);
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+  -o-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
 }
 
 /* SVG ANIMATION */
