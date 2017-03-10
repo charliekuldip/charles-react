@@ -128,6 +128,11 @@ const GooeyOverlay = function () {
   return GooeyOverlay;
 }();
 
+const svgStyle = {
+  WebkitTransform:'translate3d(0,0,100px)',
+  transform:'translate3d(0,0,100px)'
+}
+
 class SvgAnimation extends Component {
 
   constructor(props) {
@@ -156,7 +161,7 @@ class SvgAnimation extends Component {
 
   render() {
     return (
-      <svg id="page-animation" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg id="page-animation" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style={svgStyle}>
           <path className="path01" id="path01" d="" ref="path1"></path>
           <path className="path02" id="path02" d="" ref="path2"></path>
       </svg>

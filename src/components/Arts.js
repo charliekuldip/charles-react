@@ -27,18 +27,17 @@ let arts = ArtList.map((art) => {
   }
 
   const stopScale = (e)=> {
-    let parentEl = findAncestor(e.target, 'project');
+    let parentEl = findAncestor(e.target, 'art');
     let bgImg = parentEl.getElementsByClassName("bg-img")[0];
     let computedStyle = window.getComputedStyle(bgImg),
         transform = computedStyle.getPropertyValue('transform');
   
-    console.log('THis is transform', transform);
-    boxOne.style.transform = transform;
-    // removeClass(bgImg, 'scale-bg');
+    bgImg.style.transform = transform;
+    removeClass(bgImg, 'scale-bg');
   }
   
   return (
-    <li className="art" key={art.id} >
+    <li className="art" key={art.id} onClick={stopScale}>
       <div className="project-img bg-img art-img scale-bg" style={artStyle} />
       <NavLink to={"/art/"+ art.id}>        
         <h3 className="art-heading">{art.name}</h3>

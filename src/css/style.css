@@ -28,6 +28,7 @@ html {
   }
 }
 
+.resume-link,
 .previous, .next,
 .main-nav a,
 ul.tags li,
@@ -38,6 +39,12 @@ h1, h2,h3,h4,h5,h6 {
   text-transform: uppercase;
   letter-spacing: 0.015em;
   line-height: 1.4em;
+}
+
+.resume-link {
+  color: inherit;
+  margin-top: 0.5em;
+  display: block;
 }
 
 h1,
@@ -206,18 +213,21 @@ header {
   bottom:0;
   top:0;
   z-index: -1;
+  -webkit-transform:translate3d(0,0,-1px);
+  -moz-transform:translate3d(0,0,-1px);
+  -o-transform:translate3d(0,0,-1px);
+  transform:translate3d(0,0,-1px);
 }
 
 /* SVG ANIMATION */
 svg#page-animation {
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 100;
-  -webkit-transform:translateZ(100);
-  transform:translateZ(100);
   pointer-events:none;
 }
 svg#page-animation path.path01 {
@@ -452,20 +462,15 @@ ul.group li {
 .next,
 .previous {
     position: absolute;
-    /*z-index: 5;*/
     z-index: 2;
     color: white;
     display: block;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.025em;
-
-
-    /*padding-bottom: 59.25%;*/
     padding-bottom: 88.5%;
     top: 0;
     height: 0;
-    /*width: 10%;*/
     width: 8%;
 
     transition:color 180ms;
@@ -766,4 +771,11 @@ ul.group li a h3.art-heading {
 .art-project .previous,
 .art-project .next {
   padding-bottom: 100vh;
+}
+
+div#about-bio > * {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
 }

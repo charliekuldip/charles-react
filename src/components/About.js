@@ -38,6 +38,7 @@ class About extends Component {
 					<p>For the next decade he wrote and recorded original music featured in several TV productions including MTV's 'Jersey Shore', 'Viva La Bam', and 'Real World'.</p>
 					<p>A decision to return to education yielded positive results as Charles discovered an untapped passion for programming for the web while earning his Bachelor's degree from Hunter College. Passion turned into obsession as he progressed from building simple websites to fully dynamic applications.</p>
 					<p>A creative problem solver in the digital and physical realm, the ability to code enabled Charles to independently handle a creative challenge from start to finish. His ability to understand the creative process in multiple mediums and translate it into fully interactive experiences make him an asset on any project.</p>
+					<a href="/resume.html" id="resume-link" className="resume-link">Resume</a>
 		       	</div>
 
 		       <div className="clearfix about-marquee table-full">

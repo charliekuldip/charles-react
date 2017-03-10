@@ -32,7 +32,7 @@ let projects = ProjectList.map((project) => {
         transform = computedStyle.getPropertyValue('transform');
   
     console.log('THis is transform', transform);
-    boxOne.style.transform = transform;
+    bgImg.style.transform = transform;
     // removeClass(bgImg, 'scale-bg');
   }
   return (
