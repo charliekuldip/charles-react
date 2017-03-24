@@ -775,6 +775,7 @@ ul.group li a h3.art-heading {
   background-size: cover;
   margin:0 auto;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .art-project .previous,
@@ -847,4 +848,32 @@ div#about-bio > * {
   .case-study {
     max-width: 768px;
   }
+}
+
+.about-bg {
+  display: block;
+  height: 0;
+  padding-bottom: 150px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0.75em;
+}
+
+@media (min-width: 600px) {
+  .about-bg {
+    max-width: 50%;
+    margin-top: 1em;
+  }
+
+  .about-bg:nth-child(1),
+  .about-bg:nth-child(3),
+  .about-bg:nth-child(8) {
+    float: left;
+    clear: left;
+  }
+}
+
+.c-art {
+  background-position: 50% 100%;
 }

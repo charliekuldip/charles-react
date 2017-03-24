@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import NavLink from './NavLink';
 import ArtList from '../data/art';
+import BgImageLoader from './parts/BgImageLoader';
 
 function findAncestor (el, cls) {
     while ((el = el.parentElement) && !el.classList.contains(cls));
@@ -20,9 +21,6 @@ function removeClass(el, className) {
 let arts = ArtList.map((art) => {
 
   const artStyle = {
-    backgroundImage:'url("/src/img/art/'+art.src+'")',
-    backgroundSize:'cover',
-    backgroundRepeat:'no-repeat',
     backgroundColor:art.bg_colors[0]
   }
 
@@ -37,8 +35,8 @@ let arts = ArtList.map((art) => {
   }
   
   return (
-    <li className="art" key={art.id} onClick={stopScale}>
-      <div className="project-img bg-img art-img scale-bg" style={artStyle} />
+    <li className="art" key={art.id} onClick={stopScale} style={artStyle}>
+      <BgImageLoader className="project-img bg-img art-img scale-bg" src={"/src/img/art/"+art.src} />
       <NavLink to={"/art/"+ art.id}>        
         <h3 className="art-heading">{art.name}</h3>
       </NavLink>

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import BgImageLoader from './parts/BgImageLoader';
 
-const cStyle = {
-	backgroundImage:'url("/src/img/charles/cdavis-for-web-2-c.png")'
-}
-
 const aboutStyle = {
 	paddingTop:0
 }
@@ -13,7 +9,7 @@ class About extends Component {
   render() {
     return (
     	<div className="clearfix" style={aboutStyle}>
-		    <BgImageLoader className="c-davis-bg" src="/src/img/charles/cdavis-for-web-2-c.png" />
+		    <BgImageLoader className="c-davis-bg" src="/src/img/charles/cdavis-for-web-2-c.png" key="main-bg" />
 		    <div className="main-content about">
 
 		    	<div className="clearfix about-marquee table-full">
@@ -34,10 +30,12 @@ class About extends Component {
 		    	<div id="about-bio" className="clearfix block-container about-container">
 		        	<h1>{ this.props.route.title }</h1>
 		        	<p>Often described as a 'neo-renaissance' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive Developer.</p>
+		        	<BgImageLoader className="about-bg c-art" src="/src/img/about/c-art.jpg" key="c-art" />
 					<p>A classically trained fine artist since childhood, Charles attended the School of the Art Institute of Chicago before dropping out to join a touring punk band.</p>
 					<p>For the next decade he wrote and recorded original music featured in several TV productions including MTV's 'Jersey Shore', 'Viva La Bam', and 'Real World'.</p>
+					<BgImageLoader className="about-bg c-guitar" src="/src/img/about/c-guitar.jpg" key="c-guitar" />
 					<p>A decision to return to education yielded positive results as Charles discovered an untapped passion for programming for the web while earning his Bachelor's degree from Hunter College. Passion turned into obsession as he progressed from building simple websites to fully dynamic applications.</p>
-					<p>A creative problem solver in the digital and physical realm, the ability to code enabled Charles to independently handle a creative challenge from start to finish. His ability to understand the creative process in multiple mediums and translate it into fully interactive experiences make him an asset on any project.</p>
+					<BgImageLoader className="about-bg c-programmer" src="/src/img/about/c-programmer.jpg" key="c-programmer" />
 					<a href="/resume.html" id="resume-link" className="resume-link">Resume</a>
 		       	</div>
 
