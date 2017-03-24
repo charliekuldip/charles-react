@@ -18,10 +18,6 @@
 .clearfix { display: block; }
 
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   font-size: 100%;
 }
@@ -29,10 +25,6 @@ html {
 body, html {
   margin:0;
   padding:0;
-}
-
-body {
-  margin:0 auto;
 }
 
 header {
@@ -143,7 +135,6 @@ address span {
 }
 
 .resume-container {
-  width: 100%;
   max-width: 8.5in;
   margin-left:auto;
   margin-right: auto;
@@ -178,9 +169,5 @@ article {
 @media print {
   html {
     font-size: 90%;
-  }
-  img {
-    float:right;
-    margin-top: 0.25rem;
   }
 }
