@@ -147,7 +147,8 @@ address span {
   max-width: 8.5in;
   margin-left:auto;
   margin-right: auto;
-  margin-top: 1.5em;
+  /*margin-top: 1.5em;*/
+  margin-top:0;
 }
 
 article {
@@ -174,6 +175,11 @@ article {
   margin-top: 1rem;
 }
 
+.download-resume {
+  display: block;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
 
 @media print {
   html {
@@ -183,4 +189,8 @@ article {
     float:right;
     margin-top: 0.25rem;
   }
+  .download-resume {
+    display: none;
+  }
 }
+
