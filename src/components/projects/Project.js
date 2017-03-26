@@ -51,15 +51,18 @@ class Project extends Component {
         <DeviceContainer projectId={this.props.currentProject.id} images={this.props.currentProject.images} />
 
         <div className="clearfix block-container">
-          <ul className="roles">
-            <li><span>Role:&nbsp;</span><span>{this.props.currentProject.role}</span></li>
-            <li><span>Client:&nbsp;</span><span>{this.props.currentProject.client}</span></li>
-            <li><span>Agency:&nbsp;</span><span>{this.props.currentProject.agency}</span></li>
-          </ul>
-          <p className="bio">{ this.props.currentProject.bio }</p>
-          <ul className="tags">{tagItems}</ul>
-          <h5>{ this.props.currentProject.id }</h5>
+          <div className="clearfix content">
+            <ul className="roles">
+              <li><span>Role:&nbsp;</span><span>{this.props.currentProject.role}</span></li>
+              <li><span>Client:&nbsp;</span><span>{this.props.currentProject.client}</span></li>
+              <li><span>Agency:&nbsp;</span><span>{this.props.currentProject.agency}</span></li>
+            </ul>
+            <p className="bio">{ this.props.currentProject.bio }</p>
+            <ul className="tags">{tagItems}</ul>
+            <h5>{ this.props.currentProject.id }</h5>
+          </div>
         </div>
+        
       </div>
     );
   }

@@ -293,10 +293,12 @@ svg#page-animation path.path02 {
 }
 
 /* PROJECTS PAGE */
+/*
 .ready ul.group li:hover .scale-bg {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
+*/
 
 ul.group li,
 ul.group li a {
@@ -876,4 +878,10 @@ div#about-bio > * {
 
 .c-art {
   background-position: 50% 100%;
+}
+
+.content {
+  max-width: 50rem;
+  margin-left:auto;
+  margin-right:auto;
 }

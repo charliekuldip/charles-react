@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ProjectList from '../data/projects';
+import BgImageLoader from './parts/BgImageLoader';
 
 
 function findAncestor (el, cls) {
@@ -37,7 +38,7 @@ let projects = ProjectList.map((project) => {
   }
   return (
     <li className="project" key={project.id} onClick={stopScale}>
-      <div className="project-img bg-img scale-bg" style={projectStyle} />
+      <BgImageLoader className="project-img bg-img scale-bg" src={"/src/img/projects/"+project.id+"/"+project.img_small} />
       <NavLink to={"/projects/"+ project.id}>        
         <h3>{project.name}</h3>
       </NavLink>
