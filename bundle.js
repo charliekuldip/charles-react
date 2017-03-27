@@ -21542,7 +21542,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.case-study li a,\n.resume-link,\n.previous, .next,\n.main-nav a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\n.resume-link {\n  color: inherit;\n  margin-top: 0.5em;\n  display: block;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\np {\n  margin-top:0.75em;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n.about h2 {\n  margin-bottom: 0.6em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\nheader {\n  /*float: right;*/\n  z-index: 10;\n  /*position: relative;*/\n}\nheader {\n  position: fixed;\n  top:0;\n  width:100%;\n}\nheader .main-nav {\n    float: right;\n  }\n\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n\n.main-nav li {\n  float: left;\n}  \n\n.main-nav a {\n  font-size: .95em;\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  transition:all .2s;\n}\n\n.single .main-nav a,\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n.home .main-nav a:hover,\n.about .main-nav a:hover,\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n  -webkit-transform:translate3d(0,0,0);\n  -moz-transform:translate3d(0,0,0);\n  -o-transform:translate3d(0,0,0);\n  transform:translate3d(0,0,0);\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  display: block;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n}\n\n.scale-bg {\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n.ready ul.group li:hover .scale-bg {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n  content: '';\n  width: 0;\n  height: 0;\n  border-style: solid;\n  -webkit-transition:all 180ms;\n  -moz-transition:all 180ms;\n  -o-transition:all 180ms;\n  transition:all 180ms;\n}\n\n.previous:after {\n  border-width: 0.44em 0.68em 0.44em 0;\n  border-color: transparent #ffffff transparent transparent;\n}\n\n.next:after {\n  border-width: 0.44em 0 0.44em 0.68em;\n  border-color: transparent transparent transparent #ffffff;\n}\n\n\n.previous.active:after,\n.previous:active:after,\n.previous:hover:after{\n  border-color:transparent red transparent transparent;\n}\n\n.next.active:after,\n.next:active:after,\n.next:hover:after {\n  border-color:transparent transparent transparent red;\n\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    /*padding-bottom: 508px;*/\n    padding-bottom: 740px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 2em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n    margin:7% auto 15%;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.main-content.about {\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-container h1,\n.about-container .h1 {\n  line-height: 1em;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n}\n\n.about-marquee:first-of-type {\n  margin-bottom: 50vh;\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n.art-project {\n  min-height: 100vh;\n  background-color: #000000;\n}\n\n.single-art {\n  top:50%;\n  -webkit-transform:translateY(-50%);\n  -moz-transform:translateY(-50%);\n  -o-transform:translateY(-50%);\n  transform:translateY(-50%);\n}\n\nul.group li a h3.art-heading {\n  color: transparent;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100vh;\n}\n\ndiv#about-bio > * {\n    max-width: 50rem;\n    margin-left: auto;\n    margin-right: auto;\n    float: none;\n}\n\n.case-study {\n    position: absolute;\n    bottom: 0;\n    left:0;\n    right: 0;\n    /*width: 100%;*/\n    z-index: 5;\n    margin:auto;\n}\n\n.case-study li {\n  display: inline-block;\n  width: 50%;\n  margin: auto;\n  padding:0;\n  text-align: center;\n}\n\n.case-study li:only-child {\n  display: block;\n}\n\n.case-study li a {\n  color: white;\n  padding: 0.75em 0;\n  font-size: 0.7em;\n  display: block;\n  -webkit-transition: all 200ms;\n  -moz-transition: all 200ms;\n  -o-transition: all 200ms;\n  transition: all 200ms;\n}\n\n.case-study li a:hover,\n.case-study li a:active,\n.case-study li a.active {\n  color:red;\n}\n\n@media(min-width: 400px) {\n  .case-study li a {\n    font-size: 0.9em;\n  }\n}\n\n@media(min-width: 600px) {\n  .case-study {\n    max-width: 84%;\n  }\n  .case-study li a {\n    font-size: 1em;\n  }\n}\n\n@media(min-width: 768px) {\n  .case-study {\n    max-width: 768px;\n  }\n}", ""]);
+	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.case-study li a,\n.resume-link,\n.previous, .next,\n.main-nav a,\n.links a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\n.resume-link {\n  color: inherit;\n  /*margin-top: 0.5em;*/\n  margin-right: 1em;\n  display: inline-block;\n  /*margin-bottom: 1em;*/\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\np {\n  margin-top:0.75em;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n.about h2 {\n  margin-bottom: 0.6em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\nheader {\n  /*float: right;*/\n  z-index: 10;\n  /*position: relative;*/\n}\nheader {\n  position: fixed;\n  top:0;\n  width:100%;\n}\nheader .main-nav {\n    float: right;\n  }\n\n#main-nav-btn {\n  z-index:auto;\n  display:none;\n  position: static;\n}\n\n.main-nav li {\n  float: left;\n}  \n\n.main-nav a {\n  font-size: .95em;\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n.single .main-nav a,\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n.home .main-nav a:hover,\n.about .main-nav a:hover,\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n  -webkit-transform:translate3d(0,0,0);\n  -moz-transform:translate3d(0,0,0);\n  -o-transform:translate3d(0,0,0);\n  transform:translate3d(0,0,0);\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  display: block;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n}\n\n.scale-bg {\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n/*\n.ready ul.group li:hover .scale-bg {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n*/\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n  content: '';\n  width: 0;\n  height: 0;\n  border-style: solid;\n  -webkit-transition:all 180ms;\n  -moz-transition:all 180ms;\n  -o-transition:all 180ms;\n  transition:all 180ms;\n}\n\n.previous:after {\n  border-width: 0.44em 0.68em 0.44em 0;\n  border-color: transparent #ffffff transparent transparent;\n}\n\n.next:after {\n  border-width: 0.44em 0 0.44em 0.68em;\n  border-color: transparent transparent transparent #ffffff;\n}\n\n\n.previous.active:after,\n.previous:active:after,\n.previous:hover:after{\n  border-color:transparent red transparent transparent;\n}\n\n.next.active:after,\n.next:active:after,\n.next:hover:after {\n  border-color:transparent transparent transparent red;\n\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    /*padding-bottom: 508px;*/\n    padding-bottom: 740px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 0 auto 2em;\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n    margin:7% auto 15%;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.main-content.about {\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-container h1,\n.about-container .h1 {\n  line-height: 1em;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n}\n\n.about-marquee:first-of-type {\n  margin-bottom: 50vh;\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n.art-project {\n  min-height: 100vh;\n  background-color: #000000;\n}\n\n.single-art {\n  top:50%;\n  -webkit-transform:translateY(-50%);\n  -moz-transform:translateY(-50%);\n  -o-transform:translateY(-50%);\n  transform:translateY(-50%);\n}\n\nul.group li a h3.art-heading {\n  color: transparent;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100vh;\n}\n\ndiv#about-bio > * {\n    max-width: 50rem;\n    margin-left: auto;\n    margin-right: auto;\n    float: none;\n}\n\n.case-study {\n    position: absolute;\n    bottom: 0;\n    left:0;\n    right: 0;\n    /*width: 100%;*/\n    z-index: 5;\n    margin:auto;\n}\n\n.case-study li {\n  display: inline-block;\n  width: 50%;\n  margin: auto;\n  padding:0;\n  text-align: center;\n}\n\n.case-study li:only-child {\n  display: block;\n}\n\n.case-study li a {\n  color: white;\n  padding: 0.75em 0;\n  font-size: 0.7em;\n  display: block;\n  -webkit-transition: all 200ms;\n  -moz-transition: all 200ms;\n  -o-transition: all 200ms;\n  transition: all 200ms;\n}\n\n.case-study li a:hover,\n.case-study li a:active,\n.case-study li a.active {\n  color:red;\n}\n\n@media(min-width: 400px) {\n  .case-study li a {\n    font-size: 0.9em;\n  }\n}\n\n@media(min-width: 600px) {\n  .case-study {\n    max-width: 84%;\n  }\n  .case-study li a {\n    font-size: 1em;\n  }\n}\n\n@media(min-width: 768px) {\n  .case-study {\n    max-width: 768px;\n  }\n}\n\n.about-bg {\n  display: block;\n  height: 0;\n  padding-bottom: 150px;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  /*margin-top: 0.75em;*/\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n}\n\n.about-p > div:last-of-type {\n  margin-bottom: 1em;\n}\n\n@media (min-width: 600px) {\n  .about-p > div {\n    display: table;\n    width: 100%;\n  }\n\n  .about-p > div * {\n    display: table-cell;\n    width: 50%;\n    vertical-align: middle;\n  }\n  \n  .about-p > div:nth-of-type(2) > span {\n    padding-left: 0.5em;\n    -webkit-transform:translateX(100%);\n    -moz-transform:translateX(100%);\n    -o-transform:translateX(100%);\n    transform:translateX(100%);\n\n  }\n  .about-p > div:nth-of-type(2) > .about-bg {\n    -webkit-transform:translateX(-100%);\n    -moz-transform:translateX(-100%);\n    -o-transform:translateX(-100%);\n    transform:translateX(-100%);\n  }\n\n  .about-bg {\n    margin-top: 0;\n  }\n\n  .about-p > div:nth-child(1) > span {\n    padding-bottom:0.5em;\n    padding-right: 0.5em;\n  }\n  \n  .about-p > div:nth-child(2) > span {\n    padding-top: 0.5em;\n    padding-bottom: 0.5em;\n    padding-left: 0.5em;\n  }\n  .about-p > div:nth-child(3) > span {\n    padding-top: 0.5em;\n    padding-right: 0.5em;\n  }\n\n}\n\n.c-art {\n  background-position: 50% 100%;\n}\n\n.content {\n  max-width: 50rem;\n  margin-left:auto;\n  margin-right:auto;\n}\n.links {\n  margin-top: 0.25em;\n}\n.links a {\n  color: inherit;\n  text-transform: none;\n  font-size: 1rem;\n  display: block;\n  line-height: 1.6em;\n  text-align: center;\n}\n.links a,\n.resume-link {\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n.links a:hover,\n.links a:active,\n.resume-link:hover,\n.resume-link:active {\n  color:red;\n}\n\n.links h2,\n.links h3 {\n  margin: 0 auto;\n}\n/*.links h3 {\n  text-transform: none;\n}*/", ""]);
 
 	// exports
 
@@ -21881,7 +21881,7 @@
 
 	var _Arts2 = _interopRequireDefault(_Arts);
 
-	var _About = __webpack_require__(304);
+	var _About = __webpack_require__(306);
 
 	var _About2 = _interopRequireDefault(_About);
 
@@ -32789,6 +32789,10 @@
 
 	var _art2 = _interopRequireDefault(_art);
 
+	var _BgImageLoader = __webpack_require__(304);
+
+	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32812,9 +32816,6 @@
 	var arts = _art2.default.map(function (art) {
 
 	  var artStyle = {
-	    backgroundImage: 'url("/src/img/art/' + art.src + '")',
-	    backgroundSize: 'cover',
-	    backgroundRepeat: 'no-repeat',
 	    backgroundColor: art.bg_colors[0]
 	  };
 
@@ -32830,8 +32831,8 @@
 
 	  return _react2.default.createElement(
 	    'li',
-	    { className: 'art', key: art.id, onClick: stopScale },
-	    _react2.default.createElement('div', { className: 'project-img bg-img art-img scale-bg', style: artStyle }),
+	    { className: 'art', key: art.id, onClick: stopScale, style: artStyle },
+	    _react2.default.createElement(_BgImageLoader2.default, { className: 'project-img bg-img art-img scale-bg', src: "/src/img/art/" + art.src }),
 	    _react2.default.createElement(
 	      _NavLink2.default,
 	      { to: "/art/" + art.id },
@@ -32976,164 +32977,6 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _BgImageLoader = __webpack_require__(305);
-
-	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var cStyle = {
-		backgroundImage: 'url("/src/img/charles/cdavis-for-web-2-c.png")'
-	};
-
-	var aboutStyle = {
-		paddingTop: 0
-	};
-
-	var About = function (_Component) {
-		_inherits(About, _Component);
-
-		function About() {
-			_classCallCheck(this, About);
-
-			return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
-		}
-
-		_createClass(About, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'div',
-					{ className: 'clearfix', style: aboutStyle },
-					_react2.default.createElement(_BgImageLoader2.default, { className: 'c-davis-bg', src: '/src/img/charles/cdavis-for-web-2-c.png' }),
-					_react2.default.createElement(
-						'div',
-						{ className: 'main-content about' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'clearfix about-marquee table-full' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'clearfix outer' },
-								_react2.default.createElement(
-									'div',
-									{ className: 'clearfix inner' },
-									_react2.default.createElement(
-										'h1',
-										null,
-										'Charles Davis'
-									),
-									_react2.default.createElement(
-										'h2',
-										null,
-										'Creative Problem Solver in the Physical & Digital realm'
-									),
-									_react2.default.createElement(
-										'svg',
-										{ version: '1.1', id: 'dogs-logo', xmlns: 'http://www.w3.org/2000/svg', x: '0px', y: '0px', viewBox: '0 116 500 272', enableBackground: 'new 0 116 500 272' },
-										_react2.default.createElement(
-											'g',
-											{ id: 'dogs' },
-											_react2.default.createElement('path', { id: 'dog2', d: 'M147.7,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.6,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14.4c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4c-2.5,1.8-5,7.9-2.9,7.9c2.5,0,19.4,12.9,71.5-1.8c0-0.7,2.5-2.2,3.2-2.9 c4-3.2,6.5-6.8,10.8-9.3c0-1.8-6.8-6.1-8.3-8.3c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8s-9-16.5-15.1-23 c1.1-6.5,1.1-9.7,0.4-11.9c-0.4-2.2,2.9-14.4,0.7-21.2C147.4,124.7,145.2,125.1,147.7,119.7z' }),
-											_react2.default.createElement('path', { id: 'dog1', d: 'M290,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.2,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4s-5,7.9-2.9,7.9c2.2,0,19.4,12.9,71.5-1.8c1.1-6.8,7.5,0,12.2,1.8 c4.7,1.8,43.1,4,53.9,0.4c11.1-3.6,13.7-13.7,11.9-14c-8.3-2.5,16.2,11.5-45.6,3.2c-11.5-3.6-23-5.7-26.6-11.9 c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8c-0.4-3.6-9-16.5-15.1-23c1.1-6.5,1.1-9.7,0.4-11.9 c-0.4-2.2,2.9-14.4,0.7-21.2C289.6,124.7,287.8,125.1,290,119.7z' })
-										)
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ id: 'about-bio', className: 'clearfix block-container about-container' },
-							_react2.default.createElement(
-								'h1',
-								null,
-								this.props.route.title
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'Often described as a \'neo-renaissance\' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive Developer.'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'A classically trained fine artist since childhood, Charles attended the School of the Art Institute of Chicago before dropping out to join a touring punk band.'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'For the next decade he wrote and recorded original music featured in several TV productions including MTV\'s \'Jersey Shore\', \'Viva La Bam\', and \'Real World\'.'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'A decision to return to education yielded positive results as Charles discovered an untapped passion for programming for the web while earning his Bachelor\'s degree from Hunter College. Passion turned into obsession as he progressed from building simple websites to fully dynamic applications.'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'A creative problem solver in the digital and physical realm, the ability to code enabled Charles to independently handle a creative challenge from start to finish. His ability to understand the creative process in multiple mediums and translate it into fully interactive experiences make him an asset on any project.'
-							),
-							_react2.default.createElement(
-								'a',
-								{ href: '/resume.html', id: 'resume-link', className: 'resume-link' },
-								'Resume'
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'clearfix about-marquee table-full' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'clearfix outer' },
-								_react2.default.createElement(
-									'svg',
-									{ version: '1.1', id: 'dogs-logo', xmlns: 'http://www.w3.org/2000/svg', x: '0px', y: '0px', viewBox: '0 116 500 272', enableBackground: 'new 0 116 500 272' },
-									_react2.default.createElement(
-										'g',
-										{ id: 'dogs' },
-										_react2.default.createElement('path', { id: 'dog2', d: 'M147.7,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.6,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14.4c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4c-2.5,1.8-5,7.9-2.9,7.9c2.5,0,19.4,12.9,71.5-1.8c0-0.7,2.5-2.2,3.2-2.9 c4-3.2,6.5-6.8,10.8-9.3c0-1.8-6.8-6.1-8.3-8.3c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8s-9-16.5-15.1-23 c1.1-6.5,1.1-9.7,0.4-11.9c-0.4-2.2,2.9-14.4,0.7-21.2C147.4,124.7,145.2,125.1,147.7,119.7z' }),
-										_react2.default.createElement('path', { id: 'dog1', d: 'M290,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.2,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4s-5,7.9-2.9,7.9c2.2,0,19.4,12.9,71.5-1.8c1.1-6.8,7.5,0,12.2,1.8 c4.7,1.8,43.1,4,53.9,0.4c11.1-3.6,13.7-13.7,11.9-14c-8.3-2.5,16.2,11.5-45.6,3.2c-11.5-3.6-23-5.7-26.6-11.9 c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8c-0.4-3.6-9-16.5-15.1-23c1.1-6.5,1.1-9.7,0.4-11.9 c-0.4-2.2,2.9-14.4,0.7-21.2C289.6,124.7,287.8,125.1,290,119.7z' })
-									)
-								)
-							)
-						)
-					)
-				);
-			}
-		}]);
-
-		return About;
-	}(_react.Component);
-
-	exports.default = About;
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
@@ -33145,7 +32988,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(306);
+	var _classnames = __webpack_require__(305);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -33157,8 +33000,6 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var bgImgStyle = {};
-
 	var BgImageLoader = function (_Component) {
 	  _inherits(BgImageLoader, _Component);
 
@@ -33168,7 +33009,8 @@
 	    var _this = _possibleConstructorReturn(this, (BgImageLoader.__proto__ || Object.getPrototypeOf(BgImageLoader)).call(this, props));
 
 	    _this.state = {
-	      loaded: false
+	      loaded: false,
+	      bgImg: {}
 	    };
 	    return _this;
 	  }
@@ -33176,7 +33018,7 @@
 	  _createClass(BgImageLoader, [{
 	    key: 'onImageLoad',
 	    value: function onImageLoad() {
-	      this.setState({ loaded: true });
+	      this.setState({ loaded: true, bgImg: this.props.src });
 	    }
 	  }, {
 	    key: 'componentDidMount',
@@ -33186,11 +33028,13 @@
 	      var img = new window.Image();
 	      img.onload = this.onImageLoad.bind(this);
 	      img.src = imgSrc;
-	      bgImgStyle.backgroundImage = 'url("' + imgSrc + '")';
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var bgImgStyle = {
+	        backgroundImage: 'url("' + this.state.bgImg + '")'
+	      };
 	      var _props = this.props,
 	          className = _props.className,
 	          props = _props.props;
@@ -33211,7 +33055,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "BgImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 306 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -33265,6 +33109,206 @@
 
 
 /***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BgImageLoader = __webpack_require__(304);
+
+	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
+
+	var _reactScroll = __webpack_require__(290);
+
+	var _reactScroll2 = _interopRequireDefault(_reactScroll);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var aboutStyle = {
+		paddingTop: 0
+	};
+
+	var About = function (_Component) {
+		_inherits(About, _Component);
+
+		function About() {
+			_classCallCheck(this, About);
+
+			return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+		}
+
+		_createClass(About, [{
+			key: 'scrollToContact',
+			value: function scrollToContact(e) {
+				e.preventDefault();
+				console.log('Scrolling to contact!');
+				_reactScroll2.default.animateScroll.scrollToBottom({
+					duration: 350
+				});
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'clearfix', style: aboutStyle },
+					_react2.default.createElement(_BgImageLoader2.default, { className: 'c-davis-bg', src: '/src/img/charles/cdavis-for-web-2-c.png', key: 'main-bg' }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'main-content about' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'clearfix about-marquee table-full' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'clearfix outer' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'clearfix inner' },
+									_react2.default.createElement(
+										'h1',
+										null,
+										'Charles Davis'
+									),
+									_react2.default.createElement(
+										'h2',
+										null,
+										'Creative Problem Solver in the Physical & Digital realm'
+									),
+									_react2.default.createElement(
+										'svg',
+										{ version: '1.1', id: 'dogs-logo', xmlns: 'http://www.w3.org/2000/svg', x: '0px', y: '0px', viewBox: '0 116 500 272', enableBackground: 'new 0 116 500 272' },
+										_react2.default.createElement(
+											'g',
+											{ id: 'dogs' },
+											_react2.default.createElement('path', { id: 'dog2', d: 'M147.7,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.6,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14.4c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4c-2.5,1.8-5,7.9-2.9,7.9c2.5,0,19.4,12.9,71.5-1.8c0-0.7,2.5-2.2,3.2-2.9 c4-3.2,6.5-6.8,10.8-9.3c0-1.8-6.8-6.1-8.3-8.3c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8s-9-16.5-15.1-23 c1.1-6.5,1.1-9.7,0.4-11.9c-0.4-2.2,2.9-14.4,0.7-21.2C147.4,124.7,145.2,125.1,147.7,119.7z' }),
+											_react2.default.createElement('path', { id: 'dog1', d: 'M290,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.2,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4s-5,7.9-2.9,7.9c2.2,0,19.4,12.9,71.5-1.8c1.1-6.8,7.5,0,12.2,1.8 c4.7,1.8,43.1,4,53.9,0.4c11.1-3.6,13.7-13.7,11.9-14c-8.3-2.5,16.2,11.5-45.6,3.2c-11.5-3.6-23-5.7-26.6-11.9 c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8c-0.4-3.6-9-16.5-15.1-23c1.1-6.5,1.1-9.7,0.4-11.9 c-0.4-2.2,2.9-14.4,0.7-21.2C289.6,124.7,287.8,125.1,290,119.7z' })
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ id: 'about-bio', className: 'clearfix block-container about-container' },
+							_react2.default.createElement(
+								'h1',
+								null,
+								this.props.route.title
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'clearfix about-p' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'clearfix' },
+									_react2.default.createElement(
+										'span',
+										null,
+										'Often described as a \'neo-renaissance\' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive\xA0Developer.'
+									),
+									_react2.default.createElement(_BgImageLoader2.default, { className: 'about-bg c-art', src: '/src/img/about/c-art.jpg', key: 'c-art' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'clearfix' },
+									_react2.default.createElement(
+										'span',
+										null,
+										'A classically trained fine artist since childhood, Charles attended the School of the Art Institute of Chicago before dropping out to join a touring punk band. For the next decade he wrote and recorded original music featured in several TV productions including MTV\'s \'Jersey Shore\', \'Viva La Bam\', and \'Real\xA0World\'.'
+									),
+									_react2.default.createElement(_BgImageLoader2.default, { className: 'about-bg c-guitar', src: '/src/img/about/c-guitar.jpg', key: 'c-guitar' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'clearfix' },
+									_react2.default.createElement(
+										'span',
+										null,
+										'A decision to return to education yielded positive results as Charles discovered an untapped passion for programming for the web while earning his Bachelor\'s degree from Hunter College. Passion turned into obsession as he progressed from building simple websites to full-stack\xA0applications.'
+									),
+									_react2.default.createElement(_BgImageLoader2.default, { className: 'about-bg c-programmer', src: '/src/img/about/c-programmer.jpg', key: 'c-programmer' })
+								),
+								_react2.default.createElement(
+									'a',
+									{ href: '/resume.html', id: 'resume-link', className: 'resume-link' },
+									'Resume'
+								),
+								_react2.default.createElement(
+									'a',
+									{ href: '#contact', id: 'contact-link', className: 'resume-link contact-link', onClick: this.scrollToContact },
+									'Contact'
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ id: 'contact', className: 'clearfix about-marquee table-full' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'clearfix outer' },
+								_react2.default.createElement(
+									'svg',
+									{ version: '1.1', id: 'dogs-logo', xmlns: 'http://www.w3.org/2000/svg', x: '0px', y: '0px', viewBox: '0 116 500 272', enableBackground: 'new 0 116 500 272' },
+									_react2.default.createElement(
+										'g',
+										{ id: 'dogs' },
+										_react2.default.createElement('path', { id: 'dog2', d: 'M147.7,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.6,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14.4c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4c-2.5,1.8-5,7.9-2.9,7.9c2.5,0,19.4,12.9,71.5-1.8c0-0.7,2.5-2.2,3.2-2.9 c4-3.2,6.5-6.8,10.8-9.3c0-1.8-6.8-6.1-8.3-8.3c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8s-9-16.5-15.1-23 c1.1-6.5,1.1-9.7,0.4-11.9c-0.4-2.2,2.9-14.4,0.7-21.2C147.4,124.7,145.2,125.1,147.7,119.7z' }),
+										_react2.default.createElement('path', { id: 'dog1', d: 'M290,119.7c-6.1-3.6-19.4,21.2-18,23.4c1.4,2.2-14.4-2.2-18,0c-4,2.2-4.7,5-4.7,5s-24.8,1.1-27.3,3.6 c-2.5,2.2,0.7,17.2,14.7,18.7c21.9,1.8,4.3,8.6,4.3,8.6s-9.7,2.9-12.2,4c-2.9,1.1,1.4,6.8,6.1,6.8c4.7,0,19-3.6,20.5-1.1 c1.4,2.2,5,12.9,5,16.2c0,2.9,1.8,13.7,4.3,19.4c2.5,5.7-7.2,58.2,25.9,81.9c1.1,6.8,1.8,8.6,5,10.8c0.4,6.8,0,28.4,2.5,35.9 c-3.6,5-4.7,8.6-7.5,9.7c-2.9,1.1-10.1,8.6-10.4,8.6c-0.4,0,0.4,6.5,18,1.8c2.9-5,8.3-14.4,10.1-18.3c1.8-4,2.5,4,3.6,5.7 c1.4,1.8-6.1,8.6-7.2,10.8c-1.1,2.2-2.5,5,11.5,2.9c2.9-7.5,5-7.9,9-14c-1.4-9-2.9-20.5-1.4-26.6c6.1,4.7,14,7.9,23,10.8 c-1.8,9.7,0.4,16.5,8.3,19.4c-1.1,4-3.6,2.2-6.1,4s-5,7.9-2.9,7.9c2.2,0,19.4,12.9,71.5-1.8c1.1-6.8,7.5,0,12.2,1.8 c4.7,1.8,43.1,4,53.9,0.4c11.1-3.6,13.7-13.7,11.9-14c-8.3-2.5,16.2,11.5-45.6,3.2c-11.5-3.6-23-5.7-26.6-11.9 c-3.6-6.5-7.5-51.7-62.5-105.6c-11.1-11.5-58.2-58.2-58.6-61.8c-0.4-3.6-9-16.5-15.1-23c1.1-6.5,1.1-9.7,0.4-11.9 c-0.4-2.2,2.9-14.4,0.7-21.2C289.6,124.7,287.8,125.1,290,119.7z' })
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'clearfix links' },
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Charles Davis'
+									),
+									_react2.default.createElement(
+										'a',
+										{ href: 'mailto:chowarddavis@gmail.com' },
+										'chowarddavis@gmail.com'
+									),
+									_react2.default.createElement(
+										'a',
+										{ href: 'tel:19024874053' },
+										'901-487-4053'
+									)
+								)
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return About;
+	}(_react.Component);
+
+	exports.default = About;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
 /* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -33289,6 +33333,10 @@
 	var _projects = __webpack_require__(288);
 
 	var _projects2 = _interopRequireDefault(_projects);
+
+	var _BgImageLoader = __webpack_require__(304);
+
+	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33331,7 +33379,7 @@
 	  return _react2.default.createElement(
 	    'li',
 	    { className: 'project', key: project.id, onClick: stopScale },
-	    _react2.default.createElement('div', { className: 'project-img bg-img scale-bg', style: projectStyle }),
+	    _react2.default.createElement(_BgImageLoader2.default, { className: 'project-img bg-img scale-bg', src: "/src/img/projects/" + project.id + "/" + project.img_small }),
 	    _react2.default.createElement(
 	      _NavLink2.default,
 	      { to: "/projects/" + project.id },
@@ -33532,7 +33580,7 @@
 
 	var _DeviceContainer2 = _interopRequireDefault(_DeviceContainer);
 
-	var _BgImageLoader = __webpack_require__(305);
+	var _BgImageLoader = __webpack_require__(304);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
@@ -33631,65 +33679,69 @@
 	          'div',
 	          { className: 'clearfix block-container' },
 	          _react2.default.createElement(
-	            'ul',
-	            { className: 'roles' },
+	            'div',
+	            { className: 'clearfix content' },
 	            _react2.default.createElement(
-	              'li',
-	              null,
+	              'ul',
+	              { className: 'roles' },
 	              _react2.default.createElement(
-	                'span',
+	                'li',
 	                null,
-	                'Role:\xA0'
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Role:\xA0'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  this.props.currentProject.role
+	                )
 	              ),
 	              _react2.default.createElement(
-	                'span',
+	                'li',
 	                null,
-	                this.props.currentProject.role
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Client:\xA0'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  this.props.currentProject.client
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Agency:\xA0'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  this.props.currentProject.agency
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                'Client:\xA0'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                this.props.currentProject.client
-	              )
+	              'p',
+	              { className: 'bio' },
+	              this.props.currentProject.bio
 	            ),
 	            _react2.default.createElement(
-	              'li',
+	              'ul',
+	              { className: 'tags' },
+	              tagItems
+	            ),
+	            _react2.default.createElement(
+	              'h5',
 	              null,
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                'Agency:\xA0'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                this.props.currentProject.agency
-	              )
+	              this.props.currentProject.id
 	            )
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'bio' },
-	            this.props.currentProject.bio
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'tags' },
-	            tagItems
-	          ),
-	          _react2.default.createElement(
-	            'h5',
-	            null,
-	            this.props.currentProject.id
 	          )
 	        )
 	      );
@@ -33915,7 +33967,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(306);
+	var _classnames = __webpack_require__(305);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -34205,7 +34257,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(306);
+	var _classnames = __webpack_require__(305);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 

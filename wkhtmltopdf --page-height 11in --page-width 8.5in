@@ -1,1 +1,0 @@
-wkhtmltopdf --page-height 11in --page-width 8.5in --margin-top 0 --margin-bottom 0 --margin-left 2mm --margin-right 2mm --no-outline --disable-smart-shrinking --print-media-type --zoom 1 localhost:8080/resume.html resume.pdf
