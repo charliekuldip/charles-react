@@ -20,12 +20,6 @@ function removeClass(el, className) {
 
 let projects = ProjectList.map((project) => {
 
-  const projectStyle = {
-    backgroundImage:'url("/src/img/projects/'+project.id+'/'+project.img_small+'")',
-    backgroundSize:'cover',
-    backgroundRepeat:'no-repeat',
-    backgroundColor:project.bg_colors[0]
-  }
   const stopScale = (e)=> {
     let parentEl = findAncestor(e.target, 'project');
     let bgImg = parentEl.getElementsByClassName("bg-img")[0];

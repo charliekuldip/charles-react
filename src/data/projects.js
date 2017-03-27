@@ -33,6 +33,33 @@ const ProjectList = [
     ]
   },
   {
+    name: "Canvas 2",
+    bio: "Commissioned by Camel for their Turkish campaign, an interactive drawing experience was created based on art and code from digital artist Joshua Davis. Joshua Davis worked with the Click3X dev team to convert his demos written in processing to Javascript. The HTML5 canvas element was used. The agency Havas tasked the dev team at Click 3X with building out the prototypes for the Drawing component. The campain included 4 installments of the drawing app, each adding a new feature to the experience.",
+    img_src: "/src/img/projects/canvas2/canvas-2_header-big.jpg",
+    img_big: "canvas2_header-big.jpg",
+    img_small: "canvas2_header-small.jpg",
+    id: "canvas2",
+    website:'http://chowarddavis.com/camel/canvas-6',
+    // case_study:'http://clickfiremedia.com/project/iriswarriors',
+    images:[
+      'Joshua Davis Canvas-2.png',
+      'Joshua Davis Canvas-3.png',
+      'Joshua Davis Canvas-1.png',
+    ],
+    tags:[
+      'Canvas',
+      'jQuery',
+    ],
+    agency:'Havas',
+    client: 'Camel',
+    role: 'Front End Engineer',
+    bg_colors: [
+      '#334550',
+      '#ee9d36',
+      '#0f8fa4'
+    ]
+  },
+  {
     name: "Matcha Love",
     bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",

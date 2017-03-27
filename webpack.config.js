@@ -4,12 +4,12 @@ const path = require('path');
 // const BUILD_DIR = path.resolve(__dirname, 'src/dist');
 // const APP_DIR = path.resolve(__dirname, 'src/build');
 
-new webpack.DefinePlugin({
-  'process.env': {
-    NODE_ENV: JSON.stringify('production')
-  }
-}),
-new webpack.optimize.UglifyJsPlugin();
+// new webpack.DefinePlugin({
+//   'process.env': {
+//     NODE_ENV: JSON.stringify('production')
+//   }
+// }),
+// new webpack.optimize.UglifyJsPlugin();
 
 module.exports = {
   entry: './src/index.js',

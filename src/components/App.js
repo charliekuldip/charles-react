@@ -8,14 +8,14 @@ import ProjectList from '../data/projects';
 import MainNav from './MainNav';
 
 
-const toggleOutlines = ()=> {
-  let body = document.getElementsByTagName('body')[0];
-  if(body.classList.contains('outlines')) {
-    body.removeAttribute('class', 'outlines');
-  } else {
-    body.setAttribute('class','outlines');
-  }
-}
+// const toggleOutlines = ()=> {
+//   let body = document.getElementsByTagName('body')[0];
+//   if(body.classList.contains('outlines')) {
+//     body.removeAttribute('class', 'outlines');
+//   } else {
+//     body.setAttribute('class','outlines');
+//   }
+// }
 
 /*----- disable pointer events on scroll-------*/
 function disablepointeronscroll(){
@@ -166,7 +166,6 @@ class App extends Component {
         >
           { renderChildren(this.props) }
         </ReactCSSTransitionGroup>
-        <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
       </div>
     );
   }

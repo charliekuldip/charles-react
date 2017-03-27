@@ -24,7 +24,6 @@ class ImageLoader extends Component {
 
   render() {
     const { className, props } = this.props;
-    const imgClasses = 'image';
     const rootClassName = classNames(className, 'image', {
       'image-loaded': this.state.loaded,
     });

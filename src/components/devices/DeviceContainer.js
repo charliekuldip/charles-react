@@ -29,6 +29,7 @@ class DeviceContainer extends Component {
 
 	onTick() {
 	    // if(this.state.running) {
+	    console.log('THis is this.props.images: ', this.props.images);
 	   	if(this.props.images !== undefined) {
 		    var now = Date.now();
 		    console.log("This props images length", this.props.images.length);

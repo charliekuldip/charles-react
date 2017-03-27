@@ -27633,14 +27633,14 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var toggleOutlines = function toggleOutlines() {
-	  var body = document.getElementsByTagName('body')[0];
-	  if (body.classList.contains('outlines')) {
-	    body.removeAttribute('class', 'outlines');
-	  } else {
-	    body.setAttribute('class', 'outlines');
-	  }
-	};
+	// const toggleOutlines = ()=> {
+	//   let body = document.getElementsByTagName('body')[0];
+	//   if(body.classList.contains('outlines')) {
+	//     body.removeAttribute('class', 'outlines');
+	//   } else {
+	//     body.setAttribute('class','outlines');
+	//   }
+	// }
 
 	/*----- disable pointer events on scroll-------*/
 	function disablepointeronscroll() {
@@ -27804,11 +27804,6 @@
 	            transitionLeaveTimeout: 1000
 	          },
 	          renderChildren(this.props)
-	        ),
-	        _react2.default.createElement(
-	          'button',
-	          { id: 'outline-button', className: 'outline-button', onClick: toggleOutlines },
-	          'Out'
 	        )
 	      );
 	    }
@@ -31683,6 +31678,21 @@
 	  role: 'Full Stack Developer',
 	  bg_colors: ['#483078', '#000000', '#fff0a8']
 	}, {
+	  name: "Canvas 2",
+	  bio: "Commissioned by Camel for their Turkish campaign, an interactive drawing experience was created based on art and code from digital artist Joshua Davis. Joshua Davis worked with the Click3X dev team to convert his demos written in processing to Javascript. The HTML5 canvas element was used. The agency Havas tasked the dev team at Click 3X with building out the prototypes for the Drawing component. The campain included 4 installments of the drawing app, each adding a new feature to the experience.",
+	  img_src: "/src/img/projects/canvas2/canvas-2_header-big.jpg",
+	  img_big: "canvas2_header-big.jpg",
+	  img_small: "canvas2_header-small.jpg",
+	  id: "canvas2",
+	  website: 'http://chowarddavis.com/camel/canvas-6',
+	  // case_study:'http://clickfiremedia.com/project/iriswarriors',
+	  images: ['Joshua Davis Canvas-2.png', 'Joshua Davis Canvas-3.png', 'Joshua Davis Canvas-1.png'],
+	  tags: ['Canvas', 'jQuery'],
+	  agency: 'Havas',
+	  client: 'Camel',
+	  role: 'Front End Engineer',
+	  bg_colors: ['#334550', '#ee9d36', '#0f8fa4']
+	}, {
 	  name: "Matcha Love",
 	  bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
 	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
@@ -33360,12 +33370,6 @@
 
 	var projects = _projects2.default.map(function (project) {
 
-	  var projectStyle = {
-	    backgroundImage: 'url("/src/img/projects/' + project.id + '/' + project.img_small + '")',
-	    backgroundSize: 'cover',
-	    backgroundRepeat: 'no-repeat',
-	    backgroundColor: project.bg_colors[0]
-	  };
 	  var stopScale = function stopScale(e) {
 	    var parentEl = findAncestor(e.target, 'project');
 	    var bgImg = parentEl.getElementsByClassName("bg-img")[0];
@@ -33829,6 +33833,7 @@
 			key: 'onTick',
 			value: function onTick() {
 				// if(this.state.running) {
+				console.log('THis is this.props.images: ', this.props.images);
 				if (this.props.images !== undefined) {
 					var now = Date.now();
 					console.log("This props images length", this.props.images.length);
@@ -34014,7 +34019,6 @@
 	          className = _props.className,
 	          props = _props.props;
 
-	      var imgClasses = 'image';
 	      var rootClassName = (0, _classnames2.default)(className, 'image', {
 	        'image-loaded': this.state.loaded
 	      });
