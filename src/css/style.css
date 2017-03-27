@@ -32,6 +32,7 @@ html {
 .resume-link,
 .previous, .next,
 .main-nav a,
+.links a,
 ul.tags li,
 h1, h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
@@ -44,8 +45,10 @@ h1, h2,h3,h4,h5,h6 {
 
 .resume-link {
   color: inherit;
-  margin-top: 0.5em;
-  display: block;
+  /*margin-top: 0.5em;*/
+  margin-right: 1em;
+  display: inline-block;
+  /*margin-bottom: 1em;*/
 }
 
 h1,
@@ -177,6 +180,8 @@ header .main-nav {
   padding: 1em;
   margin-bottom: 0;
   -webkit-transition:all .2s;
+  -moz-transition:all .2s;
+  -o-transition:all .2s;
   transition:all .2s;
 }
 
@@ -859,21 +864,61 @@ div#about-bio > * {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0.75em;
+  /*margin-top: 0.75em;*/
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.about-p > div:last-of-type {
+  margin-bottom: 1em;
 }
 
 @media (min-width: 600px) {
-  .about-bg {
-    max-width: 50%;
-    margin-top: 1em;
+  .about-p > div {
+    display: table;
+    width: 100%;
   }
 
-  .about-bg:nth-child(1),
-  .about-bg:nth-child(3),
-  .about-bg:nth-child(8) {
-    float: left;
-    clear: left;
+  .about-p > div * {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
   }
+  
+  .about-p > div:nth-of-type(2) > span {
+    padding-left: 0.5em;
+    -webkit-transform:translateX(100%);
+    -moz-transform:translateX(100%);
+    -o-transform:translateX(100%);
+    transform:translateX(100%);
+
+  }
+  .about-p > div:nth-of-type(2) > .about-bg {
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
+    transform:translateX(-100%);
+  }
+
+  .about-bg {
+    margin-top: 0;
+  }
+
+  .about-p > div:nth-child(1) > span {
+    padding-bottom:0.5em;
+    padding-right: 0.5em;
+  }
+  
+  .about-p > div:nth-child(2) > span {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+  }
+  .about-p > div:nth-child(3) > span {
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+  }
+
 }
 
 .c-art {
@@ -884,4 +929,29 @@ div#about-bio > * {
   max-width: 50rem;
   margin-left:auto;
   margin-right:auto;
+}
+.links {
+  margin-top: 0.25em;
+}
+.links a {
+  color: inherit;
+  text-transform: none;
+  font-size: 1rem;
+  display: block;
+  line-height: 1.6em;
+  text-align: center;
+}
+.links a,
+.resume-link {
+  -webkit-transition:all .2s;
+  -moz-transition:all .2s;
+  -o-transition:all .2s;
+  transition:all .2s;
+}
+
+.links a:hover,
+.links a:active,
+.resume-link:hover,
+.resume-link:active {
+  color:red;
 }
