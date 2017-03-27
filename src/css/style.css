@@ -955,3 +955,11 @@ div#about-bio > * {
 .resume-link:active {
   color:red;
 }
+
+.links h2,
+.links h3 {
+  margin: 0 auto;
+}
+/*.links h3 {
+  text-transform: none;
+}*/
