@@ -14,11 +14,9 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
-    "react-addons-transition-group": "^15.4.2",
     "react-dom": "^15.3.0",
     "react-router": "^2.7.0",
-    "react-scroll": "^1.4.7",
-    "react-slick": "^0.14.6"
+    "react-scroll": "^1.4.7"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",

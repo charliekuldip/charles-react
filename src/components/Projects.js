@@ -19,6 +19,9 @@ function removeClass(el, className) {
 };
 
 let projects = ProjectList.map((project) => {
+  const projectStyle = {
+    backgroundColor:project.bg_colors[0]
+  }
 
   const stopScale = (e)=> {
     let parentEl = findAncestor(e.target, 'project');
@@ -31,7 +34,7 @@ let projects = ProjectList.map((project) => {
     // removeClass(bgImg, 'scale-bg');
   }
   return (
-    <li className="project" key={project.id} onClick={stopScale}>
+    <li className="project" key={project.id} onClick={stopScale} style={projectStyle}>
       <BgImageLoader className="project-img bg-img scale-bg" src={"/src/img/projects/"+project.id+"/"+project.img_small} />
       <NavLink to={"/projects/"+ project.id}>        
         <h3>{project.name}</h3>

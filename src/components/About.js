@@ -38,7 +38,7 @@ class About extends Component {
 			    	
 			    	<div id="about-bio" className="clearfix block-container about-container">
 			        	<h1>{ this.props.route.title }</h1>
-			        	<p className="clearfix about-p">
+			        	<div className="clearfix about-p div-p">
 			        		<div className="clearfix">
 				        		<span>Often described as a 'neo-renaissance' man, Charles Davis was originally a musician and artist before discovering a passion for programming and becoming an Interactive&nbsp;Developer.</span>
 					        	<BgImageLoader className="about-bg c-art" src="/src/img/about/c-art.jpg" key="c-art" />
@@ -54,7 +54,7 @@ class About extends Component {
 							</div>
 							<a href="/resume.html" id="resume-link" className="resume-link">Resume</a>
 							<a href="#contact" id="contact-link" className="resume-link contact-link" onClick={this.scrollToContact}>Contact</a>
-						</p>
+						</div>
 			       	</div>
 
 			       <div id="contact" className="clearfix about-marquee table-full">
