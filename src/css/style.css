@@ -5,6 +5,234 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 
 /* ================================= 
+  BASE CSS
+==================================== */
+
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-family: serif;
+  font-size: 137.5%;
+  -webkit-font-smoothing: antialiased;
+}
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.414rem;
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+
+
+/* ================================= 
+  DEVICE CONTAINERS
+==================================== */
+ /* GENERAL STYLE */
+
+.device-mockup {
+  position: relative;
+  width: 100%;
+  padding-bottom: 61.775701%;
+}
+
+  .device-mockup > .device {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("/src/img/devices/macbook/macbook.png");
+  }
+
+    .device-mockup > .device > .screen {
+      position: absolute;
+      top:    11.0438729%;
+      bottom: 14.6747352%;
+      left:   13.364486%;
+      right:  13.364486%;
+      overflow: hidden;
+    }
+
+    .device-mockup > .device > .button {
+      position: absolute;
+      top: 0; left: 0;
+      display: none;
+      overflow: hidden;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      cursor: pointer;
+    }
+
+/* MacBook Pro */
+.device-mockup[data-device="macbook"] {
+  padding-bottom: 61.775701%;
+}
+
+.device-mockup[data-device="macbook"] > .device {
+  background-image: url("/src/img/devices/macbook/macbook.png");
+}
+
+.device-mockup[data-device="macbook"] > .device > .screen {
+  top: 11.0438729%; bottom: 14.6747352%; left: 13.364486%; right: 13.364486%;
+}
+
+
+/* iPhone 6 */
+.device-mockup[data-device="iphone6"],
+.device-mockup[data-device="iphone6"][data-orientation="portrait"] {
+  padding-bottom: 207.19%;
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"] {
+  padding-bottom: 48.76%;
+}
+
+.device-mockup[data-device="iphone6"] > .device,
+.device-mockup[data-device="iphone6"][data-color="black"] > .device,
+.device-mockup[data-device="iphone6"][data-orientation="portrait"][data-color="black"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_port_black.png");
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"] > .device,
+.device-mockup[data-device="iphone6"][data-orientation="landscape"][data-color="black"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_land_black.png");
+}
+
+.device-mockup[data-device="iphone6"][data-color="white"] > .device,
+.device-mockup[data-device="iphone6"][data-orientation="portrait"][data-color="white"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_port_white.png");
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"][data-color="white"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_land_white.png");
+}
+
+.device-mockup[data-device="iphone6"][data-color="gold"] > .device,
+.device-mockup[data-device="iphone6"][data-orientation="portrait"][data-color="gold"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_port_gold.png");
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"][data-color="gold"] > .device {
+  background-image: url("/src/img/devices/iphone_6/iphone_6_land_gold.png");
+}
+
+.device-mockup[data-device="iphone6"] > .device > .screen,
+.device-mockup[data-device="iphone6"][data-orientation="portrait"] > .device > .screen {
+  top: 12.58%; bottom: 12.88%; left: 6.77%; right: 6.77%;
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"] > .device > .screen {
+  top: 6.77%; bottom: 6.77%; left: 12.58%; right: 12.88%;
+}
+
+.device-mockup[data-device="iphone6"] > .device > .button,
+.device-mockup[data-device="iphone6"][data-orientation="portrait"] > .device > .button {
+  display: block;
+  top: 88.6%; bottom: 3.2%; left: 42%; right: 42%;
+}
+
+.device-mockup[data-device="iphone6"][data-orientation="landscape"] > .device > .button {
+  display: block;
+  top: 42%; bottom: 42%; left:  88.6%; right: 3.2%;
+}
+
+/* iPad Air 2 */
+.device-mockup[data-device="ipad_air_2"],
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"] {
+    padding-bottom: 141.38%;
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"] {
+  padding-bottom: 70.73%;
+}
+
+.device-mockup[data-device="ipad_air_2"] > .device,
+.device-mockup[data-device="ipad_air_2"][data-color="grey"] > .device,
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"][data-color="grey"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_gray_port.png");
+}
+
+.device-mockup[data-device="ipad_air_2"][data-color="silver"] > .device,
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"][data-color="silver"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_silver_port.png");
+}
+
+.device-mockup[data-device="ipad_air_2"][data-color="gold"] > .device,
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"][data-color="gold"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_gold_port.png");
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"] > .device,
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"][data-color="grey"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_gray_land.png");
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"][data-color="silver"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_silver_land.png");
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"][data-color="gold"] > .device {
+  background-image: url("/src/img/devices/ipad_air_2/ipad_air_2_gold_land.png");
+}
+
+.device-mockup[data-device="ipad_air_2"] > .device > .screen,
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"] > .device > .screen {
+  top: 9.025723%; bottom: 8.854341%; left: 6.15995%; right: 6.15995%;
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"] > .device > .screen {
+    top: 6.277551%; bottom: 6.277551%; left: 8.545988%; right: 8.545988%;
+}
+
+.device-mockup[data-device="ipad_air_2"] > .device > .button,
+.device-mockup[data-device="ipad_air_2"][data-orientation="portrait"] > .device > .button {
+  display: block;
+    top: 93.2%; bottom: 2.1%; left: 46.3%; right: 46.5%;
+}
+
+.device-mockup[data-device="ipad_air_2"][data-orientation="landscape"] > .device > .button {
+  display: block;
+  top: 46.5%; bottom: 46.8%; left: 93.5%; right: 1.9%;
+}
+
+
+/* ================================= 
   ELEMENT STYLES
 ==================================== */
 
@@ -154,14 +382,14 @@ p {
   MENU & HEADER STYLES
 ==================================== */
 header {
-  /*float: right;*/
-  z-index: 10;
-  /*position: relative;*/
-}
-header {
   position: fixed;
+  z-index: 10;
   top:0;
   width:100%;
+  -webkit-transform: translate3d(0,0,1000px);
+  -moz-transform: translate3d(0,0,1000px);
+  -o-transform: translate3d(0,0,1000px);
+  transform: translate3d(0,0,1000px);
 }
 header .main-nav {
     float: right;
@@ -588,7 +816,19 @@ ul.group li {
 .tri-device-container {
   position: relative;
   max-width: 1300px;
-  margin: 0 auto 2em;
+  margin: 5% auto 15%;
+}
+
+@media(min-width: 600px) {
+  .tri-device-container {
+    margin: 2.5% auto 12%; 
+  }
+}
+
+@media(min-width: 1000px) {
+  .tri-device-container {
+    margin:1% auto 10%; 
+  }
 }
 
 .tri-device-container .ipad,
@@ -611,7 +851,6 @@ ul.group li {
 .macbookcontainer {
     width:100%;
     max-width:1300px;
-    margin:7% auto 15%;
 }
 
 .screen {
@@ -690,6 +929,18 @@ ul.tags li {
 
 .about-marquee:first-of-type {
   margin-bottom: 50vh;
+}
+
+.about-marquee:first-of-type > .outer > .inner {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media(min-width: 600px) {
+  .about-marquee:first-of-type > .outer > .inner {
+    margin-top: 71px;
+    margin-bottom: 71px;
+  }
 }
 
 .about-marquee h1,
