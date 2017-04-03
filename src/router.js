@@ -1,6 +1,7 @@
 // Libs
 import React from 'react';
 import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
+import ReactGA from 'react-ga';
 
 // Components
 import App from './components/App';
@@ -13,9 +14,18 @@ import NotFound from './components/NotFound';
 
 // import ProjectsList from './data/projects';
 
+// GOOGLE ANALYTICS
+ReactGA.initialize('UA-96618450-1');
+
+function fireTracking() {
+    // console.log('THis is window.location.href', window.location.href);
+    ReactGA.pageview(window.location.href);
+}
+
+
 // Routes
 const routes = (
-  <Router history={browserHistory}>
+  <Router history={browserHistory} onUpdate={fireTracking}>
     <Route component={App}>
       <Route path="/" component={About} title="About" />
       <Route path="projects" component={Projects} title="Projects" projects={[App.state]} />

@@ -511,6 +511,45 @@ svg#page-animation path.path02 {
   transition: opacity 1s step-end;
 }
 
+/* PROJECT DEVICE ANIMATIONS */
+.project-enter {
+  opacity: 0;
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+}
+
+.project-enter.project-enter-active {
+  opacity: 1;
+  -webkit-transform:translateX(0);
+  -moz-transform:translateX(0);
+  -o-transform:translateX(0);
+  transform:translateX(0);
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.project-leave {
+  opacity: 1;
+}
+
+.project-leave.project-leave-active {
+  opacity: 0;
+  -webkit-transform:translateX(-100%);
+  -moz-transform:translateX(-100%);
+  -o-transform:translateX(-100%);
+  transform:translateX(-100%);
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
 
 /* PROJECT LIST */
 .bg-img {

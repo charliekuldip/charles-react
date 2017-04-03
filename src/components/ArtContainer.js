@@ -5,7 +5,6 @@ import ArtList from '../data/art';
 import Art from './projects/Art';
 
 
-
 const artStyle = {
   paddingTop:0
 }
@@ -21,9 +20,6 @@ class ArtContainer extends Component {
       key:'art-container'
     };
   }
-
-  
-
   
   render() {  
 

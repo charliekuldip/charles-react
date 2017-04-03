@@ -2,21 +2,7 @@ import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ArtList from '../data/art';
 import BgImageLoader from './parts/BgImageLoader';
-
-function findAncestor (el, cls) {
-    while ((el = el.parentElement) && !el.classList.contains(cls));
-    return el;
-}
-
-function removeClass(el, className) {
-  if (el.classList)
-    el.classList.remove(className)
-  else if (hasClass(el, className)) {
-    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
-    el.className=el.className.replace(reg, ' ')
-  }
-};
-
+import { removeClass, findAncestor } from './helpers/helpers';
 
 let arts = ArtList.map((art) => {
 

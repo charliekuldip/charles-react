@@ -6,7 +6,7 @@ const ProjectList = [
     img_big: "iris_warriors_header-big.jpg",
     img_small: "iris_warriors_header-small.jpg",
     id: "iriswarriors",
-    website:'http://iriswarriors.com/',
+    website:'http://iriswarriors.com/the-story/',
     case_study:'http://clickfiremedia.com/project/iriswarriors',
     images:[
       'The Story - Iris Warriors.png',
