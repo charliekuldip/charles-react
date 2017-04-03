@@ -102,9 +102,6 @@ class App extends Component {
       })
     }
 
-    // console.log('__dirname ', __dirname );
-    // console.log('__filename ', __filename );
-
     return (
 
       <div className="container clearfix" ref="app-container">

@@ -1181,7 +1181,7 @@ div#about-bio > * {
     vertical-align: middle;
   }
   
-  .about-p > div:nth-of-type(2) > span {
+  .about-p > div:nth-of-type(even) > span {
     padding-left: 0.5em;
     -webkit-transform:translateX(100%);
     -moz-transform:translateX(100%);
@@ -1189,7 +1189,7 @@ div#about-bio > * {
     transform:translateX(100%);
 
   }
-  .about-p > div:nth-of-type(2) > .about-bg {
+  .about-p > div:nth-of-type(even) > .about-bg {
     -webkit-transform:translateX(-100%);
     -moz-transform:translateX(-100%);
     -o-transform:translateX(-100%);
@@ -1211,6 +1211,14 @@ div#about-bio > * {
     padding-left: 0.5em;
   }
   .about-p > div:nth-child(3) > span {
+    /*padding-top: 0.5em;
+    padding-right: 0.5em;*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .about-p > div:nth-child(4) > span {
     padding-top: 0.5em;
     padding-right: 0.5em;
   }
@@ -1219,6 +1227,10 @@ div#about-bio > * {
 
 .c-art {
   background-position: 50% 100%;
+}
+
+.c-programmer {
+  background-position: 50% 55%;
 }
 
 .content {

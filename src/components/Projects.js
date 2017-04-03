@@ -15,7 +15,7 @@ let projects = ProjectList.map((project) => {
     let computedStyle = window.getComputedStyle(bgImg),
         transform = computedStyle.getPropertyValue('transform');
   
-    console.log('THis is transform', transform);
+    // console.log('THis is transform', transform);
     bgImg.style.transform = transform;
     // removeClass(bgImg, 'scale-bg');
   }
