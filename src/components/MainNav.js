@@ -13,8 +13,16 @@ class MainNav extends Component {
 	    };
 	}
 
-	componentWillMount() {
+	// componentWillMount() {
 
+	// }
+
+	componentWillUpdate(nextProps) {
+		let pTitle = nextProps.activePage.charAt(0).toUpperCase() + nextProps.activePage.slice(1);
+		if(pTitle != "Single") {
+			document.title = 'Charles Davis - ' + pTitle;	
+		} 
+		console.log('location:', location);
 	}
 
     setMenuClass(e) {
@@ -55,7 +63,7 @@ class MainNav extends Component {
 	    		</button>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
-					    <li><NavLink to="/" onClick={this.setMenuClass.bind(this)} style={navStyle}>About</NavLink></li>
+					    <li><NavLink to="/about" onClick={this.setMenuClass.bind(this)} style={navStyle}>About</NavLink></li>
 					    <li><NavLink to="/projects" onClick={this.setMenuClass.bind(this)} style={navStyle}>Projects</NavLink></li>
 					    <li><NavLink to="/art" onClick={this.setMenuClass.bind(this)} style={navStyle}>Art</NavLink></li>
 					</ul>

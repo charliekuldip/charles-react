@@ -21929,6 +21929,7 @@
 	    _reactRouter.Route,
 	    { component: _App2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _About2.default, title: 'About' }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _About2.default, title: 'About', scrollToAbout: 'true' }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _Projects2.default, title: 'Projects', projects: [_App2.default.state] }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'projects/:id', component: _ProjectContainer2.default, title: 'Project' }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'art', component: _Arts2.default, title: 'Art' }),
@@ -30744,6 +30745,20 @@
 	  }
 
 	  _createClass(SvgAnimation, [{
+	    key: 'startAnimation',
+	    value: function startAnimation() {
+	      this.setState({
+	        animating: true
+	      });
+	    }
+	  }, {
+	    key: 'stopAnimation',
+	    value: function stopAnimation() {
+	      this.setState({
+	        animating: false
+	      });
+	    }
+	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2, this);
@@ -30904,9 +30919,19 @@
 			return _this;
 		}
 
+		// componentWillMount() {
+
+		// }
+
 		_createClass(MainNav, [{
-			key: 'componentWillMount',
-			value: function componentWillMount() {}
+			key: 'componentWillUpdate',
+			value: function componentWillUpdate(nextProps) {
+				var pTitle = nextProps.activePage.charAt(0).toUpperCase() + nextProps.activePage.slice(1);
+				if (pTitle != "Single") {
+					document.title = 'Charles Davis - ' + pTitle;
+				}
+				console.log('location:', location);
+			}
 		}, {
 			key: 'setMenuClass',
 			value: function setMenuClass(e) {
@@ -30960,7 +30985,7 @@
 								null,
 								_react2.default.createElement(
 									_NavLink2.default,
-									{ to: '/', onClick: this.setMenuClass.bind(this), style: navStyle },
+									{ to: '/about', onClick: this.setMenuClass.bind(this), style: navStyle },
 									'About'
 								)
 							),
@@ -32191,10 +32216,10 @@
 	var About = function (_Component) {
 		_inherits(About, _Component);
 
-		function About() {
+		function About(props) {
 			_classCallCheck(this, About);
 
-			return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+			return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
 		}
 
 		_createClass(About, [{
@@ -32521,6 +32546,20 @@
 	  client: 'Camel',
 	  role: 'Front End Engineer',
 	  bg_colors: ['#334550', '#ee9d36', '#0f8fa4']
+	}, {
+	  name: "Charles Davis Portfolio",
+	  bio: "Written in Javascript ES 6 and compiled with Babel via webpack, my portfolio website is my first production site made with ReactJS. I used npm to install all devpendencies and run the build tools. Working in React was a pleasant experience and one with a payoff as it is an extrodinarly fast framework. I wrote custom animations for the page transitions by manipulating the svg path element attributes. I installed Google Analytics via npm to keep a track on page visits, React Router to take caure of urls and page routing, and structured the code using ES6 modules. Im excited about React, npm, and webpack am using these tools on current projects in the works..",
+	  img_src: "/src/img/projects/charles/charlesdavis_header-big.jpg",
+	  img_big: "charlesdavis_header-big.jpg",
+	  img_small: "charlesdavis_header-small.jpg",
+	  id: "charlesdavis",
+	  website: 'http://chowarddavis.com',
+	  images: [],
+	  tags: ['React', 'Webpack', 'npm', 'Javascript ES6', 'SVG Animation', 'Google Analytics API'],
+	  agency: 'C Howard Davis Publications',
+	  client: 'Charles Davis',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#6b3d44', '#b1a99c', '#0e0e0d']
 	}, {
 	  name: "Matcha Love",
 	  bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",

@@ -60,6 +60,33 @@ const ProjectList = [
     ]
   },
   {
+    name: "Charles Davis Portfolio",
+    bio: "Written in Javascript ES 6 and compiled with Babel via webpack, my portfolio website is my first production site made with ReactJS. I used npm to install all devpendencies and run the build tools. Working in React was a pleasant experience and one with a payoff as it is an extrodinarly fast framework. I wrote custom animations for the page transitions by manipulating the svg path element attributes. I installed Google Analytics via npm to keep a track on page visits, React Router to take caure of urls and page routing, and structured the code using ES6 modules. Im excited about React, npm, and webpack am using these tools on current projects in the works..",
+    img_src: "/src/img/projects/charles/charlesdavis_header-big.jpg",
+    img_big: "charlesdavis_header-big.jpg",
+    img_small: "charlesdavis_header-small.jpg",
+    id: "charlesdavis",
+    website:'http://chowarddavis.com',
+    images:[
+    ],
+    tags:[
+      'React',
+      'Webpack',
+      'npm',
+      'Javascript ES6',
+      'SVG Animation',
+      'Google Analytics API',
+    ],
+    agency:'C Howard Davis Publications',
+    client: 'Charles Davis',
+    role: 'Full Stack Developer',
+    bg_colors: [
+      '#6b3d44',
+      '#b1a99c',
+      '#0e0e0d'
+    ]
+  },
+  {
     name: "Matcha Love",
     bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
     img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",

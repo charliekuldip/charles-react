@@ -7,6 +7,11 @@ const aboutStyle = {
 }
 
 class About extends Component {
+
+	constructor(props) {
+	    super(props);
+	}
+
 	scrollToContact(e) {
 		e.preventDefault();
 		console.log('Scrolling to contact!');

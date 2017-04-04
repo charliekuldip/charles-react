@@ -119,7 +119,19 @@ class SvgAnimation extends Component {
     this.state = {
       animating:false
     };
-  } 
+  }
+
+  startAnimation() {
+    this.setState({
+      animating:true
+    });
+  }
+
+  stopAnimation() {
+    this.setState({
+      animating:false
+    });
+  }
 
   componentDidMount() {
     this.gooeyOverlay = new GooeyOverlay(this.refs.path1, this.refs.path2, this);

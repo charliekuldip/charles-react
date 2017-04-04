@@ -28,6 +28,7 @@ const routes = (
   <Router history={browserHistory} onUpdate={fireTracking}>
     <Route component={App}>
       <Route path="/" component={About} title="About" />
+      <Route path="about" component={About} title="About" scrollToAbout="true" />
       <Route path="projects" component={Projects} title="Projects" projects={[App.state]} />
       <Route path="projects/:id" component={ProjectContainer} title="Project" />
       <Route path="art" component={Arts} title="Art" />
