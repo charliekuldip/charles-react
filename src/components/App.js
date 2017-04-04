@@ -86,6 +86,7 @@ class App extends Component {
   };
 
   // componentDidUpdate(prevProps, prevState) {}
+  // <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
   
   render() {
     const renderChildren = (props) => {
@@ -118,8 +119,6 @@ class App extends Component {
         >
           { renderChildren(this.props) }
         </ReactCSSTransitionGroup>
-
-        <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
         
       </div>
     );

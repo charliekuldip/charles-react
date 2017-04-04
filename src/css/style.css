@@ -383,13 +383,13 @@ p {
 ==================================== */
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 8;
   top:0;
   width:100%;
-  -webkit-transform: translate3d(0,0,1000px);
-  -moz-transform: translate3d(0,0,1000px);
-  -o-transform: translate3d(0,0,1000px);
-  transform: translate3d(0,0,1000px);
+  -webkit-transform: translate3d(0,0,8px);
+  -moz-transform: translate3d(0,0,8px);
+  -o-transform: translate3d(0,0,8px);
+  transform: translate3d(0,0,8px);
 }
 header .main-nav {
     float: right;

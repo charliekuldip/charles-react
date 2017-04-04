@@ -28,7 +28,7 @@ class DeviceContainer extends Component {
 	}
 
 	onTick() {
-		if(this.state.running) {
+		// if(this.state.running) {
 		    console.log('THis is this.props.images: ', this.props.images);
 		   	if(this.props.images !== undefined) {
 			    var now = Date.now();
@@ -49,7 +49,7 @@ class DeviceContainer extends Component {
 			    });
 		    }
 	    console.log('onTick');
-	    }
+	    // }
 	}
 
 	onStart() {
