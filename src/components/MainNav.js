@@ -13,16 +13,14 @@ class MainNav extends Component {
 	    };
 	}
 
-	// componentWillMount() {
-
-	// }
+	// componentWillMount() {}
 
 	componentWillUpdate(nextProps) {
 		let pTitle = nextProps.activePage.charAt(0).toUpperCase() + nextProps.activePage.slice(1);
 		if(pTitle != "Single") {
 			document.title = 'Charles Davis - ' + pTitle;	
 		} 
-		console.log('location:', location);
+		// console.log('location:', location);
 	}
 
     setMenuClass(e) {

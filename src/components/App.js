@@ -65,21 +65,21 @@ class App extends Component {
   }
 
   toggleAnimationTrue() {
-    console.log('Toggle Animation True called!');
+    // console.log('Toggle Animation True called!');
     this.setState({
       animating:true
     });
   }
 
   toggleAnimationFalse() {
-    console.log('Toggle Animation False called!');
+    // console.log('Toggle Animation False called!');
     this.setState({
       animating:false
     });
   }
 
   toggleAnim() {
-    console.log('THis is anim', this.state.animating);
+    // console.log('THis is anim', this.state.animating);
     this.setState({
       animating: !this.state.animating
     });
@@ -120,7 +120,7 @@ class App extends Component {
         </ReactCSSTransitionGroup>
 
         <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
-
+        
       </div>
     );
   }

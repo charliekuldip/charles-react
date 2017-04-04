@@ -14,7 +14,7 @@ class About extends Component {
 
 	scrollToContact(e) {
 		e.preventDefault();
-		console.log('Scrolling to contact!');
+		// console.log('Scrolling to contact!');
 		Scroll.animateScroll.scrollToBottom({
 			duration:350
 		});	

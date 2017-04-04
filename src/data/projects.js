@@ -68,6 +68,9 @@ const ProjectList = [
     id: "charlesdavis",
     website:'http://chowarddavis.com',
     images:[
+      'Charles Davis - art.png',
+      'Charles Davis - iris-warriors.png',
+      'Charles Davis - projects.png'
     ],
     tags:[
       'React',

@@ -1271,3 +1271,7 @@ div#about-bio > * {
 /*.links h3 {
   text-transform: none;
 }*/
+
+.charlesdavis .device-mockup > .device > .screen {
+  background-color: white;
+}

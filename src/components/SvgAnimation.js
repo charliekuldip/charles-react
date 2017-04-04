@@ -86,7 +86,7 @@ const GooeyOverlay = function () {
 
     if (Date.now() - this.timeStart >= this.duration + this.delay) {
       if (!this.direction) {
-        console.log('We are done with anination!');
+        // console.log('We are done with anination!');
         document.body.removeEventListener('touch', this.myHandler);
         removeClass(document.body, 'hide-overflow');
         addClass(document.body, 'ready');
@@ -143,11 +143,11 @@ class SvgAnimation extends Component {
 
   componentWillUpdate(nextProps, nextState) {
     this.gooeyOverlay.close();
-    console.log('FROM SVG THis is componentWillUpdate!');
+    // console.log('FROM SVG THis is componentWillUpdate!');
   }
 
   componentDidUpdate(prevProps, prevState) {
-      console.log('FROM SVG THis is from componentDidUpdate!');
+      // console.log('FROM SVG THis is from componentDidUpdate!');
   }
 
   render() {
