@@ -40,7 +40,6 @@ const ProjectList = [
     img_small: "canvas2_header-small.jpg",
     id: "canvas2",
     website:'http://chowarddavis.com/camel/canvas-6',
-    // case_study:'http://clickfiremedia.com/project/iriswarriors',
     images:[
       'Joshua Davis Canvas-2.png',
       'Joshua Davis Canvas-3.png',
@@ -70,7 +69,9 @@ const ProjectList = [
     images:[
       'Charles Davis - art.png',
       'Charles Davis - iris-warriors.png',
-      'Charles Davis - projects.png'
+      'Charles Davis - about.png',
+      'Charles Davis - projects.png',
+      'Charles Davis - home.png'
     ],
     tags:[
       'React',

@@ -28,26 +28,26 @@ class DeviceContainer extends Component {
 	}
 
 	onTick() {
-	    // if(this.state.running) {
-	    console.log('THis is this.props.images: ', this.props.images);
-	   	if(this.props.images !== undefined) {
-		    var now = Date.now();
-		    console.log("This props images length", this.props.images.length);
-		    console.log("This this.state.slideIndex", this.state.slideIndex);
-		    let curSlide;
+		if(this.state.running) {
+		    console.log('THis is this.props.images: ', this.props.images);
+		   	if(this.props.images !== undefined) {
+			    var now = Date.now();
+			    console.log("This props images length", this.props.images.length);
+			    console.log("This this.state.slideIndex", this.state.slideIndex);
+			    let curSlide;
 
-		    if(this.state.slideIndex >= this.props.images.length-1) {
-		    	curSlide = 0;
-		    } else {
-		    	curSlide = this.state.slideIndex+1;
+			    if(this.state.slideIndex >= this.props.images.length-1) {
+			    	curSlide = 0;
+			    } else {
+			    	curSlide = this.state.slideIndex+1;
+			    }
+
+			    this.setState({
+			        previousTime: now,
+			        elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
+					slideIndex: curSlide
+			    });
 		    }
-
-		    this.setState({
-		        previousTime: now,
-		        elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
-				slideIndex: curSlide
-		    });
-	    // }
 	    console.log('onTick');
 	    }
 	}

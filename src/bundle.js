@@ -28444,6 +28444,12 @@
 	            transitionLeaveTimeout: 1000
 	          },
 	          renderChildren(this.props)
+	        ),
+	        '// ',
+	        _react2.default.createElement(
+	          'button',
+	          { id: 'outline-button', className: 'outline-button', onClick: _helpers.toggleOutlines },
+	          'Out'
 	        )
 	      );
 	    }
@@ -32537,7 +32543,6 @@
 	  img_small: "canvas2_header-small.jpg",
 	  id: "canvas2",
 	  website: 'http://chowarddavis.com/camel/canvas-6',
-	  // case_study:'http://clickfiremedia.com/project/iriswarriors',
 	  images: ['Joshua Davis Canvas-2.png', 'Joshua Davis Canvas-3.png', 'Joshua Davis Canvas-1.png'],
 	  tags: ['Canvas', 'jQuery'],
 	  agency: 'Havas',
@@ -32552,7 +32557,7 @@
 	  img_small: "charlesdavis_header-small.jpg",
 	  id: "charlesdavis",
 	  website: 'http://chowarddavis.com',
-	  images: ['Charles Davis - art.png', 'Charles Davis - iris-warriors.png', 'Charles Davis - projects.png'],
+	  images: ['Charles Davis - art.png', 'Charles Davis - iris-warriors.png', 'Charles Davis - about.png', 'Charles Davis - projects.png', 'Charles Davis - home.png'],
 	  tags: ['React', 'Webpack', 'npm', 'Javascript ES6', 'SVG Animation', 'Google Analytics API'],
 	  agency: 'C Howard Davis Publications',
 	  client: 'Charles Davis',
@@ -33069,26 +33074,26 @@
 		}, {
 			key: 'onTick',
 			value: function onTick() {
-				// if(this.state.running) {
-				console.log('THis is this.props.images: ', this.props.images);
-				if (this.props.images !== undefined) {
-					var now = Date.now();
-					console.log("This props images length", this.props.images.length);
-					console.log("This this.state.slideIndex", this.state.slideIndex);
-					var curSlide = void 0;
+				if (this.state.running) {
+					console.log('THis is this.props.images: ', this.props.images);
+					if (this.props.images !== undefined) {
+						var now = Date.now();
+						console.log("This props images length", this.props.images.length);
+						console.log("This this.state.slideIndex", this.state.slideIndex);
+						var curSlide = void 0;
 
-					if (this.state.slideIndex >= this.props.images.length - 1) {
-						curSlide = 0;
-					} else {
-						curSlide = this.state.slideIndex + 1;
+						if (this.state.slideIndex >= this.props.images.length - 1) {
+							curSlide = 0;
+						} else {
+							curSlide = this.state.slideIndex + 1;
+						}
+
+						this.setState({
+							previousTime: now,
+							elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
+							slideIndex: curSlide
+						});
 					}
-
-					this.setState({
-						previousTime: now,
-						elapsedTime: this.state.elapsedTime + (now - this.state.previousTime),
-						slideIndex: curSlide
-					});
-					// }
 					console.log('onTick');
 				}
 			}
