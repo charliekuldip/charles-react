@@ -12,7 +12,8 @@ class MainNav extends Component {
 	      	active: false,
 	      	activePage:props.activePage,
 	      	windowWidth: window.innerWidth,
-    		mobileNavVisible: false
+    		mobileNavVisible: false,
+    		anchorClick:false
 	    };
 	}
 
@@ -59,13 +60,21 @@ class MainNav extends Component {
     	if(!this.state.active) {
     		this.setState({
     			active: true,
-    			menuClass:'open'
+    			menuClass:'open',
+    			anchorClick:false
     		});	
     	} else {
     		let closeClass = 'closed';
-    		if(e.target.className == "main-nav-btn") {
-    			closeClass += ' from-btn';
-    		} 
+    		if(e.target.nodeName === "A") {
+    			closeClass += ' no-trans';
+    			this.setState({
+    				anchorClick:true
+    			});
+    		} else {
+    			this.setState({
+    				anchorClick:false
+    			});
+    		}
     		this.setState({
     			active: false,
     			menuClass:closeClass
@@ -86,6 +95,7 @@ class MainNav extends Component {
   		const navBtnClasses = "main-nav-btn menu-icon";
 	    const rootClassName = classNames(className, navBtnClasses, {
 	      'open': this.state.active,
+	      'no-trans':this.state.anchorClick
 	    });
 
 	    return (

@@ -1278,16 +1278,16 @@ NAV MENU ///////////////////////////////////////////////////
   -o-transform: translateZ(11);
   -ms-transform: translateZ(11);
   transform: translateZ(11);
-  /*-webkit-transition: all 300ms;
+  -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   -ms-transition: all 300ms;
-  transition: all 300ms;*/
-  -webkit-transition: all 500ms step-end;
+  transition: all 300ms;
+  /*-webkit-transition: all 500ms step-end;
   -moz-transition: all 500ms step-end;
   -o-transition: all 500ms step-end;
   -ms-transition: all 500ms step-end;
-  transition: all 500ms step-end;
+  transition: all 500ms step-end;*/
 }
 
 .menu-icon > span {
@@ -1312,6 +1312,7 @@ NAV MENU ///////////////////////////////////////////////////
   background-color: black;
 }
 
+.menu-icon > span,
 .menu-icon > span:before,
 .menu-icon > span:after {
   content: "";
@@ -1320,11 +1321,21 @@ NAV MENU ///////////////////////////////////////////////////
   height: 4px;
   background-color: white;
   border-radius: 4px;
-  /*-webkit-transition: all 300ms;
+  -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   -ms-transition: all 300ms;
-  transition: all 300ms;*/
+  transition: all 300ms;
+  /*-webkit-transition: all 500ms step-end;
+  -moz-transition: all 500ms step-end;
+  -o-transition: all 500ms step-end;
+  -ms-transition: all 500ms step-end;
+  transition: all 500ms step-end;*/
+}
+
+.menu-icon.no-trans > span,
+.menu-icon.no-trans > span:before,
+.menu-icon.no-trans > span:after {
   -webkit-transition: all 500ms step-end;
   -moz-transition: all 500ms step-end;
   -o-transition: all 500ms step-end;
@@ -1363,8 +1374,10 @@ NAV MENU ///////////////////////////////////////////////////
   transition: all 300ms;
 }
 
+.menu-icon.open > span,
 .menu-icon.open > span:after,
 .menu-icon.open > span:before {
+  background-color: white;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -1375,6 +1388,16 @@ NAV MENU ///////////////////////////////////////////////////
   -o-transition: all 300ms;
   -ms-transition: all 300ms;
   transition: all 300ms;
+}
+
+.menu-icon.no-trans,
+.menu-icon.no-trans > span:after,
+.menu-icon.no-trans > span:before {
+  -webkit-transition: all 500ms step-end;
+  -moz-transition: all 500ms step-end;
+  -o-transition: all 500ms step-end;
+  -ms-transition: all 500ms step-end;
+  transition: all 500ms step-end;
 }
 
 header {
@@ -1418,16 +1441,24 @@ header {
     -o-transform: translateY(-100vh);
     -ms-transform: translateY(-100vh);
     transform: translateY(-100vh);
-    /*-webkit-transition: all 500ms;
+    -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -o-transition: all 500ms;
     -ms-transition: all 500ms;
-    transition: all 500ms;*/
-    -webkit-transition: all 1000ms step-end;
+    transition: all 500ms;
+    /*-webkit-transition: all 1000ms step-end;
     -moz-transition: all 1000ms step-end;
     -o-transition: all 1000ms step-end;
     -ms-transition: all 1000ms step-end;
-    transition: all 1000ms step-end;
+    transition: all 1000ms step-end;*/
+  }
+
+  #main-nav-container.no-trans {
+    -webkit-transition: all 800ms step-end;
+    -moz-transition: all 800ms step-end;
+    -o-transition: all 800ms step-end;
+    -ms-transition: all 800ms step-end;
+    transition: all 800ms step-end;
   }
 
   #main-nav-container .main-nav,
