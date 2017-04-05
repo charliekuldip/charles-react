@@ -1,11 +1,44 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
+import axios from 'axios';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactTransitionGroup from 'react-addons-transition-group'
 import SvgAnimation from './SvgAnimation';
+import ProjectList from '../data/projects';
 import MainNav from './MainNav';
-import { disablepointeronscroll, toggleOutlines } from './helpers/helpers';
+
+
+const toggleOutlines = ()=> {
+  let body = document.getElementsByTagName('body')[0];
+  if(body.classList.contains('outlines')) {
+    body.removeAttribute('class', 'outlines');
+  } else {
+    body.setAttribute('class','outlines');
+  }
+}
 
 /*----- disable pointer events on scroll-------*/
+function disablepointeronscroll(){
+    var scrolltimer;
+
+    window.addEventListener('scroll', function(){
+        clearTimeout(scrolltimer);
+
+        if(document.body.className.indexOf('disable-hover') == -1) {
+            document.body.className += ' disable-hover';
+        }
+
+        scrolltimer = setTimeout(function(){
+            var classes = document.body.className.split(" ");
+            for(var i = 0; i<classes.length; i++){
+                if( classes[i] == 'disable-hover' )
+                    classes.splice(i,1);
+            }
+            document.body.className = classes.join(" ");
+        },200);
+    }, false);
+}
+
 disablepointeronscroll();
 
 class App extends Component {
@@ -25,7 +58,7 @@ class App extends Component {
     }
 
     this.state = {
-      // projects:ProjectList,
+      projects:ProjectList,
       activePage:activePage,
       topLevelPage:topLevel,
       animating:false
@@ -36,6 +69,18 @@ class App extends Component {
     setTimeout(()=>{
       window.scrollTo(0, window.innerHeight);
     }, 1000);
+  }
+
+
+  componentDidMount() {
+    // const loadingContainer = document.getElementById('loading-container');
+    // loadingContainer.setAttribute('class', 'hide');
+    // setTimeout(()=>{
+    //   loadingContainer.parentNode.removeChild(loadingContainer);
+    //   document.body.removeAttribute('class', 'unloaded');
+    //   // debugger();
+    //   console.log('Just removed the Container!');
+    // }, 1000);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -65,28 +110,31 @@ class App extends Component {
   }
 
   toggleAnimationTrue() {
-    // console.log('Toggle Animation True called!');
+    console.log('Toggle Animation True called!');
     this.setState({
       animating:true
     });
   }
 
   toggleAnimationFalse() {
-    // console.log('Toggle Animation False called!');
+    console.log('Toggle Animation True called!');
     this.setState({
       animating:false
     });
   }
 
   toggleAnim() {
-    // console.log('THis is anim', this.state.animating);
+    console.log('THis is anim', this.state.animating);
     this.setState({
       animating: !this.state.animating
     });
   };
 
-  // componentDidUpdate(prevProps, prevState) {}
-    
+  componentDidUpdate(prevProps, prevState) {
+    // console.log('THis is from componentDidUpdate!');
+    // console.log('prevState', prevState);
+  }
+  
   render() {
     const renderChildren = (props) => {
       return React.Children.map(props.children, child => {
@@ -105,7 +153,6 @@ class App extends Component {
     return (
 
       <div className="container clearfix" ref="app-container">
-
         <SvgAnimation activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} animating={this.state.animating} toggleAnim={this.toggleAnim.bind(this)} />
         
         <MainNav activePage={this.state.activePage} topLevelPage={this.state.topLevelPage} />       
@@ -118,7 +165,7 @@ class App extends Component {
         >
           { renderChildren(this.props) }
         </ReactCSSTransitionGroup>
-        
+        <button id="outline-button" className="outline-button" onClick={toggleOutlines}>Out</button>
       </div>
     );
   }

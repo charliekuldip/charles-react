@@ -3,6 +3,10 @@ import IPad from './Ipad';
 import IPhone from './Iphone';
 import MacBook from './MacBook';
 
+function downloadImages(imgs) {
+
+}
+
 class DeviceContainer extends Component {
 
 	constructor(props) {
@@ -11,7 +15,8 @@ class DeviceContainer extends Component {
 			running: false,
 	      	elapsedTime: 0,
 	      	previousTime: 0,
-	      	slideIndex:0
+	      	slideIndex:0,
+	      	images:[]
 	    };
 	}
 
@@ -21,6 +26,12 @@ class DeviceContainer extends Component {
 
 	componentDidMount() {
 		this.interval = setInterval(this.onTick.bind(this), 5000);
+
+		for (let key of this.props.images) {
+		  	key += 1;
+		  	console.log(this.props.images[key]);
+		  	console.log(key);
+		}
 	}
 
 	componentWillUnmount() {

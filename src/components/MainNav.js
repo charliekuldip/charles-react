@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink'
 import Scroll from 'react-scroll';
+import classNames from 'classnames';
 
 class MainNav extends Component {
 	constructor(props) {
@@ -9,11 +10,25 @@ class MainNav extends Component {
 	    	menuClass:'closed',
 	      	animating:false,
 	      	active: false,
-	      	activePage:props.activePage
+	      	activePage:props.activePage,
+	      	windowWidth: window.innerWidth,
+    		mobileNavVisible: false
 	    };
 	}
 
+	handleResize() {
+	  	this.setState({windowWidth: window.innerWidth});
+	}
+
 	// componentWillMount() {}
+
+	componentDidMount() {
+		window.addEventListener('resize', this.handleResize.bind(this));
+	}
+
+	componentWillUnmount() {
+	  window.removeEventListener('resize', this.handleResize.bind(this));
+	}
 
 	componentWillUpdate(nextProps) {
 		let pTitle = nextProps.activePage.charAt(0).toUpperCase() + nextProps.activePage.slice(1);
@@ -21,6 +36,21 @@ class MainNav extends Component {
 			document.title = 'Charles Davis - ' + pTitle;	
 		} 
 		// console.log('location:', location);
+	}
+
+	renderMobileNav() {
+	  if(this.state.mobileNavVisible) {
+	    // return this.navigationLinks();
+	    console.log('MOBILE NAV IS VISIBLE');
+	  }
+	}
+
+	handleNavClick() {
+	  if(!this.state.mobileNavVisible) {
+	    this.setState({mobileNavVisible: true});
+	  } else {
+	    this.setState({mobileNavVisible: false});
+	  }
 	}
 
     setMenuClass(e) {
@@ -51,19 +81,24 @@ class MainNav extends Component {
 
   	render() {
   		const navStyle={}
+  		const { className, props } = this.props;
+  		const navClasses = "main-nav-btn";
+	    const rootClassName = classNames(className, navClasses, {
+	      'active': this.state.active,
+	    });
 
 	    return (
 	    	<header className="clearfix">
-	    		<button id="main-nav-btn" className="main-nav-btn" onClick={this.setMenuClass.bind(this)} onTouchStart={this.setMenuClass.bind(this)}>
+	    		<div id="main-nav-btn" className={rootClassName} onClick={this.setMenuClass.bind(this)} onTouchStart={this.setMenuClass.bind(this)}>
 	    			<span className="bar"></span>
 	    			<span className="bar"></span>
 	    			<span className="bar"></span>
-	    		</button>
+	    		</div>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
-					    <li><NavLink to="/about" onClick={this.setMenuClass.bind(this)} style={navStyle}>About</NavLink></li>
-					    <li><NavLink to="/projects" onClick={this.setMenuClass.bind(this)} style={navStyle}>Projects</NavLink></li>
-					    <li><NavLink to="/art" onClick={this.setMenuClass.bind(this)} style={navStyle}>Art</NavLink></li>
+					    <li><NavLink to="/about" style={navStyle}>About</NavLink></li>
+					    <li><NavLink to="/projects" style={navStyle}>Projects</NavLink></li>
+					    <li><NavLink to="/art" style={navStyle}>Art</NavLink></li>
 					</ul>
 				</div>
 			</header>

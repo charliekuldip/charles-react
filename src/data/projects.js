@@ -235,6 +235,7 @@ const ProjectList = [
     img_big: "GM_header-big.jpg",
     img_small: "GM_header-small.jpg",
     id: "gm",
+    website: "http://www.gm.com/company/about-gm.html",
     images:[
       'General Motors | About.png'
     ],
