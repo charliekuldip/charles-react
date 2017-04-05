@@ -35,6 +35,7 @@ class MainNav extends Component {
 		if(pTitle != "Single") {
 			document.title = 'Charles Davis - ' + pTitle;	
 		} 
+		console.log('MainNav is updating!');	
 		// console.log('location:', location);
 	}
 
@@ -82,23 +83,21 @@ class MainNav extends Component {
   	render() {
   		const navStyle={}
   		const { className, props } = this.props;
-  		const navClasses = "main-nav-btn";
-	    const rootClassName = classNames(className, navClasses, {
-	      'active': this.state.active,
+  		const navBtnClasses = "main-nav-btn menu-icon";
+	    const rootClassName = classNames(className, navBtnClasses, {
+	      'open': this.state.active,
 	    });
 
 	    return (
-	    	<header className="clearfix">
+	    	<header id="fix-menu" className="clearfix fix-menu fixed-menu">
 	    		<div id="main-nav-btn" className={rootClassName} onClick={this.setMenuClass.bind(this)} onTouchStart={this.setMenuClass.bind(this)}>
-	    			<span className="bar"></span>
-	    			<span className="bar"></span>
 	    			<span className="bar"></span>
 	    		</div>
 	    		<div id="main-nav-container" className={this.state.menuClass}>
 					<ul className="main-nav clearfix">
-					    <li><NavLink to="/about" style={navStyle}>About</NavLink></li>
-					    <li><NavLink to="/projects" style={navStyle}>Projects</NavLink></li>
-					    <li><NavLink to="/art" style={navStyle}>Art</NavLink></li>
+					    <li><NavLink to="/about" style={navStyle} onClick={this.setMenuClass.bind(this)}>About</NavLink></li>
+					    <li><NavLink to="/projects" style={navStyle} onClick={this.setMenuClass.bind(this)}>Projects</NavLink></li>
+					    <li><NavLink to="/art" style={navStyle} onClick={this.setMenuClass.bind(this)}>Art</NavLink></li>
 					</ul>
 				</div>
 			</header>
