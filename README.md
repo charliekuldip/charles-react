@@ -1,4 +1,4 @@
-# Charles Davis Portfoliio 2017
+# Charles Davis Portfolio 2017
 
 - Built with React JS, React Router, and compiled with Webpack
 
