@@ -21542,7 +21542,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  BASE CSS\n==================================== */\n\n/* Setup */\nhtml {\n  /* Change default typefaces here */\n  font-family: serif;\n  font-size: 137.5%;\n  -webkit-font-smoothing: antialiased;\n}\n/* Copy & Lists */\np {\n  line-height: 1.5rem;\n  margin-top: 1.5rem;\n  margin-bottom: 0;\n}\n\n/* Headings */\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  /* Change heading typefaces here */\n  font-family: sans-serif;\n  margin-top: 1.5rem;\n  margin-bottom: 0;\n  line-height: 1.5rem;\n}\nh1 {\n  font-size: 4.242rem;\n  line-height: 4.5rem;\n  margin-top: 3rem;\n}\nh2 {\n  font-size: 2.828rem;\n  line-height: 3rem;\n  margin-top: 3rem;\n}\nh3 {\n  font-size: 1.414rem;\n}\nh4 {\n  font-size: 0.707rem;\n}\nh5 {\n  font-size: 0.4713333333333333rem;\n}\nh6 {\n  font-size: 0.3535rem;\n}\n\n\n/* ================================= \n  DEVICE CONTAINERS\n==================================== */\n /* GENERAL STYLE */\n\n.device-mockup {\n  position: relative;\n  width: 100%;\n  padding-bottom: 61.775701%;\n}\n\n  .device-mockup > .device {\n    position: absolute;\n    top: 0; bottom: 0; left: 0; right: 0;\n    width: 100%; height: 100%;\n    background-size: 100% 100%;\n    background-repeat: no-repeat;\n    background-image: url(\"/src/img/devices/macbook/macbook.png\");\n  }\n\n    .device-mockup > .device > .screen {\n      position: absolute;\n      top:    11.0438729%;\n      bottom: 14.6747352%;\n      left:   13.364486%;\n      right:  13.364486%;\n      overflow: hidden;\n    }\n\n    .device-mockup > .device > .button {\n      position: absolute;\n      top: 0; left: 0;\n      display: none;\n      overflow: hidden;\n      border-radius: 100%;\n      -webkit-border-radius: 100%;\n      -moz-border-radius: 100%;\n      cursor: pointer;\n    }\n\n/* MacBook Pro */\n.device-mockup[data-device=\"macbook\"] {\n  padding-bottom: 61.775701%;\n}\n\n.device-mockup[data-device=\"macbook\"] > .device {\n  background-image: url(\"/src/img/devices/macbook/macbook.png\");\n}\n\n.device-mockup[data-device=\"macbook\"] > .device > .screen {\n  top: 11.0438729%; bottom: 14.6747352%; left: 13.364486%; right: 13.364486%;\n}\n\n\n/* iPhone 6 */\n.device-mockup[data-device=\"iphone6\"],\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] {\n  padding-bottom: 207.19%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] {\n  padding-bottom: 48.76%;\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-color=\"black\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"black\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_black.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"black\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_black.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-color=\"white\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"white\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_white.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"white\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_white.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-color=\"gold\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_gold.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_gold.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device > .screen,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] > .device > .screen {\n  top: 12.58%; bottom: 12.88%; left: 6.77%; right: 6.77%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device > .screen {\n  top: 6.77%; bottom: 6.77%; left: 12.58%; right: 12.88%;\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device > .button,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] > .device > .button {\n  display: block;\n  top: 88.6%; bottom: 3.2%; left: 42%; right: 42%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device > .button {\n  display: block;\n  top: 42%; bottom: 42%; left:  88.6%; right: 3.2%;\n}\n\n/* iPad Air 2 */\n.device-mockup[data-device=\"ipad_air_2\"],\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] {\n    padding-bottom: 141.38%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] {\n  padding-bottom: 70.73%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"grey\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"grey\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gray_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"silver\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"silver\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_silver_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"gold\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gold_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"grey\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gray_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"silver\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_silver_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gold_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device > .screen,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] > .device > .screen {\n  top: 9.025723%; bottom: 8.854341%; left: 6.15995%; right: 6.15995%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device > .screen {\n    top: 6.277551%; bottom: 6.277551%; left: 8.545988%; right: 8.545988%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device > .button,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] > .device > .button {\n  display: block;\n    top: 93.2%; bottom: 2.1%; left: 46.3%; right: 46.5%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device > .button {\n  display: block;\n  top: 46.5%; bottom: 46.8%; left: 93.5%; right: 1.9%;\n}\n\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.case-study li a,\n.resume-link,\n.previous, .next,\n.main-nav a,\n.links a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\n.resume-link {\n  color: inherit;\n  margin-right: 1em;\n  display: inline-block;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n.div-p,\np {\n  margin-top:0.75em;\n}\n\n.div-p {\n  line-height: 1.5rem;\n  margin-bottom: 0;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n.about h2 {\n  margin-bottom: 0.6em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n.main-nav a {\n  padding: 0.5em 0;\n\n\n  /*font-size: .95em;*/\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  font-size: 10vw;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n@media(min-width: 600px) {\n  .main-nav a {\n    padding: 1em;\n    font-size: .95em;\n  }\n}\n\n.single .main-nav a,\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n.home .main-nav a:hover,\n.about .main-nav a:hover,\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n  -webkit-transform:translate3d(0,0,0);\n  -moz-transform:translate3d(0,0,0);\n  -o-transform:translate3d(0,0,0);\n  transform:translate3d(0,0,0);\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  display: block;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n/* PROJECT DEVICE ANIMATIONS */\n.project-enter {\n  opacity: 0;\n  -webkit-transform:translateX(100%);\n  -moz-transform:translateX(100%);\n  -o-transform:translateX(100%);\n  transform:translateX(100%);\n}\n\n.project-enter.project-enter-active {\n  opacity: 1;\n  -webkit-transform:translateX(0);\n  -moz-transform:translateX(0);\n  -o-transform:translateX(0);\n  transform:translateX(0);\n\n  -webkit-transition: all 500ms;\n  -moz-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n\n.project-leave {\n  opacity: 1;\n}\n\n.project-leave.project-leave-active {\n  opacity: 0;\n  -webkit-transform:translateX(-100%);\n  -moz-transform:translateX(-100%);\n  -o-transform:translateX(-100%);\n  transform:translateX(-100%);\n\n  -webkit-transition: all 500ms;\n  -moz-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n}\n\n.scale-bg {\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n/*\n.ready ul.group li:hover .scale-bg {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n*/\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  /*background: rgba(0,0,0,0.25);*/\n  background:radial-gradient(transparent, rgba(0,0,0,0.5));\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n  content: '';\n  width: 0;\n  height: 0;\n  border-style: solid;\n  -webkit-transition:all 180ms;\n  -moz-transition:all 180ms;\n  -o-transition:all 180ms;\n  transition:all 180ms;\n}\n\n.previous:after {\n  border-width: 0.44em 0.68em 0.44em 0;\n  border-color: transparent #ffffff transparent transparent;\n}\n\n.next:after {\n  border-width: 0.44em 0 0.44em 0.68em;\n  border-color: transparent transparent transparent #ffffff;\n}\n\n\n.previous.active:after,\n.previous:active:after,\n.previous:hover:after{\n  border-color:transparent red transparent transparent;\n}\n\n.next.active:after,\n.next:active:after,\n.next:hover:after {\n  border-color:transparent transparent transparent red;\n\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    /*padding-bottom: 508px;*/\n    padding-bottom: 740px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 5% auto 15%;\n}\n\n@media(min-width: 600px) {\n  .tri-device-container {\n    margin: 2.5% auto 12%; \n  }\n}\n\n@media(min-width: 1000px) {\n  .tri-device-container {\n    margin:1% auto 10%; \n  }\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.main-content.about {\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-container h1,\n.about-container .h1 {\n  line-height: 1em;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n}\n\n.about-marquee:first-of-type {\n  margin-bottom: 50vh;\n}\n\n.about-marquee:first-of-type > .outer > .inner {\n  margin-top: 60px;\n  margin-bottom: 60px;\n}\n\n@media(min-width: 600px) {\n  .about-marquee:first-of-type > .outer > .inner {\n    margin-top: 71px;\n    margin-bottom: 71px;\n  }\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n.art-project {\n  min-height: 100vh;\n  background-color: #000000;\n}\n\n.single-art {\n  top:50%;\n  -webkit-transform:translateY(-50%);\n  -moz-transform:translateY(-50%);\n  -o-transform:translateY(-50%);\n  transform:translateY(-50%);\n}\n\nul.group li a h3.art-heading {\n  color: transparent;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100vh;\n}\n\ndiv#about-bio > * {\n    max-width: 50rem;\n    margin-left: auto;\n    margin-right: auto;\n    float: none;\n}\n\n.case-study {\n    position: absolute;\n    bottom: 0;\n    left:0;\n    right: 0;\n    /*width: 100%;*/\n    z-index: 5;\n    margin:auto;\n}\n\n.case-study li {\n  display: inline-block;\n  width: 50%;\n  margin: auto;\n  padding:0;\n  text-align: center;\n}\n\n.case-study li:only-child {\n  display: block;\n}\n\n.case-study li a {\n  color: white;\n  padding: 0.75em 0;\n  font-size: 0.7em;\n  display: block;\n  -webkit-transition: all 200ms;\n  -moz-transition: all 200ms;\n  -o-transition: all 200ms;\n  transition: all 200ms;\n}\n\n.case-study li a:hover,\n.case-study li a:active,\n.case-study li a.active {\n  color:red;\n}\n\n@media(min-width: 400px) {\n  .case-study li a {\n    font-size: 0.9em;\n  }\n}\n\n@media(min-width: 600px) {\n  .case-study {\n    max-width: 84%;\n  }\n  .case-study li a {\n    font-size: 1em;\n  }\n}\n\n@media(min-width: 768px) {\n  .case-study {\n    max-width: 768px;\n  }\n}\n\n.about-bg {\n  display: block;\n  height: 0;\n  padding-bottom: 150px;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  /*margin-top: 0.75em;*/\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n}\n\n.about-p > div:last-of-type {\n  margin-bottom: 1em;\n}\n\n@media (min-width: 600px) {\n  .about-p > div {\n    display: table;\n    width: 100%;\n  }\n\n  .about-p > div * {\n    display: table-cell;\n    width: 50%;\n    vertical-align: middle;\n  }\n  \n  .about-p > div:nth-of-type(even) > span {\n    padding-left: 0.5em;\n    -webkit-transform:translateX(100%);\n    -moz-transform:translateX(100%);\n    -o-transform:translateX(100%);\n    transform:translateX(100%);\n\n  }\n  .about-p > div:nth-of-type(even) > .about-bg {\n    -webkit-transform:translateX(-100%);\n    -moz-transform:translateX(-100%);\n    -o-transform:translateX(-100%);\n    transform:translateX(-100%);\n  }\n\n  .about-bg {\n    margin-top: 0;\n  }\n\n  .about-p > div:nth-child(1) > span {\n    padding-bottom:0.5em;\n    padding-right: 0.5em;\n  }\n  \n  .about-p > div:nth-child(2) > span {\n    padding-top: 0.5em;\n    padding-bottom: 0.5em;\n    padding-left: 0.5em;\n  }\n  .about-p > div:nth-child(3) > span {\n    /*padding-top: 0.5em;\n    padding-right: 0.5em;*/\n    padding-top: 0.5em;\n    padding-bottom: 0.5em;\n    padding-right: 0.5em;\n  }\n\n  .about-p > div:nth-child(4) > span {\n    padding-top: 0.5em;\n    padding-right: 0.5em;\n  }\n\n}\n\n.c-art {\n  background-position: 50% 100%;\n}\n\n.c-programmer {\n  background-position: 50% 55%;\n}\n\n.content {\n  max-width: 50rem;\n  margin-left:auto;\n  margin-right:auto;\n}\n.links {\n  margin-top: 0.25em;\n}\n.links a {\n  color: inherit;\n  text-transform: none;\n  font-size: 1rem;\n  display: block;\n  line-height: 1.6em;\n  text-align: center;\n}\n.links a,\n.resume-link {\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n.links a:hover,\n.links a:active,\n.resume-link:hover,\n.resume-link:active {\n  color:red;\n}\n\n.links h2,\n.links h3 {\n  margin: 0 auto;\n}\n\n.charlesdavis .device-mockup > .device > .screen {\n  background-color: white;\n}\n\n\n/*\nNAV MENU ///////////////////////////////////////////////////\n*/\n.menu-icon {\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  margin: 0 auto;\n  float: none;\n  text-align: left;\n  position: absolute;\n  z-index: 11;\n  left: 8px;\n  top: 0;\n  -webkit-transform: translateZ(11);\n  -moz-transform: translateZ(11);\n  -o-transform: translateZ(11);\n  -ms-transform: translateZ(11);\n  transform: translateZ(11);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n  /*-webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;*/\n}\n\n.menu-icon > span {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  left: 0;\n  margin: auto;\n  display: block;\n  width: 80%;\n  height: 4px;\n  background-color: white;\n  border-radius: 4px;\n}\n\n.projects .menu-icon > span,\n.projects .menu-icon > span:after,\n.projects .menu-icon > span:before,\n.art .menu-icon > span,\n.art .menu-icon > span:after,\n.art .menu-icon > span:before {\n  background-color: black;\n}\n\n.menu-icon > span,\n.menu-icon > span:before,\n.menu-icon > span:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 4px;\n  background-color: white;\n  border-radius: 4px;\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n  /*-webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;*/\n}\n\n.menu-icon.no-trans > span,\n.menu-icon.no-trans > span:before,\n.menu-icon.no-trans > span:after {\n  -webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;\n}\n\n.menu-icon > span:before {\n  -webkit-transform: translateY(-0.7em);\n  -moz-transform: translateY(-0.7em);\n  -o-transform: translateY(-0.7em);\n  -ms-transform: translateY(-0.7em);\n  transform: translateY(-0.7em);\n}\n\n.menu-icon > span:after {\n  -webkit-transform: translateY(0.7em);\n  -moz-transform: translateY(0.7em);\n  -o-transform: translateY(0.7em);\n  -ms-transform: translateY(0.7em);\n  transform: translateY(0.7em);\n}\n\n/* OPENED */\n.menu-icon.open {\n  margin-top: 3px;\n  -webkit-transform: rotate(45deg);\n  -moz-transform: rotate(45deg);\n  -o-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n}\n\n.menu-icon.open > span,\n.menu-icon.open > span:after,\n.menu-icon.open > span:before {\n  background-color: white;\n  -webkit-transform: rotate(90deg);\n  -moz-transform: rotate(90deg);\n  -o-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n}\n\n.menu-icon.no-trans,\n.menu-icon.no-trans > span:after,\n.menu-icon.no-trans > span:before {\n  -webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;\n}\n\nheader {\n  position: fixed;\n  z-index: 8;\n  top:0;\n  width:100%;\n  -webkit-transform: translate3d(0,0,8px);\n  -moz-transform: translate3d(0,0,8px);\n  -o-transform: translate3d(0,0,8px);\n  transform: translate3d(0,0,8px);\n}\n\n@media (max-width: 599px) {\n  .main-nav a {\n    color:white;\n  }\n\n  #main-nav-container {\n    width: 100%;\n    height: 230px;\n    height: 100vh;\n    background-color: rgba(215, 66, 78, 0.8);\n    color: white;\n    position: absolute;\n    top: -230px;\n    top: -100vh;\n    z-index: 10;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n    -webkit-transform: translateY(-230px);\n    -moz-transform: translateY(-230px);\n    -o-transform: translateY(-230px);\n    -ms-transform: translateY(-230px);\n    transform: translateY(-230px);\n    -webkit-transform: translateY(-100vh);\n    -moz-transform: translateY(-100vh);\n    -o-transform: translateY(-100vh);\n    -ms-transform: translateY(-100vh);\n    transform: translateY(-100vh);\n    -webkit-transition: all 500ms;\n    -moz-transition: all 500ms;\n    -o-transition: all 500ms;\n    -ms-transition: all 500ms;\n    transition: all 500ms;\n    /*-webkit-transition: all 1000ms step-end;\n    -moz-transition: all 1000ms step-end;\n    -o-transition: all 1000ms step-end;\n    -ms-transition: all 1000ms step-end;\n    transition: all 1000ms step-end;*/\n  }\n\n  #main-nav-container.no-trans {\n    -webkit-transition: all 800ms step-end;\n    -moz-transition: all 800ms step-end;\n    -o-transition: all 800ms step-end;\n    -ms-transition: all 800ms step-end;\n    transition: all 800ms step-end;\n  }\n\n  #main-nav-container .main-nav,\n  #main-nav-container #menu-footer-nav {\n    width: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n\n\n  #main-nav-container.open {\n    top: 0;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    transform: translateY(0px);\n    -webkit-transition: all 500ms;\n    -moz-transition: all 500ms;\n    -o-transition: all 500ms;\n    -ms-transition: all 500ms;\n    transition: all 500ms;\n  }\n}\n.fix-menu {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 10;\n  height: 44px;\n  -webkit-transform: translateZ(10);\n  -moz-transform: translateZ(10);\n  -o-transform: translateZ(10);\n  -ms-transform: translateZ(10);\n  transform: translateZ(10);\n}\n\n@media (max-width: 599px) {\n\n  .main-nav .sub-menu {\n    display: none;\n  }\n}\n\n@media (min-width: 600px) {\n\n  header .main-nav {\n    float: right;\n  }\n  .main-nav li {\n    float: left;\n  }  \n  .menu-icon {\n    display: none;\n  }\n\n  .fix-menu {\n    position: absolute;\n    bottom: 5px;\n    z-index: 10;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n  }\n\n  .fix-menu nav li {\n    width: 33.333334%;\n    float: left;\n    text-align: center;\n  }\n\n  .fix-menu nav li ul {\n    width: 100%;\n    margin: 0;\n    padding: 0;\n    background-color: rgba(200, 40, 40, 0.8);\n  }\n\n  .fix-menu nav li ul li {\n    width: 100%;\n  }\n\n\n  .fixed-menu {\n    position: fixed;\n    width: 100%;\n    top: 0;\n    z-index: 10;\n    height: 44px;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n  }\n\n  .fixed-menu #main-nav-container {\n    background-color: rgba(200, 40, 40, 0.8);\n  }\n}\n.fix-top {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n  -webkit-transform: translateZ(10);\n  -moz-transform: translateZ(10);\n  -o-transform: translateZ(10);\n  -ms-transform: translateZ(10);\n  transform: translateZ(10);\n}\n", ""]);
+	exports.push([module.id, "/* ================================= \n  WEB FONTS\n==================================== */\n\n/* ================================= \n  BASE CSS\n==================================== */\n\n/* Setup */\nhtml {\n  /* Change default typefaces here */\n  font-family: serif;\n  font-size: 137.5%;\n  -webkit-font-smoothing: antialiased;\n}\n/* Copy & Lists */\np {\n  line-height: 1.5rem;\n  margin-top: 1.5rem;\n  margin-bottom: 0;\n}\n\n/* Headings */\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  /* Change heading typefaces here */\n  font-family: sans-serif;\n  margin-top: 1.5rem;\n  margin-bottom: 0;\n  line-height: 1.5rem;\n}\nh1 {\n  font-size: 4.242rem;\n  line-height: 4.5rem;\n  margin-top: 3rem;\n}\nh2 {\n  font-size: 2.828rem;\n  line-height: 3rem;\n  margin-top: 3rem;\n}\nh3 {\n  font-size: 1.414rem;\n}\nh4 {\n  font-size: 0.707rem;\n}\nh5 {\n  font-size: 0.4713333333333333rem;\n}\nh6 {\n  font-size: 0.3535rem;\n}\n\n\n/* ================================= \n  DEVICE CONTAINERS\n==================================== */\n /* GENERAL STYLE */\n\n.device-mockup {\n  position: relative;\n  width: 100%;\n  padding-bottom: 61.775701%;\n}\n\n  .device-mockup > .device {\n    position: absolute;\n    top: 0; bottom: 0; left: 0; right: 0;\n    width: 100%; height: 100%;\n    background-size: 100% 100%;\n    background-repeat: no-repeat;\n    background-image: url(\"/src/img/devices/macbook/macbook.png\");\n  }\n\n    .device-mockup > .device > .screen {\n      position: absolute;\n      top:    11.0438729%;\n      bottom: 14.6747352%;\n      left:   13.364486%;\n      right:  13.364486%;\n      overflow: hidden;\n    }\n\n    .device-mockup > .device > .button {\n      position: absolute;\n      top: 0; left: 0;\n      display: none;\n      overflow: hidden;\n      border-radius: 100%;\n      -webkit-border-radius: 100%;\n      -moz-border-radius: 100%;\n      cursor: pointer;\n    }\n\n/* MacBook Pro */\n.device-mockup[data-device=\"macbook\"] {\n  padding-bottom: 61.775701%;\n}\n\n.device-mockup[data-device=\"macbook\"] > .device {\n  background-image: url(\"/src/img/devices/macbook/macbook.png\");\n}\n\n.device-mockup[data-device=\"macbook\"] > .device > .screen {\n  top: 11.0438729%; bottom: 14.6747352%; left: 13.364486%; right: 13.364486%;\n}\n\n\n/* iPhone 6 */\n.device-mockup[data-device=\"iphone6\"],\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] {\n  padding-bottom: 207.19%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] {\n  padding-bottom: 48.76%;\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-color=\"black\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"black\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_black.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"black\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_black.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-color=\"white\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"white\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_white.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"white\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_white.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-color=\"gold\"] > .device,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_port_gold.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/iphone_6/iphone_6_land_gold.png\");\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device > .screen,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] > .device > .screen {\n  top: 12.58%; bottom: 12.88%; left: 6.77%; right: 6.77%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device > .screen {\n  top: 6.77%; bottom: 6.77%; left: 12.58%; right: 12.88%;\n}\n\n.device-mockup[data-device=\"iphone6\"] > .device > .button,\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"portrait\"] > .device > .button {\n  display: block;\n  top: 88.6%; bottom: 3.2%; left: 42%; right: 42%;\n}\n\n.device-mockup[data-device=\"iphone6\"][data-orientation=\"landscape\"] > .device > .button {\n  display: block;\n  top: 42%; bottom: 42%; left:  88.6%; right: 3.2%;\n}\n\n/* iPad Air 2 */\n.device-mockup[data-device=\"ipad_air_2\"],\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] {\n    padding-bottom: 141.38%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] {\n  padding-bottom: 70.73%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"grey\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"grey\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gray_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"silver\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"silver\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_silver_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-color=\"gold\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gold_port.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"grey\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gray_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"silver\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_silver_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"][data-color=\"gold\"] > .device {\n  background-image: url(\"/src/img/devices/ipad_air_2/ipad_air_2_gold_land.png\");\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device > .screen,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] > .device > .screen {\n  top: 9.025723%; bottom: 8.854341%; left: 6.15995%; right: 6.15995%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device > .screen {\n    top: 6.277551%; bottom: 6.277551%; left: 8.545988%; right: 8.545988%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"] > .device > .button,\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"portrait\"] > .device > .button {\n  display: block;\n    top: 93.2%; bottom: 2.1%; left: 46.3%; right: 46.5%;\n}\n\n.device-mockup[data-device=\"ipad_air_2\"][data-orientation=\"landscape\"] > .device > .button {\n  display: block;\n  top: 46.5%; bottom: 46.8%; left: 93.5%; right: 1.9%;\n}\n\n\n/* ================================= \n  ELEMENT STYLES\n==================================== */\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-weight: normal;\n  font-weight: 400;\n}\n\nhtml {\n  font-size: 115.5%;\n}\n\n@media(min-width: 600px) {\n  html {\n    font-size: 137.5%;\n  }\n}\n\n.case-study li a,\n.resume-link,\n.previous, .next,\n.main-nav a,\n.links a,\nul.tags li,\nh1, h2,h3,h4,h5,h6 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: normal;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.015em;\n  line-height: 1.4em;\n}\n\n.resume-link {\n  color: inherit;\n  margin-right: 1em;\n  display: inline-block;\n}\n\nh1,\nh2,\nul {\n  margin: 0;\n  padding: 0;\n}\nh2 {\n  font-size: 1.6em;\n  margin-bottom: 1.25em;\n}\nh3 {\n  margin-bottom: 1.5em;\n}\nul {\n  list-style-type: none;\n}\na {\n  text-decoration: none;\n}\n\n.div-p,\np {\n  margin-top:0.75em;\n}\n\n.div-p {\n  line-height: 1.5rem;\n  margin-bottom: 0;\n}\n\n.clearfix:after {\n visibility: hidden;\n display: block;\n font-size: 0;\n content: \" \";\n clear: both;\n height: 0;\n}\n.clearfix { display: inline-block; }\n* html .clearfix { height: 1%; }\n.clearfix { display: block; }\n\n.hide-overflow {\n  overflow: hidden;\n}\n\n#outline-button {\n  position: fixed;\n  bottom:20px;\n  right:20px;\n  z-index: 1000;\n  width: 100px;\n}\n\n.outlines * {\n  outline: 1px solid red;\n}\n\n/* ================================= \n  LAYOUT & PAGE STYLES\n==================================== */\n.container > div {\n  position: relative;\n  width: 100%;\n}\n.container > div > div {\n  position: absolute;\n  width: 100%;\n  padding-top: 59.094px;\n}\n@media(min-width: 600px) {\n.container > div > div {\n  padding-top: 70.781px;\n  }\n}\n\n.container > div > div.single-project {\n  padding-top: 0;\n}\n\n@media(min-width: 600px) {\n  .container > div > div.single-project {\n    padding-top: 0;\n  }\n}\n\n.block-container {\n  padding:0em 1em;\n  background-color:white;\n}\n\n.about .block-container {\n  padding:1em 1em;\n}\n\n.about h2 {\n  margin-bottom: 0.6em;\n}\n\n/* ================================= \n  MENU & HEADER STYLES\n==================================== */\n.main-nav a {\n  padding: 0.5em 0;\n\n\n  /*font-size: .95em;*/\n  color: #000;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  font-size: 10vw;\n  margin-bottom: 0;\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n@media(min-width: 600px) {\n  .main-nav a {\n    padding: 1em;\n    font-size: .95em;\n  }\n}\n\n.single .main-nav a,\n.home .main-nav a,\n.about .main-nav a {\n  color: white;  \n}\n\n.home .main-nav a:hover,\n.about .main-nav a:hover,\n.main-nav a:hover,\n.main-nav .active {\n  color: red;\n}\n\n\n/* IMAGES -------- */\n.course-img {\n  width: 70px;\n}\n.project-img {\n  width: 100%;\n}\n.not-found {\n  text-align: center;\n}\n\n.single-project img {\n  width: 100%;\n}\n\n/* ABOUT PAGE */\n.c-davis-bg {\n  background-color:#ada798;\n  background-position: 50% 0%;\n  background-size: auto 100vh;\n  background-repeat:no-repeat;\n  min-height: 100vh;\n  height: 100%;\n  width: 100vw;\n  position: fixed;\n  bottom:0;\n  top:0;\n  z-index: -1;\n  -webkit-transform:translate3d(0,0,0);\n  -moz-transform:translate3d(0,0,0);\n  -o-transform:translate3d(0,0,0);\n  transform:translate3d(0,0,0);\n}\n\n/* SVG ANIMATION */\nsvg#page-animation {\n  display: block;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 100;\n  pointer-events:none;\n}\nsvg#page-animation path.path01 {\n  fill: #cdd;\n}\nsvg#page-animation path.path02 {\n  fill: #abb;\n}\n\n\n/* CSS ANIMATION */\n.example-enter {\n  opacity: 0;\n}\n\n.example-enter.example-enter-active {\n  opacity: 1;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n.example-leave {\n  opacity: 1;\n}\n\n.example-leave.example-leave-active {\n  opacity: 0;\n  -webkit-transition: opacity 1s step-end;\n  -moz-transition: opacity 1s step-end;\n  -o-transition: opacity 1s step-end;\n  transition: opacity 1s step-end;\n}\n\n/* PROJECT DEVICE ANIMATIONS */\n.project-enter {\n  opacity: 0;\n  -webkit-transform:translateX(100%);\n  -moz-transform:translateX(100%);\n  -o-transform:translateX(100%);\n  transform:translateX(100%);\n}\n\n.project-enter.project-enter-active {\n  opacity: 1;\n  -webkit-transform:translateX(0);\n  -moz-transform:translateX(0);\n  -o-transform:translateX(0);\n  transform:translateX(0);\n\n  -webkit-transition: all 500ms;\n  -moz-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n\n.project-leave {\n  opacity: 1;\n}\n\n.project-leave.project-leave-active {\n  opacity: 0;\n  -webkit-transform:translateX(-100%);\n  -moz-transform:translateX(-100%);\n  -o-transform:translateX(-100%);\n  transform:translateX(-100%);\n\n  -webkit-transition: all 500ms;\n  -moz-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n\n\n/* PROJECT LIST */\n.bg-img {\n  padding-bottom:59.25%;\n  height: 0;\n  background-position: 50% 50%;\n  background-size:cover;\n\n  -webkit-transform-origin:center center;\n  transform-origin:center center;\n}\n\n.scale-bg {\n  -webkit-transform:scale(1);\n  transform:scale(1);\n\n  -webkit-transition:all 5000ms;\n  transition:all 5000ms;\n}\n\n/* PROJECTS PAGE */\n/*\n.ready ul.group li:hover .scale-bg {\n  -webkit-transform:scale(1.1);\n  transform:scale(1.1);\n}\n*/\n\nul.group li,\nul.group li a {\n  display: block;\n  position: relative;\n}\n\nul.group li {\n  position: relative;\n  overflow: hidden;\n}\n\nul.group li a {\n  position: absolute;\n  top:0; left:0; bottom: 0; right: 0;\n  margin: auto;\n  width: 100%;\n  height:100%;\n  z-index: 2;\n}\n\nul.group li a h3 {\n  color:white;\n  position: absolute;\n  top:50%; left:50%;\n  width: 95%;\n  margin:auto;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  -webkit-transition:all 200ms;\n  transition:all 200ms;\n}\n\n/*.about-marquee h1*/\n.about-marquee,\nul.group li a h3 {\n  text-align: center;\n  line-height: 1.15em;\n  font-size: 2.1em;\n  font-size: 10.8vw;\n}\n\n@media(min-width: 600px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 5.4vw;\n  }\n}\n\n@media(min-width: 1200px) {\n  .about-marquee h1,\n  ul.group li a h3 {\n    font-size: 2.7vw;\n  }\n}\n\n.about-marquee h1 {\n  font-size: 0.9em;\n  line-height: 1.1em;\n}\n.about-marquee h2 {\n  font-size: 0.4em;\n  line-height: 1.1em;\n  margin-bottom: 0.1em;\n  margin-top:0.1em;\n}\n\nul.group li a:hover h3 {\n  color:red;\n}\n\nul.group li:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  background: rgba(0,0,0,0.25);\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n\n  -webkit-transition:background 600ms;\n  transition:background 600ms;\n}\n\nul.group li:hover:before {\n  background:rgba(0,0,0,0);\n}\n\nul.group li {\n  display: block;\n  width: 100%;\n}\n\n@media(min-width: 600px) {\n  ul.group li {\n    float: left;\n    width: 50%;\n  }\n}\n\n@media(min-width: 1200px) {\n  ul.group li {\n    width: 33.3333333%;\n  }\n}\n\n/* MARQUEE */\n.marquee-nav {\n  position: relative;\n}\n\n.marquee {\n  /*padding-bottom:59.25%;*/\n  width:100%;\n  position: relative;\n  background-size: cover;\n  background-position:50% 50%;\n  background-repeat:no-repeat;\n\n  padding-bottom: 88.5%;\n}\n\n\n.marquee:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  max-width: auto;\n  /*background: rgba(0,0,0,0.25);*/\n  background:radial-gradient(transparent, rgba(0,0,0,0.5));\n  z-index: 1;\n  width: 100%;\n  height: 100%;\n  margin: auto;\n  max-width: none;\n}\n\n.marquee-nav h1 {\n  color:white;\n  text-align: center;\n  line-height: 1.15em;\n\n  position: absolute;\n  top:50%; left:50%;\n  /*width: 95%;*/\n  width: 84%;\n  margin:auto;\n  z-index: 1;\n\n  -webkit-transform:translate3d(-50%, -50%, 0);\n  -moz-transform:translate3d(-50%, -50%, 0);\n  -o-transform:translate3d(-50%, -50%, 0);\n  transform:translate3d(-50%, -50%, 0);  \n\n  font-size: 9vw; \n}\n\n.next,\n.previous {\n    position: absolute;\n    z-index: 2;\n    color: white;\n    display: block;\n    text-transform: uppercase;\n    font-weight: 800;\n    letter-spacing: 0.025em;\n    padding-bottom: 88.5%;\n    top: 0;\n    height: 0;\n    width: 8%;\n\n    transition:color 180ms;\n    -webkit-transition:color 180ms;\n}\n\n.next:hover,\n.previous:hover {\n  color:red;\n}\n\n.next {\n  right:0;\n}\n\n.previous {\n  left:0;\n}\n\n.previous:after,\n.next:after {\n  display: block;\n  position: absolute;\n  top:0; bottom:0; \n  left:0; right:0;\n  margin:auto;\n  height: 1ex;\n  width: 1ex;\n  line-height: 1ex;\n  font-size: 9vw;\n  text-align: center;\n  cursor: pointer;\n  content: '';\n  width: 0;\n  height: 0;\n  border-style: solid;\n  -webkit-transition:all 180ms;\n  -moz-transition:all 180ms;\n  -o-transition:all 180ms;\n  transition:all 180ms;\n}\n\n.previous:after {\n  border-width: 0.44em 0.68em 0.44em 0;\n  border-color: transparent #ffffff transparent transparent;\n}\n\n.next:after {\n  border-width: 0.44em 0 0.44em 0.68em;\n  border-color: transparent transparent transparent #ffffff;\n}\n\n\n.previous.active:after,\n.previous:active:after,\n.previous:hover:after{\n  border-color:transparent red transparent transparent;\n}\n\n.next.active:after,\n.next:active:after,\n.next:hover:after {\n  border-color:transparent transparent transparent red;\n\n}\n\n@media(min-width: 600px) {\n  .next,\n  .previous,\n  .marquee {\n    padding-bottom:59.25%;\n  }\n}\n\n@media(min-width:1264px) {\n  .next,\n  .previous,\n  .marquee {\n    /*padding-bottom: 508px;*/\n    padding-bottom: 740px;\n  }\n  .marquee h1 {\n    font-size: 110px;\n  }\n}\n\n\n/* DEVICES */\n.device-container {\n  position: relative;\n}\n\n.tri-device-container {\n  position: relative;\n  max-width: 1300px;\n  margin: 5% auto 15%;\n}\n\n@media(min-width: 600px) {\n  .tri-device-container {\n    margin: 2.5% auto 12%; \n  }\n}\n\n@media(min-width: 1000px) {\n  .tri-device-container {\n    margin:1% auto 10%; \n  }\n}\n\n.tri-device-container .ipad,\n.tri-device-container .iphone {\n  position: absolute;\n  margin:auto;\n}\n.tri-device-container .iphone {\n  width: 18%;\n  max-width: 380px;\n  bottom: -11%;\n  left: 5%;\n}\n.tri-device-container .ipad {\n    width: 30%;\n    bottom: -11%;\n    right: 5%;\n}\n\n.macbookcontainer {\n    width:100%;\n    max-width:1300px;\n}\n\n.screen {\n  background:black;\n}\n\n.gm .screen {\n  background:white;\n}\n\n.bio {\n  margin-bottom: 1em;\n}\n\nul.tags li {\n  font-size: 0.85em;\n  display:inline-block;\n  list-style-type:disc;\n  padding:0 0.5em;\n  line-height: 1.6em;\n  margin-right: 0.5em;\n  margin-bottom: 0.5em;\n  background: rgba(0,0,0, 1);\n  color:white;\n}\n\n\n.image { \n  opacity: 0; \n  -webkit-transition: opacity 0.3s; \n  transition: opacity 0.3s;\n}\n.image.image-loaded { \n  opacity: 1; \n}\n\n.roles {\n  list-style-type: none;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 800;\n  text-transform: uppercase;\n  margin:0 auto 0;\n  padding:1em 0 0;\n}\n\n.roles li {\n  line-height: 1.2em;\n  margin-bottom: 0.3em;\n}\n\n\n/* ABOUT PAGE UPDATES */\n.table-full {\n  display: table;\n}\n\n.table-full > div {\n  display: table-cell;\n  vertical-align: middle;\n}\n\n.main-content.about {\n  background-color:rgba(0,0,0,0.25);\n}\n\n.about-container h1,\n.about-container .h1 {\n  line-height: 1em;\n}\n\n.about-marquee {\n  color:white;\n  height: 100vh;\n  width: 100%;\n}\n\n.about-marquee:first-of-type {\n  margin-bottom: 50vh;\n}\n\n.about-marquee:first-of-type > .outer > .inner {\n  margin-top: 60px;\n  margin-bottom: 60px;\n}\n\n@media(min-width: 600px) {\n  .about-marquee:first-of-type > .outer > .inner {\n    margin-top: 71px;\n    margin-bottom: 71px;\n  }\n}\n\n.about-marquee h1,\n.about-marquee h2 {\n  text-align: center;\n  margin-left:auto;\n  margin-right: auto;\n}\n\n.about-marquee h2 {\n  max-width: 19em;\n}\n\n#dogs-logo {\n  width: 50%;\n  max-width: 500px;\n  margin-left:auto;\n  margin-right: auto;\n  display: block;\n}\n#dogs-logo path {\n  fill:#ffffff;\n}\n\n\n/* ART */\nul.arts-list li img {\n  display: block;\n  width: 100%;\n  max-width: 100%;\n}\n\n.single-art,\n.single-project .inner {\n  position: absolute;\n  width: 100%;\n}\n\n.art-project {\n  min-height: 100vh;\n  background-color: #000000;\n}\n\n.single-art {\n  top:50%;\n  -webkit-transform:translateY(-50%);\n  -moz-transform:translateY(-50%);\n  -o-transform:translateY(-50%);\n  transform:translateY(-50%);\n}\n\nul.group li a h3.art-heading {\n  color: transparent;\n}\n\n#loading-container {\n  opacity: 1; \n  -webkit-transition: opacity 1900ms;\n  transition: opacity 1900ms;\n}\n#loading-container.hide {\n  opacity: 0;\n}\n\n.unloaded {\n  background-color: black;\n -webkit-transition: background-color 500ms;\n  transition: background-color 500ms; \n}\n\n.main-content > h1 {\n  line-height: 1em;\n  margin-bottom:0.2em;\n  padding-left:0.1em;\n  font-size: 19vw;\n}\n\n@media(min-width: 475px) {\n  .main-content > h1 {\n    font-size: 90px;\n  }\n}\n\n.single-project .inner {\n    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:    -moz-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:     -ms-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:      -o-radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n    background-image:         radial-gradient(center center, circle cover, #ffffff, #cfcfcf 100%);\n}\n\n\n.art-img {\n  width: 100%;\n  padding-bottom: 100%;\n  background-size: cover;\n  margin:0 auto;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n}\n\n.art-project .previous,\n.art-project .next {\n  padding-bottom: 100vh;\n}\n\ndiv#about-bio > * {\n    max-width: 50rem;\n    margin-left: auto;\n    margin-right: auto;\n    float: none;\n}\n\n.case-study {\n    position: absolute;\n    bottom: 0;\n    left:0;\n    right: 0;\n    /*width: 100%;*/\n    z-index: 5;\n    margin:auto;\n}\n\n.case-study li {\n  display: inline-block;\n  width: 50%;\n  margin: auto;\n  padding:0;\n  text-align: center;\n}\n\n.case-study li:only-child {\n  display: block;\n}\n\n.case-study li a {\n  color: white;\n  padding: 0.75em 0;\n  font-size: 0.7em;\n  display: block;\n  -webkit-transition: all 200ms;\n  -moz-transition: all 200ms;\n  -o-transition: all 200ms;\n  transition: all 200ms;\n}\n\n.case-study li a:hover,\n.case-study li a:active,\n.case-study li a.active {\n  color:red;\n}\n\n@media(min-width: 400px) {\n  .case-study li a {\n    font-size: 0.9em;\n  }\n}\n\n@media(min-width: 600px) {\n  .case-study {\n    max-width: 84%;\n  }\n  .case-study li a {\n    font-size: 1em;\n  }\n}\n\n@media(min-width: 768px) {\n  .case-study {\n    max-width: 768px;\n  }\n}\n\n.about-bg {\n  display: block;\n  height: 0;\n  padding-bottom: 150px;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  /*margin-top: 0.75em;*/\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n}\n\n.about-p > div:last-of-type {\n  margin-bottom: 1em;\n}\n\n@media (min-width: 600px) {\n  .about-p > div {\n    display: table;\n    width: 100%;\n  }\n\n  .about-p > div * {\n    display: table-cell;\n    width: 50%;\n    vertical-align: middle;\n  }\n  \n  .about-p > div:nth-of-type(even) > span {\n    padding-left: 0.5em;\n    -webkit-transform:translateX(100%);\n    -moz-transform:translateX(100%);\n    -o-transform:translateX(100%);\n    transform:translateX(100%);\n\n  }\n  .about-p > div:nth-of-type(even) > .about-bg {\n    -webkit-transform:translateX(-100%);\n    -moz-transform:translateX(-100%);\n    -o-transform:translateX(-100%);\n    transform:translateX(-100%);\n  }\n\n  .about-bg {\n    margin-top: 0;\n  }\n\n  .about-p > div:nth-child(1) > span {\n    padding-bottom:0.5em;\n    padding-right: 0.5em;\n  }\n  \n  .about-p > div:nth-child(2) > span {\n    padding-top: 0.5em;\n    padding-bottom: 0.5em;\n    padding-left: 0.5em;\n  }\n  .about-p > div:nth-child(3) > span {\n    /*padding-top: 0.5em;\n    padding-right: 0.5em;*/\n    padding-top: 0.5em;\n    padding-bottom: 0.5em;\n    padding-right: 0.5em;\n  }\n\n  .about-p > div:nth-child(4) > span {\n    padding-top: 0.5em;\n    padding-right: 0.5em;\n  }\n\n}\n\n.c-art {\n  background-position: 50% 100%;\n}\n\n.c-programmer {\n  background-position: 50% 55%;\n}\n\n.content {\n  max-width: 50rem;\n  margin-left:auto;\n  margin-right:auto;\n}\n.links {\n  margin-top: 0.25em;\n}\n.links a {\n  color: inherit;\n  text-transform: none;\n  font-size: 1rem;\n  display: block;\n  line-height: 1.6em;\n  text-align: center;\n}\n.links a,\n.resume-link {\n  -webkit-transition:all .2s;\n  -moz-transition:all .2s;\n  -o-transition:all .2s;\n  transition:all .2s;\n}\n\n.links a:hover,\n.links a:active,\n.resume-link:hover,\n.resume-link:active {\n  color:red;\n}\n\n.links h2,\n.links h3 {\n  margin: 0 auto;\n}\n\n.charlesdavis .device-mockup > .device > .screen {\n  background-color: white;\n}\n\n\n/*\nNAV MENU ///////////////////////////////////////////////////\n*/\n.menu-icon {\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  margin: 0 auto;\n  float: none;\n  text-align: left;\n  position: absolute;\n  z-index: 11;\n  left: 8px;\n  top: 0;\n  -webkit-transform: translateZ(11);\n  -moz-transform: translateZ(11);\n  -o-transform: translateZ(11);\n  -ms-transform: translateZ(11);\n  transform: translateZ(11);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n  /*-webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;*/\n}\n\n.menu-icon > span {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  left: 0;\n  margin: auto;\n  display: block;\n  width: 80%;\n  height: 4px;\n  background-color: white;\n  border-radius: 4px;\n}\n\n.projects .menu-icon > span,\n.projects .menu-icon > span:after,\n.projects .menu-icon > span:before,\n.videos .menu-icon > span,\n.videos .menu-icon > span:after,\n.videos .menu-icon > span:before,\n.art .menu-icon > span,\n.art .menu-icon > span:after,\n.art .menu-icon > span:before {\n  background-color: black;\n}\n\n.menu-icon > span,\n.menu-icon > span:before,\n.menu-icon > span:after {\n  content: \"\";\n  position: absolute;\n  width: 100%;\n  height: 4px;\n  background-color: white;\n  border-radius: 4px;\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n  /*-webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;*/\n}\n\n.menu-icon.no-trans > span,\n.menu-icon.no-trans > span:before,\n.menu-icon.no-trans > span:after {\n  -webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;\n}\n\n.menu-icon > span:before {\n  -webkit-transform: translateY(-0.7em);\n  -moz-transform: translateY(-0.7em);\n  -o-transform: translateY(-0.7em);\n  -ms-transform: translateY(-0.7em);\n  transform: translateY(-0.7em);\n}\n\n.menu-icon > span:after {\n  -webkit-transform: translateY(0.7em);\n  -moz-transform: translateY(0.7em);\n  -o-transform: translateY(0.7em);\n  -ms-transform: translateY(0.7em);\n  transform: translateY(0.7em);\n}\n\n/* OPENED */\n.menu-icon.open {\n  margin-top: 3px;\n  -webkit-transform: rotate(45deg);\n  -moz-transform: rotate(45deg);\n  -o-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n}\n\n.menu-icon.open > span,\n.menu-icon.open > span:after,\n.menu-icon.open > span:before {\n  background-color: white;\n  -webkit-transform: rotate(90deg);\n  -moz-transform: rotate(90deg);\n  -o-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n  -webkit-transition: all 300ms;\n  -moz-transition: all 300ms;\n  -o-transition: all 300ms;\n  -ms-transition: all 300ms;\n  transition: all 300ms;\n}\n\n.menu-icon.no-trans,\n.menu-icon.no-trans > span:after,\n.menu-icon.no-trans > span:before {\n  -webkit-transition: all 500ms step-end;\n  -moz-transition: all 500ms step-end;\n  -o-transition: all 500ms step-end;\n  -ms-transition: all 500ms step-end;\n  transition: all 500ms step-end;\n}\n\nheader {\n  position: fixed;\n  z-index: 8;\n  top:0;\n  width:100%;\n  -webkit-transform: translate3d(0,0,8px);\n  -moz-transform: translate3d(0,0,8px);\n  -o-transform: translate3d(0,0,8px);\n  transform: translate3d(0,0,8px);\n}\n\n@media (max-width: 599px) {\n  .main-nav a {\n    color:white;\n  }\n\n  #main-nav-container {\n    width: 100%;\n    height: 230px;\n    height: 100vh;\n    background-color: rgba(215, 66, 78, 0.8);\n    color: white;\n    position: absolute;\n    top: -230px;\n    top: -100vh;\n    z-index: 10;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n    -webkit-transform: translateY(-230px);\n    -moz-transform: translateY(-230px);\n    -o-transform: translateY(-230px);\n    -ms-transform: translateY(-230px);\n    transform: translateY(-230px);\n    -webkit-transform: translateY(-100vh);\n    -moz-transform: translateY(-100vh);\n    -o-transform: translateY(-100vh);\n    -ms-transform: translateY(-100vh);\n    transform: translateY(-100vh);\n    -webkit-transition: all 500ms;\n    -moz-transition: all 500ms;\n    -o-transition: all 500ms;\n    -ms-transition: all 500ms;\n    transition: all 500ms;\n    /*-webkit-transition: all 1000ms step-end;\n    -moz-transition: all 1000ms step-end;\n    -o-transition: all 1000ms step-end;\n    -ms-transition: all 1000ms step-end;\n    transition: all 1000ms step-end;*/\n  }\n\n  #main-nav-container.no-trans {\n    -webkit-transition: all 800ms step-end;\n    -moz-transition: all 800ms step-end;\n    -o-transition: all 800ms step-end;\n    -ms-transition: all 800ms step-end;\n    transition: all 800ms step-end;\n  }\n\n  #main-nav-container .main-nav,\n  #main-nav-container #menu-footer-nav {\n    width: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n\n\n  #main-nav-container.open {\n    top: 0;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    transform: translateY(0px);\n    -webkit-transition: all 500ms;\n    -moz-transition: all 500ms;\n    -o-transition: all 500ms;\n    -ms-transition: all 500ms;\n    transition: all 500ms;\n  }\n}\n.fix-menu {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 10;\n  height: 44px;\n  -webkit-transform: translateZ(10);\n  -moz-transform: translateZ(10);\n  -o-transform: translateZ(10);\n  -ms-transform: translateZ(10);\n  transform: translateZ(10);\n}\n\n@media (max-width: 599px) {\n\n  .main-nav .sub-menu {\n    display: none;\n  }\n}\n\n@media (min-width: 600px) {\n\n  header .main-nav {\n    float: right;\n  }\n  .main-nav li {\n    float: left;\n  }  \n  .menu-icon {\n    display: none;\n  }\n\n  .fix-menu {\n    position: absolute;\n    bottom: 5px;\n    z-index: 10;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n  }\n\n  .fix-menu nav li {\n    width: 33.333334%;\n    float: left;\n    text-align: center;\n  }\n\n  .fix-menu nav li ul {\n    width: 100%;\n    margin: 0;\n    padding: 0;\n    background-color: rgba(200, 40, 40, 0.8);\n  }\n\n  .fix-menu nav li ul li {\n    width: 100%;\n  }\n\n\n  .fixed-menu {\n    position: fixed;\n    width: 100%;\n    top: 0;\n    z-index: 10;\n    height: 44px;\n    -webkit-transform: translateZ(10);\n    -moz-transform: translateZ(10);\n    -o-transform: translateZ(10);\n    -ms-transform: translateZ(10);\n    transform: translateZ(10);\n  }\n\n  .fixed-menu #main-nav-container {\n    background-color: rgba(200, 40, 40, 0.8);\n  }\n}\n.fix-top {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n  -webkit-transform: translateZ(10);\n  -moz-transform: translateZ(10);\n  -o-transform: translateZ(10);\n  -ms-transform: translateZ(10);\n  transform: translateZ(10);\n}\n", ""]);
 
 	// exports
 
@@ -21881,27 +21881,35 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Arts = __webpack_require__(286);
+	var _Arts = __webpack_require__(287);
 
 	var _Arts2 = _interopRequireDefault(_Arts);
 
-	var _About = __webpack_require__(289);
+	var _Videos = __webpack_require__(290);
+
+	var _Videos2 = _interopRequireDefault(_Videos);
+
+	var _About = __webpack_require__(292);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Projects = __webpack_require__(290);
+	var _Projects = __webpack_require__(293);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _ProjectContainer = __webpack_require__(292);
+	var _ProjectContainer = __webpack_require__(294);
 
 	var _ProjectContainer2 = _interopRequireDefault(_ProjectContainer);
 
-	var _ArtContainer = __webpack_require__(299);
+	var _ArtContainer = __webpack_require__(301);
 
 	var _ArtContainer2 = _interopRequireDefault(_ArtContainer);
 
-	var _NotFound = __webpack_require__(301);
+	var _VideoContainer = __webpack_require__(303);
+
+	var _VideoContainer2 = _interopRequireDefault(_VideoContainer);
+
+	var _NotFound = __webpack_require__(305);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -21934,6 +21942,8 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: 'projects/:id', component: _ProjectContainer2.default, title: 'Project' }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'art', component: _Arts2.default, title: 'Art' }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'art/:id', component: _ArtContainer2.default, title: 'Art' }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'videos', component: _Videos2.default, title: 'Video' }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'videos/:id', component: _VideoContainer2.default, title: 'Video' }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
 	  )
 	);
@@ -28298,15 +28308,19 @@
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _SvgAnimation = __webpack_require__(270);
+	var _projects = __webpack_require__(270);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
+	var _SvgAnimation = __webpack_require__(271);
 
 	var _SvgAnimation2 = _interopRequireDefault(_SvgAnimation);
 
-	var _MainNav = __webpack_require__(272);
+	var _MainNav = __webpack_require__(273);
 
 	var _MainNav2 = _interopRequireDefault(_MainNav);
 
-	var _helpers = __webpack_require__(271);
+	var _helpers = __webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28341,7 +28355,7 @@
 	    }
 
 	    _this.state = {
-	      // projects:ProjectList,
+	      projects: _projects2.default,
 	      activePage: activePage,
 	      topLevelPage: topLevel,
 	      animating: false
@@ -30605,6 +30619,180 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var ProjectList = [{
+	  name: "Iris Warriors",
+	  bio: "Iris Warriors is many things – a film, a ballet, a book, but above and beyond everything else, it is a creation myth about the birth of color. We were tasked by our client, Donroy Entertainment, to create an engaging online experience to help generate buzz around Iris Warriors, while giving them a tool to build an audience in the social space around the question, \“Which warrior are you?\" Our main challenge was that the film had not been shot, so we needed an experiential way to illustrate this abstract concept with no media assets. Our solution was binary. By breaking down each chapter of the story to its core meaning, we were then able to bring this essence to life visually using code. Combined together, they formed a beautiful storytelling technique. Prior to allowing users to experience the story, we gave them the opportunity to learn about the different characters in the film, and choose a warrior that suits them best. After choosing their warriors and providing minimal user data, they are then plotted using google maps, allowing our clients to not only geo-target their audience, but also market to them based on their chosen warrior. These warriors become a user's social identity while they navigate throughout the digital experience. The Iris Warriors film is currently in production and is scheduled to premiere in early 2017, but we’ve given Donroy Entertainment a head start to building an audience with an engaging online experience and powerful marketing tool.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/iris_warriors_header.jpg",
+	  img_big: "iris_warriors_header-big.jpg",
+	  img_small: "iris_warriors_header-small.jpg",
+	  id: "iriswarriors",
+	  website: 'http://iriswarriors.com/the-story/',
+	  case_study: 'http://clickfiremedia.com/project/iriswarriors',
+	  images: ['The Story - Iris Warriors.png', 'Gallery - Iris Warriors.png', 'The Dancers - Iris Warriors.png', 'The Making Of - Iris Warriors.png'],
+	  tags: ['Canvas', 'Google Maps API', 'Greensock JS', 'jQuery', 'PHP', 'SVG Animation', 'Wordpress'],
+	  agency: 'Click 3X',
+	  client: 'DonRoy',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#483078', '#000000', '#fff0a8']
+	}, {
+	  name: "Canvas 2",
+	  bio: "Commissioned by Camel for their Turkish campaign, an interactive drawing experience was created based on art and code from digital artist Joshua Davis. Joshua Davis worked with the Click3X dev team to convert his demos written in processing to Javascript. The HTML5 canvas element was used. The agency Havas tasked the dev team at Click 3X with building out the prototypes for the Drawing component. The campain included 4 installments of the drawing app, each adding a new feature to the experience.",
+	  img_src: "/src/img/projects/canvas2/canvas-2_header-big.jpg",
+	  img_big: "canvas2_header-big.jpg",
+	  img_small: "canvas2_header-small.jpg",
+	  id: "canvas2",
+	  website: 'http://chowarddavis.com/camel/canvas-6',
+	  images: ['Joshua Davis Canvas-2.png', 'Joshua Davis Canvas-3.png', 'Joshua Davis Canvas-1.png'],
+	  tags: ['Canvas', 'jQuery'],
+	  agency: 'Havas',
+	  client: 'Camel',
+	  role: 'Front End Engineer',
+	  bg_colors: ['#334550', '#ee9d36', '#0f8fa4']
+	}, {
+	  name: "Charles Davis Portfolio",
+	  bio: "Written in Javascript ES 6 and compiled with Babel via webpack, my portfolio website is my first production site made with ReactJS. I used npm to install all devpendencies and run the build tools. Working in React was a pleasant experience and one with a payoff as it is an extrodinarly fast framework. I wrote custom animations for the page transitions by manipulating the svg path element attributes. I installed Google Analytics via npm to keep a track on page visits, React Router to take caure of urls and page routing, and structured the code using ES6 modules. Im excited about React, npm, and webpack am using these tools on current projects in the works..",
+	  img_src: "/src/img/projects/charles/charlesdavis_header-big.jpg",
+	  img_big: "charlesdavis_header-big.jpg",
+	  img_small: "charlesdavis_header-small.jpg",
+	  id: "charlesdavis",
+	  website: 'http://chowarddavis.com',
+	  images: ['Charles Davis - art.png', 'Charles Davis - iris-warriors.png', 'Charles Davis - about.png', 'Charles Davis - projects.png', 'Charles Davis - home.png'],
+	  tags: ['React', 'Webpack', 'npm', 'Javascript ES6', 'SVG Animation', 'Google Analytics API'],
+	  agency: 'C Howard Davis Publications',
+	  client: 'Charles Davis',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#6b3d44', '#b1a99c', '#0e0e0d']
+	}, {
+	  name: "Matcha Love",
+	  bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
+	  img_big: "matcha_header-big.jpg",
+	  img_small: "matcha_header-small.jpg",
+	  id: "matchalove",
+	  website: "http://matchalove.com/",
+	  case_study: "http://clickfiremedia.com/project/matchalove",
+	  images: ['Home - Matcha Love.png', 'About - Matcha Love.png', 'Classic Matcha - Matcha Love.png', 'Press - Matcha Love.png', 'Products Archive - Matcha Love.png', 'Recipes Archive - Matcha Love.png', 'Stores - Matcha Love.png'],
+	  tags: ['jQuery', 'PHP', 'SASS', 'Wordpress'],
+	  agency: 'Click 3X',
+	  client: 'Matcha Love',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#a86030', '#f0d8c0', '#d8c0a8']
+	}, {
+	  name: "Heard City Website",
+	  bio: "Our friends at Heard City approached us to help them establish a brand identity that was not only true to their agency culture, but which reflected their company’s cutting-edge audio post-production capabilities. Our creative team partnered with Heard City to successfully capture the agency’s essence and craft an identity that brought the brand to life (in digital and print form) through a responsive HTML5 parallax website, business cards, a brochure and a stationary set.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/HeardCity_header.jpg",
+	  img_big: "HeardCity_header-big.jpg",
+	  img_small: "HeardCity_header-small.jpg",
+	  id: "heardcity",
+	  website: 'http://heardcity.com/',
+	  images: ['Home - Heardcity.png', 'Projects - Heardcity.png', 'Our Team - Heardcity.png', 'Gloria Pitagorsky - Heardcity.png', 'VR Projects - Heardcity.png'],
+	  tags: ['GSAP', 'Parallax', 'jQuery', 'PHP', 'Wordpress'],
+	  agency: 'Click 3X',
+	  client: 'Heard City',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#f0f0f0', '#d8d8d8', '#c0a8a8']
+	}, {
+	  name: "Con Edison Microsite",
+	  bio: "conEdison approached ClickFireMedia with the challenge of building an interactive online platform that informs and educates New York City Building Managers of energy-efficient cost saving techniques for their properties. Working with the Gate we conceptualized an immersive visual journey that put the average Building Manger into the drivers seat. Our CG team designed and constructed a photo realistic 3D “Class B” building, consisting of 9 different destinations, that users can explore, all while learning of different techniques to enhance their building and save on their energy bill. conEdison’s ultimate goal was to get users to register for their Demand Response Program.  An initiative that gives conEdison control of a building’s energy consumption during peak hours, in return for revenue. To make this offer more enticing we offered the users a suite of tools to educate them on these cost savings opportunities and revenue potential. Our investment in this project spans almost a full year, starting with detailed UX wire framings to endless design explorations and content hub for thought leadership, industry insights and educational interactive tools.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/ConEd_header.jpg",
+	  img_big: "ConEd_header-big.jpg",
+	  img_small: "ConEd_header-small.jpg",
+	  id: "coned",
+	  case_study: "http://clickfiremedia.com/project/coned",
+	  images: ['Commercial - Con Edison.png', 'Customer Solutions - Con Edison.png', 'Insights & Events - Con Edison.png', 'Urban Green Gala - Con Edison.png'],
+	  tags: ['CSS Animation', 'jQuery', 'PHP', 'Wordpress'],
+	  agency: 'The Gate',
+	  client: 'Con Edison',
+	  role: 'Full Stack Developer',
+	  bg_colors: ['#c0d8f0', '#d8f0f0', '#9090a8']
+	}, {
+	  name: "VFILES Smashion!",
+	  bio: "What chic sophisticate hasn’t fantasized about donning a fashionable frock on the runway to compete with top models? In order to bring that dream to fruition, we worked with the VFILES team, provided concepting, game logic, animation and cross-platform application development to ensure a gaming experience stylish enough to live up to the VFILES brand. Just like the big names in Haute Couture, the goal for players is to compete on the runways of four major city’s fashion weeks. Featuring immersive storytelling and addictive gameplay, the app—built for iOS and Android devices—delivers a compelling challenge in either landscape or portrait orientation.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/smashion_header.jpg",
+	  img_big: "smashion_header-big.jpg",
+	  img_small: "smashion_header-small.jpg",
+	  id: "vfiles",
+	  tags: ['Corona SDK', 'Lua', 'Mobile App'],
+	  agency: 'Click 3X',
+	  client: 'VFiles',
+	  role: 'Front End Developer',
+	  bg_colors: ['#304830', '#486048', '#181818']
+	}, {
+	  name: "Theraflu",
+	  bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-video/CFM_Theraflu_CS.jpg",
+	  img_big: "CFM_Theraflu_CS-big.jpg",
+	  img_small: "CFM_Theraflu_CS-small.jpg",
+	  id: "theraflu",
+	  case_study: "http://clickfiremedia.com/project/theraflu",
+	  tags: ['Angular JS', 'CSS Animation', 'Kiosk', 'Large Display', 'SASS'],
+	  agency: 'Saatchi & Saatchi',
+	  client: 'Theraflu',
+	  role: 'Front End Developer',
+	  bg_colors: ['#181848', '#000000', '#000018']
+	}, {
+	  name: "GM About Page",
+	  bio: "Mccann Detroit approached us to collaborate on the imagination of the new look gm.com website. This exciting brief challenged our team to concept, design and develop the new look \"About Our Company\" section of gm.com site that would inspire the new website's look and feel. Our goal was to visually enhance an information-heavy experience, to ultimately tell a more engaging and interactive story across desktop, tablet and mobile platforms. During our R&D phase our team created animated prototypes and used a creative prototyping technique called \"video-lization\" to communicate and bring to life our creative vision. We also created a series of customized SVG animations to visually communicate important GM brand values such as \"Our Company\", \"Our People\", \"Our Brands\", and \"Our Commitment\". From a Technology standpoint our team formulated development solutions that enhanced the overall user experience across various devices and browsers. To prevent conflict with the existing GM codebase, the technology team wrote a custom-tailored mobile-first framework utilizing CSS3 animations and transforms in combination with scroll-controlled features and SVG graphics. The result is a seamless experience delighting the user as they scroll, revealing eye-catching animations to carry the dialog of GM’s story and further establish their reputation as trend-setters in their industry.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/GM_header.jpg",
+	  img_big: "GM_header-big.jpg",
+	  img_small: "GM_header-small.jpg",
+	  id: "gm",
+	  website: "http://www.gm.com/company/about-gm.html",
+	  images: ['General Motors | About.png'],
+	  tags: ['CSS Animation', 'jQuery', 'SASS', 'SVG Animation'],
+	  agency: 'McCaan',
+	  client: 'General Motors',
+	  role: 'Front End Developer',
+	  bg_colors: ['#d8d8d8', '#f0f0f0', '#ffffff']
+	}, {
+	  name: "Gamut",
+	  bio: "To transfer a new brand vision into reality, ClickFire Media partnered with CO-OP Marketing to rebrand COX Digital Solutions and craft them a new website. The fully responsive site performs flawlessly across platforms and includes a robust CMS, coded to make managing content a seamless experience. Using cutting-edge CSS3 techniques, the site implements parallax scrolling without the use of Javascript, ensuring a smooth visual effect across all modern browsers. A branding video was also produced and launched on the website to communicate the essence of the new brand identity to customers.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/gamut_header.jpg",
+	  img_big: "gamut_header-big.jpg",
+	  img_small: "gamut_header-small.jpg",
+	  id: "gamut",
+	  images: ['Gamut | Who We Are | Our Leadership.png', 'Gamut | Watch + Read.png', 'Gamut | What we do.png', 'Gamut | Who We Are | About.png'],
+	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery', 'CSS Animation'],
+	  bg_colors: ['#d8d8d8', '#f0f0f0', '#c0c0c0']
+	}, {
+	  name: "The Family",
+	  bio: "We function differently for each of our clients and friends, but we always strive to make a significant and profound impact on both of their brands and businesses. We manage talent, brands, and careers connected with creating and producing award-winning advertising.  We help create a unique niche for each of our Family Members based on their individual talent, aesthetic, and where they want to grow. We give each a resoundingly clear voice in this very loud and cluttered industry. We effectively help build their brands, their portfolios, their standing in the industry, and their bottom line. Our skills include, but are not limited to: communicating, relationship building, dog training, proactive selling and marketing, strategizing, splitting wood, branding, cooking, public relations, gardening, event planning, producing, creating, reading, writing, arithmetic, motivational dancing, business coaching and consulting, spotting and building talent, surfing, interior decorating, hunting and gathering, multitasking, driving a stick shift, trend setting and taste making, gift wrapping, making dove sounds, procurement, and winning. One of us is even a repeated Spelling Bee champ.",
+	  img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
+	  img_big: "Home---The-Family-big.jpg",
+	  img_small: "Home---The-Family-small.jpg",
+	  id: "thefamily",
+	  images: ['Home - The Family.png', 'Work & News - The Family.png', 'Family Members - The Family.png', 'Recent Archives - The Family.png', 'Contact - The Family.png'],
+	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery'],
+	  bg_colors: ['#d8a860', '#f0f0f0', '#ffffff']
+	}, {
+	  name: "Breast Cancer Awareness",
+	  bio: "In 2014 we were challenged by our client The Estée Lauder Companies to create a 360 campaign that would inspire audiences to join the important conversation about breast cancer awareness. Our response was to leverage the power of storytelling across the digital and social landscape, by amplifying video content and tailoring the topics of conversation to connect to a wider audience. With the call-to-action: “Hear our stories. Share yours,” Click3x Director Jonathan Yi and ClickFire Media brought together individuals, their families and supporters to capture a two-way conversation. Through authentic narrative and hours of moving footage, audiences learned that cancer is not a solitary struggle; it affects us all. The hours of moving footage led to the creation of a campaign trailer and 27-minute documentary. Users around the world visited the responsive BCACampaign.com website, built ground up with consistent performance from mobile to desktop. It was then translated into 15 different languages, to share stories, photos, videos and opinions resulting in an aggregated live feed that engaged a global audience. The resulting metrics were astounding - 1,000,000 YouTube views, 2,000,000 social media impressions, and 16,000 moments of engagement demonstrating the power of storytelling to transcend space, time and location.",
+	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/bca_header.jpg",
+	  img_big: "bca_header-big.jpg",
+	  img_small: "bca_header-small.jpg",
+	  id: "bca",
+	  tags: ['Backbone JS', 'CodeIgniter', 'Google Maps API', 'jQuery', 'PHP'],
+	  agency: 'Reason 2 Be',
+	  client: 'Estee Lauder',
+	  role: 'Front End Developer',
+	  bg_colors: ['#a8a8c0', '#90a8a8', '#181818']
+	}];
+
+	exports.default = ProjectList;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "projects.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -30617,7 +30805,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _helpers = __webpack_require__(271);
+	var _helpers = __webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30798,7 +30986,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SvgAnimation.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -30869,7 +31057,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "helpers.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -30890,11 +31078,11 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _reactScroll = __webpack_require__(273);
+	var _reactScroll = __webpack_require__(274);
 
 	var _reactScroll2 = _interopRequireDefault(_reactScroll);
 
-	var _classnames = __webpack_require__(285);
+	var _classnames = __webpack_require__(286);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -31060,6 +31248,15 @@
 									{ to: '/art', style: navStyle, onClick: this.setMenuClass.bind(this) },
 									'Art'
 								)
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									_NavLink2.default,
+									{ to: '/videos', style: navStyle, onClick: this.setMenuClass.bind(this) },
+									'Videos'
+								)
 							)
 						)
 					)
@@ -31075,27 +31272,27 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MainNav.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.Link = __webpack_require__(274);
-	exports.Button = __webpack_require__(283);
-	exports.Element = __webpack_require__(284);
-	exports.Helpers = __webpack_require__(275);
-	exports.scroller = __webpack_require__(282);
-	exports.Events = __webpack_require__(280);
-	exports.scrollSpy = __webpack_require__(281);
-	exports.animateScroll = __webpack_require__(276);
+	exports.Link = __webpack_require__(275);
+	exports.Button = __webpack_require__(284);
+	exports.Element = __webpack_require__(285);
+	exports.Helpers = __webpack_require__(276);
+	exports.scroller = __webpack_require__(283);
+	exports.Events = __webpack_require__(281);
+	exports.scrollSpy = __webpack_require__(282);
+	exports.animateScroll = __webpack_require__(277);
 
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(275);
+	var Helpers = __webpack_require__(276);
 
 	var Link = React.createClass({
 	  render: function () {
@@ -31107,7 +31304,7 @@
 
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31115,9 +31312,9 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 
-	var animateScroll = __webpack_require__(276);
-	var scrollSpy = __webpack_require__(281);
-	var defaultScroller = __webpack_require__(282);
+	var animateScroll = __webpack_require__(277);
+	var scrollSpy = __webpack_require__(282);
+	var defaultScroller = __webpack_require__(283);
 	var assign = __webpack_require__(4);
 
 
@@ -31351,18 +31548,18 @@
 
 
 /***/ },
-/* 276 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assign = __webpack_require__(4);
 
-	var smooth = __webpack_require__(277);
+	var smooth = __webpack_require__(278);
 
 	var easing = smooth.defaultEasing;
 
-	var cancelEvents = __webpack_require__(278);
+	var cancelEvents = __webpack_require__(279);
 
-	var events = __webpack_require__(280);
+	var events = __webpack_require__(281);
 
 	/*
 	 * Function helper
@@ -31555,7 +31752,7 @@
 
 
 /***/ },
-/* 277 */
+/* 278 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31573,10 +31770,10 @@
 	}
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addPassiveEventListener = __webpack_require__(279);
+	var addPassiveEventListener = __webpack_require__(280);
 
 	var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown']
 
@@ -31594,7 +31791,7 @@
 
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports) {
 
 	/*
@@ -31623,7 +31820,7 @@
 
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports) {
 
 	
@@ -31642,10 +31839,10 @@
 	module.exports = Events;
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addPassiveEventListener = __webpack_require__(279);
+	var addPassiveEventListener = __webpack_require__(280);
 
 	var eventThrottler = function(eventHandler) {
 	  var eventHandlerTimeout;
@@ -31749,13 +31946,13 @@
 
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assign = __webpack_require__(4);
 
-	var animateScroll = __webpack_require__(276);
-	var events = __webpack_require__(280);
+	var animateScroll = __webpack_require__(277);
+	var events = __webpack_require__(281);
 
 	var __mapped = {};
 	var __activeLink;
@@ -31859,13 +32056,13 @@
 
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(275);
+	var Helpers = __webpack_require__(276);
 
 	var Button = React.createClass({
 	  render: function () {
@@ -31877,13 +32074,13 @@
 
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(275);
+	var Helpers = __webpack_require__(276);
 
 	var Element = React.createClass({
 	  render: function () {
@@ -31895,7 +32092,7 @@
 
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31949,7 +32146,7 @@
 
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -31970,15 +32167,15 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _art = __webpack_require__(287);
+	var _art = __webpack_require__(288);
 
 	var _art2 = _interopRequireDefault(_art);
 
-	var _BgImageLoader = __webpack_require__(288);
+	var _BgImageLoader = __webpack_require__(289);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
-	var _helpers = __webpack_require__(271);
+	var _helpers = __webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32064,7 +32261,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Arts.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32144,7 +32341,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "art.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32163,7 +32360,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(285);
+	var _classnames = __webpack_require__(286);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -32230,7 +32427,166 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "BgImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 289 */
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(256);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _videos = __webpack_require__(291);
+
+	var _videos2 = _interopRequireDefault(_videos);
+
+	var _BgImageLoader = __webpack_require__(289);
+
+	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
+
+	var _helpers = __webpack_require__(272);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var videos = _videos2.default.map(function (video) {
+
+	  var videoStyle = {
+	    backgroundColor: video.bg_colors[0]
+	  };
+
+	  var stopScale = function stopScale(e) {
+	    var parentEl = (0, _helpers.findAncestor)(e.target, 'video');
+	    var bgImg = parentEl.getElementsByClassName("bg-img")[0];
+	    var computedStyle = window.getComputedStyle(bgImg),
+	        transform = computedStyle.getPropertyValue('transform');
+
+	    bgImg.style.transform = transform;
+	    (0, _helpers.removeClass)(bgImg, 'scale-bg');
+	  };
+
+	  return _react2.default.createElement(
+	    'li',
+	    { className: 'video', key: video.id, onClick: stopScale, style: videoStyle },
+	    _react2.default.createElement(_BgImageLoader2.default, { className: 'project-img bg-img video-img scale-bg', src: "/src/img/videos/" + video.id + "/" + video.thumb }),
+	    _react2.default.createElement(
+	      _NavLink2.default,
+	      { to: "/videos/" + video.id },
+	      _react2.default.createElement(
+	        'h3',
+	        { className: 'video-heading' },
+	        video.name
+	      )
+	    )
+	  );
+	});
+
+	var Videos = function (_Component) {
+	  _inherits(Videos, _Component);
+
+	  function Videos() {
+	    _classCallCheck(this, Videos);
+
+	    return _possibleConstructorReturn(this, (Videos.__proto__ || Object.getPrototypeOf(Videos)).apply(this, arguments));
+	  }
+
+	  _createClass(Videos, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.setTimeout(function () {
+	        window.scrollTo(0, 0);
+	      }, 1000);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Videos'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'clearfix group videos-list' },
+	          videos
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Videos;
+	}(_react.Component);
+
+	exports.default = Videos;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Videos.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var VideoList = [{
+	  id: 'adrenaline-rush',
+	  name: 'Adrenaline Rush',
+	  src: 'https://www.youtube.com/watch?v=q6K4CGU2Dqw',
+	  media: 'video',
+	  img: 'poster.jpg',
+	  thumb: 'liz-boat.jpg',
+	  gallery: ['billy.jpg', 'gun-noir.jpg', 'lady-z-billy.jpg', 'liz-boat.jpg', 'poster.jpg'],
+	  bg_colors: ['#ff7762', '#f7f0e6z', '#b1ffee']
+	}, {
+	  id: 'recent-future',
+	  name: 'Recent Future: Dog Mask Killer',
+	  src: 'https://www.youtube.com/watch?v=7rMKHGI0lwE',
+	  media: 'video',
+	  img: 'amelia-.jpg',
+	  thumb: 'ben.jpg',
+	  gallery: ['amelia-.jpg', 'amy-claire.jpg', 'ben.jpg', 'credits.jpg', 'preist-book.jpg', 'priest-gun.jpg', 'rap-guy.jpg', 'water.jpg'],
+	  bg_colors: ['#e75f37', '#196e51']
+	}, {
+	  id: 'memphis-3000',
+	  name: 'Memhis 3000',
+	  // src:'tyler-naomi.jpg',
+	  media: 'video',
+	  img: 'tommy-kha.jpg',
+	  thumb: 'amy-mask.jpg',
+	  gallery: ['amy-mask.jpg', 'billy-road.jpg', 'billy.jpg', 'buzz.jpg', 'lady-z.jpg', 'liz-ryan.jpg', 'pyramid.jpg', 'skate-land.jpg', 'tall-david.jpg', 'tommy-gun.jpg', 'tommy-kha.jpg', 'tommy-mask.jpg', 'tyler.jpg', 'vidalia.jpg'],
+	  bg_colors: ['#e75f37', '#196e51']
+	}];
+
+	exports.default = VideoList;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "videos.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32247,11 +32603,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _BgImageLoader = __webpack_require__(288);
+	var _BgImageLoader = __webpack_require__(289);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
-	var _reactScroll = __webpack_require__(273);
+	var _reactScroll = __webpack_require__(274);
 
 	var _reactScroll2 = _interopRequireDefault(_reactScroll);
 
@@ -32445,7 +32801,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 290 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32466,15 +32822,15 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _projects = __webpack_require__(291);
+	var _projects = __webpack_require__(270);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _BgImageLoader = __webpack_require__(288);
+	var _BgImageLoader = __webpack_require__(289);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
-	var _helpers = __webpack_require__(271);
+	var _helpers = __webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32560,181 +32916,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Projects.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 291 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var ProjectList = [{
-	  name: "Iris Warriors",
-	  bio: "Iris Warriors is many things – a film, a ballet, a book, but above and beyond everything else, it is a creation myth about the birth of color. We were tasked by our client, Donroy Entertainment, to create an engaging online experience to help generate buzz around Iris Warriors, while giving them a tool to build an audience in the social space around the question, \“Which warrior are you?\" Our main challenge was that the film had not been shot, so we needed an experiential way to illustrate this abstract concept with no media assets. Our solution was binary. By breaking down each chapter of the story to its core meaning, we were then able to bring this essence to life visually using code. Combined together, they formed a beautiful storytelling technique. Prior to allowing users to experience the story, we gave them the opportunity to learn about the different characters in the film, and choose a warrior that suits them best. After choosing their warriors and providing minimal user data, they are then plotted using google maps, allowing our clients to not only geo-target their audience, but also market to them based on their chosen warrior. These warriors become a user's social identity while they navigate throughout the digital experience. The Iris Warriors film is currently in production and is scheduled to premiere in early 2017, but we’ve given Donroy Entertainment a head start to building an audience with an engaging online experience and powerful marketing tool.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/iris_warriors_header.jpg",
-	  img_big: "iris_warriors_header-big.jpg",
-	  img_small: "iris_warriors_header-small.jpg",
-	  id: "iriswarriors",
-	  website: 'http://iriswarriors.com/the-story/',
-	  case_study: 'http://clickfiremedia.com/project/iriswarriors',
-	  images: ['The Story - Iris Warriors.png', 'Gallery - Iris Warriors.png', 'The Dancers - Iris Warriors.png', 'The Making Of - Iris Warriors.png'],
-	  tags: ['Canvas', 'Google Maps API', 'Greensock JS', 'jQuery', 'PHP', 'SVG Animation', 'Wordpress'],
-	  agency: 'Click 3X',
-	  client: 'DonRoy',
-	  role: 'Full Stack Developer',
-	  bg_colors: ['#483078', '#000000', '#fff0a8']
-	}, {
-	  name: "Canvas 2",
-	  bio: "Commissioned by Camel for their Turkish campaign, an interactive drawing experience was created based on art and code from digital artist Joshua Davis. Joshua Davis worked with the Click3X dev team to convert his demos written in processing to Javascript. The HTML5 canvas element was used. The agency Havas tasked the dev team at Click 3X with building out the prototypes for the Drawing component. The campain included 4 installments of the drawing app, each adding a new feature to the experience.",
-	  img_src: "/src/img/projects/canvas2/canvas-2_header-big.jpg",
-	  img_big: "canvas2_header-big.jpg",
-	  img_small: "canvas2_header-small.jpg",
-	  id: "canvas2",
-	  website: 'http://chowarddavis.com/camel/canvas-6',
-	  images: ['Joshua Davis Canvas-2.png', 'Joshua Davis Canvas-3.png', 'Joshua Davis Canvas-1.png'],
-	  tags: ['Canvas', 'jQuery'],
-	  agency: 'Havas',
-	  client: 'Camel',
-	  role: 'Front End Engineer',
-	  bg_colors: ['#334550', '#ee9d36', '#0f8fa4']
-	}, {
-	  name: "Charles Davis Portfolio",
-	  bio: "Written in Javascript ES 6 and compiled with Babel via webpack, my portfolio website is my first production site made with ReactJS. I used npm to install all devpendencies and run the build tools. Working in React was a pleasant experience and one with a payoff as it is an extrodinarly fast framework. I wrote custom animations for the page transitions by manipulating the svg path element attributes. I installed Google Analytics via npm to keep a track on page visits, React Router to take caure of urls and page routing, and structured the code using ES6 modules. Im excited about React, npm, and webpack am using these tools on current projects in the works..",
-	  img_src: "/src/img/projects/charles/charlesdavis_header-big.jpg",
-	  img_big: "charlesdavis_header-big.jpg",
-	  img_small: "charlesdavis_header-small.jpg",
-	  id: "charlesdavis",
-	  website: 'http://chowarddavis.com',
-	  images: ['Charles Davis - art.png', 'Charles Davis - iris-warriors.png', 'Charles Davis - about.png', 'Charles Davis - projects.png', 'Charles Davis - home.png'],
-	  tags: ['React', 'Webpack', 'npm', 'Javascript ES6', 'SVG Animation', 'Google Analytics API'],
-	  agency: 'C Howard Davis Publications',
-	  client: 'Charles Davis',
-	  role: 'Full Stack Developer',
-	  bg_colors: ['#6b3d44', '#b1a99c', '#0e0e0d']
-	}, {
-	  name: "Matcha Love",
-	  bio: "Prestigious Japanese tea company ITO EN approached us to bring their new brand matcha LOVE to life. In response we worked collaboratively with the brand team to concept, design and develop a beautifully branded experience in the form of a responsive HTML website. The website communicates the brand's unique story of heritage and quality, displays the unique product range, and educates users on the health and lifestyle benefits of using matcha as a natural energy booster our daily lives. To further create a unique brand experience our Live Action team worked with the client to shoot, retouch and integrate a portfolio of beautifully curated photography for use on the matcha LOVE website and across other marketing platforms.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/matcha_header.jpg",
-	  img_big: "matcha_header-big.jpg",
-	  img_small: "matcha_header-small.jpg",
-	  id: "matchalove",
-	  website: "http://matchalove.com/",
-	  case_study: "http://clickfiremedia.com/project/matchalove",
-	  images: ['Home - Matcha Love.png', 'About - Matcha Love.png', 'Classic Matcha - Matcha Love.png', 'Press - Matcha Love.png', 'Products Archive - Matcha Love.png', 'Recipes Archive - Matcha Love.png', 'Stores - Matcha Love.png'],
-	  tags: ['jQuery', 'PHP', 'SASS', 'Wordpress'],
-	  agency: 'Click 3X',
-	  client: 'Matcha Love',
-	  role: 'Full Stack Developer',
-	  bg_colors: ['#a86030', '#f0d8c0', '#d8c0a8']
-	}, {
-	  name: "Heard City Website",
-	  bio: "Our friends at Heard City approached us to help them establish a brand identity that was not only true to their agency culture, but which reflected their company’s cutting-edge audio post-production capabilities. Our creative team partnered with Heard City to successfully capture the agency’s essence and craft an identity that brought the brand to life (in digital and print form) through a responsive HTML5 parallax website, business cards, a brochure and a stationary set.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/HeardCity_header.jpg",
-	  img_big: "HeardCity_header-big.jpg",
-	  img_small: "HeardCity_header-small.jpg",
-	  id: "heardcity",
-	  website: 'http://heardcity.com/',
-	  images: ['Home - Heardcity.png', 'Projects - Heardcity.png', 'Our Team - Heardcity.png', 'Gloria Pitagorsky - Heardcity.png', 'VR Projects - Heardcity.png'],
-	  tags: ['GSAP', 'Parallax', 'jQuery', 'PHP', 'Wordpress'],
-	  agency: 'Click 3X',
-	  client: 'Heard City',
-	  role: 'Full Stack Developer',
-	  bg_colors: ['#f0f0f0', '#d8d8d8', '#c0a8a8']
-	}, {
-	  name: "Con Edison Microsite",
-	  bio: "conEdison approached ClickFireMedia with the challenge of building an interactive online platform that informs and educates New York City Building Managers of energy-efficient cost saving techniques for their properties. Working with the Gate we conceptualized an immersive visual journey that put the average Building Manger into the drivers seat. Our CG team designed and constructed a photo realistic 3D “Class B” building, consisting of 9 different destinations, that users can explore, all while learning of different techniques to enhance their building and save on their energy bill. conEdison’s ultimate goal was to get users to register for their Demand Response Program.  An initiative that gives conEdison control of a building’s energy consumption during peak hours, in return for revenue. To make this offer more enticing we offered the users a suite of tools to educate them on these cost savings opportunities and revenue potential. Our investment in this project spans almost a full year, starting with detailed UX wire framings to endless design explorations and content hub for thought leadership, industry insights and educational interactive tools.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/ConEd_header.jpg",
-	  img_big: "ConEd_header-big.jpg",
-	  img_small: "ConEd_header-small.jpg",
-	  id: "coned",
-	  case_study: "http://clickfiremedia.com/project/coned",
-	  images: ['Commercial - Con Edison.png', 'Customer Solutions - Con Edison.png', 'Insights & Events - Con Edison.png', 'Urban Green Gala - Con Edison.png'],
-	  tags: ['CSS Animation', 'jQuery', 'PHP', 'Wordpress'],
-	  agency: 'The Gate',
-	  client: 'Con Edison',
-	  role: 'Full Stack Developer',
-	  bg_colors: ['#c0d8f0', '#d8f0f0', '#9090a8']
-	}, {
-	  name: "VFILES Smashion!",
-	  bio: "What chic sophisticate hasn’t fantasized about donning a fashionable frock on the runway to compete with top models? In order to bring that dream to fruition, we worked with the VFILES team, provided concepting, game logic, animation and cross-platform application development to ensure a gaming experience stylish enough to live up to the VFILES brand. Just like the big names in Haute Couture, the goal for players is to compete on the runways of four major city’s fashion weeks. Featuring immersive storytelling and addictive gameplay, the app—built for iOS and Android devices—delivers a compelling challenge in either landscape or portrait orientation.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/smashion_header.jpg",
-	  img_big: "smashion_header-big.jpg",
-	  img_small: "smashion_header-small.jpg",
-	  id: "vfiles",
-	  tags: ['Corona SDK', 'Lua', 'Mobile App'],
-	  agency: 'Click 3X',
-	  client: 'VFiles',
-	  role: 'Front End Developer',
-	  bg_colors: ['#304830', '#486048', '#181818']
-	}, {
-	  name: "Theraflu",
-	  bio: "In conjunction with CES 2017, Saatchi & Saatchi NY approached us with a request for an outdoor touch screen kiosk for their client Theraflu. Our team produced the entire operation in just 4 weeks, from research and development, to the kiosk build, to the installation on the Las Vegas strip. The kiosk was engineered with a thermal camera--capturing and saving thermal images. Users came to the kiosk, which was operational 24/7 during a 7-day period, throughout the day and well into the evening. We captured thermoselfies of all kinds--from family portraits, to animated vacation-goers, to Jack Sparrow lookalikes and other costume-adorned characters. We filtered the selfies through a moderation tool and into an aggregated gallery. Users received their images via text message, which could then be shared to social media channels. The kiosk also pulled in real-time SickScore data from The Weather Channel--ultimately letting users decide if they were \"sicker\" than Vegas, and encouraging users to discover their hometown SickScores via zipcode entry.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-video/CFM_Theraflu_CS.jpg",
-	  img_big: "CFM_Theraflu_CS-big.jpg",
-	  img_small: "CFM_Theraflu_CS-small.jpg",
-	  id: "theraflu",
-	  case_study: "http://clickfiremedia.com/project/theraflu",
-	  tags: ['Angular JS', 'CSS Animation', 'Kiosk', 'Large Display', 'SASS'],
-	  agency: 'Saatchi & Saatchi',
-	  client: 'Theraflu',
-	  role: 'Front End Developer',
-	  bg_colors: ['#181848', '#000000', '#000018']
-	}, {
-	  name: "GM About Page",
-	  bio: "Mccann Detroit approached us to collaborate on the imagination of the new look gm.com website. This exciting brief challenged our team to concept, design and develop the new look \"About Our Company\" section of gm.com site that would inspire the new website's look and feel. Our goal was to visually enhance an information-heavy experience, to ultimately tell a more engaging and interactive story across desktop, tablet and mobile platforms. During our R&D phase our team created animated prototypes and used a creative prototyping technique called \"video-lization\" to communicate and bring to life our creative vision. We also created a series of customized SVG animations to visually communicate important GM brand values such as \"Our Company\", \"Our People\", \"Our Brands\", and \"Our Commitment\". From a Technology standpoint our team formulated development solutions that enhanced the overall user experience across various devices and browsers. To prevent conflict with the existing GM codebase, the technology team wrote a custom-tailored mobile-first framework utilizing CSS3 animations and transforms in combination with scroll-controlled features and SVG graphics. The result is a seamless experience delighting the user as they scroll, revealing eye-catching animations to carry the dialog of GM’s story and further establish their reputation as trend-setters in their industry.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/GM_header.jpg",
-	  img_big: "GM_header-big.jpg",
-	  img_small: "GM_header-small.jpg",
-	  id: "gm",
-	  website: "http://www.gm.com/company/about-gm.html",
-	  images: ['General Motors | About.png'],
-	  tags: ['CSS Animation', 'jQuery', 'SASS', 'SVG Animation'],
-	  agency: 'McCaan',
-	  client: 'General Motors',
-	  role: 'Front End Developer',
-	  bg_colors: ['#d8d8d8', '#f0f0f0', '#ffffff']
-	}, {
-	  name: "Gamut",
-	  bio: "To transfer a new brand vision into reality, ClickFire Media partnered with CO-OP Marketing to rebrand COX Digital Solutions and craft them a new website. The fully responsive site performs flawlessly across platforms and includes a robust CMS, coded to make managing content a seamless experience. Using cutting-edge CSS3 techniques, the site implements parallax scrolling without the use of Javascript, ensuring a smooth visual effect across all modern browsers. A branding video was also produced and launched on the website to communicate the essence of the new brand identity to customers.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/gamut_header.jpg",
-	  img_big: "gamut_header-big.jpg",
-	  img_small: "gamut_header-small.jpg",
-	  id: "gamut",
-	  images: ['Gamut | Who We Are | Our Leadership.png', 'Gamut | Watch + Read.png', 'Gamut | What we do.png', 'Gamut | Who We Are | About.png'],
-	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery', 'CSS Animation'],
-	  bg_colors: ['#d8d8d8', '#f0f0f0', '#c0c0c0']
-	}, {
-	  name: "The Family",
-	  bio: "We function differently for each of our clients and friends, but we always strive to make a significant and profound impact on both of their brands and businesses. We manage talent, brands, and careers connected with creating and producing award-winning advertising.  We help create a unique niche for each of our Family Members based on their individual talent, aesthetic, and where they want to grow. We give each a resoundingly clear voice in this very loud and cluttered industry. We effectively help build their brands, their portfolios, their standing in the industry, and their bottom line. Our skills include, but are not limited to: communicating, relationship building, dog training, proactive selling and marketing, strategizing, splitting wood, branding, cooking, public relations, gardening, event planning, producing, creating, reading, writing, arithmetic, motivational dancing, business coaching and consulting, spotting and building talent, surfing, interior decorating, hunting and gathering, multitasking, driving a stick shift, trend setting and taste making, gift wrapping, making dove sounds, procurement, and winning. One of us is even a repeated Spelling Bee champ.",
-	  img_src: "/src/img/projects/thefamily/desktop/Home - The Family.png",
-	  img_big: "Home---The-Family-big.jpg",
-	  img_small: "Home---The-Family-small.jpg",
-	  id: "thefamily",
-	  images: ['Home - The Family.png', 'Work & News - The Family.png', 'Family Members - The Family.png', 'Recent Archives - The Family.png', 'Contact - The Family.png'],
-	  tags: ['Wordpress', 'PHP', 'Parallax', 'jQuery'],
-	  bg_colors: ['#d8a860', '#f0f0f0', '#ffffff']
-	}, {
-	  name: "Breast Cancer Awareness",
-	  bio: "In 2014 we were challenged by our client The Estée Lauder Companies to create a 360 campaign that would inspire audiences to join the important conversation about breast cancer awareness. Our response was to leverage the power of storytelling across the digital and social landscape, by amplifying video content and tailoring the topics of conversation to connect to a wider audience. With the call-to-action: “Hear our stories. Share yours,” Click3x Director Jonathan Yi and ClickFire Media brought together individuals, their families and supporters to capture a two-way conversation. Through authentic narrative and hours of moving footage, audiences learned that cancer is not a solitary struggle; it affects us all. The hours of moving footage led to the creation of a campaign trailer and 27-minute documentary. Users around the world visited the responsive BCACampaign.com website, built ground up with consistent performance from mobile to desktop. It was then translated into 15 different languages, to share stories, photos, videos and opinions resulting in an aggregated live feed that engaged a global audience. The resulting metrics were astounding - 1,000,000 YouTube views, 2,000,000 social media impressions, and 16,000 moments of engagement demonstrating the power of storytelling to transcend space, time and location.",
-	  img_src: "https://s3.amazonaws.com/media.clickfiremedia.com/images/modules/banner-image/bca_header.jpg",
-	  img_big: "bca_header-big.jpg",
-	  img_small: "bca_header-small.jpg",
-	  id: "bca",
-	  tags: ['Backbone JS', 'CodeIgniter', 'Google Maps API', 'jQuery', 'PHP'],
-	  agency: 'Reason 2 Be',
-	  client: 'Estee Lauder',
-	  role: 'Front End Developer',
-	  bg_colors: ['#a8a8c0', '#90a8a8', '#181818']
-	}];
-
-	exports.default = ProjectList;
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "projects.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 292 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32759,11 +32941,11 @@
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _projects = __webpack_require__(291);
+	var _projects = __webpack_require__(270);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _Project = __webpack_require__(293);
+	var _Project = __webpack_require__(295);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
@@ -32848,7 +33030,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ProjectContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 293 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32869,15 +33051,15 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _projects = __webpack_require__(291);
+	var _projects = __webpack_require__(270);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _DeviceContainer = __webpack_require__(294);
+	var _DeviceContainer = __webpack_require__(296);
 
 	var _DeviceContainer2 = _interopRequireDefault(_DeviceContainer);
 
-	var _BgImageLoader = __webpack_require__(288);
+	var _BgImageLoader = __webpack_require__(289);
 
 	var _BgImageLoader2 = _interopRequireDefault(_BgImageLoader);
 
@@ -33053,7 +33235,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Project.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 294 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33070,15 +33252,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Ipad = __webpack_require__(295);
+	var _Ipad = __webpack_require__(297);
 
 	var _Ipad2 = _interopRequireDefault(_Ipad);
 
-	var _Iphone = __webpack_require__(297);
+	var _Iphone = __webpack_require__(299);
 
 	var _Iphone2 = _interopRequireDefault(_Iphone);
 
-	var _MacBook = __webpack_require__(298);
+	var _MacBook = __webpack_require__(300);
 
 	var _MacBook2 = _interopRequireDefault(_MacBook);
 
@@ -33230,7 +33412,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "DeviceContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 295 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33245,7 +33427,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(296);
+	var _ImageLoader = __webpack_require__(298);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -33276,7 +33458,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Ipad.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 296 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33295,7 +33477,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(285);
+	var _classnames = __webpack_require__(286);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -33357,7 +33539,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ImageLoader.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 297 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33372,7 +33554,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(296);
+	var _ImageLoader = __webpack_require__(298);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -33403,7 +33585,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Iphone.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 298 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33418,7 +33600,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ImageLoader = __webpack_require__(296);
+	var _ImageLoader = __webpack_require__(298);
 
 	var _ImageLoader2 = _interopRequireDefault(_ImageLoader);
 
@@ -33449,7 +33631,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MacBook.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 299 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33474,11 +33656,11 @@
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _art = __webpack_require__(287);
+	var _art = __webpack_require__(288);
 
 	var _art2 = _interopRequireDefault(_art);
 
-	var _Art = __webpack_require__(300);
+	var _Art = __webpack_require__(302);
 
 	var _Art2 = _interopRequireDefault(_Art);
 
@@ -33567,7 +33749,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ArtContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 300 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -33584,7 +33766,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(285);
+	var _classnames = __webpack_require__(286);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -33592,7 +33774,7 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _art = __webpack_require__(287);
+	var _art = __webpack_require__(288);
 
 	var _art2 = _interopRequireDefault(_art);
 
@@ -33699,7 +33881,261 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Art.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 301 */
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _NavLink = __webpack_require__(256);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _reactAddonsCssTransitionGroup = __webpack_require__(257);
+
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
+	var _videos = __webpack_require__(291);
+
+	var _videos2 = _interopRequireDefault(_videos);
+
+	var _Video = __webpack_require__(304);
+
+	var _Video2 = _interopRequireDefault(_Video);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var videoStyle = {
+	  paddingTop: 0
+	};
+
+	var VideoContainer = function (_Component) {
+	  _inherits(VideoContainer, _Component);
+
+	  function VideoContainer(props) {
+	    _classCallCheck(this, VideoContainer);
+
+	    var _this = _possibleConstructorReturn(this, (VideoContainer.__proto__ || Object.getPrototypeOf(VideoContainer)).call(this, props));
+
+	    _this.state = {
+	      videos: _videos2.default,
+	      currentProject: _this.props.params.id,
+	      animating: false,
+	      key: 'video-container'
+	    };
+	    return _this;
+	  }
+
+	  _createClass(VideoContainer, [{
+	    key: 'render',
+	    value: function render() {
+
+	      var id = this.props.params.id,
+	          currentProject = void 0,
+	          index = -1,
+	          nextLink = void 0,
+	          previousLink = void 0;
+
+	      // NEXT / PREVIOUS LINKS
+	      for (var i = 0, len = _videos2.default.length; i < len; i++) {
+	        if (_videos2.default[i].id === id) {
+	          index = i;
+	          currentProject = _videos2.default[index];
+	          nextLink = index + 1 < len ? _videos2.default[index + 1] : _videos2.default[0];
+	          previousLink = index - 1 >= 0 ? _videos2.default[index - 1] : _videos2.default[len - 1];
+	          break;
+	        }
+	      }
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content single-project art-project', style: videoStyle },
+	        _react2.default.createElement(
+	          'div',
+	          { className: currentProject.id },
+	          _react2.default.createElement(_NavLink2.default, { to: "/videos/" + previousLink.id, className: 'previous previous-project' }),
+	          _react2.default.createElement(_NavLink2.default, { to: "/videos/" + nextLink.id, className: 'next next-project' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'clearfix' },
+	            _react2.default.createElement(
+	              _reactAddonsCssTransitionGroup2.default,
+	              {
+	                component: 'div',
+	                transitionName: 'example',
+	                transitionEnterTimeout: 1000,
+	                transitionLeaveTimeout: 1000
+	              },
+	              _react2.default.createElement(_Video2.default, { key: index, currentProject: currentProject })
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return VideoContainer;
+	}(_react.Component);
+
+	exports.default = VideoContainer;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "VideoContainer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(286);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _NavLink = __webpack_require__(256);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
+	var _videos = __webpack_require__(291);
+
+	var _videos2 = _interopRequireDefault(_videos);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Video = function (_Component) {
+	  _inherits(Video, _Component);
+
+	  function Video(props) {
+	    _classCallCheck(this, Video);
+
+	    var _this = _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).call(this, props));
+
+	    var src = "/src/img/videos/" + _this.props.currentProject.id + "/" + _this.props.currentProject.img;
+
+	    _this.state = {
+	      src: src,
+	      loaded: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Video, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      // window.setTimeout(()=>{
+	      //   window.scrollTo(0, 0);
+	      // }, 1000);
+
+	      var img = new window.Image();
+
+	      img.onload = function () {
+	        var pBottom = '',
+	            pWidth = '',
+	            units = '';
+
+	        if (window.innerWidth > window.innerHeight) {
+	          units = 'vh';
+	        } else {
+	          units = 'vw';
+	        }
+
+	        // VERT
+	        if (img.height > img.width) {
+	          pBottom = '100' + units;
+	          pWidth = img.width / img.height * 100;
+	          pWidth += units;
+	        } else {
+	          //HORIZ
+	          pBottom = img.height / img.width * 100;
+	          pWidth = '100' + units;
+	          pBottom += units;
+	        }
+
+	        _this2.setState({
+	          width: pWidth,
+	          height: img.height,
+	          paddingBottom: pBottom,
+	          loaded: true
+	        });
+	      };
+	      img.src = this.state.src;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          className = _props.className,
+	          props = _props.props;
+
+	      var imgClasses = 'clearfix marquee-nav art-img image';
+	      var rootClassName = (0, _classnames2.default)(className, imgClasses, {
+	        'image-loaded': this.state.loaded
+	      });
+
+	      var marqStyle = {
+	        backgroundImage: 'url("/src/img/videos/' + this.props.currentProject.id + "/" + this.props.currentProject.img + '")',
+	        backgroundColor: this.props.currentProject.bg_colors[0],
+	        paddingBottom: this.state.paddingBottom,
+	        width: this.state.width
+	      };
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content single-art' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: this.props.currentProject.src, target: '_blank' },
+	          _react2.default.createElement('div', { className: rootClassName, ref: 'img', style: marqStyle })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Video;
+	}(_react.Component);
+
+	exports.default = Video;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Video.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/wenzhang/Documents/Works/charles-react/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
