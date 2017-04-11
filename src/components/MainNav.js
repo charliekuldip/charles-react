@@ -108,6 +108,7 @@ class MainNav extends Component {
 					    <li><NavLink to="/about" style={navStyle} onClick={this.setMenuClass.bind(this)}>About</NavLink></li>
 					    <li><NavLink to="/projects" style={navStyle} onClick={this.setMenuClass.bind(this)}>Projects</NavLink></li>
 					    <li><NavLink to="/art" style={navStyle} onClick={this.setMenuClass.bind(this)}>Art</NavLink></li>
+					    <li><NavLink to="/videos" style={navStyle} onClick={this.setMenuClass.bind(this)}>Videos</NavLink></li>
 					</ul>
 				</div>
 			</header>

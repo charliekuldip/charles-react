@@ -1306,6 +1306,9 @@ NAV MENU ///////////////////////////////////////////////////
 .projects .menu-icon > span,
 .projects .menu-icon > span:after,
 .projects .menu-icon > span:before,
+.videos .menu-icon > span,
+.videos .menu-icon > span:after,
+.videos .menu-icon > span:before,
 .art .menu-icon > span,
 .art .menu-icon > span:after,
 .art .menu-icon > span:before {

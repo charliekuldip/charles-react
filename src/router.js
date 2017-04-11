@@ -6,10 +6,12 @@ import ReactGA from 'react-ga';
 // Components
 import App from './components/App';
 import Arts from './components/Arts';
+import Videos from './components/Videos';
 import About from './components/About';
 import Projects from './components/Projects';
 import ProjectContainer from './components/ProjectContainer';
 import ArtContainer from './components/ArtContainer';
+import VideoContainer from './components/VideoContainer';
 import NotFound from './components/NotFound';
 
 // import ProjectsList from './data/projects';
@@ -33,6 +35,8 @@ const routes = (
       <Route path="projects/:id" component={ProjectContainer} title="Project" />
       <Route path="art" component={Arts} title="Art" />
       <Route path="art/:id" component={ArtContainer} title="Art" />
+      <Route path="videos" component={Videos} title="Video" />
+      <Route path="videos/:id" component={VideoContainer} title="Video" />
       <Route path="*" component={NotFound} />
     </Route>
   </Router>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ProjectList from '../data/projects';
 import SvgAnimation from './SvgAnimation';
 import MainNav from './MainNav';
 import { disablepointeronscroll, toggleOutlines } from './helpers/helpers';
@@ -25,7 +26,7 @@ class App extends Component {
     }
 
     this.state = {
-      // projects:ProjectList,
+      projects:ProjectList,
       activePage:activePage,
       topLevelPage:topLevel,
       animating:false
