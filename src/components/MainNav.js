@@ -100,7 +100,7 @@ class MainNav extends Component {
 
 	    return (
 	    	<header id="fix-menu" className="clearfix fix-menu fixed-menu">
-	    		<div id="main-nav-btn" className={rootClassName} onClick={this.setMenuClass.bind(this)} onTouchStart={this.setMenuClass.bind(this)}>
+	    		<div id="main-nav-btn" className={rootClassName} onClick={this.setMenuClass.bind(this)}>
 	    			<span className="bar"></span>
 	    		</div>
 	    		<div id="main-nav-container" className={this.state.menuClass}>

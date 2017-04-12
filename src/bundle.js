@@ -31213,7 +31213,7 @@
 					{ id: 'fix-menu', className: 'clearfix fix-menu fixed-menu' },
 					_react2.default.createElement(
 						'div',
-						{ id: 'main-nav-btn', className: rootClassName, onClick: this.setMenuClass.bind(this), onTouchStart: this.setMenuClass.bind(this) },
+						{ id: 'main-nav-btn', className: rootClassName, onClick: this.setMenuClass.bind(this) },
 						_react2.default.createElement('span', { className: 'bar' })
 					),
 					_react2.default.createElement(
